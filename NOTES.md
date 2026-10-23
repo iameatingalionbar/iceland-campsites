@@ -5,21 +5,31 @@ Hard rules: **no invented prices, hours or facilities.** Every fact has a source
 Anything not confirmed is rendered as a visible **Unconfirmed** badge. Vague source wording ("depending on weather",
 "upon request") or conflicting sources → winter status `call-ahead` (or `partial`), never `open`.
 
+## Deploy (GitHub Pages) — every nightly run MUST finish with `./deploy.sh`
+
+Live site: https://iameatingalionbar.github.io/iceland-campsites/  (repo iameatingalionbar/iceland-campsites, public)
+`./deploy.sh` = build with BASE_URL=https://iameatingalionbar.github.io/iceland-campsites → `check.py` → `serve_check.py`
+(aborts on any problem) → commit + push source to `main` → force-push `dist/` (+ `.nojekyll`) to `gh-pages` →
+ensure Pages source = gh-pages `/` via REST (GET /pages, then PUT, or POST if missing) → request a Pages build.
+Auth: env var `GITHUB_TOKEN_CAMPSITES` (fine-grained; Contents/Pages/Administration write on this repo only), read by the
+repo-local git credential.helper and sent to the API via a stdin header. Never print it or write it to a file or git config.
+HTTPS only (SSH is blocked from the box). Non-zero exit = deploy failed; report the HTTP status/message.
+
 ## Build & preview
 
 ```bash
 cd /workspace/iceland-campsites
 python3 build.py                       # data/ + templates/ + static/ -> dist/  (fails on any unsourced fact)
 BASE_URL=https://your-domain.is python3 build.py   # canonical URLs, sitemap, robots use this
-python3 check.py                       # internal links/anchors, tag balance, <title>/description/canonical/viewport, sitemap
+python3 check.py                       # (BASE_URL path-prefix aware) internal links/anchors, tag balance, <title>/description/canonical/viewport, sitemap
 python3 -m http.server -d dist 8000    # preview at http://localhost:8000/
 python3 make_preview.py                # standalone guide with CSS inlined -> south-coast-winter-preview.html
 /tmp/pwvenv/bin/python screenshot.py   # full-page PNG -> screenshots/south-coast-winter.png
 #   (venv: python3 -m venv /tmp/pwvenv && /tmp/pwvenv/bin/pip install playwright; uses /usr/bin/google-chrome)
 ```
 
-Exit codes: `build.py` and `check.py` exit non-zero on failure. A nightly run should be:
-`python3 build.py && python3 check.py && python3 make_preview.py`.
+Exit codes: `build.py` and `check.py` exit non-zero on failure. A nightly run should be: edit data → `./deploy.sh` (which runs every check).
+`python3 serve_check.py` serves dist under the base path (e.g. /iceland-campsites/) and crawls every link + sitemap URL.
 
 ## Layout
 
@@ -79,7 +89,7 @@ A nightly run should take the first `todo` (or `stub` → full) row by prio, res
 |---|---|---|---|---|---|---|---|---|
 | B01 | 1 | done | guide | south-coast-winter-campsites | Campsites Open in Winter on Iceland's South Coast (2026–27) | south | top winter question (Reddit) | ferdalag winter list, tjalda |
 | B02 | 1 | done | campsite | reykjavik-eco-campsite | Reykjavík Eco-Campsite | capital-area | flagship, open all year | reykjavikcampsite.is |
-| B03 | 1 | stub | campsite | skaftafell | Skaftafell Campground (full page) | south | only winter site Vík–Höfn | vatnajokulsthjodgardur.is |
+| B03 | 1 | done | campsite | skaftafell | Skaftafell Campground (full page) | south | only winter site Vík–Höfn | vatnajokulsthjodgardur.is |
 | B04 | 1 | stub | campsite | selfoss-gesthus | Selfoss Gesthús (full page) | south | open all year, kitchen | gesthus.is |
 | B05 | 1 | stub | campsite | hellisholar | Hellishólar (full page; dump?) | south | winter area G | hellisholar.is |
 | B06 | 1 | todo | guide | dump-stations-iceland | Where to empty a cassette toilet in Iceland (by region) | all | dump-station theme hub needs data | uos.is disposal list, icetourist.is |
@@ -135,6 +145,11 @@ Nothing signed up, no links placed. The affiliate disclosure page is a placehold
 - Contacting campsites to fill Unconfirmed cells (email/phone) needs your approval.
 
 ## CHANGELOG
+- 2026-10-23: Skaftafell upgraded to a full page (official VJP price list 2026, winter zones A/C, Visitor Centre hours,
+  regional parking fee; whether campers pay the parking fee and the dump point location are Unconfirmed / reported only by tjalda).
+- 2026-10-23: Hosting: GitHub Pages at https://iameatingalionbar.github.io/iceland-campsites/. Added `deploy.sh` and
+  `serve_check.py` (serves dist under /iceland-campsites/ and crawls everything). `check.py` now strips the BASE_URL path prefix
+  when mapping sitemap entries/absolute links to files. 404.html now uses base-path-absolute links.
 - 2026-10-23: Project created. Stdlib build (`build.py`), checker (`check.py`), base template, CSS, 8 regions, 2 themes,
   About/methodology, affiliate-disclosure placeholder, sitemap/robots.
 - 2026-10-23: Reykjavík Eco-Campsite full page (2026 prices, winter Area A rules, Klettagarðar 14 dump point).

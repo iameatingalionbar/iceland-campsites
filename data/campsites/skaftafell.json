@@ -1,9 +1,13 @@
 {
   "slug": "skaftafell",
   "name": "Skaftafell Campground (Vatnajökull National Park)",
+  "alt_names": [
+    "Tjaldsvæðið í Skaftafelli",
+    "Skaftafell campsite"
+  ],
   "region": "south",
-  "town": "Skaftafell",
-  "completeness": "stub",
+  "town": "Skaftafell, Öræfi",
+  "completeness": "full",
   "checked": "2026-10-23",
   "sources": {
     "vjp": {
@@ -11,14 +15,39 @@
       "url": "https://www.vatnajokulsthjodgardur.is/en/areas/skaftafell/tjaldsvaedid-i-skaftafelli",
       "checked": "2026-10-23"
     },
+    "vjp-prices": {
+      "title": "Vatnajökull National Park – Pricelist (campsites and regional fees)",
+      "url": "https://www.vatnajokulsthjodgardur.is/en/communities--businesses/pricelist",
+      "checked": "2026-10-23"
+    },
+    "vjp-pay": {
+      "title": "Vatnajökull National Park – Payment of camping and regional fees",
+      "url": "https://www.vatnajokulsthjodgardur.is/en/communities--businesses/payment-of-camping-and-regional-fees",
+      "checked": "2026-10-23"
+    },
     "vjp-area": {
-      "title": "Vatnajökull National Park – Skaftafell area",
+      "title": "Vatnajökull National Park – Skaftafell area (access & services)",
       "url": "https://www.vatnajokulsthjodgardur.is/en/areas/skaftafell",
       "checked": "2026-10-23"
     },
+    "vjp-vc": {
+      "title": "Vatnajökull National Park – Skaftafellsstofa Visitor Centre (opening hours)",
+      "url": "https://www.vatnajokulsthjodgardur.is/en/areas/skaftafell/skaftafellsstofa",
+      "checked": "2026-10-23"
+    },
     "tjalda": {
-      "title": "Tjalda.is – Skaftafell listing (2026 rates & services)",
+      "title": "Tjalda.is – Skaftafell listing (Rates 2026 & services)",
       "url": "https://tjalda.is/en/campsite/skaftafell",
+      "checked": "2026-10-23"
+    },
+    "visitvatnajokull": {
+      "title": "Visit Vatnajökull – Campgrounds (regional tourism site; some details may be older)",
+      "url": "https://visitvatnajokull.is/information/campground/",
+      "checked": "2026-10-23"
+    },
+    "utilegukort": {
+      "title": "Útilegukortið (Camping Card) – Opening dates of camping sites 2026",
+      "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en",
       "checked": "2026-10-23"
     },
     "visiticeland-winter": {
@@ -28,17 +57,20 @@
     }
   },
   "intro": {
-    "value": "The national park campground at Skaftafell, under Vatnajökull. It is the only campsite between Kirkjubæjarklaustur and Höfn that publishes a year-round season. No reservations; vehicles can enter only 07:00–23:00.",
+    "value": "The national park campground at Skaftafell sits below Vatnajökull, Europe's largest glacier, beside the trails to Svartifoss and Skaftafellsjökull. It has been on this spot since 1974. It is open year-round with no reservations; in winter only zones A and C (vehicle access and electricity) stay open. It is the only campsite between Kirkjubæjarklaustur (70 km west) and Höfn (130 km east) that publishes a year-round season.",
     "src": [
       "vjp",
+      "vjp-area",
       "tjalda"
     ]
   },
   "location": {
     "address": {
-      "value": "Skaftafell, 785 Öræfi",
+      "value": "Skaftafellsstofa, 785 Öræfi (campground entrance on the west side, off Route 1)",
       "src": [
-        "tjalda"
+        "visitvatnajokull",
+        "vjp",
+        "vjp-area"
       ]
     },
     "lat": 64.016214,
@@ -48,24 +80,27 @@
     ]
   },
   "season": {
-    "value": "Open all year",
+    "value": "Open all year round",
     "src": [
       "vjp",
+      "vjp-area",
       "tjalda"
     ]
   },
   "winter": {
     "status": "open",
-    "value": "Open all year; only zones A and C are open in winter. There is no outdoor water until about mid-May because of frost (water is available indoors). In winter, register at the Visitor Centre.",
+    "value": "Open all year. In winter only zones A and C stay open (vehicle access, separate pitches, electricity). No water at the outdoor sinks until about mid-May because of frost; water is available indoors. In winter, register at the reception in the Skaftafellsstofa Visitor Centre.",
     "src": [
       "vjp",
-      "tjalda"
+      "tjalda",
+      "visitvatnajokull"
     ]
   },
   "prices": {
     "applies_to": {
-      "value": "2026 rates",
+      "value": "2026 rates per person per night, accommodation tax included",
       "src": [
+        "vjp-prices",
         "tjalda"
       ]
     },
@@ -75,95 +110,175 @@
         "label": "Adult (17–66) per night",
         "value": "2,800 ISK",
         "src": [
+          "vjp-prices",
           "tjalda"
         ]
       },
       {
-        "label": "Senior / disabled per night",
+        "label": "Senior (67+) / disabled per night",
         "value": "2,300 ISK",
         "src": [
+          "vjp-prices",
           "tjalda"
         ]
       },
       {
-        "label": "Children 16 and under",
+        "label": "Children 16 and under (with an adult)",
         "value": "Free",
         "src": [
+          "vjp-prices",
           "tjalda"
         ]
       },
       {
-        "label": "Electricity per night",
+        "label": "Electricity per 24 hours",
         "value": "1,500 ISK",
         "src": [
+          "vjp-prices",
           "tjalda"
         ]
       },
       {
-        "label": "Showers, washer and dryer",
+        "label": "Accommodation tax",
+        "value": "Included in the per-person fee",
+        "src": [
+          "vjp-prices"
+        ]
+      },
+      {
+        "label": "Showers, washing machine and dryer",
         "value": "Included in the campsite fee",
         "src": [
+          "vjp-prices",
           "tjalda"
+        ]
+      },
+      {
+        "label": "Do overnight campground guests also pay the regional (parking) fee?",
+        "value": null,
+        "note": "The sources checked don't say. There is no vehicle fee on the campsite price list."
+      },
+      {
+        "label": "Regional (parking) fee at Skaftafell car park, per day",
+        "value": "1,110 ISK (car, 5 or fewer seats); 1,440 ISK (6–9 seats); valid until midnight on the day paid",
+        "src": [
+          "vjp-prices",
+          "vjp-pay"
         ]
       }
     ]
   },
   "facts": {
     "electricity": {
-      "value": "Yes – 100 outlets; zones A and C (open in winter) have electricity. Not for charging vehicles.",
+      "value": "Yes – 100 electrical outlets in zones A–D; A and C (open in winter) have separate pitches and good access to electricity. 1,500 ISK per 24 h. Not for charging vehicles: the park says the system is neither powerful nor safe enough.",
+      "src": [
+        "vjp",
+        "vjp-prices",
+        "tjalda"
+      ]
+    },
+    "kitchen": {
+      "value": "No indoor dining or cooking facilities for campground visitors. Dishwashing sinks next to the service buildings (no outdoor water until about mid-May). The Visitor Centre has food service.",
       "src": [
         "vjp",
         "tjalda"
       ]
     },
-    "kitchen": {
-      "value": "No indoor dining or cooking facilities; dishwashing sinks next to the service buildings",
+    "showers": {
+      "value": "Included in the campsite fee (2026). An older Visit Vatnajökull page still describes paid service cards; the national park's own 2026 price list says showers are included.",
       "src": [
-        "vjp"
+        "vjp-prices",
+        "tjalda",
+        "visitvatnajokull"
       ]
     },
-    "showers": {
-      "value": "Included in the 2026 fee (tjalda.is)",
+    "toilets": {
+      "value": "Flush toilets; wheelchair accessible",
+      "src": [
+        "vjp",
+        "vjp-area"
+      ]
+    },
+    "dump_station": {
+      "has": "yes",
+      "value": "Listed by tjalda.is ('Waste disposal for mobile homes'). The national park's own campground page does not mention it, so ask at reception where it is.",
       "src": [
         "tjalda"
       ]
     },
-    "toilets": {
-      "value": "Flush toilets, wheelchair-accessible",
-      "src": [
-        "vjp"
-      ]
-    },
     "wifi": {
-      "value": "Wi-Fi listed",
+      "value": "Wi-Fi is listed as a service; free internet access at the Skaftafell Visitor Centre",
       "src": [
         "tjalda"
       ]
     },
     "laundry": {
-      "value": "Washer and dryer (included in the 2026 fee)",
+      "value": "Washing machine and dryer, included in the campsite fee",
       "src": [
         "vjp",
-        "tjalda"
+        "vjp-prices"
       ]
     },
     "camping_card": {
-      "value": null,
-      "note": "Not stated in the sources checked."
-    },
-    "contact": {
-      "value": "+354 470 8300 · skaftafell@nattura.is",
+      "value": "No – Skaftafell is not among the campsites in the Útilegukortið (Camping Card) 2026 list.",
       "src": [
-        "tjalda"
+        "utilegukort"
       ]
     },
-    "dump_station": {
-      "has": "yes",
-      "value": "Yes – 'Waste disposal for mobile homes' listed",
+    "contact": {
+      "value": "+354 470 8300 · skaftafell@nattura.is · vatnajokulsthjodgardur.is. No reservations (campsites cannot be booked); pay on site.",
       "src": [
-        "tjalda"
+        "vjp",
+        "tjalda",
+        "vjp-pay"
       ]
     }
   },
-  "practical": []
+  "practical": [
+    {
+      "value": "You can't reserve a pitch. Register and pay at the camping reception before you set up; the campsite fee is paid on site, not in the Parka app.",
+      "src": [
+        "vjp",
+        "vjp-pay"
+      ]
+    },
+    {
+      "value": "Vehicles can only enter the campsite between 07:00 and 23:00. Quiet hours are 23:30–07:00.",
+      "src": [
+        "tjalda"
+      ]
+    },
+    {
+      "value": "Winter reception is in the Skaftafellsstofa Visitor Centre. Its hours: November 9–17, December–February 10–17, March–May 9–17, September–October 9–18, June–August 9–19.",
+      "src": [
+        "visitvatnajokull",
+        "vjp-vc"
+      ]
+    },
+    {
+      "value": "Zones E, F, G and H are tent-only (no driving). Campervans use A–D, and in winter only A and C.",
+      "src": [
+        "vjp-prices",
+        "tjalda"
+      ]
+    },
+    {
+      "value": "The area is accessible year-round, 'weather and road conditions permitting'. Outside summer, conditions can change rapidly, so check before you drive.",
+      "src": [
+        "vjp-area"
+      ]
+    },
+    {
+      "value": "Collecting firewood in the national park is prohibited. Dogs are allowed but must be on a leash. Sort waste at the stations in the centre of the campsite and by the Visitor Centre.",
+      "src": [
+        "tjalda"
+      ]
+    },
+    {
+      "value": "Nearest towns: Kirkjubæjarklaustur 70 km west and Höfn 130 km east.",
+      "src": [
+        "vjp-area"
+      ]
+    }
+  ]
 }
