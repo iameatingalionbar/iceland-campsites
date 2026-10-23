@@ -1,0 +1,169 @@
+{
+  "slug": "skaftafell",
+  "name": "Skaftafell Campground (Vatnajökull National Park)",
+  "region": "south",
+  "town": "Skaftafell",
+  "completeness": "stub",
+  "checked": "2026-10-23",
+  "sources": {
+    "vjp": {
+      "title": "Vatnajökull National Park – Skaftafell campground",
+      "url": "https://www.vatnajokulsthjodgardur.is/en/areas/skaftafell/tjaldsvaedid-i-skaftafelli",
+      "checked": "2026-10-23"
+    },
+    "vjp-area": {
+      "title": "Vatnajökull National Park – Skaftafell area",
+      "url": "https://www.vatnajokulsthjodgardur.is/en/areas/skaftafell",
+      "checked": "2026-10-23"
+    },
+    "tjalda": {
+      "title": "Tjalda.is – Skaftafell listing (2026 rates & services)",
+      "url": "https://tjalda.is/en/campsite/skaftafell",
+      "checked": "2026-10-23"
+    },
+    "visiticeland-winter": {
+      "title": "Visit Iceland – Camper winter service in South Iceland",
+      "url": "https://www.visiticeland.com/things-to-do/south/accommodation/camper-winter-service/",
+      "checked": "2026-10-23"
+    }
+  },
+  "intro": {
+    "value": "The national park campground at Skaftafell, under Vatnajökull. It is the only campsite between Kirkjubæjarklaustur and Höfn that publishes a year-round season. No reservations; vehicles can enter only 07:00–23:00.",
+    "src": [
+      "vjp",
+      "tjalda"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Skaftafell, 785 Öræfi",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "lat": 64.016214,
+    "lon": -16.969221,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "Open all year",
+    "src": [
+      "vjp",
+      "tjalda"
+    ]
+  },
+  "winter": {
+    "status": "open",
+    "value": "Open all year; only zones A and C are open in winter. There is no outdoor water until about mid-May because of frost (water is available indoors). In winter, register at the Visitor Centre.",
+    "src": [
+      "vjp",
+      "tjalda"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult (17–66) per night",
+        "value": "2,800 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Senior / disabled per night",
+        "value": "2,300 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Children 16 and under",
+        "value": "Free",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Electricity per night",
+        "value": "1,500 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Showers, washer and dryer",
+        "value": "Included in the campsite fee",
+        "src": [
+          "tjalda"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes – 100 outlets; zones A and C (open in winter) have electricity. Not for charging vehicles.",
+      "src": [
+        "vjp",
+        "tjalda"
+      ]
+    },
+    "kitchen": {
+      "value": "No indoor dining or cooking facilities; dishwashing sinks next to the service buildings",
+      "src": [
+        "vjp"
+      ]
+    },
+    "showers": {
+      "value": "Included in the 2026 fee (tjalda.is)",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "toilets": {
+      "value": "Flush toilets, wheelchair-accessible",
+      "src": [
+        "vjp"
+      ]
+    },
+    "wifi": {
+      "value": "Wi-Fi listed",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "laundry": {
+      "value": "Washer and dryer (included in the 2026 fee)",
+      "src": [
+        "vjp",
+        "tjalda"
+      ]
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 470 8300 · skaftafell@nattura.is",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "dump_station": {
+      "has": "yes",
+      "value": "Yes – 'Waste disposal for mobile homes' listed",
+      "src": [
+        "tjalda"
+      ]
+    }
+  },
+  "practical": []
+}

@@ -1,0 +1,127 @@
+{
+  "slug": "skogafoss",
+  "name": "Skógafoss Campsite (Skógar)",
+  "region": "south",
+  "town": "Skógar",
+  "completeness": "stub",
+  "checked": "2026-10-23",
+  "sources": {
+    "tjalda": {
+      "title": "Tjalda.is – Tjaldsvæðið við Skógafoss listing (2026 rates & services)",
+      "url": "https://tjalda.is/en/campsite/skogafoss",
+      "checked": "2026-10-23"
+    },
+    "visiticeland-winter": {
+      "title": "Visit Iceland – Camper winter service in South Iceland",
+      "url": "https://www.visiticeland.com/things-to-do/south/accommodation/camper-winter-service/",
+      "checked": "2026-10-23"
+    },
+    "ferdalag-winter": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-10-23"
+    }
+  },
+  "intro": {
+    "value": "The Skógafoss campsite has moved to a new location reached via Skógavegur and the Skógræktarfélag Rangæinga sign. It is about 2 km (20 minutes on foot) from the waterfall, with basic facilities.",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Drangshlíðardal, 861 Hvolsvöllur (new location off Skógavegur)",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "lat": 63.52145,
+    "lon": -19.507052,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "Tjalda.is: 'Open 2026', tagged as an all-year site",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "winter": {
+    "status": "call-ahead",
+    "value": "Listed under 'Camper winter service' by Visit Iceland/Ferdalag, and tjalda.is tags it all-year with the text 'Open 2026', but no winter dates or winter services are published. The campsite has moved about 2 km from the waterfall. Call ahead.",
+    "src": [
+      "tjalda",
+      "visiticeland-winter"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Per person per night",
+        "value": "2,100 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Electricity",
+        "value": null,
+        "note": "Electricity is not listed among the 2026 facilities."
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "kitchen": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "showers": {
+      "value": null,
+      "note": "Showers are not listed among the 2026 facilities (only toilets and cold water)."
+    },
+    "toilets": {
+      "value": "Yes – basic: toilets and cold fresh water",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "wifi": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "laundry": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 863 8064 · dalur@emax.is · pay by QR code on the service building",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "dump_station": {
+      "has": "yes",
+      "value": "Yes – 'A disposal point for portable toilets is also available on site'",
+      "src": [
+        "tjalda"
+      ]
+    }
+  },
+  "practical": []
+}

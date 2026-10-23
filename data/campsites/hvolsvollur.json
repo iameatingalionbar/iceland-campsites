@@ -1,0 +1,168 @@
+{
+  "slug": "hvolsvollur",
+  "name": "Hvolsvöllur Campsite",
+  "region": "south",
+  "town": "Hvolsvöllur",
+  "completeness": "stub",
+  "checked": "2026-10-23",
+  "sources": {
+    "tjalda": {
+      "title": "Tjalda.is – Hvolsvöllur listing (2026 rates & services)",
+      "url": "https://tjalda.is/en/campsite/hvolsvollur",
+      "checked": "2026-10-23"
+    },
+    "visiticeland-winter": {
+      "title": "Visit Iceland – Camper winter service in South Iceland",
+      "url": "https://www.visiticeland.com/things-to-do/south/accommodation/camper-winter-service/",
+      "checked": "2026-10-23"
+    },
+    "ferdalag-winter": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-10-23"
+    }
+  },
+  "intro": {
+    "value": "A sheltered, tree-lined campsite at the entrance to Hvolsvöllur, just off the Ring Road, established in 1980.",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Austurvegur 4, 860 Hvolsvöllur",
+      "src": [
+        "ferdalag-winter"
+      ]
+    },
+    "lat": 63.750005,
+    "lon": -20.238479,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "1 May – 1 November",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "winter": {
+    "status": "closed",
+    "value": "Closed in winter: tjalda.is gives the season as 1 May – 1 November. Note that Visit Iceland still lists it under 'Camper winter service' – a conflict between sources, so do not rely on it between November and April.",
+    "src": [
+      "tjalda",
+      "visiticeland-winter"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult per night (lodging tax included)",
+        "value": "2,900 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Senior / disabled per night",
+        "value": "2,000 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Children 15 and under",
+        "value": "Free",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Electricity per night",
+        "value": "1,900 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Shower",
+        "value": "400 ISK per use",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Washing machine & dryer",
+        "value": "Free (included)",
+        "src": [
+          "tjalda"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes (1,900 ISK/night)",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "kitchen": {
+      "value": "Simple cooking area and dishwashing in one service building",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "showers": {
+      "value": "Paid – 400 ISK per use",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "toilets": {
+      "value": "Yes, incl. wheelchair-accessible",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "wifi": {
+      "value": "Yes",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "laundry": {
+      "value": "Washing machine & dryer included in the fee",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 866 8945 · astahalla@gmail.com",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "dump_station": {
+      "has": "yes",
+      "value": "Yes – service area for motorhomes and caravans; 'waste disposal for mobile homes'",
+      "src": [
+        "tjalda",
+        "ferdalag-winter"
+      ]
+    }
+  },
+  "practical": []
+}

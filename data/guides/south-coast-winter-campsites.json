@@ -1,0 +1,134 @@
+{
+  "slug": "south-coast-winter-campsites",
+  "title": "Campsites Open in Winter on Iceland's South Coast (2026–27)",
+  "description": "Which South Coast campsites take campervans in winter 2026–27, from Hveragerði to Höfn: winter status, electricity, dump stations and 2026 prices, each fact sourced and dated.",
+  "region": "south",
+  "checked": "2026-10-23",
+  "sources": {
+    "ferdalag-winter": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-10-23"
+    },
+    "visiticeland-winter": {
+      "title": "Visit Iceland – Camper winter service in South Iceland",
+      "url": "https://www.visiticeland.com/things-to-do/south/accommodation/camper-winter-service/",
+      "checked": "2026-10-23"
+    },
+    "tjalda-api": {
+      "title": "Tjalda.is – campsite directory (public listing data, region 'South Iceland')",
+      "url": "https://tjalda.is/en",
+      "checked": "2026-10-23"
+    },
+    "vik-own": {
+      "title": "Vík Camping – Opening hours summer 2026",
+      "url": "https://www.vikcamping.is/",
+      "checked": "2026-10-23"
+    },
+    "vjp": {
+      "title": "Vatnajökull National Park – Skaftafell campground",
+      "url": "https://www.vatnajokulsthjodgardur.is/en/areas/skaftafell/tjaldsvaedid-i-skaftafelli",
+      "checked": "2026-10-23"
+    },
+    "vjp-area": {
+      "title": "Vatnajökull National Park – Skaftafell area (access & services)",
+      "url": "https://www.vatnajokulsthjodgardur.is/en/areas/skaftafell",
+      "checked": "2026-10-23"
+    },
+    "reddit-vik": {
+      "title": "r/VisitingIceland – 'Winter campground in Vik?' (Jan 2024; seen via search-engine result, Reddit blocks direct fetch)",
+      "url": "https://www.reddit.com/r/VisitingIceland/comments/193fqbr/winter_campground_in_vik/",
+      "checked": "2026-10-23"
+    },
+    "reddit-recs": {
+      "title": "r/VisitingIceland – 'Campsite recommendations' (Nov 2024; seen via search-engine result)",
+      "url": "https://www.reddit.com/r/VisitingIceland/comments/1gytpl5/campsite_recommendations/",
+      "checked": "2026-10-23"
+    },
+    "uos": {
+      "title": "Umhverfis- og orkustofnun – Emptying portable toilets",
+      "url": "https://uos.is/en/environment/ocean-water/emptying-portable-toilets",
+      "checked": "2026-10-23"
+    },
+    "ferdalag-hofn": {
+      "title": "Ferdalag.is – Höfn Camping Ground",
+      "url": "https://www.ferdalag.is/en/service/hofn-camping-ground",
+      "checked": "2026-10-23"
+    }
+  },
+  "intro": [
+    {
+      "value": "Most Icelandic campsites close for the winter, and the South Coast has some notable gaps. Vík's village campsite says plainly that it is closed in winter (open 20 April – 1 November 2026). Hvolsvöllur's season ends on 1 November, and Kirkjubær II at Kirkjubæjarklaustur is open March – November only.",
+      "src": [
+        "vik-own",
+        "tjalda-api"
+      ]
+    },
+    {
+      "value": "This guide lists the South Coast campsites (Ring Road, Hveragerði to Höfn) that an official listing or the campsite itself says take campers in winter, plus the well-known ones that don't, so you can plan around them. The official 'Camper winter service' listings often use loose wording such as 'depending on weather' or 'upon request', and some entries conflict with the campsite's own season dates. Wherever a source is vague or contradicts another, the site is marked Call ahead rather than Open.",
+      "src": [
+        "ferdalag-winter",
+        "visiticeland-winter"
+      ]
+    }
+  ],
+  "scope_note": "Scope: campsites along the Ring Road (Route 1) between Hveragerði and Höfn, plus Fljótshlíð. Golden Circle and inland sites (e.g. Úthlíð, Hraunborgir, Skjól, Þingvellir) are not covered here and are in the backlog for a separate guide.",
+  "demand": {
+    "value": "Travellers regularly ask this. In r/VisitingIceland threads, people planning April and November campervan trips report finding no winter campsite in Vík and being pointed to Skógar and Kirkjubæjarklaustur instead. One commenter (Jan 2024) said Kirkjubæjarklaustur was also closed that winter. Another advised using tjalda.is and contacting campsites to confirm they are open: 'Do not wing this!'",
+    "src": [
+      "reddit-vik",
+      "reddit-recs"
+    ]
+  },
+  "campsites": [
+    "hveragerdi-reykjamork",
+    "selfoss-gesthus",
+    "hella-arhus",
+    "hvolsvollur",
+    "hellisholar",
+    "smaratun-fljotshlid",
+    "starlight-lambafell",
+    "skogafoss",
+    "farmhouse-lodge-skeidflot",
+    "vik-camping",
+    "kirkjubaer-ii",
+    "skaftafell",
+    "hofn"
+  ],
+  "tips": [
+    {
+      "value": "Between Vík and Skaftafell, no campsite publishes a December – February season: Vík is closed in winter and Kirkjubær II is open March – November only. Plan to stay west of Vík or at Skaftafell.",
+      "src": [
+        "vik-own",
+        "tjalda-api"
+      ]
+    },
+    {
+      "value": "At Skaftafell only zones A and C are open in winter. There is no outdoor water until about mid-May (water is available indoors), and no indoor kitchen or dining room for campers. Vehicles can enter only 07:00–23:00.",
+      "src": [
+        "vjp",
+        "tjalda-api"
+      ]
+    },
+    {
+      "value": "Vatnajökull National Park notes that the Skaftafell area is accessible year-round 'weather and road conditions permitting' and that conditions outside summer can change rapidly. Check before driving.",
+      "src": [
+        "vjp-area"
+      ]
+    },
+    {
+      "value": "At Hellishólar, winter campers use area G by the reception. There is no shared kitchen in winter, so you either cook in your van or eat at the on-site restaurant (18:00–21:30).",
+      "src": [
+        "tjalda-api"
+      ]
+    },
+    {
+      "value": "Empty cassette toilets only at designated disposal points. Hveragerði, Selfoss (Gesthús), Hella (Árhús), Skógafoss, Skaftafell and Höfn are listed with disposal facilities.",
+      "src": [
+        "uos",
+        "tjalda-api",
+        "ferdalag-hofn"
+      ]
+    }
+  ]
+}

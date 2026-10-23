@@ -1,0 +1,152 @@
+{
+  "slug": "hveragerdi-reykjamork",
+  "name": "Hveragerði Campsite (Reykjamörk)",
+  "region": "south",
+  "town": "Hveragerði",
+  "completeness": "stub",
+  "checked": "2026-10-23",
+  "sources": {
+    "tjalda": {
+      "title": "Tjalda.is – Hveragerði – Reykjamörk listing (2026 rates & services)",
+      "url": "https://tjalda.is/en/campsite/hveragerdi",
+      "checked": "2026-10-23"
+    }
+  },
+  "intro": {
+    "value": "A municipal campsite in central Hveragerði, the first town east of Reykjavík on the Ring Road. Tjalda.is lists electricity, laundry and waste disposal for motorhomes.",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Reykjamörk, 810 Hveragerði",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "lat": 63.998989,
+    "lon": -21.181625,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "Tagged 'Open all year' on tjalda.is; no season dates are given in the text",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "winter": {
+    "status": "call-ahead",
+    "value": "Tjalda.is tags it 'Open all year' but gives no winter season or winter service details. Call ahead.",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult per night",
+        "value": "2,300 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Children 0–15",
+        "value": "Free",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Electricity per night (paid on site)",
+        "value": "1,500 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Lodging tax per unit per night",
+        "value": "400 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Washing machine / tumble dryer (paid on site)",
+        "value": "800 ISK each",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Vehicle",
+        "value": null,
+        "note": "No separate vehicle fee listed."
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes (1,500 ISK/night)",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "kitchen": {
+      "value": "Listed: cooking facilities; outdoor shelter with hot/cold water for dishes and large barbecues",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "showers": {
+      "value": "Yes – in the service house; not stated whether paid",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "toilets": {
+      "value": "Yes",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "wifi": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "laundry": {
+      "value": "Washing machine and tumble dryer, 800 ISK each",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 844 6617 · hveragerdicampsite@gmail.com",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "dump_station": {
+      "has": "yes",
+      "value": "Yes – 'Waste disposal for mobile homes' listed",
+      "src": [
+        "tjalda"
+      ]
+    }
+  },
+  "practical": []
+}

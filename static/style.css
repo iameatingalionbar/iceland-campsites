@@ -1,0 +1,51 @@
+/* Iceland Campsites – single stylesheet. System fonts, no external requests. */
+:root{--bg:#fbfcfd;--fg:#1b2430;--muted:#55606e;--line:#d9dee4;--accent:#0b5c8a;--accent-2:#e8f2f8;
+--ok:#1d6b3a;--ok-bg:#e6f4ea;--warn:#7a4b00;--warn-bg:#fff4d6;--bad:#8a1c1c;--bad-bg:#fde8e8;--unc:#5b3a8c;--unc-bg:#f1eafb;
+--max:74rem;--radius:.5rem}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font:1rem/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--fg);background:var(--bg)}
+a{color:var(--accent)}a:hover{text-decoration-thickness:2px}
+a:focus-visible,button:focus-visible{outline:3px solid #f0a500;outline-offset:2px}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:.5rem 1rem;z-index:10}.skip:focus{left:.5rem}
+header.site{background:#0d3b5a;color:#fff}
+header.site .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1.5rem;padding:.75rem 1rem}
+header.site a{color:#fff;text-decoration:none}
+.brand{font-weight:700;font-size:1.1rem}
+nav.main ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.25rem 1rem}
+nav.main a{padding:.25rem 0;display:inline-block}nav.main a:hover{text-decoration:underline}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 1rem}
+main{padding:1.5rem 0 3rem}
+h1{font-size:clamp(1.6rem,4vw,2.3rem);line-height:1.2;margin:.5rem 0 1rem}
+h2{font-size:1.35rem;margin:2rem 0 .75rem;padding-top:.5rem;border-top:1px solid var(--line)}
+h3{font-size:1.1rem;margin:1.5rem 0 .5rem}
+.lede{font-size:1.1rem;color:#2a3542}
+.meta{color:var(--muted);font-size:.9rem}
+.breadcrumb{font-size:.9rem;color:var(--muted);margin:0}.breadcrumb a{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));gap:1rem;padding:0;list-style:none}
+.cards li{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1rem}
+.cards li h3{margin-top:0}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{text-align:left;vertical-align:top;padding:.55rem .65rem;border-bottom:1px solid var(--line)}
+thead th{background:var(--accent-2);position:sticky;top:0}
+tbody tr:last-child td,tbody tr:last-child th{border-bottom:0}
+table.facts th[scope=row]{width:32%;background:#f6f8fa}
+.badge{display:inline-block;font-size:.78rem;font-weight:600;padding:.1rem .45rem;border-radius:999px;white-space:nowrap}
+.b-open{color:var(--ok);background:var(--ok-bg)}.b-partial,.b-call{color:var(--warn);background:var(--warn-bg)}
+.b-closed{color:var(--bad);background:var(--bad-bg)}.b-unc{color:var(--unc);background:var(--unc-bg)}
+.unconfirmed{color:var(--unc);background:var(--unc-bg);font-weight:600;padding:0 .35rem;border-radius:.25rem}
+.unc-note{display:block;color:var(--muted);font-size:.85rem}
+sup.cite{font-size:.72rem;line-height:0;white-space:nowrap}sup.cite a{text-decoration:none;padding:0 .1rem}
+.checked{color:var(--muted);font-size:.8rem;white-space:nowrap}
+.callout{border-left:4px solid var(--accent);background:var(--accent-2);padding:.75rem 1rem;border-radius:0 var(--radius) var(--radius) 0;margin:1rem 0}
+.callout.warn{border-color:#d49a00;background:var(--warn-bg)}
+ol.sources{font-size:.9rem;padding-left:1.4rem}ol.sources li{margin:.3rem 0;word-break:break-word}
+ul.tips li{margin:.4rem 0}
+footer.site{border-top:1px solid var(--line);background:#f1f4f7;color:var(--muted);font-size:.9rem}
+footer.site .wrap{padding:1.25rem 1rem}
+footer.site ul{list-style:none;padding:0;margin:.5rem 0;display:flex;flex-wrap:wrap;gap:.25rem 1rem}
+.legend{display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0 1rem;font-size:.88rem}
+@media (max-width:40rem){table.facts th[scope=row]{width:40%}th,td{padding:.45rem}}
+@media print{header.site,footer.site,nav{display:none}a{color:#000}}
+table.guide{min-width:58rem}table.guide td.wcol{min-width:15rem}

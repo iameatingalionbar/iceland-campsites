@@ -1,0 +1,127 @@
+{
+  "slug": "vik-camping",
+  "name": "Vík Camping",
+  "region": "south",
+  "town": "Vík",
+  "completeness": "stub",
+  "checked": "2026-10-23",
+  "sources": {
+    "own": {
+      "title": "Vík Camping – home page (Opening hours – summer 2026)",
+      "url": "https://www.vikcamping.is/",
+      "checked": "2026-10-23"
+    },
+    "tjalda": {
+      "title": "Tjalda.is – Vík Camping listing (2026 rates & services)",
+      "url": "https://tjalda.is/en/campsite/vik",
+      "checked": "2026-10-23"
+    },
+    "reddit-vik": {
+      "title": "r/VisitingIceland – 'Winter campground in Vik?' (Jan 2024, traveller discussion; seen via search result)",
+      "url": "https://www.reddit.com/r/VisitingIceland/comments/193fqbr/winter_campground_in_vik/",
+      "checked": "2026-10-23"
+    }
+  },
+  "intro": {
+    "value": "The village campsite at Vík, about 1 km from the centre. Open in summer only.",
+    "src": [
+      "own"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Klettsvegur 7, 870 Vík",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "lat": 63.419327470811744,
+    "lon": -18.995547487569553,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "20 April – 1 November 2026",
+    "src": [
+      "own"
+    ]
+  },
+  "winter": {
+    "status": "closed",
+    "value": "Closed in winter: 'Vik Campsite will be open from 20th of April to 1st of November 2026. In winter the campsite is closed.'",
+    "src": [
+      "own"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": null,
+      "note": "No 2026 prices published on the sources checked (tjalda.is says its info may be outdated)."
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult per night",
+        "value": null,
+        "note": "Not published."
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes",
+      "src": [
+        "own"
+      ]
+    },
+    "kitchen": {
+      "value": "Dining facilities",
+      "src": [
+        "own"
+      ]
+    },
+    "showers": {
+      "value": "Yes (not stated whether paid)",
+      "src": [
+        "own"
+      ]
+    },
+    "toilets": {
+      "value": "Yes",
+      "src": [
+        "own"
+      ]
+    },
+    "wifi": {
+      "value": "Yes",
+      "src": [
+        "own"
+      ]
+    },
+    "laundry": {
+      "value": "Washing machines and tumble dryers (2019 service house)",
+      "src": [
+        "own"
+      ]
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 487 1345 (summer only) · vikcamping@vikcamping.is",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "dump_station": {
+      "has": "yes",
+      "value": "Yes – facilities to empty and clean car toilets (added 2019)",
+      "src": [
+        "own"
+      ]
+    }
+  },
+  "practical": []
+}

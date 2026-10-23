@@ -1,0 +1,181 @@
+{
+  "slug": "selfoss-gesthus",
+  "name": "Selfoss Campsite – Gesthús",
+  "region": "south",
+  "town": "Selfoss",
+  "completeness": "stub",
+  "checked": "2026-10-23",
+  "sources": {
+    "own": {
+      "title": "Gesthús Selfoss – home page",
+      "url": "https://www.gesthus.is/",
+      "checked": "2026-10-23"
+    },
+    "tjalda": {
+      "title": "Tjalda.is – Selfoss – Gesthús listing (2026 rates & services)",
+      "url": "https://tjalda.is/en/campsite/gesthus",
+      "checked": "2026-10-23"
+    },
+    "ferdalag-winter": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-10-23"
+    },
+    "visiticeland-winter": {
+      "title": "Visit Iceland – Camper winter service in South Iceland",
+      "url": "https://www.visiticeland.com/things-to-do/south/accommodation/camper-winter-service/",
+      "checked": "2026-10-23"
+    }
+  },
+  "intro": {
+    "value": "A family-run campsite and RV park in the centre of Selfoss, the largest town in South Iceland, open all year with an indoor kitchen and dining room.",
+    "src": [
+      "own",
+      "tjalda"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Engjavegur 56, 800 Selfoss",
+      "src": [
+        "tjalda",
+        "ferdalag-winter"
+      ]
+    },
+    "lat": 63.933913,
+    "lon": -20.992174,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "Open all year round (campsite and RV park)",
+    "src": [
+      "own",
+      "tjalda"
+    ]
+  },
+  "winter": {
+    "status": "open",
+    "value": "Open all year. The service centre is open until 20:00 in winter (22:00 in summer).",
+    "src": [
+      "own",
+      "visiticeland-winter"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult per night",
+        "value": "3,000 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Senior per night",
+        "value": "2,500 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Children 12 and under",
+        "value": "Free",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Children 13–17",
+        "value": "1,500 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Electricity per night",
+        "value": "1,900 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Accommodation tax per unit per night",
+        "value": "400 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Vehicle",
+        "value": null,
+        "note": "No separate vehicle fee listed."
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes – separate area for motorhomes and folding campers with electricity (1,900 ISK/night)",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "kitchen": {
+      "value": "Yes – service centre with kitchen and a big dining room",
+      "src": [
+        "own",
+        "tjalda"
+      ]
+    },
+    "showers": {
+      "value": "Hot showers in the service centre; not stated whether included",
+      "src": [
+        "own"
+      ]
+    },
+    "toilets": {
+      "value": "Yes",
+      "src": [
+        "own"
+      ]
+    },
+    "wifi": {
+      "value": "Free WiFi",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "laundry": {
+      "value": "Washing machine and tumble dryer for a small fee",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 482 3585 · gesthus@gesthus.is · gesthus.is",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "dump_station": {
+      "has": "yes",
+      "value": "Yes – 'waste disposal and other facilities for mobile homes'",
+      "src": [
+        "tjalda"
+      ]
+    }
+  },
+  "practical": []
+}

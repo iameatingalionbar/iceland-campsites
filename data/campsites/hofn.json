@@ -1,0 +1,164 @@
+{
+  "slug": "hofn",
+  "name": "Höfn Campsite (Höfn í Hornafirði)",
+  "region": "south",
+  "town": "Höfn í Hornafirði",
+  "completeness": "stub",
+  "checked": "2026-10-23",
+  "sources": {
+    "tjalda": {
+      "title": "Tjalda.is – Tjaldsvæðið Höfn í Hornafirði listing (2026 rates & services)",
+      "url": "https://tjalda.is/en/campsite/tjaldsvaedid-hofn-i-hornafirdi",
+      "checked": "2026-10-23"
+    },
+    "ferdalag-hofn": {
+      "title": "Ferdalag.is – Höfn Camping Ground",
+      "url": "https://www.ferdalag.is/en/service/hofn-camping-ground",
+      "checked": "2026-10-23"
+    },
+    "visiticeland-winter": {
+      "title": "Visit Iceland – Camper winter service in South Iceland",
+      "url": "https://www.visiticeland.com/things-to-do/south/accommodation/camper-winter-service/",
+      "checked": "2026-10-23"
+    }
+  },
+  "intro": {
+    "value": "The town campsite at the entrance to Höfn, the last town on the South Coast before the Eastfjords, with glacier views.",
+    "src": [
+      "ferdalag-hofn",
+      "tjalda"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Hafnarbraut 52, 780 Höfn í Hornafirði",
+      "src": [
+        "ferdalag-hofn"
+      ]
+    },
+    "lat": 64.258368,
+    "lon": -15.203018,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "Open all year",
+    "src": [
+      "tjalda",
+      "ferdalag-hofn"
+    ]
+  },
+  "winter": {
+    "status": "open",
+    "value": "Listed 'Open all year' by tjalda.is and ferdalag.is ('a quality camp site all year round'). Cottages only mid-April – 15 October.",
+    "src": [
+      "tjalda",
+      "ferdalag-hofn"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult per night",
+        "value": "2,500 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Children 15 and under",
+        "value": "Free",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Electricity per night",
+        "value": "1,500 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Lodging tax per unit per night",
+        "value": "400 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Washing machine / dryer",
+        "value": "1,500 ISK each",
+        "src": [
+          "tjalda"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes – specific spots for mobile homes, good access to electricity",
+      "src": [
+        "ferdalag-hofn",
+        "tjalda"
+      ]
+    },
+    "kitchen": {
+      "value": "Cooking facilities",
+      "src": [
+        "ferdalag-hofn"
+      ]
+    },
+    "showers": {
+      "value": "Shower listed (not stated whether paid)",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "toilets": {
+      "value": "Yes",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "wifi": {
+      "value": "Wireless internet",
+      "src": [
+        "ferdalag-hofn"
+      ]
+    },
+    "laundry": {
+      "value": "Washing facilities (1,500 ISK per machine use)",
+      "src": [
+        "ferdalag-hofn",
+        "tjalda"
+      ]
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 478 1606 · camping@simnet.is",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "dump_station": {
+      "has": "yes",
+      "value": "Yes – 'Waste tank discharge' listed",
+      "src": [
+        "ferdalag-hofn"
+      ]
+    }
+  },
+  "practical": []
+}

@@ -1,0 +1,128 @@
+{
+  "slug": "smaratun-fljotshlid",
+  "name": "Smáratún / Hotel Fljótshlíð Campsite",
+  "region": "south",
+  "town": "Fljótshlíð",
+  "completeness": "stub",
+  "checked": "2026-10-23",
+  "sources": {
+    "own": {
+      "title": "Smáratún farm – home page",
+      "url": "https://smaratun.is/",
+      "checked": "2026-10-23"
+    },
+    "ferdalag-winter": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-10-23"
+    },
+    "visiticeland-winter": {
+      "title": "Visit Iceland – Camper winter service in South Iceland",
+      "url": "https://www.visiticeland.com/things-to-do/south/accommodation/camper-winter-service/",
+      "checked": "2026-10-23"
+    }
+  },
+  "intro": {
+    "value": "A family farm hotel off road 261 in Fljótshlíð, about 10 minutes from Hvolsvöllur, that says it takes campers all year round.",
+    "src": [
+      "own",
+      "ferdalag-winter"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Smáratún, 861 Hvolsvöllur",
+      "src": [
+        "own",
+        "ferdalag-winter"
+      ]
+    },
+    "lat": null,
+    "lon": null,
+    "coords_src": []
+  },
+  "season": {
+    "value": "'We accommodate campers all year around'",
+    "src": [
+      "own",
+      "ferdalag-winter"
+    ]
+  },
+  "winter": {
+    "status": "open",
+    "value": "Takes campers all year round; no reservation needed.",
+    "src": [
+      "own",
+      "ferdalag-winter"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": null,
+      "note": "No campsite prices found on the sources checked."
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult per night",
+        "value": null,
+        "note": "No published price found."
+      },
+      {
+        "label": "Electricity",
+        "value": null,
+        "note": "No published price found."
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes",
+      "src": [
+        "own"
+      ]
+    },
+    "kitchen": {
+      "value": "Common kitchen",
+      "src": [
+        "own"
+      ]
+    },
+    "showers": {
+      "value": "Yes (not stated whether paid)",
+      "src": [
+        "own"
+      ]
+    },
+    "toilets": {
+      "value": "Bathroom",
+      "src": [
+        "own"
+      ]
+    },
+    "wifi": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "laundry": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 487 1416 · smaratun@smaratun.is",
+      "src": [
+        "ferdalag-winter"
+      ]
+    },
+    "dump_station": {
+      "has": null,
+      "value": null,
+      "note": "Not stated in the sources checked."
+    }
+  },
+  "practical": []
+}

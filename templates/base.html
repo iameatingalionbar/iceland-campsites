@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>$title</title>
+<meta name="description" content="$description">
+<link rel="canonical" href="$canonical">
+<meta property="og:type" content="website">
+<meta property="og:title" content="$title">
+<meta property="og:description" content="$description">
+<meta property="og:url" content="$canonical">
+<meta name="robots" content="$robots">
+$head_extra
+<link rel="stylesheet" href="${root}static/style.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="site"><div class="wrap">
+<a class="brand" href="${root}index.html">$site_name</a>
+<nav class="main" aria-label="Main"><ul>
+<li><a href="${root}regions/index.html">Regions</a></li>
+<li><a href="${root}themes/index.html">Themes</a></li>
+<li><a href="${root}guides/index.html">Guides</a></li>
+<li><a href="${root}campsites/index.html">All campsites</a></li>
+<li><a href="${root}about/index.html">About &amp; sources</a></li>
+</ul></nav>
+</div></header>
+<main id="content"><div class="wrap">
+$body
+</div></main>
+<footer class="site"><div class="wrap">
+<p>Every fact on this site links to its source and shows the date it was checked. Campsite seasons, prices and facilities change, so confirm with the campsite before you travel. Anything we could not confirm is marked <span class="unconfirmed">Unconfirmed</span>.</p>
+<ul>
+<li><a href="${root}about/index.html">About, sources &amp; methodology</a></li>
+<li><a href="${root}affiliate-disclosure/index.html">Affiliate disclosure</a></li>
+<li><a href="${root}sitemap.xml">Sitemap</a></li>
+</ul>
+<p>Site built $build_date.</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,155 @@
+{
+  "slug": "hellisholar",
+  "name": "Hellishólar Campsite (Fljótshlíð)",
+  "region": "south",
+  "town": "Hellishólar, Fljótshlíð",
+  "completeness": "stub",
+  "checked": "2026-10-23",
+  "sources": {
+    "tjalda": {
+      "title": "Tjalda.is – Hellishólar, Fljótshlíð listing (2026 rates & services)",
+      "url": "https://tjalda.is/en/campsite/hellisholar",
+      "checked": "2026-10-23"
+    },
+    "visiticeland-winter": {
+      "title": "Visit Iceland – Camper winter service in South Iceland",
+      "url": "https://www.visiticeland.com/things-to-do/south/accommodation/camper-winter-service/",
+      "checked": "2026-10-23"
+    },
+    "ferdalag-winter": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-10-23"
+    }
+  },
+  "intro": {
+    "value": "A golf-and-hotel complex in the Fljótshlíð countryside, about 10 km from Hvolsvöllur, that keeps one camping area (G) open in winter. Age limit 25 unless travelling with family.",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Hellishólar, 861 Hvolsvöllur",
+      "src": [
+        "ferdalag-winter"
+      ]
+    },
+    "lat": 63.724877,
+    "lon": -20.038818,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "Open year-round",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "winter": {
+    "status": "open",
+    "value": "Open year-round. In winter only area G (by the reception and restaurant) is open, and there is no shared kitchen or dining room for campers. Book and pay before pitching ('Book First Then Camp').",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult per night",
+        "value": "3,500 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Senior (67+)",
+        "value": "2,800 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Children 13 and under",
+        "value": "Free",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Electricity per night",
+        "value": "2,000 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Accommodation tax per unit per night",
+        "value": "400 ISK",
+        "src": [
+          "tjalda"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes (2,000 ISK/night)",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "kitchen": {
+      "value": "No shared kitchen or dining room for campsite guests in winter; Hygge Restaurant & Bar open daily 18:00–21:30",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "showers": {
+      "value": "Winter bathhouse showers at no extra charge",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "toilets": {
+      "value": "Yes",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "wifi": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "laundry": {
+      "value": "Washing machines and dryers listed",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 487 8360 · hellisholar@hellisholar.is · hellisholar.is",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "dump_station": {
+      "has": null,
+      "value": null,
+      "note": "Not stated in the sources checked."
+    }
+  },
+  "practical": []
+}

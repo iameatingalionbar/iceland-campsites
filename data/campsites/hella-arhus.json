@@ -1,0 +1,147 @@
+{
+  "slug": "hella-arhus",
+  "name": "Árhús Cottage and Camping (Hella)",
+  "region": "south",
+  "town": "Hella",
+  "completeness": "stub",
+  "checked": "2026-10-23",
+  "sources": {
+    "tjalda": {
+      "title": "Tjalda.is – Árhús Cottage and Camping – Hella listing (2026 rates & services)",
+      "url": "https://tjalda.is/en/campsite/arhus",
+      "checked": "2026-10-23"
+    }
+  },
+  "intro": {
+    "value": "A roughly 6-hectare riverside campsite at Hella on the Ring Road. The camping fee includes showers and electricity, and no reservations are needed.",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Rangárbakki 6, 850 Hella",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "lat": 63.8331338,
+    "lon": -20.4057605,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "'Open until November/December (depending on weather)'; tjalda.is season field: 1 June – 30 November",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "winter": {
+    "status": "partial",
+    "value": "Shoulder season only: 'open until November/December (depending on weather)'. The closing date depends on weather, so call ahead, and assume it is closed in deep winter unless the campsite confirms otherwise.",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult (15+) per night, lodging tax included",
+        "value": "3,000 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Children 6–14",
+        "value": "1,000 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Children 5 and under",
+        "value": "Free",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Electricity",
+        "value": "Included in the camping fee",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Vehicle",
+        "value": null,
+        "note": "No separate vehicle fee listed."
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes – included in the camping fee",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "kitchen": {
+      "value": "Common area / indoor dining facility listed; cooking facilities not stated",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "showers": {
+      "value": "Hot showers included in the camping fee",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "toilets": {
+      "value": "Yes",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "wifi": {
+      "value": "WiFi in the shared facilities",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "laundry": {
+      "value": "Washing machine listed",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 790 3277 · arhusehf@gmail.com",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "dump_station": {
+      "has": "yes",
+      "value": "Yes – 'Waste disposal for mobile homes' listed",
+      "src": [
+        "tjalda"
+      ]
+    }
+  },
+  "practical": []
+}

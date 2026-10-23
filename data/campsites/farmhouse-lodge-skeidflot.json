@@ -1,0 +1,139 @@
+{
+  "slug": "farmhouse-lodge-skeidflot",
+  "name": "Farmhouse Lodge Campsite (Skeiðflöt, near Vík)",
+  "region": "south",
+  "town": "Skeiðflöt, Mýrdalur",
+  "completeness": "stub",
+  "checked": "2026-10-23",
+  "sources": {
+    "tjalda": {
+      "title": "Tjalda.is – Farmhouse Lodge – Skeiðflöt listing (2026 rates & services)",
+      "url": "https://tjalda.is/en/campsite/farmhouse-lodge",
+      "checked": "2026-10-23"
+    },
+    "own": {
+      "title": "Farmhouse Lodge – home page",
+      "url": "https://farmhouse.is/",
+      "checked": "2026-10-23"
+    }
+  },
+  "intro": {
+    "value": "A farm lodge west of Vík with space for about 30 tents and two parking areas for up to 25 campervans. It is the only site near Vík that says it is open all year.",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Skeiðflöt, 871 Vík",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "lat": 63.4381578214337,
+    "lon": -19.188116704075053,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "'Open all year'",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "winter": {
+    "status": "call-ahead",
+    "value": "Tjalda.is says 'Open all year', but the lodge's own site says winter opening hours 'may vary depending on the season and operational requirements'. Call ahead.",
+    "src": [
+      "tjalda",
+      "own"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult (15+) per night",
+        "value": "2,500 ISK",
+        "src": [
+          "tjalda",
+          "own"
+        ]
+      },
+      {
+        "label": "Electricity per night",
+        "value": "2,500 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Lodging tax per unit per night",
+        "value": "400 ISK",
+        "src": [
+          "tjalda",
+          "own"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes (2,500 ISK/night)",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "kitchen": {
+      "value": "Access to cooking facilities; covered dining area",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "showers": {
+      "value": "Shared bathrooms and showers",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "toilets": {
+      "value": "Yes",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "wifi": {
+      "value": "Yes",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "laundry": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 625 8905 · farmhouse@farmhouse.is · farmhouse.is",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "dump_station": {
+      "has": null,
+      "value": null,
+      "note": "Not stated in the sources checked."
+    }
+  },
+  "practical": []
+}

@@ -1,0 +1,21 @@
+{
+  "site_name": "Iceland Campsites for Campervans",
+  "tagline": "Sourced, dated facts about Icelandic campsites for campervan and motorhome travellers",
+  "base_url": "https://www.example.com",
+  "language": "en",
+  "default_checked": "2026-10-23",
+  "regions": [
+    {"slug": "capital-area", "name": "Capital area", "is": "Höfuðborgarsvæðið", "blurb": "Reykjavík and the surrounding towns (Kópavogur, Hafnarfjörður, Garðabær, Mosfellsbær)."},
+    {"slug": "reykjanes", "name": "Reykjanes", "is": "Suðurnes", "blurb": "The peninsula around Keflavík International Airport, including Grindavík, Sandgerði and Garður."},
+    {"slug": "west", "name": "West Iceland", "is": "Vesturland", "blurb": "Akranes, Borgarnes, Snæfellsnes and the Dalir district."},
+    {"slug": "westfjords", "name": "Westfjords", "is": "Vestfirðir", "blurb": "Ísafjörður, Patreksfjörður, Þingeyri, Hólmavík and the fjords in between."},
+    {"slug": "north-west", "name": "North West", "is": "Norðurland vestra", "blurb": "Hvammstangi, Blönduós, Skagaströnd, Sauðárkrókur and the Skagafjörður area."},
+    {"slug": "north-east", "name": "North East", "is": "Norðurland eystra", "blurb": "Akureyri, Mývatn, Húsavík, Siglufjörður and the north-east coast."},
+    {"slug": "east", "name": "East Iceland", "is": "Austurland", "blurb": "Egilsstaðir, Seyðisfjörður, the Eastfjords and Djúpivogur."},
+    {"slug": "south", "name": "South Iceland", "is": "Suðurland", "blurb": "Hveragerði and Selfoss east along the Ring Road to Vík, Skaftafell and Höfn, plus the Golden Circle."}
+  ],
+  "themes": [
+    {"slug": "open-in-winter", "name": "Open in winter", "blurb": "Campsites whose own published information (or an official listing) says they take campers in winter. Status is shown exactly as sourced; 'call ahead' means the source uses vague wording such as 'depending on weather' or 'upon request'.", "filter": "winter"},
+    {"slug": "dump-stations", "name": "Dump stations / chemical toilet disposal by region", "blurb": "Campsites where a source confirms a disposal point for chemical (cassette) toilets and/or grey water, grouped by region. Sites where disposal is unconfirmed or absent are not listed here.", "filter": "dump"}
+  ]
+}

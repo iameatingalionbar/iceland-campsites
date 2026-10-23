@@ -1,0 +1,158 @@
+{
+  "slug": "kirkjubaer-ii",
+  "name": "Kirkjubær II Campsite (Kirkjubæjarklaustur)",
+  "region": "south",
+  "town": "Kirkjubæjarklaustur",
+  "completeness": "stub",
+  "checked": "2026-10-23",
+  "sources": {
+    "tjalda": {
+      "title": "Tjalda.is – Kirkjubær II, Kirkjubæjarklaustri listing (2026 rates & services)",
+      "url": "https://tjalda.is/en/campsite/kirkjubaer",
+      "checked": "2026-10-23"
+    },
+    "own": {
+      "title": "Kirkjubær II – home page",
+      "url": "https://kirkjubaer.com/",
+      "checked": "2026-10-23"
+    }
+  },
+  "intro": {
+    "value": "A spacious village campsite in Kirkjubæjarklaustur, next to Systrakaffi and the grocery store, halfway between Vík and Skaftafell.",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Kirkjubæjarklaustur, 880 Kirkjubæjarklaustur",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "lat": 63.79284,
+    "lon": -18.049986,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "March – November",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "winter": {
+    "status": "partial",
+    "value": "Shoulder season only: open from March to November, so closed December – February.",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult (13+) per night",
+        "value": "2,000 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Accommodation tax per unit per night",
+        "value": "400 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Electricity per 24 h",
+        "value": "1,500 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Shower",
+        "value": "300 ISK / 3 minutes",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Washing machine / dryer",
+        "value": "950 ISK each",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Children under 13",
+        "value": null,
+        "note": "Not stated."
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes – hookups throughout (1,500 ISK/24 h)",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "kitchen": {
+      "value": "Kitchen and dining area in the service building",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "showers": {
+      "value": "Paid – 300 ISK for 3 minutes",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "toilets": {
+      "value": "Ten toilets",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "wifi": {
+      "value": "Free WiFi",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "laundry": {
+      "value": "Washer and dryer, 950 ISK each",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 894 4495 · kirkjubaer@simnet.is · kirkjubaer.com (online booking, gate opens by licence plate)",
+      "src": [
+        "tjalda",
+        "own"
+      ]
+    },
+    "dump_station": {
+      "has": null,
+      "value": null,
+      "note": "Not stated in the sources checked."
+    }
+  },
+  "practical": []
+}

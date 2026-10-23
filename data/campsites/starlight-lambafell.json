@@ -1,0 +1,141 @@
+{
+  "slug": "starlight-lambafell",
+  "name": "Starlight Campsite and Pods (Lambafell)",
+  "region": "south",
+  "town": "Lambafell, near Skógar",
+  "completeness": "stub",
+  "checked": "2026-10-23",
+  "sources": {
+    "tjalda": {
+      "title": "Tjalda.is – Starlight Campsite and Pods listing (2026 rates & services)",
+      "url": "https://tjalda.is/en/campsite/starlight-camping",
+      "checked": "2026-10-23"
+    }
+  },
+  "intro": {
+    "value": "A campsite with camping pods under Eyjafjallajökull, with zones B–D reserved for campervans and motorhomes.",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Lambafell, 861 Hvolsvöllur",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "lat": 63.543861813921716,
+    "lon": -19.632791102125605,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "'Open all year!'",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "winter": {
+    "status": "open",
+    "value": "Listed 'Open all year!' on tjalda.is.",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult per night",
+        "value": "2,500 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Senior (67+)",
+        "value": "2,000 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Children 15 and under",
+        "value": "Free",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Lodging tax per unit per night",
+        "value": "400 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Electricity",
+        "value": null,
+        "note": "Electricity is not listed among facilities or prices."
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "kitchen": {
+      "value": "Shared kitchens",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "showers": {
+      "value": "Hot showers (not stated whether paid)",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "toilets": {
+      "value": "Yes",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "wifi": {
+      "value": "Free WiFi",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "laundry": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 487 1212 · info@welcome.is",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "dump_station": {
+      "has": null,
+      "value": null,
+      "note": "Not stated in the sources checked."
+    }
+  },
+  "practical": []
+}
