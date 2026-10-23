@@ -9,6 +9,7 @@ Fails loudly if any fact has a value without a source, or cites an unknown sourc
 import json, os, sys, shutil, glob, datetime, re
 from html import escape
 from string import Template
+from urllib.parse import urlparse
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DIST = os.path.join(ROOT, "dist")
@@ -95,9 +96,9 @@ def map_links(c):
     return (f'<a href="https://www.openstreetmap.org/?mlat={lat}&amp;mlon={lon}#map=15/{lat}/{lon}" rel="nofollow noopener">OpenStreetMap</a> · '
             f'<a href="https://www.google.com/maps/search/?api=1&amp;query={lat},{lon}" rel="nofollow noopener">Google Maps</a>')
 
-def write_page(rel, title, description, body, head_extra="", robots="index,follow"):
+def write_page(rel, title, description, body, head_extra="", robots="index,follow", root=None):
     depth = rel.count("/")
-    root = "../" * depth
+    if root is None: root = "../" * depth  # relative links: work at any host/subpath
     canon_path = rel[:-len("index.html")] if rel.endswith("index.html") else rel
     html = TEMPLATE.substitute(title=escape(title), description=escape(description), canonical=f"{BASE_URL}/{canon_path}",
                                robots=robots, head_extra=head_extra, root=root, body=body, site_name=escape(SITE["site_name"]),
@@ -319,8 +320,10 @@ def render_static_pages(cs):
 <p>This site may in future contain referral (affiliate) links to campervan and motorhome rental companies in Iceland. If you book through one of those links, we may earn a commission at no extra cost to you.</p>
 <p>Referral links will never affect which campsites we list or what we say about them. Campsite facts come only from the sources cited on each page.</p>
 <p><strong>Current status:</strong> the site has no affiliate links yet. When we add any, we will label them clearly where they appear.</p>""")
+    # 404.html is served for any missing URL at any depth, so it must use base-path-absolute links.
+    base_path = urlparse(BASE_URL).path.rstrip("/") + "/"
     write_page("404.html", f"Page not found | {SITE['site_name']}", "Page not found.",
-               '<h1>Page not found</h1><p><a href="/index.html">Go to the home page</a>.</p>', robots="noindex")
+               f'<h1>Page not found</h1><p><a href="{base_path}index.html">Go to the home page</a>.</p>', robots="noindex", root=base_path)
 
 def write_sitemap():
     urls = "\n".join(f"  <url><loc>{BASE_URL}/{p}</loc><lastmod>{BUILD_DATE}</lastmod></url>" for p in sorted(set(PAGES)))

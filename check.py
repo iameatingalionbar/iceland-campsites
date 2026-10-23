@@ -6,6 +6,20 @@ from html.parser import HTMLParser
 from urllib.parse import urlparse, unquote
 
 DIST = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dist")
+def detect_base():
+    """BASE_URL from env, else from the canonical link of dist/index.html."""
+    if os.environ.get("BASE_URL"): return os.environ["BASE_URL"].rstrip("/")
+    m = re.search(r'<link rel="canonical" href="([^"]+)"', open(os.path.join(DIST, "index.html"), encoding="utf-8").read())
+    return m.group(1).rstrip("/") if m else ""
+BASE_URL = detect_base()
+BASE_PATH = urlparse(BASE_URL).path.rstrip("/")   # e.g. "/iceland-campsites" or ""
+def strip_base(path):
+    """Map a site-absolute URL path to a path relative to dist/."""
+    if BASE_PATH and (path == BASE_PATH or path.startswith(BASE_PATH + "/")):
+        path = path[len(BASE_PATH):]
+    elif BASE_PATH and path.startswith("/"):
+        return None  # absolute path outside the base path -> broken when served under the subpath
+    return path.lstrip("/")
 VOID = {"area","base","br","col","embed","hr","img","input","link","meta","source","track","wbr"}
 problems, ext_links = [], set()
 
@@ -19,7 +33,9 @@ class P(HTMLParser):
         if "id" in a: s.ids.append(a["id"])
         if t=="a" and "href" in a: s.links.append(a["href"])
         if t=="link" and a.get("rel")=="stylesheet": s.links.append(a["href"])
-        if t=="link" and a.get("rel")=="canonical": s.meta["canonical"]=a.get("href")
+        if t=="link" and a.get("rel")=="canonical":
+            s.meta["canonical"]=a.get("href")
+            if BASE_URL and not a.get("href","").startswith(BASE_URL): problems.append(f"{s.file}: canonical not under BASE_URL")
         if t=="meta" and a.get("name")=="description": s.meta["description"]=a.get("content")
         if t=="meta" and a.get("name")=="viewport": s.meta["viewport"]=1
         if t=="title": s.has_title=True
@@ -53,7 +69,10 @@ for f,p in pages.items():
         if u.scheme: continue
         path=unquote(u.path)
         if path=="": target=f
-        elif path.startswith("/"): target=os.path.join(DIST, path.lstrip("/"))
+        elif path.startswith("/"):
+            rel=strip_base(path)
+            if rel is None: problems.append(f"{p.file}: absolute link outside base path {href}"); continue
+            target=os.path.join(DIST, rel)
         else: target=os.path.normpath(os.path.join(os.path.dirname(f), path))
         if os.path.isdir(target): target=os.path.join(target,"index.html")
         if not os.path.exists(target): problems.append(f"{p.file}: broken link {href}"); continue
@@ -62,11 +81,13 @@ for f,p in pages.items():
 
 sm=open(os.path.join(DIST,"sitemap.xml")).read()
 for loc in re.findall(r"<loc>([^<]+)</loc>", sm):
-    path=urlparse(loc).path.lstrip("/")
+    if BASE_URL and not loc.startswith(BASE_URL + "/"): problems.append(f"sitemap: {loc} not under BASE_URL {BASE_URL}"); continue
+    path=strip_base(urlparse(loc).path)
     t=os.path.join(DIST, path, "index.html") if (path=="" or path.endswith("/")) else os.path.join(DIST,path)
     if not os.path.exists(t): problems.append(f"sitemap: {loc} has no file")
 
 unc=sum(open(f,encoding="utf-8").read().count('class="unconfirmed"') for f in pages)
+print(f"BASE_URL={BASE_URL!r} base path={BASE_PATH!r}")
 print(f"Checked {len(pages)} HTML files, {len(ext_links)} distinct external links (not fetched), {unc} visible 'Unconfirmed' markers.")
 if problems:
     print("PROBLEMS:"); print("\n".join(problems)); sys.exit(1)
