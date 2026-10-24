@@ -1,0 +1,153 @@
+{
+  "slug": "vogar-reykjanes",
+  "name": "Vogar Camping & Chalets (Reykjanes)",
+  "region": "reykjanes",
+  "town": "Vogar",
+  "completeness": "stub",
+  "checked": "2026-10-24",
+  "sources": {
+    "tjalda": {
+      "title": "Tjalda.is – Vogar listing (2026 rates & services)",
+      "url": "https://tjalda.is/en/campsite/vogar",
+      "checked": "2026-10-24"
+    },
+    "own": {
+      "title": "vogarcamping.is – Camping & Chalets in Vogar (operator's site)",
+      "url": "https://vogarcamping.is/",
+      "checked": "2026-10-24"
+    }
+  },
+  "intro": {
+    "value": "A campsite with chalets next to the sports centre in Vogar, a village on the Reykjanes Peninsula between Keflavík Airport and Reykjavík. Not to be confused with Vogar at Lake Mývatn.",
+    "src": [
+      "tjalda",
+      "own"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Hafnargata 19, 190 Vogar",
+      "src": [
+        "tjalda",
+        "own"
+      ]
+    },
+    "lat": 63.984686,
+    "lon": -22.381076,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "Open all year",
+    "src": [
+      "tjalda",
+      "own"
+    ]
+  },
+  "winter": {
+    "status": "open",
+    "value": "'We are open all year round' (operator's site); tjalda.is also lists it as open all year.",
+    "src": [
+      "own",
+      "tjalda"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult (14+) per person per night",
+        "value": "2,800 ISK",
+        "src": [
+          "tjalda",
+          "own"
+        ]
+      },
+      {
+        "label": "Children 13 and under",
+        "value": "Free",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Electricity per night",
+        "value": "1,800 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Lodging tax per unit per night",
+        "value": "400 ISK",
+        "src": [
+          "tjalda"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "toilets": {
+      "value": "Yes",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "wifi": {
+      "value": "Free WiFi",
+      "src": [
+        "tjalda",
+        "own"
+      ]
+    },
+    "laundry": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 777 3222 · vidsjoinn@gmail.com · vogarcamping.is",
+      "src": [
+        "tjalda",
+        "own"
+      ]
+    },
+    "electricity": {
+      "has": "yes",
+      "value": "Yes – 1,800 ISK per night (price list)",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "showers": {
+      "has": "yes",
+      "value": "Yes – 'excellent facilities, including a kitchen, showers and free Wi-Fi'",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "kitchen": {
+      "has": "yes",
+      "value": "Yes – kitchen listed in the description",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "dump_station": {
+      "has": null,
+      "value": null,
+      "note": "Not listed on tjalda.is or the operator's site."
+    }
+  },
+  "practical": []
+}

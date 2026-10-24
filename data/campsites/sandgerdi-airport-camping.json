@@ -1,0 +1,188 @@
+{
+  "slug": "sandgerdi-airport-camping",
+  "name": "Airport Camping – Sandgerði",
+  "region": "reykjanes",
+  "town": "Sandgerði",
+  "completeness": "stub",
+  "checked": "2026-10-24",
+  "sources": {
+    "tjalda": {
+      "title": "Tjalda.is – Airport camping – Sandgerði listing (2026 rates & services)",
+      "url": "https://tjalda.is/en/campsite/sandgerdi",
+      "checked": "2026-10-24"
+    },
+    "own": {
+      "title": "airportcamping.is – Campsite in Sandgerði (operator's site)",
+      "url": "https://airportcamping.is/",
+      "checked": "2026-10-24"
+    }
+  },
+  "intro": {
+    "value": "A small-town campsite in the fishing village of Sandgerði, which the operator puts 8 minutes' drive from Keflavík International Airport and about 35 minutes from the Reykjavík area. Cabins can also be rented.",
+    "src": [
+      "tjalda",
+      "own"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Byggðavegur, 245 Sandgerði",
+      "src": [
+        "tjalda",
+        "own"
+      ]
+    },
+    "lat": 64.039635,
+    "lon": -22.697616,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "Open all year",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "winter": {
+    "status": "open",
+    "value": "Tjalda.is lists it as 'Open: All year'. The operator's own site does not state a season, so ring ahead in deep winter.",
+    "src": [
+      "tjalda",
+      "own"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult (15+) per person per night",
+        "value": "2,200 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Seniors (67+) and disabled",
+        "value": "1,500 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Children 14 and under",
+        "value": "Free",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Electricity per night",
+        "value": "1,200 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Overnight stay tax per unit",
+        "value": "400 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Washer / washer & dryer per use",
+        "value": "500 ISK / 1,000 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "With Camping Card",
+        "value": "100 ISK (not valid during the town festival)",
+        "src": [
+          "tjalda"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "toilets": {
+      "value": "Yes",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "wifi": {
+      "value": "Free WiFi",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "laundry": {
+      "value": "Washing machine and dryer (500 ISK wash, 1,000 ISK wash & dry; dryer alone not possible)",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "camping_card": {
+      "value": "Accepted – 100 ISK; not valid on the days of the town's festival",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "contact": {
+      "value": "+354 854 8424 · info@airportcamping.is · airportcamping.is",
+      "src": [
+        "tjalda",
+        "own"
+      ]
+    },
+    "electricity": {
+      "has": "yes",
+      "value": "Yes – electricity for RVs (1,200 ISK/night)",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "showers": {
+      "has": "yes",
+      "value": "Yes – showers in the service house; not stated whether included",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "kitchen": {
+      "has": null,
+      "value": null,
+      "note": "No guest kitchen is listed; outdoor sinks with hot and cold water are."
+    },
+    "dump_station": {
+      "has": "yes",
+      "value": "Yes – 'black and grey water disposal' and water-tank refill",
+      "src": [
+        "tjalda"
+      ]
+    }
+  },
+  "practical": [
+    {
+      "value": "Tjalda.is says reservations are not possible except for large groups, so individual campers just turn up.",
+      "src": [
+        "tjalda"
+      ]
+    },
+    {
+      "value": "Grocery store, ATM, swimming pool and sauna are within walking distance, according to the listing.",
+      "src": [
+        "tjalda"
+      ]
+    }
+  ]
+}

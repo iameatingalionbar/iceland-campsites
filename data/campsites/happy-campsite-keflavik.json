@@ -1,0 +1,163 @@
+{
+  "slug": "happy-campsite-keflavik",
+  "name": "Happy Campsite Keflavík",
+  "region": "reykjanes",
+  "town": "Reykjanesbær",
+  "completeness": "stub",
+  "checked": "2026-10-24",
+  "sources": {
+    "tjalda": {
+      "title": "Tjalda.is – Happy Campsite Keflavík listing (2026 rates & services)",
+      "url": "https://tjalda.is/en/campsite/happycampsite",
+      "checked": "2026-10-24"
+    },
+    "own": {
+      "title": "Happy Campers – Welcome to Happy Campsite Keflavik (blog post, 14.07.2021)",
+      "url": "https://happycampers.is/welcome-to-happy-campsite-keflavik/",
+      "checked": "2026-10-24"
+    }
+  },
+  "intro": {
+    "value": "A small campsite next to the Happy Campers rental office in Reykjanesbær, which the operator puts 6 minutes from Keflavík Airport.",
+    "src": [
+      "tjalda",
+      "own"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Stapabraut 21, 260 Reykjanesbær",
+      "src": [
+        "tjalda",
+        "own"
+      ]
+    },
+    "lat": 63.97053,
+    "lon": -22.50995,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "1 May – 1 October",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "winter": {
+    "status": "closed",
+    "value": "Closed in winter: tjalda.is gives the season as 1 May – 1 October.",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult per person per night",
+        "value": "1,900 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Electricity per night",
+        "value": "1,000 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Lodging tax per unit per night",
+        "value": "400 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Children",
+        "value": null,
+        "note": "The operator's 2021 post says free for 16 and under; the 2026 tjalda.is price list does not mention children."
+      }
+    ]
+  },
+  "facts": {
+    "toilets": {
+      "value": "Yes",
+      "src": [
+        "tjalda",
+        "own"
+      ]
+    },
+    "wifi": {
+      "value": "Free WiFi",
+      "src": [
+        "tjalda",
+        "own"
+      ]
+    },
+    "laundry": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 578 7860 · info@happycampers.is",
+      "src": [
+        "tjalda",
+        "own"
+      ]
+    },
+    "electricity": {
+      "has": "yes",
+      "value": "Yes – zone B only, few connections (tjalda.is: 3; the 2021 post said 9); book electricity in advance",
+      "src": [
+        "tjalda",
+        "own"
+      ]
+    },
+    "showers": {
+      "has": "yes",
+      "value": "Yes – toilets and showers with hot and cold water",
+      "src": [
+        "tjalda",
+        "own"
+      ]
+    },
+    "kitchen": {
+      "has": null,
+      "value": null,
+      "note": "No kitchen is listed; outdoor washbasins with cold water are."
+    },
+    "dump_station": {
+      "has": null,
+      "value": null,
+      "note": "Not listed on tjalda.is or the operator's post."
+    }
+  },
+  "practical": [
+    {
+      "value": "Late-night arrival is possible if you pre-booked on the Parka app.",
+      "src": [
+        "tjalda"
+      ]
+    },
+    {
+      "value": "Zones A and C are for campervans without electricity; zone B is for vehicles that need power.",
+      "src": [
+        "tjalda",
+        "own"
+      ]
+    }
+  ]
+}

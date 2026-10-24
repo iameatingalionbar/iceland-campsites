@@ -10,7 +10,7 @@ PAGES = {
     "campsite-skaftafell": "campsites/skaftafell/index.html",
     "guide": "guides/south-coast-winter-campsites/index.html",
     "guide-dump-stations": "guides/dump-stations-iceland/index.html",
-    "guide-near-reykjavik": "guides/campsites-near-reykjavik/index.html",
+    "guide-near-kef": "guides/campsites-near-keflavik-airport/index.html",
 }
 SIZES = {"mobile": 390, "desktop": 1280}
 want = sys.argv[1:] or list(PAGES)

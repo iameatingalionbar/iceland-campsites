@@ -1,0 +1,150 @@
+{
+  "slug": "gardskagi",
+  "name": "Garðskagi Campsite (lighthouses)",
+  "region": "reykjanes",
+  "town": "Garður, Suðurnesjabær",
+  "completeness": "stub",
+  "checked": "2026-10-24",
+  "sources": {
+    "tjalda": {
+      "title": "Tjalda.is – Garðskagi listing (2026 rates & services)",
+      "url": "https://tjalda.is/en/campsite/gardskagi",
+      "checked": "2026-10-24"
+    }
+  },
+  "intro": {
+    "value": "A low-service campsite on the coast between the two Garðskagi lighthouses at the tip of the Reykjanes Peninsula, next to Röstin restaurant and the Garðskagi museum.",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Skagabraut 100, 250 Suðurnesjabær",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "lat": 64.082316,
+    "lon": -22.69122,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "Open all year",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "winter": {
+    "status": "open",
+    "value": "'The campsite is open all year' (tjalda.is). It is a low-service site: no showers or indoor space in any season.",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult per night",
+        "value": "1,700 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Children 0–12",
+        "value": "Free",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Electricity per 24 hours",
+        "value": "1,000 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Lodging tax",
+        "value": "400 ISK",
+        "src": [
+          "tjalda"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "toilets": {
+      "value": "24-hour toilets",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "wifi": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "laundry": {
+      "value": "None",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 893 8909 / +354 777 9847 · johann@gardskagi.com",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "electricity": {
+      "has": "yes",
+      "value": "Yes – electricity for campers (1,000 ISK per 24 h)",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "showers": {
+      "has": "no",
+      "value": "No – 'There are no showers, washing machines, or indoor facilities'",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "kitchen": {
+      "has": "no",
+      "value": "No indoor kitchen; an outdoor sink for washing up with hot and cold water",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "dump_station": {
+      "has": "yes",
+      "value": "Yes – 'a waste disposal (dump) point'",
+      "src": [
+        "tjalda"
+      ]
+    }
+  },
+  "practical": [
+    {
+      "value": "Pay at Röstin restaurant during opening hours or online at parka.is/gardskagi. Individual tents and small groups cannot reserve; the site says there is always space.",
+      "src": [
+        "tjalda"
+      ]
+    }
+  ]
+}

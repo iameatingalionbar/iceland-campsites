@@ -1,0 +1,184 @@
+{
+  "slug": "dump-stations-iceland",
+  "title": "Where to Empty a Campervan Toilet in Iceland: Dump Stations by Region (2026)",
+  "short": "Dump stations by region",
+  "description": "Where to empty a cassette or chemical toilet in Iceland: official disposal points, campsites with a dump station on the South Coast and near Keflavík, and the rules. Every entry sourced and dated.",
+  "region": "all",
+  "checked": "2026-10-24",
+  "sources": {
+    "uos": {
+      "title": "Umhverfis- og orkustofnun (Environment and Energy Agency of Iceland) – Emptying portable toilets",
+      "url": "https://uos.is/en/environment/ocean-water/emptying-portable-toilets",
+      "checked": "2026-10-24"
+    },
+    "uos-map": {
+      "title": "Umhverfis- og orkustofnun – map of disposal points (Kortasjá)",
+      "url": "https://kortasja.uos.is/mapview/?app=kortasja&l=is&c=500000,500000&z=3.0&ls=26,33,25",
+      "checked": "2026-10-24"
+    },
+    "tjalda-api": {
+      "title": "Tjalda.is public campsite data (https://tjalda.is/api/campsites), 181 listings",
+      "url": "https://tjalda.is/api/campsites",
+      "checked": "2026-10-24"
+    },
+    "icetourist": {
+      "title": "icetourist.is – Camping: facilities for caravans (third-party list, undated)",
+      "url": "https://www.icetourist.is/Accommodation/Camping/Campingmore/",
+      "checked": "2026-10-24"
+    },
+    "akureyri": {
+      "title": "Visit Akureyri – Information: Camper lavatory disposal sites",
+      "url": "https://www.visitakureyri.is/en/plan-your-visit/accommodation/information-camper-lavatory-disposal-sites",
+      "checked": "2026-10-24"
+    }
+  },
+  "intro": [
+    {
+      "value": "Toilet waste from a campervan or motorhome may only be emptied at a designated disposal point, according to Iceland's Environment and Energy Agency (Umhverfis- og orkustofnun). This page lists the disposal points we could confirm from a source, with the date we checked.",
+      "src": [
+        "uos"
+      ]
+    },
+    {
+      "value": "Most dump points are at campsites. On 24 October 2026, 58 of the 181 campsites in the tjalda.is database were tagged 'Waste disposal for mobile homes'. Treat that tag as a lead and confirm with the campsite.",
+      "src": [
+        "tjalda-api"
+      ]
+    }
+  ],
+  "scope_note": "Scope: campsites with a page on this site, plus the official capital-area disposal points. For the rest of the country, use the official map linked below. Fuel-station dump points are listed only where a source names them.",
+  "campsites": [
+    "reykjavik-eco-campsite",
+    "happy-campsite-keflavik",
+    "sandgerdi-airport-camping",
+    "gardskagi",
+    "vogar-reykjanes",
+    "hveragerdi-reykjamork",
+    "selfoss-gesthus",
+    "hella-arhus",
+    "hvolsvollur",
+    "hellisholar",
+    "skogafoss",
+    "starlight-lambafell",
+    "farmhouse-lodge-skeidflot",
+    "vik-camping",
+    "kirkjubaer-ii",
+    "skaftafell",
+    "hofn"
+  ],
+  "table": "dump",
+  "glance_title": "Campsites on this site: dump station or not",
+  "table_caption": "West to east. 'Dump station' is what the cited source says; Unconfirmed means no source states it either way. Winter = whether the campsite itself is open in winter.",
+  "sections": [
+    {
+      "id": "official",
+      "title": "Official disposal points in the capital area",
+      "paras": [
+        {
+          "value": "The Environment and Energy Agency lists two portable-toilet disposal points in the capital area: Klettagarðar in Reykjavík and Hraunavík in Hafnarfjörður. Its interactive map shows the disposal points for the whole country.",
+          "src": [
+            "uos",
+            "uos-map"
+          ]
+        },
+        {
+          "value": "Reykjavík Eco-Campsite (Laugardalur) has no disposal point on site and sends campers to Klettagarðar 14.",
+          "src": [
+            "reykjavik-eco-campsite:own-home"
+          ]
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "north",
+      "title": "Akureyri",
+      "paras": [
+        {
+          "value": "Visit Akureyri lists dump points at the Hamrar and Hrafnagil campsites and at the Olís fuel station in Akureyri.",
+          "src": [
+            "akureyri"
+          ]
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "other-lists",
+      "title": "Other lists (use with care)",
+      "paras": [
+        {
+          "value": "icetourist.is publishes an undated region-by-region list of places where 'motor caravan tanks can be emptied'. For the capital area it names Klettagarðar 14, Óseyrarbraut 18 in Hafnarfjörður and Aðalgata 60 in Keflavík (Motel Alex). The official agency page names Hraunavík, not Óseyrarbraut, for Hafnarfjörður, so the third-party list may be out of date.",
+          "src": [
+            "icetourist",
+            "uos"
+          ]
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "rules",
+      "title": "The rules, in short",
+      "paras": [],
+      "items": [
+        {
+          "value": "Toilet waste may only be emptied at designated disposal points.",
+          "src": [
+            "uos"
+          ]
+        },
+        {
+          "value": "Never use a fresh-water hose to rinse a portable toilet or drain.",
+          "src": [
+            "uos"
+          ]
+        },
+        {
+          "value": "Portable toilets are only for urine, faeces and toilet paper; use toilet paper intended for portable toilets.",
+          "src": [
+            "uos"
+          ]
+        },
+        {
+          "value": "Use environmentally friendly, biodegradable cleaning products and avoid chlorine, formaldehyde and phosphates.",
+          "src": [
+            "uos"
+          ]
+        },
+        {
+          "value": "Where possible, dispose of kitchen and shower wastewater (grey water) separately from toilet waste.",
+          "src": [
+            "uos"
+          ]
+        }
+      ]
+    }
+  ],
+  "tips_title": "Practical tips",
+  "tips": [
+    {
+      "value": "Between Vík and Höfn, the dump points we could confirm are at Vík, Skaftafell and Höfn. Kirkjubær II has no source either way.",
+      "src": [
+        "vik-camping:own",
+        "skaftafell:tjalda",
+        "hofn:ferdalag-hofn"
+      ]
+    },
+    {
+      "value": "Near Keflavík Airport, Sandgerði lists black- and grey-water disposal and water-tank refill, and Garðskagi lists a dump point. Both are listed as open all year.",
+      "src": [
+        "sandgerdi-airport-camping:tjalda",
+        "gardskagi:tjalda"
+      ]
+    },
+    {
+      "value": "In winter, check that the campsite itself is open before you drive there to empty your tank: Hvolsvöllur and Vík are closed in winter but have dump points.",
+      "src": [
+        "hvolsvollur:tjalda",
+        "vik-camping:own"
+      ]
+    }
+  ],
+  "warning": "Dump points can be closed in frost or moved. If a campsite is closed, ask before using its facilities. If in doubt, call the campsite or use the official map."
+}

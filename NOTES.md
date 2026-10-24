@@ -111,8 +111,8 @@ A nightly run should take the first `todo` (or `stub` → full) row by prio, res
 | B03 | 1 | done | campsite | skaftafell | Skaftafell Campground (full page) | south | only winter site Vík–Höfn | vatnajokulsthjodgardur.is |
 | B04 | 1 | done | campsite | selfoss-gesthus | Selfoss Gesthús (full page) | south | open all year, kitchen | gesthus.is |
 | B05 | 1 | stub | campsite | hellisholar | Hellishólar (full page; dump?) | south | winter area G | hellisholar.is |
-| B06 | 1 | todo | guide | dump-stations-iceland | Where to empty a cassette toilet in Iceland (by region) | all | dump-station theme hub needs data | uos.is disposal list, icetourist.is |
-| B07 | 1 | todo | campsite | sandgerdi-airport-camping | Sandgerði / airport-area campsite | reykjanes | first/last night near KEF, all year | tjalda |
+| B06 | 1 | done | guide | dump-stations-iceland | Where to empty a cassette toilet in Iceland (by region) | all | dump-station theme hub needs data | uos.is disposal list, icetourist.is |
+| B07 | 1 | stub | campsite | sandgerdi-airport-camping | Sandgerði / airport-area campsite | reykjanes | first/last night near KEF, all year | tjalda |
 | B08 | 1 | todo | campsite | hamrar-akureyri | Hamrar, Akureyri | north-east | all year | tjalda, hamrar.is |
 | B09 | 1 | todo | campsite | vogar-myvatn | Vogar, Mývatn | north-east | all year, chemical disposal | tjalda, vogarholidays.is |
 | B10 | 1 | todo | campsite | camp-egilsstadir | Camp Egilsstaðir | east | all year 24/7 | tjalda |
@@ -126,7 +126,7 @@ A nightly run should take the first `todo` (or `stub` → full) row by prio, res
 | B18 | 2 | todo | campsite | stykkisholmur | Stykkishólmur | west | Snæfellsnes base | tjalda |
 | B19 | 2 | todo | campsite | grundarfjordur | Grundarfjörður | west | Kirkjufell | tjalda |
 | B20 | 2 | todo | campsite | mosskogar | Mosskógar (Mosfellsdalur) | capital-area | 2nd capital option | tjalda |
-| B21 | 2 | todo | campsite | gardskagi | Garðskagi | reykjanes | lighthouse, near KEF | tjalda |
+| B21 | 2 | stub | campsite | gardskagi | Garðskagi | reykjanes | lighthouse, near KEF | tjalda |
 | B22 | 2 | todo | campsite | grindavik | Grindavík | reykjanes | check post-eruption status | tjalda, grindavik.is |
 | B23 | 2 | todo | campsite | djupivogur | Djúpivogur | east | Ring Road east | tjalda |
 | B24 | 2 | todo | campsite | seydisfjordur | Seyðisfjörður | east | ferry port | tjalda |
@@ -138,9 +138,28 @@ A nightly run should take the first `todo` (or `stub` → full) row by prio, res
 | B30 | 3 | todo | campsite | vestrahorn-stokksnes | Vestrahorn / Stokksnes camping | south | photo spot | tjalda |
 | B31 | 3 | todo | guide | camping-card-2026 | Is the Camping Card (Útilegukortið) worth it in 2026? | all | demand | utilegukortid.is |
 | B32 | 3 | todo | task | south-coast-stubs-dump | Confirm dump/electricity for Starlight, Farmhouse Lodge, Smáratún, Hellishólar, Kirkjubær | south | Unconfirmed cells in guide B01 | email/phone needs Stefán's OK |
+| B33 | 1 | todo | guide | winter-campsites-iceland | Campsites Open in Winter in Iceland (all regions, 2026–27) | all | KEYWORDS #1, hub for regional winter guides | Visit Iceland camper winter service, ferdalag winter list, tjalda |
+| B34 | 1 | todo | guide | campsites-near-reykjavik | Campsites near Reykjavík (city, Mosfellsdalur, Hafnarfjörður) | capital-area | KEYWORDS #4 | tjalda, reykjavikcampsite.is |
+| B35 | 1 | todo | guide | north-iceland-winter-campsites | Winter campsites around Akureyri and Mývatn | north-east | KEYWORDS #5 | tjalda, visitakureyri.is, northiceland.is camper winter service |
+| B36 | 2 | todo | guide | ring-road-campsites | Ring Road campsites in order (with map) | all | KEYWORDS #6 | tjalda coordinates |
+| B37 | 2 | todo | guide | snaefellsnes-campsites | Snæfellsnes campsites | west | KEYWORDS #7 | tjalda |
+| B38 | 3 | todo | guide | westfjords-campsites | Westfjords campsites | westfjords | KEYWORDS #10 | tjalda |
+| B39 | 3 | todo | campsite | landmannalaugar | Landmannalaugar campsite (summer, F-road) | south | KEYWORDS #11 | fi.is |
+| B40 | 1 | todo | guide | campsites-with-electricity | Campsites with electric hook-up | all | KEYWORDS #13 | campsite has-flags |
+| B41 | 1 | todo | guide | overnight-parking-rules | Can you sleep in a campervan outside campsites in Iceland? | all | KEYWORDS #14 | Nature Conservation Act / UOS pages |
+| B42 | 2 | todo | guide | campsite-prices-2026 | Iceland campsite prices 2026 (table) | all | KEYWORDS #16 | campsite data |
+| B43 | 2 | todo | guide | campsites-with-hot-tubs | Campsites with hot tubs or a pool nearby | all | KEYWORDS #17 | operator pages |
+| B44 | 2 | todo | guide | campsites-with-kitchen-showers-winter | Winter campsites with indoor kitchen and showers | all | KEYWORDS #18 | has-flags |
+| B45 | 2 | todo | guide | campervan-iceland-november | Campervan in Iceland in November/December (campsites open) | all | KEYWORDS #19 (seasonal) | winter statuses, road.is |
+| B46 | 3 | todo | guide | lodging-tax-camping | Lodging tax on campsites explained | all | KEYWORDS #20 | skatturinn.is |
+| B47 | 3 | todo | guide | do-you-need-to-book-campsites | Do you need to book campsites in Iceland? | all | KEYWORDS #21 | tjalda reservation texts |
+| B48 | 3 | todo | guide | parka-app-campsites | Paying for campsites with the Parka app | all | KEYWORDS #25 | parka.is |
+| B49 | 2 | todo | task | reykjanes-stubs-upgrade | Upgrade Reykjanes stubs; confirm dump points at Vogar and Happy Campsite | reykjanes | Unconfirmed cells in the KEF guide | operator sites; contact needs Stefán's OK |
 
 Done South Coast stubs (status `stub`, individual pages exist): hveragerdi-reykjamork, hella-arhus, hvolsvollur, smaratun-fljotshlid,
 starlight-lambafell, skogafoss, farmhouse-lodge-skeidflot, vik-camping, kirkjubaer-ii, hofn.
+Reykjanes stubs (2026-10-24, scripts/seed_reykjanes_2026-10-24.py): sandgerdi-airport-camping, gardskagi, vogar-reykjanes, happy-campsite-keflavik.
+Keyword research and page ideas: KEYWORDS.md.
 
 ## Competitor & demand notes
 - mapoficeland.is: competitor, **reference only, never copy text or data.**
@@ -153,8 +172,9 @@ Nothing signed up, no links placed. The affiliate disclosure page is a placehold
 | program | url | stated terms (from their page, not verified further) |
 |---|---|---|
 | Go Campers | https://www.gocampers.is/partner-with-us/ | 5% commission, ~$120 average commission per booking, 5-month cookie, 25% reader discount. 2026-10-24: Stefán sent an application email to go@gorentals.is from athafnamadurinn@mail.grokbot.com; awaiting reply |
-| Campervan Iceland | https://www.campervaniceland.com/affiliate-program | terms not reviewed yet |
-| Camper Rental Iceland | https://www.camperrentaliceland.com/affiliates | terms not reviewed yet |
+| Campervan Iceland | https://www.campervaniceland.com/affiliate-program | Stated by them, not verified (checked 2026-10-24): 5% commission per confirmed booking, 30-day cookie, payout every 6 months; sign-up via a web form. Contact info@campervaniceland.com (from /contact). Draft: drafts/campervan-iceland.md (NOT sent) |
+| Camper Rental Iceland | https://www.camperrentaliceland.com/affiliates | Stated by them, not verified (checked 2026-10-24): 5% commission per completed booking, 30-day cookie; payout schedule not stated; sign-up via a web form. Contact info@camperrentaliceland.com (homepage/FAQ). Looks like a sister brand of Campervan Iceland (identical wording, both "since 2013", both at KEF); not verified. Draft: drafts/camper-rental-iceland.md (NOT sent) |
+| Travel to Iceland | https://www.traveltoiceland.is/affiliate-program | Stated by them, not verified (checked 2026-10-24): 30% of net profit per completed car/camper/rooftop-tent rental, 50% after 250 confirmed bookings; 30-day cookie; payout every 6 months by PayPal or bank transfer, no minimum; dashboard + banners + API; cancelled bookings earn nothing. Contact info@traveltoiceland.is. Draft: drafts/travel-to-iceland.md (NOT sent) |
 
 ## Decisions for Stefán (nothing bought)
 - Domain ideas (availability not checked): icelandcampsites.is, campervancampsites.is, wintercamping.is, campiceland.info.
@@ -164,6 +184,15 @@ Nothing signed up, no links placed. The affiliate disclosure page is a placehold
 - Contacting campsites to fill Unconfirmed cells (email/phone) needs your approval.
 
 ## CHANGELOG
+- 2026-10-24: Design overhaul (one CSS, mobile-first cards, hero search, progressive-enhancement filters via data attributes and
+  filter.js with accent-folding search, inline SVG maps from sourced coordinates with OSM/Google links, stacked responsive tables,
+  winter status badges, favicon.svg, schema.org). Screenshots in screenshots/ (390 + 1280 px). Deployed and verified live (200s, new CSS).
+- 2026-10-24: Keyword research in KEYWORDS.md (25 ideas, no volumes) and backlog rows B33–B49. New Reykjanes stubs: Sandgerði
+  (Airport Camping), Garðskagi, Vogar (Reykjanes), Happy Campsite Keflavík (tjalda + operator pages). New guides:
+  "Campsites near Keflavík Airport" and "Where to empty a campervan toilet in Iceland" (UOS rules and capital-area points,
+  Visit Akureyri, icetourist list flagged as undated and in conflict with UOS on Hafnarfjörður). Grindavík excluded (no 2026 info on tjalda).
+- 2026-10-24: Affiliate terms reviewed for Campervan Iceland, Camper Rental Iceland, Travel to Iceland (see Monetization).
+  Application email drafts in drafts/ — NOT sent; need Stefán's approval.
 - 2026-10-24: Selfoss – Gesthús upgraded to a full page (own campsite page with 2026 prices incl. hot tub 500 ISK and free parking,
   40 electric pitches, chemical disposal + drinking water, FAQ: no booking for individuals, late arrival pay next morning,
   check-out 12:00; not on the 2026 Camping Card list). Unconfirmed: laundry fee amount, child-under-12 price only on tjalda.
