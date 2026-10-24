@@ -172,9 +172,18 @@ Nothing signed up, no links placed. The affiliate disclosure page is a placehold
 | program | url | stated terms (from their page, not verified further) |
 |---|---|---|
 | Go Campers | https://www.gocampers.is/partner-with-us/ | 5% commission, ~$120 average commission per booking, 5-month cookie, 25% reader discount. 2026-10-24: Stefán sent an application email to go@gorentals.is from athafnamadurinn@mail.grokbot.com; awaiting reply |
-| Campervan Iceland | https://www.campervaniceland.com/affiliate-program | Stated by them, not verified (checked 2026-10-24): 5% commission per confirmed booking, 30-day cookie, payout every 6 months; sign-up via a web form. Contact info@campervaniceland.com (from /contact). Draft: drafts/campervan-iceland.md (NOT sent) |
+| Campervan Iceland (2026-10-24: Stefán sent application email to info@campervaniceland.com, awaiting reply) | https://www.campervaniceland.com/affiliate-program | Stated by them, not verified (checked 2026-10-24): 5% commission per confirmed booking, 30-day cookie, payout every 6 months; sign-up via a web form. Contact info@campervaniceland.com (from /contact). Draft: drafts/campervan-iceland.md (NOT sent) |
 | Camper Rental Iceland | https://www.camperrentaliceland.com/affiliates | Stated by them, not verified (checked 2026-10-24): 5% commission per completed booking, 30-day cookie; payout schedule not stated; sign-up via a web form. Contact info@camperrentaliceland.com (homepage/FAQ). Looks like a sister brand of Campervan Iceland (identical wording, both "since 2013", both at KEF); not verified. Draft: drafts/camper-rental-iceland.md (NOT sent) |
 | Travel to Iceland | https://www.traveltoiceland.is/affiliate-program | Stated by them, not verified (checked 2026-10-24): 30% of net profit per completed car/camper/rooftop-tent rental, 50% after 250 confirmed bookings; 30-day cookie; payout every 6 months by PayPal or bank transfer, no minimum; dashboard + banners + API; cancelled bookings earn nothing. Contact info@traveltoiceland.is. Draft: drafts/travel-to-iceland.md (NOT sent) |
+| Top picks from AFFILIATES.md (2026-10-24, stated by them, not verified, nothing signed up) | see AFFILIATES.md | |
+| Northbound (marketplace, campers/motorhomes) | https://www.northbound.is/affiliate | 20% of their commission, avg ~$45/booking, 365-day attribution, payout from 10,000 ISK; form |
+| Guide to Iceland | https://guidetoiceland.is/affiliates | 5% tours / 8% packages, self-drive, hotels / 15% at $5K+/mo; 30-day cookie; $100 min payout; wants a real audience |
+| CampEasy | https://campeasy.com/agent-portal/affiliate-links-and-coupon-codes/ | Tapfiliate; 30-day; rate not stated; paid Jan/Jul, $300 min |
+| CampervanPlanet | https://www.campervanplanet.com/affiliate-program | 30% of net profit, up to 50%; self-signup |
+| Discover Cars | https://www.discovercars.com/affiliate | 70% of profit + 30% Full Coverage, ~$20/booking, 365-day cookie; direct or via Travelpayouts |
+| Lava Car Rental | https://affiliate.lavacarrental.is/ | 5% + 5% reader discount, 30-day; min payout 50,000 ISK |
+| GetYourGuide / Viator | partner.getyourguide.support / partnerresources.viator.com | 8% each, 31 / 30-day cookie |
+| Airalo (eSIM) | https://www.airalo.com/m/resources/airalo-affiliate-program | 10% via Impact |
 
 ## Decisions for Stefán (nothing bought)
 - Domain ideas (availability not checked): icelandcampsites.is, campervancampsites.is, wintercamping.is, campiceland.info.
@@ -184,6 +193,9 @@ Nothing signed up, no links placed. The affiliate disclosure page is a placehold
 - Contacting campsites to fill Unconfirmed cells (email/phone) needs your approval.
 
 ## CHANGELOG
+- 2026-10-24: AFFILIATES.md – ~35 further affiliate/referral programs researched (Iceland rentals, aggregators, insurance, eSIM,
+  activities, accommodation, gear, Camping Card, networks). Camping Card has no partner programme. GitHub Pages commercial-use
+  policy flagged. Top picks added to Monetization. Nothing signed up or emailed.
 - 2026-10-24: Design overhaul (one CSS, mobile-first cards, hero search, progressive-enhancement filters via data attributes and
   filter.js with accent-folding search, inline SVG maps from sourced coordinates with OSM/Google links, stacked responsive tables,
   winter status badges, favicon.svg, schema.org). Screenshots in screenshots/ (390 + 1280 px). Deployed and verified live (200s, new CSS).
