@@ -1,69 +1,286 @@
 {
   "slug": "reykjavik-eco-campsite",
   "name": "Reykjavík Eco-Campsite (Laugardalur)",
-  "alt_names": ["Reykjavík Campsite", "Tjaldsvæðið í Laugardal"],
+  "alt_names": [
+    "Reykjavík Campsite",
+    "Tjaldsvæðið í Laugardal"
+  ],
   "region": "capital-area",
   "town": "Reykjavík",
   "completeness": "full",
   "checked": "2026-10-23",
   "sources": {
-    "own-home": {"title": "Reykjavík Eco-Campsite – home page & FAQ", "url": "https://reykjavikcampsite.is/", "checked": "2026-10-23"},
-    "own-prices": {"title": "Reykjavík Eco-Campsite – Prices (2026)", "url": "https://reykjavikcampsite.is/prices/", "checked": "2026-10-23"},
-    "own-campsite": {"title": "Reykjavík Eco-Campsite – The Campsite (facilities & rules)", "url": "https://reykjavikcampsite.is/the-campsite/", "checked": "2026-10-23"},
-    "tjalda": {"title": "Tjalda.is – Reykjavík (Laugardalur) listing", "url": "https://tjalda.is/en/campsite/laugardalur", "checked": "2026-10-23"},
-    "ferdalag-winter": {"title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service", "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service", "checked": "2026-10-23"},
-    "utilegukort": {"title": "Útilegukortið (Camping Card) – Opening dates of participating camping sites 2026", "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en", "checked": "2026-10-23"},
-    "uos": {"title": "Umhverfis- og orkustofnun – Emptying portable toilets (disposal points)", "url": "https://uos.is/en/environment/ocean-water/emptying-portable-toilets", "checked": "2026-10-23"}
+    "own-home": {
+      "title": "Reykjavík Eco-Campsite – home page & FAQ",
+      "url": "https://reykjavikcampsite.is/",
+      "checked": "2026-10-23"
+    },
+    "own-prices": {
+      "title": "Reykjavík Eco-Campsite – Prices (2026)",
+      "url": "https://reykjavikcampsite.is/prices/",
+      "checked": "2026-10-23"
+    },
+    "own-campsite": {
+      "title": "Reykjavík Eco-Campsite – The Campsite (facilities & rules)",
+      "url": "https://reykjavikcampsite.is/the-campsite/",
+      "checked": "2026-10-23"
+    },
+    "tjalda": {
+      "title": "Tjalda.is – Reykjavík (Laugardalur) listing",
+      "url": "https://tjalda.is/en/campsite/laugardalur",
+      "checked": "2026-10-23"
+    },
+    "ferdalag-winter": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-10-23"
+    },
+    "utilegukort": {
+      "title": "Útilegukortið (Camping Card) – Opening dates of participating camping sites 2026",
+      "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en",
+      "checked": "2026-10-23"
+    },
+    "uos": {
+      "title": "Umhverfis- og orkustofnun – Emptying portable toilets (disposal points)",
+      "url": "https://uos.is/en/environment/ocean-water/emptying-portable-toilets",
+      "checked": "2026-10-23"
+    }
   },
   "intro": {
     "value": "Reykjavík Eco-Campsite sits in Laugardalur park, next to Laugardalslaug – which the campsite describes as Iceland's biggest geothermal pool – and next door to Dalur HI Hostel. It is open all year and is about 2 km from the city centre; city bus #14 stops in front. In winter (15 October – 15 April) only Area A is open, and only to motorhomes and campervans. There is no dump station on site: the campsite sends guests to the city's disposal point at Klettagarðar 14, about a 5-minute drive away.",
-    "src": ["own-home", "own-prices", "tjalda"]
+    "src": [
+      "own-home",
+      "own-prices",
+      "tjalda"
+    ]
   },
   "location": {
-    "address": {"value": "Sundlaugavegur 32, 105 Reykjavík", "src": ["own-home", "tjalda"]},
-    "lat": 64.146136, "lon": -21.875971,
-    "coords_src": ["tjalda"]
+    "address": {
+      "value": "Sundlaugavegur 32, 105 Reykjavík",
+      "src": [
+        "own-home",
+        "tjalda"
+      ]
+    },
+    "lat": 64.146136,
+    "lon": -21.875971,
+    "coords_src": [
+      "tjalda"
+    ]
   },
-  "season": {"value": "Open all year round", "src": ["own-prices", "tjalda", "ferdalag-winter"]},
+  "season": {
+    "value": "Open all year round",
+    "src": [
+      "own-prices",
+      "tjalda",
+      "ferdalag-winter"
+    ]
+  },
   "winter": {
     "status": "open",
     "value": "Open in winter, but 15 October – 15 April only Area A is open, for motorhomes and campervans only. Caravans, folding campers and trailer tents are permitted only 15 May – 15 October. Area B (tents and non-electric campers) is closed 15 October – 15 April.",
-    "src": ["own-home", "own-campsite"]
+    "src": [
+      "own-home",
+      "own-campsite"
+    ]
   },
   "prices": {
-    "applies_to": {"value": "2026 prices per pitch per night, as published (marked 'with online discount')", "src": ["own-prices"]},
+    "applies_to": {
+      "value": "2026 prices per pitch per night, as published (marked 'with online discount')",
+      "src": [
+        "own-prices"
+      ]
+    },
     "currency": "ISK",
     "items": [
-      {"label": "Campervan/motorhome pitch, no electricity (Area A or B), incl. 1 adult", "value": "3,735 ISK", "src": ["own-prices", "tjalda"]},
-      {"label": "Campervan/motorhome pitch with 16A electricity (Area A or B), incl. 1 adult", "value": "5,715 ISK", "src": ["own-prices", "tjalda"]},
-      {"label": "Tent pitch, no electricity (Area B – closed in winter), incl. 1 adult", "value": "3,555 ISK", "src": ["own-prices", "tjalda"]},
-      {"label": "Each additional adult (13 years and older)", "value": "3,150 ISK", "src": ["own-prices", "tjalda"]},
-      {"label": "Children (12 years and younger)", "value": "Free", "src": ["own-prices", "tjalda"]},
-      {"label": "Lodging tax per camping unit per night", "value": "400 ISK", "src": ["own-prices", "tjalda"]},
-      {"label": "Vehicle", "value": "Included in the pitch price (pricing is per pitch, not per vehicle)", "src": ["own-prices"]},
-      {"label": "Electricity (separately)", "value": "Priced into the 'with electricity' pitch: 5,715 vs 3,735 ISK", "src": ["own-prices"]},
-      {"label": "Price without the online discount (walk-up)", "value": null, "note": "Prices page shows only online-discounted prices; the FAQ says booking online gives a 10% discount, but no walk-up price is published."},
-      {"label": "Laundry (washer / dryer) price", "value": null, "note": "Laundry is a charged, card-operated service; no price published on the campsite site."}
+      {
+        "label": "Campervan/motorhome pitch, no electricity (Area A or B), incl. 1 adult",
+        "value": "3,735 ISK",
+        "src": [
+          "own-prices",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Campervan/motorhome pitch with 16A electricity (Area A or B), incl. 1 adult",
+        "value": "5,715 ISK",
+        "src": [
+          "own-prices",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Tent pitch, no electricity (Area B – closed in winter), incl. 1 adult",
+        "value": "3,555 ISK",
+        "src": [
+          "own-prices",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Each additional adult (13 years and older)",
+        "value": "3,150 ISK",
+        "src": [
+          "own-prices",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Children (12 years and younger)",
+        "value": "Free",
+        "src": [
+          "own-prices",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Lodging tax per camping unit per night",
+        "value": "400 ISK",
+        "src": [
+          "own-prices",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Vehicle",
+        "value": "Included in the pitch price (pricing is per pitch, not per vehicle)",
+        "src": [
+          "own-prices"
+        ]
+      },
+      {
+        "label": "Electricity (separately)",
+        "value": "Priced into the 'with electricity' pitch: 5,715 vs 3,735 ISK",
+        "src": [
+          "own-prices"
+        ]
+      },
+      {
+        "label": "Price without the online discount (walk-up)",
+        "value": null,
+        "note": "Prices page shows only online-discounted prices; the FAQ says booking online gives a 10% discount, but no walk-up price is published."
+      },
+      {
+        "label": "Laundry (washer / dryer) price",
+        "value": null,
+        "note": "Laundry is a charged, card-operated service; no price published on the campsite site."
+      }
     ]
   },
   "facts": {
-    "electricity": {"value": "Yes – 16A hookups on marked pitches in Area A (charged service). Tjalda.is says up to 50 vehicles can be connected at the same time in Area A.", "src": ["own-campsite", "own-prices", "tjalda"]},
-    "kitchen": {"value": "Yes – guest kitchen with stove tops, sinks and counters, plus a lounge; outdoor sinks with hot and cold water; open BBQ area (no equipment).", "src": ["own-campsite", "own-home"]},
-    "showers": {"value": "Included in the price (private showers).", "src": ["own-home", "own-campsite"]},
-    "toilets": {"value": "Yes – included in the price.", "src": ["own-home", "own-campsite"]},
-    "dump_station": {"has": "nearby", "value": "No disposal on site. The campsite says to use Klettagarðar 14, which it calls the only wastewater station in Reykjavík, about 5 minutes' drive away, and not to empty waste in the public bathrooms. In October 2026 the campsite said it is building a new fresh-water filling station and grey-water disposal point (with construction disruption in October and November). Opening date: Unconfirmed.", "src": ["own-home", "tjalda", "uos"]},
-    "wifi": {"value": "Free WiFi across the campground.", "src": ["own-home", "own-campsite"]},
-    "laundry": {"value": "Yes – 3 washers and 3 dryers, soap included; charged service, card-operated only.", "src": ["own-campsite", "own-home"]},
-    "camping_card": {"value": "No – Reykjavík is not among the campsites in the Útilegukortið (Camping Card) 2026 list.", "src": ["utilegukort"]},
-    "contact": {"value": "info@reykjavikcampsite.is · +354 568 6944 · reykjavikcampsite.is. Reception 07:30–22:00; outside those hours, service phone +354 553 8110.", "src": ["own-home"]}
+    "electricity": {
+      "has": "yes",
+      "value": "Yes – 16A hookups on marked pitches in Area A (charged service). Tjalda.is says up to 50 vehicles can be connected at the same time in Area A.",
+      "src": [
+        "own-campsite",
+        "own-prices",
+        "tjalda"
+      ]
+    },
+    "kitchen": {
+      "has": "yes",
+      "value": "Yes – guest kitchen with stove tops, sinks and counters, plus a lounge; outdoor sinks with hot and cold water; open BBQ area (no equipment).",
+      "src": [
+        "own-campsite",
+        "own-home"
+      ]
+    },
+    "showers": {
+      "has": "yes",
+      "value": "Included in the price (private showers).",
+      "src": [
+        "own-home",
+        "own-campsite"
+      ]
+    },
+    "toilets": {
+      "value": "Yes – included in the price.",
+      "src": [
+        "own-home",
+        "own-campsite"
+      ]
+    },
+    "dump_station": {
+      "has": "nearby",
+      "value": "No disposal on site. The campsite says to use Klettagarðar 14, which it calls the only wastewater station in Reykjavík, about 5 minutes' drive away, and not to empty waste in the public bathrooms. In October 2026 the campsite said it is building a new fresh-water filling station and grey-water disposal point (with construction disruption in October and November). Opening date: Unconfirmed.",
+      "src": [
+        "own-home",
+        "tjalda",
+        "uos"
+      ]
+    },
+    "wifi": {
+      "value": "Free WiFi across the campground.",
+      "src": [
+        "own-home",
+        "own-campsite"
+      ]
+    },
+    "laundry": {
+      "value": "Yes – 3 washers and 3 dryers, soap included; charged service, card-operated only.",
+      "src": [
+        "own-campsite",
+        "own-home"
+      ]
+    },
+    "camping_card": {
+      "value": "No – Reykjavík is not among the campsites in the Útilegukortið (Camping Card) 2026 list.",
+      "src": [
+        "utilegukort"
+      ]
+    },
+    "contact": {
+      "value": "info@reykjavikcampsite.is · +354 568 6944 · reykjavikcampsite.is. Reception 07:30–22:00; outside those hours, service phone +354 553 8110.",
+      "src": [
+        "own-home"
+      ]
+    }
   },
   "practical": [
-    {"value": "Check-in from 13:00, check-out by 11:00. Pre-book online: you get a 4-digit access code by email that opens the gate and the facilities. Late arrival is fine if you have booked.", "src": ["own-home", "own-campsite"]},
-    {"value": "Maximum stay is 7 nights in any 30-day period.", "src": ["own-home"]},
-    {"value": "Bookings are non-refundable. The campsite may move your dates within 6 months, if it has space.", "src": ["own-home"]},
-    {"value": "Rental van with no licence plate yet? Book with 'TBA' as the plate and email the plate number later.", "src": ["own-home"]},
-    {"value": "Generators, campfires and awnings, canopies or tents in Area A are not allowed. Quiet hours start at midnight. Pets are allowed if you clean up after them.", "src": ["own-campsite", "own-home"]},
-    {"value": "Groceries: Krambúðin is about a 5-minute walk away and Krónan about 15 minutes. Gas canisters: N1 is about a 10-minute walk away. There is no shop on site.", "src": ["own-home"]},
-    {"value": "Small padlocked lockers with a power socket are provided for valuables. Luggage storage costs €1.50/hour or €10/day after the day you arrive (free until check-in on arrival day).", "src": ["own-home", "own-campsite"]}
+    {
+      "value": "Check-in from 13:00, check-out by 11:00. Pre-book online: you get a 4-digit access code by email that opens the gate and the facilities. Late arrival is fine if you have booked.",
+      "src": [
+        "own-home",
+        "own-campsite"
+      ]
+    },
+    {
+      "value": "Maximum stay is 7 nights in any 30-day period.",
+      "src": [
+        "own-home"
+      ]
+    },
+    {
+      "value": "Bookings are non-refundable. The campsite may move your dates within 6 months, if it has space.",
+      "src": [
+        "own-home"
+      ]
+    },
+    {
+      "value": "Rental van with no licence plate yet? Book with 'TBA' as the plate and email the plate number later.",
+      "src": [
+        "own-home"
+      ]
+    },
+    {
+      "value": "Generators, campfires and awnings, canopies or tents in Area A are not allowed. Quiet hours start at midnight. Pets are allowed if you clean up after them.",
+      "src": [
+        "own-campsite",
+        "own-home"
+      ]
+    },
+    {
+      "value": "Groceries: Krambúðin is about a 5-minute walk away and Krónan about 15 minutes. Gas canisters: N1 is about a 10-minute walk away. There is no shop on site.",
+      "src": [
+        "own-home"
+      ]
+    },
+    {
+      "value": "Small padlocked lockers with a power socket are provided for valuables. Luggage storage costs €1.50/hour or €10/day after the day you arrive (free until check-in on arrival day).",
+      "src": [
+        "own-home",
+        "own-campsite"
+      ]
+    }
   ]
 }

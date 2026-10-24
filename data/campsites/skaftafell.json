@@ -170,6 +170,7 @@
   },
   "facts": {
     "electricity": {
+      "has": "yes",
       "value": "Yes – 100 electrical outlets in zones A–D; A and C (open in winter) have separate pitches and good access to electricity. 1,500 ISK per 24 h. Not for charging vehicles: the park says the system is neither powerful nor safe enough.",
       "src": [
         "vjp",
@@ -178,6 +179,7 @@
       ]
     },
     "kitchen": {
+      "has": "no",
       "value": "No indoor dining or cooking facilities for campground visitors. Dishwashing sinks next to the service buildings (no outdoor water until about mid-May). The Visitor Centre has food service.",
       "src": [
         "vjp",
@@ -185,6 +187,7 @@
       ]
     },
     "showers": {
+      "has": "yes",
       "value": "Included in the campsite fee (2026). An older Visit Vatnajökull page still describes paid service cards; the national park's own 2026 price list says showers are included.",
       "src": [
         "vjp-prices",

@@ -6,7 +6,7 @@ Usage:  python3 build.py              # builds into dist/
 Reads data/site.json, data/campsites/*.json, data/guides/*.json and templates/base.html.
 Fails loudly if any fact has a value without a source, or cites an unknown source key.
 """
-import json, os, sys, shutil, glob, datetime, re
+import json, os, sys, shutil, glob, datetime, re, math
 from html import escape
 from string import Template
 from urllib.parse import urlparse
@@ -96,13 +96,13 @@ def map_links(c):
     return (f'<a href="https://www.openstreetmap.org/?mlat={lat}&amp;mlon={lon}#map=15/{lat}/{lon}" rel="nofollow noopener">OpenStreetMap</a> · '
             f'<a href="https://www.google.com/maps/search/?api=1&amp;query={lat},{lon}" rel="nofollow noopener">Google Maps</a>')
 
-def write_page(rel, title, description, body, head_extra="", robots="index,follow", root=None):
+def write_page(rel, title, description, body, head_extra="", robots="index,follow", root=None, main_cls="page"):
     depth = rel.count("/")
     if root is None: root = "../" * depth  # relative links: work at any host/subpath
     canon_path = rel[:-len("index.html")] if rel.endswith("index.html") else rel
     html = TEMPLATE.substitute(title=escape(title), description=escape(description), canonical=f"{BASE_URL}/{canon_path}",
                                robots=robots, head_extra=head_extra, root=root, body=body, site_name=escape(SITE["site_name"]),
-                               build_date=BUILD_DATE)
+                               build_date=BUILD_DATE, main_cls=main_cls)
     path = os.path.join(DIST, rel)
     os.makedirs(os.path.dirname(path), exist_ok=True)
     open(path, "w", encoding="utf-8").write(html)
@@ -132,6 +132,96 @@ def validate(c):
     if c["location"].get("lat") is not None and not c["location"].get("coords_src"):
         ERRORS.append(f"{owner}: coordinates without coords_src")
 
+# ---------- facility flags, cards & map ----------
+FACILITIES = [("electricity", "Electricity"), ("showers", "Showers"), ("dump_station", "Dump station"), ("kitchen", "Kitchen")]
+FLAG_TXT = {"yes": "yes", "no": "no", "nearby": "nearby, not on site", None: "unconfirmed"}
+
+def has(c, key):
+    """Facility flag from the data file ('has'), never guessed: yes|no|nearby|None."""
+    f = c["facts"].get(key) or {}
+    h = f.get("has")
+    if h in ("yes", "no", "nearby"): return h
+    return None
+
+def adult_price(c):
+    return next((i for i in c["prices"]["items"] if i["label"].lower().startswith(("adult", "per person", "campervan"))), None)
+
+def chips(c):
+    out = []
+    for key, label in FACILITIES:
+        h = has(c, key)
+        cls = {"yes": "c-yes", "no": "c-no", "nearby": "c-near", None: "c-unc"}[h]
+        mark = {"yes": "✓", "no": "✕", "nearby": "↗", None: "?"}[h]
+        out.append(f'<li class="chip {cls}"><span aria-hidden="true">{mark}</span> {label}<span class="sr"> : {FLAG_TXT[h]}</span></li>')
+    return '<ul class="chips" aria-label="Facilities">' + "".join(out) + "</ul>"
+
+def card(c, root, heading="h3"):
+    reg = REGIONS[c["region"]]
+    ap = adult_price(c)
+    price = (f'<p class="price"><span class="meta">{escape(ap["label"])}</span> <strong>{escape(ap["value"])}</strong></p>' if ap and ap.get("value")
+             else '<p class="price"><span class="meta">Price</span> <span class="unconfirmed">Unconfirmed</span></p>')
+    data = (f'data-region="{c["region"]}" data-winter="{c["winter"].get("status") or "unconfirmed"}" '
+            + " ".join(f'data-{k.replace("_station","")}="{has(c, k) or "unc"}"' for k, _ in FACILITIES)
+            + f' data-name="{escape((c["name"] + " " + c.get("town","") + " " + " ".join(c.get("alt_names", []))).lower())}"')
+    return (f'<li class="card camp" {data}><div class="card-top">{winter_badge(c["winter"].get("status"))}'
+            + ('<span class="tag">Short entry</span>' if c.get("completeness") == "stub" else '<span class="tag tag-full">Full page</span>') + "</div>"
+            + f'<{heading} class="card-title"><a href="{campsite_url(c["slug"], root)}">{escape(c["name"])}</a></{heading}>'
+            + f'<p class="meta">{escape(c.get("town",""))} · {escape(reg["name"])}</p>' + chips(c) + price + "</li>")
+
+def cards(cs, root, cls="", heading="h3"):
+    if not cs: return '<p><em>No campsites added yet for this list. More pages are added regularly; see the <a href="' + root + 'about/index.html">methodology</a>.</em></p>'
+    return f'<ul class="cards camp-cards {cls}">' + "".join(card(c, root, heading) for c in cs) + "</ul>"
+
+OUTLINE = json.load(open(os.path.join(ROOT, "data", "geo", "iceland-outline.json"), encoding="utf-8"))
+import math
+_LON0, _LAT1 = -24.6, 66.62
+_KX = math.cos(math.radians(65)) * 100
+_KY = 100 * 1.0
+_W = round((-13.45 - _LON0) * _KX + 4); _H = round((_LAT1 - 63.33) * _KY + 2)
+def proj(lon, lat): return ((lon - _LON0) * _KX + 2, (_LAT1 - lat) * _KY + 1)
+_OUTLINE_D = "M" + " ".join(f"{x:.0f} {y:.0f}" if i == 0 else f"{x:.0f} {y:.0f}" for i, (x, y) in enumerate(proj(*p) for p in OUTLINE["coordinates"])) + "Z"
+# collapse duplicate consecutive points produced by rounding
+def _dedupe(d):
+    pts = d[1:-1].split(" "); out = []; prev = None
+    for i in range(0, len(pts), 2):
+        pt = (pts[i], pts[i+1])
+        if pt != prev: out.append(pt)
+        prev = pt
+    return "M" + " ".join(f"{a} {b}" for a, b in out) + "Z"
+_OUTLINE_D = _dedupe(_OUTLINE_D)
+
+def map_svg(cs, root, label, highlight=None, cls=""):
+    """Inline SVG overview of Iceland with one marker per campsite that has sourced coordinates."""
+    marks = []
+    for c in cs:
+        lat, lon = c["location"].get("lat"), c["location"].get("lon")
+        if lat is None or lon is None: continue
+        x, y = proj(lon, lat)
+        st = c["winter"].get("status") or "unconfirmed"
+        name = f'{c["name"]} – {WINTER.get(st, WINTER[None])[0]}'
+        r = 4 if highlight is None else 7
+        marks.append(f'<a href="{campsite_url(c["slug"], root)}" class="mk" data-slug="{c["slug"]}" aria-label="{escape(name)}">'
+                     f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r}" class="m-{st}"/><title>{escape(name)}</title></a>')
+    return (f'<svg class="map {cls}" viewBox="0 0 {_W} {_H}" role="img" aria-label="{escape(label)}" xmlns="http://www.w3.org/2000/svg">'
+            f'<path class="land" d="{_OUTLINE_D}"/>' + "".join(marks) + "</svg>")
+
+def map_credit():
+    return ('<p class="map-credit">Outline: <a href="https://www.naturalearthdata.com/" rel="nofollow noopener">Natural Earth</a> (public domain). '
+            'Markers use the GPS coordinates cited on each campsite page; campsites without sourced coordinates are not shown.</p>')
+
+def map_legend():
+    return ('<ul class="map-legend" aria-label="Marker colours">' + "".join(
+        f'<li><span class="dot m-{s}" aria-hidden="true"></span>{WINTER[s][0]}</li>' for s in ["open", "call-ahead", "partial", "closed"]) + "</ul>")
+
+def unmapped(cs, root):
+    miss = [c for c in cs if c["location"].get("lat") is None]
+    if not miss: return ""
+    return '<p class="meta">Not on the map (no sourced coordinates yet): ' + ", ".join(f'<a href="{campsite_url(c["slug"], root)}">{escape(c["name"])}</a>' for c in miss) + ".</p>"
+
+def page_head(eyebrow, title, lede="", extra=""):
+    return (f'<header class="page-head"><p class="eyebrow">{eyebrow}</p><h1>{title}</h1>'
+            + (f'<p class="lede">{lede}</p>' if lede else "") + extra + "</header>")
+
 # ---------- page renderers ----------
 def render_campsite(c):
     root = "../../"
@@ -152,14 +242,13 @@ def render_campsite(c):
     w = c["winter"]
     row("Winter opening", winter_badge(w.get("status")) + " " + fact_html(w, cites, o))
     for key, label in FACT_LABELS:
-        f = c["facts"].get(key)
-        row(escape(label), fact_html(f, cites, o))
-    facts_table = '<div class="table-wrap"><table class="facts"><caption class="meta" style="text-align:left;padding:.5rem .65rem">Key facts</caption><tbody>' + "\n".join(rows) + "</tbody></table></div>"
+        row(escape(label), fact_html(c["facts"].get(key), cites, o))
+    facts_table = '<div class="table-wrap"><table class="facts"><caption>Key facts with sources</caption><tbody>' + "\n".join(rows) + "</tbody></table></div>"
 
     p = c["prices"]
     prow = [f'<tr><th scope="row">{escape(i["label"])}</th><td>{fact_html(i, cites, o)}</td></tr>' for i in p["items"]]
-    prices = (f'<p>Currency: {escape(p.get("currency","ISK"))}. Applies to: {fact_html(p.get("applies_to"), cites, o)}</p>'
-              '<div class="table-wrap"><table class="facts"><tbody>' + "\n".join(prow) + "</tbody></table></div>")
+    prices = (f'<p class="meta">Currency: {escape(p.get("currency","ISK"))}. Applies to: {fact_html(p.get("applies_to"), cites, o)}</p>'
+              '<div class="table-wrap"><table class="facts prices"><caption>Prices</caption><tbody>' + "\n".join(prow) + "</tbody></table></div>")
     intro = f'<p class="lede">{fact_html(c.get("intro"), cites, o, with_checked=False)}</p>' if c.get("intro") else ""
     practical = ""
     if c.get("practical"):
@@ -168,41 +257,49 @@ def render_campsite(c):
     if c.get("completeness") == "stub":
         stub = '<div class="callout warn"><strong>Short entry.</strong> This page covers the basics we could source so far. Anything we have not been able to confirm is marked Unconfirmed.</div>'
     alt = f'<p class="meta">Also known as: {escape(", ".join(c["alt_names"]))}</p>' if c.get("alt_names") else ""
+    ap = adult_price(c)
+    glance = ('<dl class="glance">'
+              f'<div><dt>Winter</dt><dd>{winter_badge(w.get("status"))}</dd></div>'
+              f'<div><dt>Season</dt><dd>{escape(short_text(c["season"]) or "Unconfirmed")}</dd></div>'
+              + (f'<div><dt>{escape(ap["label"])}</dt><dd>{escape(ap["value"])}</dd></div>' if ap and ap.get("value") else '<div><dt>Price</dt><dd><span class="unconfirmed">Unconfirmed</span></dd></div>')
+              + "</dl>")
+    side = ('<aside class="side card" aria-label="Location">'
+            '<h2 class="side-h">Location</h2>'
+            + (map_svg([c], root, f"Map of Iceland showing the location of {c['name']}", highlight=c["slug"], cls="mini") if ml else "")
+            + (f'<p class="coords">{loc["lat"]:.5f}, {loc["lon"]:.5f}{cites.sup(loc["coords_src"])}</p><p class="maplinks">'
+               f'<a class="btn btn-sm" href="https://www.openstreetmap.org/?mlat={loc["lat"]}&amp;mlon={loc["lon"]}#map=14/{loc["lat"]}/{loc["lon"]}" rel="nofollow noopener">Open in OpenStreetMap</a> '
+               f'<a class="btn btn-sm btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query={loc["lat"]},{loc["lon"]}" rel="nofollow noopener">Google Maps</a></p>'
+               if ml else '<p><span class="unconfirmed">Unconfirmed</span><span class="unc-note">No sourced coordinates yet, so no map.</span></p>')
+            + '<p class="meta">Seasons and prices change. Check with the campsite before you travel.</p>'
+            + '<nav class="toc" aria-label="On this page"><p class="side-h">On this page</p><ul>'
+            + '<li><a href="#facts">Key facts</a></li><li><a href="#prices">Prices</a></li>'
+            + ('<li><a href="#tips">Practical tips</a></li>' if practical else "") + '<li><a href="#sources">Sources</a></li></ul></nav>'
+            + "</aside>")
+    head = page_head(f'<a href="{root}regions/{reg["slug"]}/index.html">{escape(reg["name"])}</a> · {escape(c.get("town",""))}', escape(c["name"]),
+                     extra=alt + glance + chips(c) + f'<p class="meta">Facts last checked {escape(c["checked"])}. Numbers in brackets link to the source; full list under <a href="#sources">Sources</a>.</p>')
     body = (crumbs(root, [("Regions", "regions/index.html"), (reg["name"], f'regions/{reg["slug"]}/index.html'), (c["name"], None)])
-            + f"<h1>{escape(c['name'])}</h1>{alt}"
-            + f'<p class="meta">Facts last checked {escape(c["checked"])}. Each fact shows its source number and check date; full list under <a href="#sources">Sources</a>.</p>'
-            + stub + intro + facts_table
+            + head + '<div class="with-side"><div class="main-col">'
+            + stub + intro + f'<h2 id="facts">Key facts</h2>{facts_table}'
             + f'<h2 id="prices">Prices</h2>{prices}' + practical
             + f'<h2 id="sources">Sources</h2>{cites.listing()}'
-            + '<p class="meta">Spotted something out of date? Please check the campsite\'s own website. Prices and seasons change from year to year.</p>')
+            + '<p class="meta">Spotted something out of date? The campsite\'s own website is always the authority. Prices and seasons change from year to year.</p>'
+            + "</div>" + side + "</div>")
     desc = f"{c['name']} in {reg['name']}, Iceland: winter opening, prices, electricity, showers, dump station and more. Every fact sourced, checked {c['checked']}."
     ld = {"@context": "https://schema.org", "@type": "Campground", "name": c["name"], "url": f"{BASE_URL}/campsites/{c['slug']}/"}
     if loc.get("lat") is not None: ld["geo"] = {"@type": "GeoCoordinates", "latitude": loc["lat"], "longitude": loc["lon"]}
     if loc.get("address", {}).get("value"): ld["address"] = loc["address"]["value"]
-    head = '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>"
-    write_page(f"campsites/{c['slug']}/index.html", f"{c['name']} – campsite facts & prices | {SITE['site_name']}", desc, body, head)
-
-def campsite_list_table(cs, root, cites=None):
-    if not cs: return '<p><em>No campsites added yet for this list. See the <a href="' + root + 'about/index.html">methodology</a>; more pages are added regularly.</em></p>'
-    rows = []
-    for c in cs:
-        el = short_text(c["facts"].get("electricity")) or "Unconfirmed"
-        dh = {"yes": "Yes", "nearby": "Not on site (nearby)", "no": "No", None: "Unconfirmed"}[dump_has(c)]
-        rows.append(f'<tr><th scope="row"><a href="{campsite_url(c["slug"], root)}">{escape(c["name"])}</a></th>'
-                    f'<td>{escape(REGIONS[c["region"]]["name"])}</td><td>{winter_badge(c["winter"].get("status"))}</td>'
-                    f'<td>{escape(el)}</td><td>{escape(dh)}</td></tr>')
-    return ('<div class="table-wrap"><table><thead><tr><th scope="col">Campsite</th><th scope="col">Region</th><th scope="col">Winter</th>'
-            '<th scope="col">Electricity</th><th scope="col">Dump station</th></tr></thead><tbody>' + "\n".join(rows) + "</tbody></table></div>"
-            '<p class="meta">Summary only. Open each campsite page for sources, check dates and details.</p>')
+    head_ld = '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>"
+    write_page(f"campsites/{c['slug']}/index.html", f"{c['name']} – campsite facts & prices | {SITE['site_name']}", desc, body, head_ld)
 
 def render_region(r, cs):
     root = "../../"
     mine = [c for c in cs if c["region"] == r["slug"]]
-    gs = [g for g in GUIDES if g.get("region") == r["slug"]]
-    guides = ("<h2>Guides</h2><ul>" + "".join(f'<li><a href="{root}guides/{g["slug"]}/index.html">{escape(g["title"])}</a></li>' for g in gs) + "</ul>") if gs else ""
+    gs = [g for g in GUIDES if g.get("region") == r["slug"] or r["slug"] in g.get("regions", [])]
+    guides = ('<h2>Guides</h2><ul class="cards guide-cards">' + "".join(guide_card(g, root) for g in gs) + "</ul>") if gs else ""
+    mp = (f'<figure class="map-fig">{map_svg(mine, root, "Map of campsites in " + r["name"])}<figcaption>{map_legend()}{map_credit()}</figcaption></figure>' if any(c["location"].get("lat") for c in mine) else "")
     body = (crumbs(root, [("Regions", "regions/index.html"), (r["name"], None)])
-            + f'<h1>Campsites in {escape(r["name"])} <span class="meta">({escape(r["is"])})</span></h1><p class="lede">{escape(r["blurb"])}</p>'
-            + guides + f"<h2>Campsites ({len(mine)})</h2>" + campsite_list_table(mine, root))
+            + page_head(f'Region · {escape(r["is"])}', f'Campsites in {escape(r["name"])}', escape(r["blurb"]))
+            + guides + f"<h2>Campsites ({len(mine)})</h2>" + mp + cards(mine, root))
     write_page(f"regions/{r['slug']}/index.html", f"Campsites in {r['name']}, Iceland | {SITE['site_name']}",
                f"Campervan-friendly campsites in {r['name']} ({r['is']}), Iceland, with sourced winter opening, electricity and dump station info.", body)
 
@@ -211,92 +308,175 @@ def render_theme(t, cs):
     if t["filter"] == "winter":
         order = ["open", "call-ahead", "partial"]
         sel = sorted([c for c in cs if c["winter"].get("status") in order], key=lambda c: (order.index(c["winter"]["status"]), c["region"], c["name"]))
-        content = ('<div class="legend">' + "".join(winter_badge(s) for s in ["open", "call-ahead", "partial"]) + "</div>"
+        content = ('<div class="legend">' + "".join(winter_badge(s) for s in order) + "</div>"
                    + "<p>Sites marked <strong>Call ahead</strong> are listed as open in winter by some source, but the wording is vague (for example 'depending on weather' or 'upon request'), or sources conflict. <strong>Shoulder season only</strong> means open into late autumn or from early spring, but not all winter. Campsites confirmed closed in winter are left off this list.</p>"
-                   + campsite_list_table(sel, root))
+                   + f'<figure class="map-fig">{map_svg(sel, root, "Map of campsites open in winter")}<figcaption>{map_legend()}{map_credit()}</figcaption></figure>'
+                   + cards(sel, root))
     else:
         content = ""
         for r in SITE["regions"]:
             sel = [c for c in cs if c["region"] == r["slug"] and dump_has(c) in ("yes",)]
-            content += f'<h2>{escape(r["name"])}</h2>' + (campsite_list_table(sel, root) if sel else '<p><em>No campsite with a confirmed disposal point added for this region yet.</em></p>')
+            content += f'<h2>{escape(r["name"])}</h2>' + (cards(sel, root) if sel else '<p class="meta"><em>No campsite with a confirmed disposal point added for this region yet.</em></p>')
         near = [c for c in cs if dump_has(c) == "nearby"]
         if near:
-            content += "<h2>Campsites without their own disposal point (nearby station)</h2>" + campsite_list_table(near, root)
-    body = crumbs(root, [("Themes", "themes/index.html"), (t["name"], None)]) + f'<h1>{escape(t["name"])}</h1><p class="lede">{escape(t["blurb"])}</p>' + content
+            content += "<h2>Campsites without their own disposal point (nearby station)</h2>" + cards(near, root)
+        dg = [g for g in GUIDES if g["slug"] == "dump-stations-iceland"]
+        if dg: content = f'<p class="callout">Read the full guide: <a href="{root}guides/dump-stations-iceland/index.html">{escape(dg[0]["title"])}</a>.</p>' + content
+    body = crumbs(root, [("Themes", "themes/index.html"), (t["name"], None)]) + page_head("Theme", escape(t["name"]), escape(t["blurb"])) + content
     write_page(f"themes/{t['slug']}/index.html", f"{t['name']} – Iceland campsites | {SITE['site_name']}", t["blurb"][:155], body)
+
+GUIDE_COLS = {
+    "winter": ["location", "winter", "electricity", "dump", "price", "sources", "checked"],
+    "overview": ["location", "winter", "electricity", "dump", "price", "sources", "checked"],
+    "dump": ["location", "dump", "winter_badge", "price", "sources", "checked"],
+}
+COL_HEAD = {"location": "Location", "winter": "Winter status", "winter_badge": "Winter", "electricity": "Electricity", "dump": "Dump station",
+            "price": "Price (if confirmed)", "sources": "Sources", "checked": "Checked"}
 
 def render_guide(g, cs_by_slug):
     root = "../../"
     owner = g["_file"]
-    # merge sources: guide sources + each listed campsite's sources (namespaced)
     sources = dict(g["sources"])
     for slug in g["campsites"]:
         c = cs_by_slug.get(slug)
         if not c: ERRORS.append(f"{owner}: unknown campsite '{slug}'"); continue
         for k, s in c["sources"].items(): sources[f"{slug}:{k}"] = s
+    for k, s in sources.items():
+        if not re.match(r"\d{4}-\d{2}-\d{2}$", s.get("checked", "")): ERRORS.append(f"{owner}: source {k} has no checked date")
     cites = Cites(sources, owner)
     def ns(slug, keys): return [f"{slug}:{k}" for k in (keys or [])]
-    intro = "".join(f"<p>{fact_html(p, cites, owner, with_checked=False)}</p>" for p in g["intro"])
+    intro = "".join(f'<p{" class=\"lede\"" if i == 0 else ""}>{fact_html(p, cites, owner, with_checked=False)}</p>' for i, p in enumerate(g["intro"]))
+    cols = GUIDE_COLS[g.get("table", "winter")]
     rows = []
+    listed = []
     for slug in g["campsites"]:
         c = cs_by_slug.get(slug)
         if not c: continue
+        listed.append(c)
         w = c["winter"]
         def nf(f):
             if not f or not f.get("value"): return f
             return {**f, "src": ns(slug, f.get("src"))}
         el, dump = nf(c["facts"].get("electricity")), nf(c["facts"].get("dump_station"))
-        adult = next((i for i in c["prices"]["items"] if i["label"].lower().startswith(("adult", "per person"))), None)
+        adult = adult_price(c)
         price = fact_html(nf(adult), cites, owner, with_checked=False) if adult else '<span class="unconfirmed">Unconfirmed</span>'
         if adult and adult.get("value"): price = escape(adult["label"]) + ": " + price
         srcs = sorted({k for f in [nf(w), el, dump, nf(adult), nf(c["season"])] if f and f.get("value") for k in f.get("src", [])})
         loc = c["location"]; ml = map_links(c)
-        loc_html = escape(c.get("town", "")) + (f'<br><span class="meta">{loc["lat"]:.4f}, {loc["lon"]:.4f}</span>' if ml else "")
-        rows.append(f'<tr><th scope="row"><a href="{campsite_url(slug, root)}">{escape(c["name"])}</a></th><td>{loc_html}</td>'
-                    f'<td class="wcol">{winter_badge(w.get("status"))}<br>{fact_html(nf(w), cites, owner, with_checked=False)}</td>'
-                    f'<td>{fact_html(el, cites, owner, with_checked=False)}</td><td>{fact_html(dump, cites, owner, with_checked=False)}</td>'
-                    f'<td>{price}</td><td>{cites.sup(srcs)}</td><td class="checked">{escape(c["checked"])}</td></tr>')
-    table = ('<div class="table-wrap" tabindex="0" role="region" aria-label="Winter campsite table (scrolls sideways on small screens)"><table class="guide"><caption class="meta" style="text-align:left;padding:.5rem .65rem">Listed roughly west to east along the Ring Road. Prices are 2026 rates as published.</caption>'
-             '<thead><tr><th scope="col">Campsite</th><th scope="col">Location</th><th scope="col">Winter status</th><th scope="col">Electricity</th>'
-             '<th scope="col">Dump station</th><th scope="col">Price (if confirmed)</th><th scope="col">Sources</th><th scope="col">Checked</th></tr></thead><tbody>'
+        cell = {
+            "location": escape(c.get("town", "")) + (f'<br><span class="meta">{loc["lat"]:.4f}, {loc["lon"]:.4f}</span>' if ml else ""),
+            "winter": f'{winter_badge(w.get("status"))}<br>{fact_html(nf(w), cites, owner, with_checked=False)}',
+            "winter_badge": winter_badge(w.get("status")),
+            "electricity": fact_html(el, cites, owner, with_checked=False),
+            "dump": fact_html(dump, cites, owner, with_checked=False),
+            "price": price, "sources": cites.sup(srcs) or "–", "checked": f'<span class="checked">{escape(c["checked"])}</span>',
+        }
+        rows.append(f'<tr><th scope="row"><a href="{campsite_url(slug, root)}">{escape(c["name"])}</a></th>'
+                    + "".join(f'<td data-label="{COL_HEAD[k]}" class="col-{k}"><div class="cv">{cell[k]}</div></td>' for k in cols) + "</tr>")
+    tkind = g.get("table", "winter")
+    table = (f'<div class="table-wrap wide" role="region" aria-label="Campsite comparison table"><table class="guide stack t-{tkind}">'
+             f'<caption>{escape(g.get("table_caption", "Listed roughly west to east along the Ring Road. Prices are 2026 rates as published."))}</caption>'
+             f'<thead><tr><th scope="col" class="col-name">Campsite</th>' + "".join(f'<th scope="col" class="col-{k}">{COL_HEAD[k]}</th>' for k in cols) + "</tr></thead><tbody>"
              + "\n".join(rows) + "</tbody></table></div>")
     legend = ('<div class="legend">' + "".join(winter_badge(s) for s in ["open", "call-ahead", "partial", "closed"]) + '<span class="unconfirmed">Unconfirmed</span></div>'
               '<p class="meta"><strong>Open in winter</strong>: the campsite or an official listing states it is open through winter. <strong>Call ahead</strong>: listed as open in winter, but the wording is vague or sources conflict. <strong>Shoulder season only</strong>: open into late autumn or from early spring, not all winter. <strong>Closed in winter</strong>: published season ends before winter.</p>')
-    tips = "<h2>Practical winter tips</h2><ul class='tips'>" + "".join(f"<li>{fact_html(t, cites, owner)}</li>" for t in g["tips"]) + "</ul>"
+    sections = ""
+    for s in g.get("sections", []):
+        sid = s.get("id", "")
+        sections += f'<h2{f" id=\"{sid}\"" if sid else ""}>{escape(s["title"])}</h2>' + "".join(f"<p>{fact_html(p, cites, owner)}</p>" for p in s.get("paras", []))
+        if s.get("items"): sections += '<ul class="tips">' + "".join(f"<li>{fact_html(t, cites, owner)}</li>" for t in s["items"]) + "</ul>"
+    tips = (f"<h2 id=\"tips\">{escape(g.get('tips_title', 'Practical winter tips'))}</h2><ul class='tips'>" + "".join(f"<li>{fact_html(t, cites, owner)}</li>" for t in g["tips"]) + "</ul>") if g.get("tips") else ""
     demand = f'<h2>What travellers ask</h2><p>{fact_html(g["demand"], cites, owner)}</p>' if g.get("demand") else ""
-    body = (crumbs(root, [("Guides", "guides/index.html"), (g["title"], None)]) + f"<h1>{escape(g['title'])}</h1>"
-            + f'<p class="meta">All facts checked {escape(g["checked"])}. Source numbers link to the original page; see the full list under <a href="#sources">Sources</a>.</p>'
-            + intro + f'<p class="callout">{escape(g["scope_note"])}</p>'
-            + "<h2>At a glance</h2>" + legend + table + tips + demand
-            + '<div class="callout warn">Winter seasons, prices and facilities can change at short notice. Contact the campsite before relying on it, especially sites marked Call ahead.</div>'
+    mp = (f'<figure class="map-fig guide-map">{map_svg(listed, root, "Map of the campsites in this guide")}<figcaption>{map_legend()}{map_credit()}{unmapped(listed, root)}</figcaption></figure>')
+    body = (crumbs(root, [("Guides", "guides/index.html"), (g["title"], None)])
+            + page_head(f'Guide · checked {escape(g["checked"])}', escape(g["title"]), extra=intro)
+            + f'<p class="callout">{escape(g["scope_note"])}</p>'
+            + f'<h2 id="glance">{escape(g.get("glance_title", "At a glance"))}</h2>' + legend + mp + table + sections + tips + demand
+            + f'<div class="callout warn">{escape(g.get("warning", "Winter seasons, prices and facilities can change at short notice. Contact the campsite before relying on it, especially sites marked Call ahead."))}</div>'
             + f'<h2 id="sources">Sources</h2>{cites.listing()}')
-    write_page(f"guides/{g['slug']}/index.html", f"{g['title']} | {SITE['site_name']}", g["description"], body)
+    ld = {"@context": "https://schema.org", "@type": "Article", "headline": g["title"], "description": g["description"],
+          "dateModified": g["checked"], "url": f"{BASE_URL}/guides/{g['slug']}/", "inLanguage": "en"}
+    write_page(f"guides/{g['slug']}/index.html", f"{g['title']} | {SITE['site_name']}", g["description"], body,
+               '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>")
+
+def guide_card(g, root):
+    return (f'<li class="card guide-card"><p class="eyebrow">Guide · {len(g["campsites"])} campsites</p>'
+            f'<h3 class="card-title"><a href="{root}guides/{g["slug"]}/index.html">{escape(g["title"])}</a></h3>'
+            f'<p class="meta">{escape(g["description"])}</p></li>')
+
+def filter_form(root, action=None, hero=False):
+    """Filter controls. On the index (action=None) JS filters cards live; on the home page it submits to the index."""
+    regs = "".join(f'<option value="{r["slug"]}">{escape(r["name"])}</option>' for r in SITE["regions"])
+    pre = "h-" if hero else "f-"
+    boxes = "".join(f'<label class="check"><input type="checkbox" name="{k}" value="yes" id="{pre}{k}"> {l}</label>'
+                    for k, l in [("electricity", "Electricity"), ("showers", "Showers"), ("dump", "Dump station"), ("kitchen", "Kitchen")])
+    return (f'<form class="filters{" hero-form" if hero else ""}" role="search" action="{action or ""}" method="get"'
+            + ("" if hero else ' id="filters" hidden') + ">"
+            + f'<div class="f-row"><label class="field grow"><span>Search by name or town</span><input type="search" name="q" id="{pre}q" placeholder="e.g. Skaftafell, Vík, Selfoss" autocomplete="off"></label>'
+            + f'<label class="field"><span>Region</span><select name="region" id="{pre}region"><option value="">All regions</option>{regs}</select></label>'
+            + f'<label class="field"><span>Winter</span><select name="winter" id="{pre}winter"><option value="">Any season</option><option value="open">Open in winter</option><option value="open,call-ahead">Open or call ahead</option><option value="open,call-ahead,partial">Open, call ahead or shoulder season</option></select></label></div>'
+            + f'<fieldset class="f-row checks"><legend>Must have (confirmed)</legend>{boxes}</fieldset>'
+            + ('<div class="f-row"><button class="btn" type="submit">Find campsites</button></div>' if hero else
+               '<div class="f-row f-foot"><p class="count" id="count" aria-live="polite"></p><button class="btn btn-ghost" type="reset" id="f-reset">Clear filters</button></div>')
+            + "</form>")
 
 def render_static_pages(cs):
-    # Home
     root = ""
-    regions = "".join(f'<li><h3><a href="regions/{r["slug"]}/index.html">{escape(r["name"])}</a></h3><p class="meta">{escape(r["is"])} · {sum(1 for c in cs if c["region"]==r["slug"])} campsite(s)</p></li>' for r in SITE["regions"])
-    themes = "".join(f'<li><h3><a href="themes/{t["slug"]}/index.html">{escape(t["name"])}</a></h3><p class="meta">{escape(t["blurb"][:120])}…</p></li>' for t in SITE["themes"])
-    guides = "".join(f'<li><h3><a href="guides/{g["slug"]}/index.html">{escape(g["title"])}</a></h3><p class="meta">{escape(g["description"])}</p></li>' for g in GUIDES)
-    body = (f"<h1>{escape(SITE['site_name'])}</h1>"
-            f'<p class="lede">An English guide to campsites in Iceland for people travelling by campervan or motorhome. For each site we list winter opening, prices, electricity, showers, kitchens and dump stations. Every fact links to its source and shows when it was checked; if we can\'t confirm something, we mark it <span class="unconfirmed">Unconfirmed</span> instead of guessing.</p>'
-            f'<h2>Guides</h2><ul class="cards">{guides}</ul><h2>Browse by region</h2><ul class="cards">{regions}</ul>'
-            f'<h2>Browse by theme</h2><ul class="cards">{themes}</ul>'
-            f'<p><a href="campsites/index.html">See all {len(cs)} campsites</a> · <a href="about/index.html">How we research</a></p>')
-    write_page("index.html", f"{SITE['site_name']} – sourced campsite facts for Iceland", SITE["tagline"], body)
-    # Indexes
-    write_page("campsites/index.html", f"All campsites | {SITE['site_name']}", "All Iceland campsites on this site with winter status, electricity and dump station summary.",
-               crumbs("../", [("All campsites", None)]) + "<h1>All campsites</h1>" + campsite_list_table(sorted(cs, key=lambda c: (list(REGIONS).index(c["region"]), c["name"])), "../"))
+    ordered = sorted(cs, key=lambda c: (list(REGIONS).index(c["region"]), c["name"]))
+    n_open = sum(1 for c in cs if c["winter"].get("status") == "open")
+    n_dump = sum(1 for c in cs if dump_has(c) == "yes")
+    n_full = sum(1 for c in cs if c.get("completeness") == "full")
+    regions = "".join(f'<li class="card region-card"><h3 class="card-title"><a href="regions/{r["slug"]}/index.html">{escape(r["name"])}</a></h3><p class="meta">{escape(r["is"])} · {sum(1 for c in cs if c["region"]==r["slug"])} campsite(s)</p></li>' for r in SITE["regions"])
+    themes = "".join(f'<li class="card"><h3 class="card-title"><a href="themes/{t["slug"]}/index.html">{escape(t["name"])}</a></h3><p class="meta">{escape(t["blurb"][:120])}…</p></li>' for t in SITE["themes"])
+    guides = "".join(guide_card(g, root) for g in GUIDES)
+    featured = [c for c in ordered if c.get("completeness") == "full"]
+    hero = ('<section class="hero" aria-labelledby="hero-h">'
+            '<div class="hero-text"><p class="eyebrow">Campervan &amp; motorhome campsites · Iceland</p>'
+            f'<h1 id="hero-h">Find a campsite in Iceland you can actually rely on</h1>'
+            '<p class="lede">Winter opening, prices, electricity, showers, kitchens and dump stations – every fact linked to its source and dated. If we can\'t confirm it, we say <span class="unconfirmed">Unconfirmed</span> instead of guessing.</p>'
+            + filter_form(root, action="campsites/index.html", hero=True)
+            + '<ul class="quick" aria-label="Popular searches">'
+              '<li><a href="themes/open-in-winter/index.html">Open in winter</a></li>'
+              '<li><a href="themes/dump-stations/index.html">Dump stations</a></li>'
+              + "".join(f'<li><a href="guides/{g["slug"]}/index.html">{escape(g.get("short", g["title"]))}</a></li>' for g in GUIDES[:3])
+            + "</ul></div>"
+            f'<div class="hero-map"><figure class="map-fig on-dark">{map_svg(cs, root, "Map of Iceland with all campsites on this site")}<figcaption>{map_legend()}</figcaption></figure></div>'
+            "</section>")
+    stats = (f'<ul class="stats" aria-label="Site at a glance"><li><strong>{len(cs)}</strong> campsites</li><li><strong>{n_open}</strong> confirmed open in winter</li>'
+             f'<li><strong>{n_dump}</strong> with a dump station</li><li><strong>{len(GUIDES)}</strong> guides</li></ul>')
+    how = ('<section class="how"><h2>How this site works</h2><ol class="steps">'
+           '<li><strong>Sourced.</strong> Every fact links to the campsite\'s own site or an official listing.</li>'
+           '<li><strong>Dated.</strong> Each fact shows when we last checked it.</li>'
+           '<li><strong>Honest.</strong> Vague or conflicting information is marked Call ahead or Unconfirmed.</li></ol>'
+           '<p><a href="about/index.html">Read our methodology</a></p></section>')
+    body = (hero + stats
+            + f'<h2>Guides</h2><ul class="cards guide-cards">{guides}</ul>'
+            + f'<h2>Campsites with full pages</h2>{cards(featured, root)}<p><a class="btn" href="campsites/index.html">Browse and filter all {len(cs)} campsites</a></p>'
+            + f'<h2>Browse by region</h2><ul class="cards region-cards">{regions}</ul>'
+            + f'<h2>Browse by theme</h2><ul class="cards">{themes}</ul>' + how)
+    ld = {"@context": "https://schema.org", "@type": "WebSite", "name": SITE["site_name"], "url": f"{BASE_URL}/", "inLanguage": "en"}
+    write_page("index.html", f"{SITE['site_name']} – sourced campsite facts for Iceland", SITE["tagline"], body,
+               '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>", main_cls="home")
+    # Campsites index with client-side filters (works without JS: all cards are listed)
+    idx = (crumbs("../", [("All campsites", None)])
+           + page_head("Directory", f"All campsites ({len(cs)})", "Filter by region, winter opening and facilities. Filters only match facilities a source confirms, so a site with an Unconfirmed facility is hidden when you tick that box.")
+           + filter_form("../")
+           + '<noscript><p class="callout">Filters need JavaScript. All campsites are listed below, grouped by region.</p></noscript>'
+           + f'<div class="dir"><figure class="map-fig dir-map">{map_svg(cs, "../", "Map of all campsites on this site")}<figcaption>{map_legend()}{map_credit()}{unmapped(cs, "../")}</figcaption></figure>'
+           + f'<div class="dir-list">{cards(ordered, "../", "filterable", heading="h2")}<p class="empty" id="empty" hidden>No campsite matches all of these filters. Try removing one.</p></div></div>'
+           + '<script src="../static/filter.js" defer></script>')
+    write_page("campsites/index.html", f"All campsites – filter by winter, electricity & dump station | {SITE['site_name']}",
+               "All Iceland campsites on this site. Filter by region, open in winter, electricity, showers, dump station and kitchen.", idx)
     write_page("regions/index.html", f"Regions | {SITE['site_name']}", "Iceland campsites by region.",
-               crumbs("../", [("Regions", None)]) + "<h1>Regions</h1><ul class='cards'>" + "".join(f'<li><h3><a href="{r["slug"]}/index.html">{escape(r["name"])}</a></h3><p class="meta">{escape(r["blurb"])}</p></li>' for r in SITE["regions"]) + "</ul>")
+               crumbs("../", [("Regions", None)]) + page_head("Browse", "Regions") + "<ul class='cards region-cards'>" + "".join(f'<li class="card"><h2 class="card-title"><a href="{r["slug"]}/index.html">{escape(r["name"])}</a></h2><p class="meta">{escape(r["is"])} · {sum(1 for c in cs if c["region"]==r["slug"])} campsite(s)</p><p class="meta">{escape(r["blurb"])}</p></li>' for r in SITE["regions"]) + "</ul>")
     write_page("themes/index.html", f"Themes | {SITE['site_name']}", "Iceland campsites by theme: winter opening, dump stations.",
-               crumbs("../", [("Themes", None)]) + "<h1>Themes</h1><ul class='cards'>" + "".join(f'<li><h3><a href="{t["slug"]}/index.html">{escape(t["name"])}</a></h3><p class="meta">{escape(t["blurb"])}</p></li>' for t in SITE["themes"]) + "</ul>")
+               crumbs("../", [("Themes", None)]) + page_head("Browse", "Themes") + "<ul class='cards'>" + "".join(f'<li class="card"><h2 class="card-title"><a href="{t["slug"]}/index.html">{escape(t["name"])}</a></h2><p class="meta">{escape(t["blurb"])}</p></li>' for t in SITE["themes"]) + "</ul>")
     write_page("guides/index.html", f"Guides | {SITE['site_name']}", "Guides to camping in Iceland by campervan.",
-               crumbs("../", [("Guides", None)]) + "<h1>Guides</h1><ul class='cards'>" + "".join(f'<li><h3><a href="{g["slug"]}/index.html">{escape(g["title"])}</a></h3><p class="meta">{escape(g["description"])}</p></li>' for g in GUIDES) + "</ul>")
+               crumbs("../", [("Guides", None)]) + page_head("Read", "Guides") + "<ul class='cards guide-cards'>" + "".join(guide_card(g, "../").replace("<h3", "<h2").replace("</h3>", "</h2>") for g in GUIDES) + "</ul>")
     # About
     write_page("about/index.html", f"About, sources & methodology | {SITE['site_name']}", "How this site researches Iceland campsites: sources, check dates and the Unconfirmed rule.",
-        crumbs("../", [("About, sources & methodology", None)]) + """<h1>About, sources &amp; methodology</h1>
-<p class="lede">An independent, English-language reference for campervan and motorhome travellers in Iceland. We are not affiliated with any campsite or with the official tourist board.</p>
+        crumbs("../", [("About, sources & methodology", None)]) + """<header class="page-head"><p class="eyebrow">About</p><h1>About, sources &amp; methodology</h1>
+<p class="lede">An independent, English-language reference for campervan and motorhome travellers in Iceland. We are not affiliated with any campsite or with the official tourist board.</p></header><div class="prose">
 <h2>Our rules</h2>
 <ul>
 <li><strong>Every fact has a source.</strong> Each fact on a campsite page links to the page it came from and shows the date we checked it. The site's build script will not publish a fact without a source.</li>
@@ -314,12 +494,12 @@ def render_static_pages(cs):
 </ol>
 <p>Traveller forums such as Reddit are used only as evidence of what travellers ask or report, and are always labelled as such. We never treat them as a source for a campsite's facts.</p>
 <h2>Corrections</h2>
-<p>Seasons and prices change every year. If you run a campsite and something here is out of date, the campsite's own website is always the authority. A corrections contact will be added here.</p>""")
+<p>Seasons and prices change every year. If you run a campsite and something here is out of date, the campsite's own website is always the authority. A corrections contact will be added here.</p></div>""")
     write_page("affiliate-disclosure/index.html", f"Affiliate disclosure | {SITE['site_name']}", "Affiliate and referral link disclosure.",
-        crumbs("../", [("Affiliate disclosure", None)]) + """<h1>Affiliate disclosure</h1>
+        crumbs("../", [("Affiliate disclosure", None)]) + """<header class="page-head"><p class="eyebrow">About</p><h1>Affiliate disclosure</h1></header><div class="prose">
 <p>This site may in future contain referral (affiliate) links to campervan and motorhome rental companies in Iceland. If you book through one of those links, we may earn a commission at no extra cost to you.</p>
 <p>Referral links will never affect which campsites we list or what we say about them. Campsite facts come only from the sources cited on each page.</p>
-<p><strong>Current status:</strong> the site has no affiliate links yet. When we add any, we will label them clearly where they appear.</p>""")
+<p><strong>Current status:</strong> the site has no affiliate links yet. When we add any, we will label them clearly where they appear.</p></div>""")
     # 404.html is served for any missing URL at any depth, so it must use base-path-absolute links.
     base_path = urlparse(BASE_URL).path.rstrip("/") + "/"
     write_page("404.html", f"Page not found | {SITE['site_name']}", "Page not found.",

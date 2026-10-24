@@ -80,14 +80,17 @@
   },
   "facts": {
     "electricity": {
+      "has": null,
       "value": null,
       "note": "Not stated in the sources checked."
     },
     "kitchen": {
+      "has": null,
       "value": null,
       "note": "Not stated in the sources checked."
     },
     "showers": {
+      "has": null,
       "value": null,
       "note": "Showers are not listed among the 2026 facilities (only toilets and cold water)."
     },

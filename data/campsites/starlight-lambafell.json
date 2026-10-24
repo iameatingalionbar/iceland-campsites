@@ -90,16 +90,19 @@
   },
   "facts": {
     "electricity": {
+      "has": null,
       "value": null,
       "note": "Not stated in the sources checked."
     },
     "kitchen": {
+      "has": "yes",
       "value": "Shared kitchens",
       "src": [
         "tjalda"
       ]
     },
     "showers": {
+      "has": "yes",
       "value": "Hot showers (not stated whether paid)",
       "src": [
         "tjalda"

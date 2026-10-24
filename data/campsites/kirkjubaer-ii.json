@@ -102,18 +102,21 @@
   },
   "facts": {
     "electricity": {
+      "has": "yes",
       "value": "Yes – hookups throughout (1,500 ISK/24 h)",
       "src": [
         "tjalda"
       ]
     },
     "kitchen": {
+      "has": "yes",
       "value": "Kitchen and dining area in the service building",
       "src": [
         "tjalda"
       ]
     },
     "showers": {
+      "has": "yes",
       "value": "Paid – 300 ISK for 3 minutes",
       "src": [
         "tjalda"

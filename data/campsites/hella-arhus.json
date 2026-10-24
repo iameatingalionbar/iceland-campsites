@@ -90,18 +90,21 @@
   },
   "facts": {
     "electricity": {
+      "has": "yes",
       "value": "Yes – included in the camping fee",
       "src": [
         "tjalda"
       ]
     },
     "kitchen": {
+      "has": null,
       "value": "Common area / indoor dining facility listed; cooking facilities not stated",
       "src": [
         "tjalda"
       ]
     },
     "showers": {
+      "has": "yes",
       "value": "Hot showers included in the camping fee",
       "src": [
         "tjalda"

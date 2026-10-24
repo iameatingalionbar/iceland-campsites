@@ -110,18 +110,21 @@
   },
   "facts": {
     "electricity": {
+      "has": "yes",
       "value": "Yes (1,900 ISK/night)",
       "src": [
         "tjalda"
       ]
     },
     "kitchen": {
+      "has": "yes",
       "value": "Simple cooking area and dishwashing in one service building",
       "src": [
         "tjalda"
       ]
     },
     "showers": {
+      "has": "yes",
       "value": "Paid – 400 ISK per use",
       "src": [
         "tjalda"

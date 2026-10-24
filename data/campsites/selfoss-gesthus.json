@@ -164,6 +164,7 @@
   },
   "facts": {
     "electricity": {
+      "has": "yes",
       "value": "Yes – electric hook-ups on 40 pitches in the separate RV area (1,900 ISK/night)",
       "src": [
         "own-campsite",
@@ -172,6 +173,7 @@
       ]
     },
     "kitchen": {
+      "has": "yes",
       "value": "Yes – indoor kitchen and a big dining room in the service centre",
       "src": [
         "own-campsite",
@@ -180,6 +182,7 @@
       ]
     },
     "showers": {
+      "has": "yes",
       "value": "Yes – hot showers in the service centre, with no separate shower charge listed in the 2026 prices. The geothermal hot water smells slightly of sulphur.",
       "src": [
         "own-campsite"

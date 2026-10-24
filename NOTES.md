@@ -24,7 +24,7 @@ BASE_URL=https://your-domain.is python3 build.py   # canonical URLs, sitemap, ro
 python3 check.py                       # (BASE_URL path-prefix aware) internal links/anchors, tag balance, <title>/description/canonical/viewport, sitemap
 python3 -m http.server -d dist 8000    # preview at http://localhost:8000/
 python3 make_preview.py                # standalone guide with CSS inlined -> south-coast-winter-preview.html
-/tmp/pwvenv/bin/python screenshot.py   # full-page PNG -> screenshots/south-coast-winter.png
+/tmp/pwvenv/bin/python screenshot.py [page ...]   # full-page PNGs at 390 + 1280 px -> screenshots/<page>-mobile|desktop.png (warns on horizontal overflow)
 #   (venv: python3 -m venv /tmp/pwvenv && /tmp/pwvenv/bin/pip install playwright; uses /usr/bin/google-chrome)
 ```
 
@@ -38,7 +38,10 @@ data/site.json               site name, base_url, regions (8), themes (2)
 data/campsites/<slug>.json   one file per campsite -> dist/campsites/<slug>/index.html
 data/guides/<slug>.json      editorial guides       -> dist/guides/<slug>/index.html
 templates/base.html          page shell (string.Template: $title $description $canonical $body $root ...)
-static/style.css             the only stylesheet
+static/style.css             the only stylesheet (system fonts, no web fonts, no framework)
+static/filter.js             ~1 KB progressive-enhancement filters for /campsites/ (page works fully without it)
+static/favicon.svg           inline-style SVG logo
+data/geo/iceland-outline.json  Natural Earth 50m Iceland coastline (public domain) used for the inline SVG maps
 build.py, check.py, make_preview.py, screenshot.py
 scripts/seed_south_coast_2026-10-23.py   one-off generator used for the 13 South Coast entries (kept for provenance)
 dist/                        build output (git-ignored)
@@ -72,7 +75,23 @@ A **fact** is `{"value": string|null, "src": [source keys], "note"?: string}`.
 }
 ```
 Theme filters: `open-in-winter` lists `winter.status` ∈ {open, call-ahead, partial}. `dump-stations` lists `dump_station.has == "yes"` by region, plus `nearby`.
-Guide schema: `slug, title, description, region, checked, sources{}, intro[FACT], scope_note, demand FACT, campsites[slugs], tips[FACT]`.
+Facility flags: `electricity`, `showers`, `kitchen` and `dump_station` carry `"has": "yes|no|nearby|null"`. The card chips and the
+/campsites/ filters use ONLY these flags (null = Unconfirmed, and a ticked filter hides it). Set `has` only from the sourced value.
+Guide schema: `slug, title, short?, description, region, checked, sources{}, intro[FACT], scope_note, demand FACT, campsites[slugs],
+tips[FACT], tips_title?, table? ("winter"|"overview"|"dump"), table_caption?, glance_title?, warning?, sections?[{id,title,paras[FACT],items[FACT]}]`.
+
+## Design (2026-10-24 overhaul)
+- Mobile-first, one stylesheet, system font stack, inline SVG only (logo, map, icons). No web fonts, no images, so no layout shift
+  (map SVGs have a fixed viewBox + CSS aspect-ratio).
+- Status badges: Open in winter (green) / Call ahead (amber) / Shoulder season only (orange) / Closed in winter (red) / Unconfirmed (purple).
+- Maps: inline SVG of the Natural Earth outline with equirectangular projection (build.py `proj()`); markers only for campsites with
+  `location.lat/lon` + `coords_src`. No tile server, no Leaflet. Each campsite page links to OpenStreetMap + Google Maps at the sourced coords.
+- **Campsites without sourced coordinates (not on maps):** smaratun-fljotshlid (not found in tjalda API search 2026-10-24).
+- Tables: `table.facts` and guide tables (`table.stack`) stack into label/value cards under 40rem (td `data-label`), scroll
+  horizontally 40–64rem, and fit with a sticky header at ≥64rem.
+- /campsites/ filters: region, winter, electricity, showers, dump station, kitchen, name search (diacritic-insensitive); state in the
+  URL (`?region=south&winter=open&dump=yes`), so the home hero form (GET to /campsites/) and shareable links work. Without JS the
+  form stays hidden and every card is listed.
 Guide tables pull each campsite's winter/electricity/dump/adult price straight from the campsite files, so update the campsite file, not the guide.
 
 Status rules: `open` = an official or own source says it is open through winter, with no conflicting source. `call-ahead` = listed as winter-open but the wording is vague or sources conflict. `partial` = shoulder season (e.g. to Nov/Dec, or from March). `closed` = published season ends before winter.
@@ -133,7 +152,7 @@ starlight-lambafell, skogafoss, farmhouse-lodge-skeidflot, vik-camping, kirkjuba
 Nothing signed up, no links placed. The affiliate disclosure page is a placeholder. Options to review:
 | program | url | stated terms (from their page, not verified further) |
 |---|---|---|
-| Go Campers | https://www.gocampers.is/partner-with-us/ | 5% commission, ~$120 average commission per booking, 5-month cookie |
+| Go Campers | https://www.gocampers.is/partner-with-us/ | 5% commission, ~$120 average commission per booking, 5-month cookie, 25% reader discount. 2026-10-24: Stefán sent an application email to go@gorentals.is from athafnamadurinn@mail.grokbot.com; awaiting reply |
 | Campervan Iceland | https://www.campervaniceland.com/affiliate-program | terms not reviewed yet |
 | Camper Rental Iceland | https://www.camperrentaliceland.com/affiliates | terms not reviewed yet |
 

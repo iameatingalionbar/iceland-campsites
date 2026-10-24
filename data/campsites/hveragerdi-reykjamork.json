@@ -97,18 +97,21 @@
   },
   "facts": {
     "electricity": {
+      "has": "yes",
       "value": "Yes (1,500 ISK/night)",
       "src": [
         "tjalda"
       ]
     },
     "kitchen": {
+      "has": "yes",
       "value": "Listed: cooking facilities; outdoor shelter with hot/cold water for dishes and large barbecues",
       "src": [
         "tjalda"
       ]
     },
     "showers": {
+      "has": "yes",
       "value": "Yes – in the service house; not stated whether paid",
       "src": [
         "tjalda"

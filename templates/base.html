@@ -6,37 +6,43 @@
 <title>$title</title>
 <meta name="description" content="$description">
 <link rel="canonical" href="$canonical">
+<meta name="theme-color" content="#0b2f45">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="$site_name">
 <meta property="og:title" content="$title">
 <meta property="og:description" content="$description">
 <meta property="og:url" content="$canonical">
 <meta name="robots" content="$robots">
-$head_extra
+<link rel="icon" href="${root}static/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="${root}static/style.css">
+$head_extra
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
-<header class="site"><div class="wrap">
-<a class="brand" href="${root}index.html">$site_name</a>
+<header class="site"><div class="wrap bar">
+<a class="brand" href="${root}index.html"><svg class="logo" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#f2b33d"/><path d="M4 24 13 9l5 8 3-4 7 11z" fill="#0b2f45"/><path d="M13 9l2.6 4.3L13 12l-2.4 1.6z" fill="#fff"/></svg><span>Iceland Campsites <span class="brand-sub">for Campervans</span></span></a>
 <nav class="main" aria-label="Main"><ul>
+<li><a href="${root}campsites/index.html">Campsites</a></li>
+<li><a href="${root}guides/index.html">Guides</a></li>
 <li><a href="${root}regions/index.html">Regions</a></li>
 <li><a href="${root}themes/index.html">Themes</a></li>
-<li><a href="${root}guides/index.html">Guides</a></li>
-<li><a href="${root}campsites/index.html">All campsites</a></li>
-<li><a href="${root}about/index.html">About &amp; sources</a></li>
+<li><a href="${root}about/index.html">About</a></li>
 </ul></nav>
 </div></header>
-<main id="content"><div class="wrap">
+<main id="content" class="$main_cls"><div class="wrap">
 $body
 </div></main>
-<footer class="site"><div class="wrap">
-<p>Every fact on this site links to its source and shows the date it was checked. Campsite seasons, prices and facilities change, so confirm with the campsite before you travel. Anything we could not confirm is marked <span class="unconfirmed">Unconfirmed</span>.</p>
+<footer class="site"><div class="wrap foot">
+<div><p class="foot-brand">Iceland Campsites for Campervans</p>
+<p>Every fact on this site links to its source and shows the date it was checked. Seasons, prices and facilities change, so confirm with the campsite before you travel. Anything we could not confirm is marked <span class="unconfirmed">Unconfirmed</span>.</p></div>
 <ul>
+<li><a href="${root}campsites/index.html">All campsites</a></li>
+<li><a href="${root}guides/index.html">Guides</a></li>
 <li><a href="${root}about/index.html">About, sources &amp; methodology</a></li>
 <li><a href="${root}affiliate-disclosure/index.html">Affiliate disclosure</a></li>
 <li><a href="${root}sitemap.xml">Sitemap</a></li>
 </ul>
-<p>Site built $build_date.</p>
+<p class="meta">Site built $build_date. Independent; not affiliated with any campsite.</p>
 </div></footer>
 </body>
 </html>

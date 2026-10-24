@@ -102,18 +102,21 @@
   },
   "facts": {
     "electricity": {
+      "has": "yes",
       "value": "Yes (2,000 ISK/night)",
       "src": [
         "tjalda"
       ]
     },
     "kitchen": {
+      "has": "no",
       "value": "No shared kitchen or dining room for campsite guests in winter; Hygge Restaurant & Bar open daily 18:00–21:30",
       "src": [
         "tjalda"
       ]
     },
     "showers": {
+      "has": "yes",
       "value": "Winter bathhouse showers at no extra charge",
       "src": [
         "tjalda"

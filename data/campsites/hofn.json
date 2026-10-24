@@ -105,6 +105,7 @@
   },
   "facts": {
     "electricity": {
+      "has": "yes",
       "value": "Yes – specific spots for mobile homes, good access to electricity",
       "src": [
         "ferdalag-hofn",
@@ -112,12 +113,14 @@
       ]
     },
     "kitchen": {
+      "has": "yes",
       "value": "Cooking facilities",
       "src": [
         "ferdalag-hofn"
       ]
     },
     "showers": {
+      "has": "yes",
       "value": "Shower listed (not stated whether paid)",
       "src": [
         "tjalda"

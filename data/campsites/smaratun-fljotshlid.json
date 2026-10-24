@@ -77,18 +77,21 @@
   },
   "facts": {
     "electricity": {
+      "has": "yes",
       "value": "Yes",
       "src": [
         "own"
       ]
     },
     "kitchen": {
+      "has": "yes",
       "value": "Common kitchen",
       "src": [
         "own"
       ]
     },
     "showers": {
+      "has": "yes",
       "value": "Yes (not stated whether paid)",
       "src": [
         "own"

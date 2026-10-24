@@ -70,18 +70,21 @@
   },
   "facts": {
     "electricity": {
+      "has": "yes",
       "value": "Yes",
       "src": [
         "own"
       ]
     },
     "kitchen": {
+      "has": null,
       "value": "Dining facilities",
       "src": [
         "own"
       ]
     },
     "showers": {
+      "has": "yes",
       "value": "Yes (not stated whether paid)",
       "src": [
         "own"
