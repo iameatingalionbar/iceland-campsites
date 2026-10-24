@@ -3,41 +3,58 @@
   "name": "Selfoss Campsite – Gesthús",
   "region": "south",
   "town": "Selfoss",
-  "completeness": "stub",
-  "checked": "2026-10-23",
+  "completeness": "full",
+  "checked": "2026-10-24",
   "sources": {
     "own": {
       "title": "Gesthús Selfoss – home page",
-      "url": "https://www.gesthus.is/",
-      "checked": "2026-10-23"
+      "url": "https://gesthus.is/",
+      "checked": "2026-10-24"
     },
     "tjalda": {
       "title": "Tjalda.is – Selfoss – Gesthús listing (2026 rates & services)",
       "url": "https://tjalda.is/en/campsite/gesthus",
-      "checked": "2026-10-23"
+      "checked": "2026-10-24"
     },
     "ferdalag-winter": {
       "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
       "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
-      "checked": "2026-10-23"
+      "checked": "2026-10-24"
     },
     "visiticeland-winter": {
       "title": "Visit Iceland – Camper winter service in South Iceland",
       "url": "https://www.visiticeland.com/things-to-do/south/accommodation/camper-winter-service/",
-      "checked": "2026-10-23"
+      "checked": "2026-10-24"
+    },
+    "own-campsite": {
+      "title": "Gesthús Selfoss – Campsite & RV park (prices 2026, facilities, rules)",
+      "url": "https://gesthus.is/campsite/",
+      "checked": "2026-10-24"
+    },
+    "own-faq": {
+      "title": "Gesthús Selfoss – Questions & Contact (FAQ)",
+      "url": "https://gesthus.is/questions-contact/",
+      "checked": "2026-10-24"
+    },
+    "utilegukort": {
+      "title": "Útilegukortið (Camping Card) – Opening dates of participating camping sites 2026",
+      "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en",
+      "checked": "2026-10-24"
     }
   },
   "intro": {
-    "value": "A family-run campsite and RV park in the centre of Selfoss, the largest town in South Iceland, open all year with an indoor kitchen and dining room.",
+    "value": "A family-run campsite and RV park tucked among tall trees in the centre of Selfoss, the largest town in South Iceland. It is open all year, needs no booking for individual travellers, and has a heated service centre with a kitchen, a big dining room and hot showers, plus 40 electric hook-up pitches and a chemical toilet disposal point.",
     "src": [
       "own",
-      "tjalda"
+      "own-campsite",
+      "own-faq"
     ]
   },
   "location": {
     "address": {
       "value": "Engjavegur 56, 800 Selfoss",
       "src": [
+        "own-campsite",
         "tjalda",
         "ferdalag-winter"
       ]
@@ -49,24 +66,28 @@
     ]
   },
   "season": {
-    "value": "Open all year round (campsite and RV park)",
+    "value": "Open all year round (campsite and RV park); no pre-booking for individuals, groups should email ahead",
     "src": [
       "own",
+      "own-campsite",
       "tjalda"
     ]
   },
   "winter": {
     "status": "open",
-    "value": "Open all year. The service centre is open until 20:00 in winter (22:00 in summer).",
+    "value": "Open all year. The service centre (reception, kitchen, showers) is open until 20:00 in winter and 22:00 in summer; if you arrive after closing you can set up and register and pay the next morning.",
     "src": [
       "own",
-      "visiticeland-winter"
+      "own-faq",
+      "visiticeland-winter",
+      "ferdalag-winter"
     ]
   },
   "prices": {
     "applies_to": {
-      "value": "2026 rates",
+      "value": "2026 rates (pay at the service centre)",
       "src": [
+        "own-campsite",
         "tjalda"
       ]
     },
@@ -76,6 +97,7 @@
         "label": "Adult per night",
         "value": "3,000 ISK",
         "src": [
+          "own-campsite",
           "tjalda"
         ]
       },
@@ -83,6 +105,15 @@
         "label": "Senior per night",
         "value": "2,500 ISK",
         "src": [
+          "own-campsite",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Children 13–17 per night",
+        "value": "1,500 ISK",
+        "src": [
+          "own-campsite",
           "tjalda"
         ]
       },
@@ -94,88 +125,157 @@
         ]
       },
       {
-        "label": "Children 13–17",
-        "value": "1,500 ISK",
-        "src": [
-          "tjalda"
-        ]
-      },
-      {
-        "label": "Electricity per night",
+        "label": "Electricity per night (RV)",
         "value": "1,900 ISK",
         "src": [
+          "own-campsite",
           "tjalda"
         ]
       },
       {
-        "label": "Accommodation tax per unit per night",
+        "label": "Lodging (accommodation) tax per unit per night",
         "value": "400 ISK",
         "src": [
+          "own-campsite",
           "tjalda"
         ]
       },
       {
-        "label": "Vehicle",
+        "label": "Hot tub",
+        "value": "500 ISK",
+        "src": [
+          "own-campsite"
+        ],
+        "note": "Per use or per person is not stated."
+      },
+      {
+        "label": "Parking",
+        "value": "Free for all guests",
+        "src": [
+          "own-campsite"
+        ]
+      },
+      {
+        "label": "Washer & dryer",
         "value": null,
-        "note": "No separate vehicle fee listed."
+        "note": "Available 'for a small fee'; the amount is not published."
       }
     ]
   },
   "facts": {
     "electricity": {
-      "value": "Yes – separate area for motorhomes and folding campers with electricity (1,900 ISK/night)",
+      "value": "Yes – electric hook-ups on 40 pitches in the separate RV area (1,900 ISK/night)",
       "src": [
+        "own-campsite",
+        "own-faq",
         "tjalda"
       ]
     },
     "kitchen": {
-      "value": "Yes – service centre with kitchen and a big dining room",
+      "value": "Yes – indoor kitchen and a big dining room in the service centre",
       "src": [
-        "own",
+        "own-campsite",
+        "own-faq",
         "tjalda"
       ]
     },
     "showers": {
-      "value": "Hot showers in the service centre; not stated whether included",
+      "value": "Yes – hot showers in the service centre, with no separate shower charge listed in the 2026 prices. The geothermal hot water smells slightly of sulphur.",
       "src": [
-        "own"
+        "own-campsite"
       ]
     },
     "toilets": {
-      "value": "Yes",
+      "value": "Yes – WC in the service centre",
       "src": [
-        "own"
+        "own-campsite",
+        "own-faq"
       ]
     },
     "wifi": {
-      "value": "Free WiFi",
+      "value": "Free Wi-Fi in public areas",
       "src": [
-        "tjalda"
+        "own-campsite",
+        "own-faq"
       ]
     },
     "laundry": {
-      "value": "Washing machine and tumble dryer for a small fee",
+      "value": "Washing machine, tumble dryer and shoe dryer on site (small fee)",
       "src": [
-        "tjalda"
+        "own-campsite",
+        "own-faq"
       ]
     },
     "camping_card": {
-      "value": null,
-      "note": "Not stated in the sources checked."
+      "value": "No – Selfoss/Gesthús is not among the campsites in the Útilegukortið (Camping Card) 2026 list.",
+      "src": [
+        "utilegukort"
+      ]
     },
     "contact": {
-      "value": "+354 482 3585 · gesthus@gesthus.is · gesthus.is",
+      "value": "Engjavegur 56, 800 Selfoss · +354 482 3585 · gesthus@gesthus.is · gesthus.is",
       "src": [
-        "tjalda"
+        "own-campsite"
       ]
     },
     "dump_station": {
       "has": "yes",
-      "value": "Yes – 'waste disposal and other facilities for mobile homes'",
+      "value": "Yes – chemical disposal point for motorhome/cassette toilets, plus drinking-water fill; tjalda.is also lists emptying of water tanks",
       "src": [
+        "own-campsite",
+        "own-faq",
         "tjalda"
       ]
     }
   },
-  "practical": []
+  "practical": [
+    {
+      "value": "No reservations needed for individuals. Register and pay at the service centre before setting up; if staff have to collect payment at your pitch, an extra service fee applies.",
+      "src": [
+        "own-campsite",
+        "own-faq"
+      ]
+    },
+    {
+      "value": "Arriving after the service centre closes is fine: set up and pay the next morning. Check-out from the campsite and RV park is before 12:00.",
+      "src": [
+        "own-faq"
+      ]
+    },
+    {
+      "value": "Quiet hours are 00:00–07:00, with no unnecessary vehicle traffic in that window. Open fires are not allowed.",
+      "src": [
+        "own-campsite"
+      ]
+    },
+    {
+      "value": "Breakfast is sold in the service centre 08:00–10:00 every day, along with coffee, soft drinks, beer and wine.",
+      "src": [
+        "tjalda",
+        "own-campsite"
+      ]
+    },
+    {
+      "value": "About 5 minutes' walk to the swimming pool and a large playground, and about 10 minutes to the town centre with supermarkets, restaurants and the post office.",
+      "src": [
+        "own-campsite"
+      ]
+    },
+    {
+      "value": "Tents and motorhomes/folding campers use two separate areas; the electric pitches are in the RV area.",
+      "src": [
+        "tjalda"
+      ]
+    },
+    {
+      "value": "Tap water is drinkable: let the cold tap run a moment so it isn't mixed with the sulphur-scented geothermal hot water.",
+      "src": [
+        "own-campsite"
+      ]
+    }
+  ],
+  "alt_names": [
+    "Gesthús Selfossi",
+    "Tjaldsvæðið Selfossi"
+  ]
 }

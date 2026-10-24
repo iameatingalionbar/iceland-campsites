@@ -90,7 +90,7 @@ A nightly run should take the first `todo` (or `stub` → full) row by prio, res
 | B01 | 1 | done | guide | south-coast-winter-campsites | Campsites Open in Winter on Iceland's South Coast (2026–27) | south | top winter question (Reddit) | ferdalag winter list, tjalda |
 | B02 | 1 | done | campsite | reykjavik-eco-campsite | Reykjavík Eco-Campsite | capital-area | flagship, open all year | reykjavikcampsite.is |
 | B03 | 1 | done | campsite | skaftafell | Skaftafell Campground (full page) | south | only winter site Vík–Höfn | vatnajokulsthjodgardur.is |
-| B04 | 1 | stub | campsite | selfoss-gesthus | Selfoss Gesthús (full page) | south | open all year, kitchen | gesthus.is |
+| B04 | 1 | done | campsite | selfoss-gesthus | Selfoss Gesthús (full page) | south | open all year, kitchen | gesthus.is |
 | B05 | 1 | stub | campsite | hellisholar | Hellishólar (full page; dump?) | south | winter area G | hellisholar.is |
 | B06 | 1 | todo | guide | dump-stations-iceland | Where to empty a cassette toilet in Iceland (by region) | all | dump-station theme hub needs data | uos.is disposal list, icetourist.is |
 | B07 | 1 | todo | campsite | sandgerdi-airport-camping | Sandgerði / airport-area campsite | reykjanes | first/last night near KEF, all year | tjalda |
@@ -145,6 +145,9 @@ Nothing signed up, no links placed. The affiliate disclosure page is a placehold
 - Contacting campsites to fill Unconfirmed cells (email/phone) needs your approval.
 
 ## CHANGELOG
+- 2026-10-24: Selfoss – Gesthús upgraded to a full page (own campsite page with 2026 prices incl. hot tub 500 ISK and free parking,
+  40 electric pitches, chemical disposal + drinking water, FAQ: no booking for individuals, late arrival pay next morning,
+  check-out 12:00; not on the 2026 Camping Card list). Unconfirmed: laundry fee amount, child-under-12 price only on tjalda.
 - 2026-10-23: Skaftafell upgraded to a full page (official VJP price list 2026, winter zones A/C, Visitor Centre hours,
   regional parking fee; whether campers pay the parking fee and the dump point location are Unconfirmed / reported only by tjalda).
 - 2026-10-23: Hosting: GitHub Pages at https://iameatingalionbar.github.io/iceland-campsites/. Added `deploy.sh` and
