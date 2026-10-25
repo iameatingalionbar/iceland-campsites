@@ -110,7 +110,7 @@ A nightly run should take the first `todo` (or `stub` → full) row by prio, res
 | B02 | 1 | done | campsite | reykjavik-eco-campsite | Reykjavík Eco-Campsite | capital-area | flagship, open all year | reykjavikcampsite.is |
 | B03 | 1 | done | campsite | skaftafell | Skaftafell Campground (full page) | south | only winter site Vík–Höfn | vatnajokulsthjodgardur.is |
 | B04 | 1 | done | campsite | selfoss-gesthus | Selfoss Gesthús (full page) | south | open all year, kitchen | gesthus.is |
-| B05 | 1 | stub | campsite | hellisholar | Hellishólar (full page; dump?) | south | winter area G | hellisholar.is |
+| B05 | 1 | done | campsite | hellisholar | Hellishólar (full page; dump?) | south | winter area G | hellisholar.is |
 | B06 | 1 | done | guide | dump-stations-iceland | Where to empty a cassette toilet in Iceland (by region) | all | dump-station theme hub needs data | uos.is disposal list, icetourist.is |
 | B07 | 1 | stub | campsite | sandgerdi-airport-camping | Sandgerði / airport-area campsite | reykjanes | first/last night near KEF, all year | tjalda |
 | B08 | 1 | todo | campsite | hamrar-akureyri | Hamrar, Akureyri | north-east | all year | tjalda, hamrar.is |
@@ -137,7 +137,7 @@ A nightly run should take the first `todo` (or `stub` → full) row by prio, res
 | B29 | 3 | todo | campsite | myllulaekur | Myllulækur (Nesjar) | south | to late Oct, weather permitting | tjalda |
 | B30 | 3 | todo | campsite | vestrahorn-stokksnes | Vestrahorn / Stokksnes camping | south | photo spot | tjalda |
 | B31 | 3 | todo | guide | camping-card-2026 | Is the Camping Card (Útilegukortið) worth it in 2026? | all | demand | utilegukortid.is |
-| B32 | 3 | todo | task | south-coast-stubs-dump | Confirm dump/electricity for Starlight, Farmhouse Lodge, Smáratún, Hellishólar, Kirkjubær | south | Unconfirmed cells in guide B01 | email/phone needs Stefán's OK |
+| B32 | 3 | todo | task | south-coast-stubs-dump | Confirm dump/electricity for Starlight, Farmhouse Lodge, Smáratún, Kirkjubær (Hellishólar: dump listed on Parka 2026-10-25, location/cassette use still unconfirmed) | south | Unconfirmed cells in guide B01 | email/phone needs Stefán's OK |
 | B33 | 1 | todo | guide | winter-campsites-iceland | Campsites Open in Winter in Iceland (all regions, 2026–27) | all | KEYWORDS #1, hub for regional winter guides | Visit Iceland camper winter service, ferdalag winter list, tjalda |
 | B34 | 1 | todo | guide | campsites-near-reykjavik | Campsites near Reykjavík (city, Mosfellsdalur, Hafnarfjörður) | capital-area | KEYWORDS #4 | tjalda, reykjavikcampsite.is |
 | B35 | 1 | todo | guide | north-iceland-winter-campsites | Winter campsites around Akureyri and Mývatn | north-east | KEYWORDS #5 | tjalda, visitakureyri.is, northiceland.is camper winter service |
@@ -182,7 +182,7 @@ Nothing signed up, no links placed. The affiliate disclosure page is a placehold
 | CampervanPlanet | https://www.campervanplanet.com/affiliate-program | 30% of net profit, up to 50%; self-signup |
 | Discover Cars | https://www.discovercars.com/affiliate | 70% of profit + 30% Full Coverage, ~$20/booking, 365-day cookie; direct or via Travelpayouts |
 | Lava Car Rental | https://affiliate.lavacarrental.is/ | 5% + 5% reader discount, 30-day; min payout 50,000 ISK |
-| GetYourGuide / Viator | partner.getyourguide.support / partnerresources.viator.com | 8% each, 31 / 30-day cookie |
+| GetYourGuide / Viator | partner.getyourguide.support / partnerresources.viator.com | 8% each, 31 / 30-day cookie  2026-10-24 22:02 (Reykjavik): GetYourGuide sent an account-activation email to athafnamadurinn@mail.grokbot.com (someone signed up for the Partner Program with that address; not done by this agent per records). Activation link valid 24h; not clicked. Awaiting Stefán. 2026-10-24 22:04 (Reykjavik): Viator sent a "Verify your email address" email for a new Viator Partner account at athafnamadurinn@mail.grokbot.com (verification link to partners.viator.com; not clicked, not done by this agent). Awaiting Stefán. 2026-10-24 22:33 (Reykjavik): Viator sent a reminder "Stefán Atli, please verify your Viator account" (Partner Program signup, verify button; not clicked). Same pending verification, no new terms. |
 | Airalo (eSIM) | https://www.airalo.com/m/resources/airalo-affiliate-program | 10% via Impact |
 
 ## Decisions for Stefán (nothing bought)
@@ -193,6 +193,11 @@ Nothing signed up, no links placed. The affiliate disclosure page is a placehold
 - Contacting campsites to fill Unconfirmed cells (email/phone) needs your approval.
 
 ## CHANGELOG
+- 2026-10-25: Hellishólar (Fljótshlíð) upgraded to a full page (2026 rates from tjalda + Parka: adult 3,500, senior 2,800,
+  electricity 2,000, tax 400; winter = area G only, no shared kitchen; up to 40 electric pitches; Wi-Fi, laundry, dogs on leash;
+  dump listed only as Parka facility tag 'Seyrulosun' → has=yes with "ask at reception"; not on Camping Card 2026 list).
+  Conflicts noted on page: own Camping page shows older rates (2,600/1,700/333), Parka text says electricity 1,900, postcode 850 vs 861,
+  Parka says online booking not activated. Nothing awaiting Stefán from this run.
 - 2026-10-24: AFFILIATES.md – ~35 further affiliate/referral programs researched (Iceland rentals, aggregators, insurance, eSIM,
   activities, accommodation, gear, Camping Card, networks). Camping Card has no partner programme. GitHub Pages commercial-use
   policy flagged. Top picks added to Monetization. Nothing signed up or emailed.

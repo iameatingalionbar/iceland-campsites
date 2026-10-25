@@ -1,30 +1,61 @@
 {
   "slug": "hellisholar",
   "name": "Hellishólar Campsite (Fljótshlíð)",
+  "alt_names": [
+    "Tjaldsvæðið Hellishólum",
+    "Hellishólar Travel Service"
+  ],
   "region": "south",
   "town": "Hellishólar, Fljótshlíð",
-  "completeness": "stub",
-  "checked": "2026-10-23",
+  "completeness": "full",
+  "checked": "2026-10-25",
   "sources": {
+    "own-camping": {
+      "title": "Hellishólar – Camping page (rates shown there are older than 2026; page last updated Feb 2025)",
+      "url": "https://hellisholar.is/camping/",
+      "checked": "2026-10-25"
+    },
+    "own-is": {
+      "title": "Hellishólar – Icelandic home page",
+      "url": "https://hellisholar.is/is/",
+      "checked": "2026-10-25"
+    },
+    "own-contact": {
+      "title": "Hellishólar – Contact",
+      "url": "https://hellisholar.is/contact/",
+      "checked": "2026-10-25"
+    },
     "tjalda": {
       "title": "Tjalda.is – Hellishólar, Fljótshlíð listing (2026 rates & services)",
       "url": "https://tjalda.is/en/campsite/hellisholar",
-      "checked": "2026-10-23"
+      "checked": "2026-10-25"
     },
-    "visiticeland-winter": {
-      "title": "Visit Iceland – Camper winter service in South Iceland",
-      "url": "https://www.visiticeland.com/things-to-do/south/accommodation/camper-winter-service/",
-      "checked": "2026-10-23"
+    "parka": {
+      "title": "Parka.is – Tjaldsvæðið Hellishólum Fljótshlíð (price list & facility list)",
+      "url": "https://parka.is/camping/hellisholar/",
+      "checked": "2026-10-25"
     },
     "ferdalag-winter": {
       "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
       "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
-      "checked": "2026-10-23"
+      "checked": "2026-10-25"
+    },
+    "visiticeland-winter": {
+      "title": "Visit Iceland – Camper winter service in South Iceland",
+      "url": "https://www.visiticeland.com/things-to-do/south/accommodation/camper-winter-service/",
+      "checked": "2026-10-25"
+    },
+    "utilegukort": {
+      "title": "Útilegukortið (Camping Card) – Opening dates of participating camping sites 2026",
+      "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en",
+      "checked": "2026-10-25"
     }
   },
   "intro": {
-    "value": "A golf-and-hotel complex in the Fljótshlíð countryside, about 10 km from Hvolsvöllur, that keeps one camping area (G) open in winter. Age limit 25 unless travelling with family.",
+    "value": "A countryside campsite around the Þverárvöllur 9-hole golf course and the Hellishólavatn fishing lake in Fljótshlíð, about 10 km from Hvolsvöllur. It is open all year with electric hook-ups for up to 40 caravans and motorhomes, two bathhouses, laundry, a big children's playground, a hotel, cottages and the Hygge Restaurant & Bar. In winter only area G, by the reception and restaurant, is open, and there is no shared guest kitchen. Age limit 25 unless travelling with family.",
     "src": [
+      "own-camping",
+      "own-is",
       "tjalda"
     ]
   },
@@ -32,8 +63,10 @@
     "address": {
       "value": "Hellishólar, 861 Hvolsvöllur",
       "src": [
-        "ferdalag-winter"
-      ]
+        "ferdalag-winter",
+        "parka"
+      ],
+      "note": "Tjalda.is gives postcode 850; ferdalag.is and Parka.is give 861."
     },
     "lat": 63.724877,
     "lon": -20.038818,
@@ -42,23 +75,30 @@
     ]
   },
   "season": {
-    "value": "Open year-round",
+    "value": "Open all year round",
     "src": [
-      "tjalda"
+      "own-is",
+      "tjalda",
+      "parka"
     ]
   },
   "winter": {
     "status": "open",
-    "value": "Open year-round. In winter only area G (by the reception and restaurant) is open, and there is no shared kitchen or dining room for campers. Book and pay before pitching ('Book First Then Camp').",
+    "value": "Open all year. In winter only area G (next to the reception and restaurant) is open to campers; the bathhouse there has toilets and showers at no extra charge, but there is no shared kitchen or dining room. Listed in the official camper winter service lists for South Iceland. Book and pay before you pitch ('Book First Then Camp').",
     "src": [
-      "tjalda"
+      "tjalda",
+      "parka",
+      "ferdalag-winter",
+      "visiticeland-winter"
     ]
   },
   "prices": {
     "applies_to": {
-      "value": "2026 rates",
+      "value": "2026 rates (tjalda.is and Parka.is price lists). The campsite's own Camping page still shows older, lower rates (2,600 ISK per person, electricity 1,700 ISK, lodging tax 333 ISK), so check when you pay.",
       "src": [
-        "tjalda"
+        "tjalda",
+        "parka",
+        "own-camping"
       ]
     },
     "currency": "ISK",
@@ -67,35 +107,51 @@
         "label": "Adult per night",
         "value": "3,500 ISK",
         "src": [
-          "tjalda"
+          "tjalda",
+          "parka"
         ]
       },
       {
-        "label": "Senior (67+)",
+        "label": "Senior (67+) per night",
         "value": "2,800 ISK",
         "src": [
-          "tjalda"
-        ]
+          "tjalda",
+          "parka"
+        ],
+        "note": "Parka.is also says seniors and disability card holders get 20% off."
       },
       {
         "label": "Children 13 and under",
         "value": "Free",
         "src": [
-          "tjalda"
+          "tjalda",
+          "parka",
+          "own-camping"
         ]
       },
       {
         "label": "Electricity per night",
         "value": "2,000 ISK",
         "src": [
-          "tjalda"
+          "tjalda",
+          "parka"
+        ],
+        "note": "Parka.is's description text says 1,900 ISK when paid with Parka; its price table says 2,000 ISK."
+      },
+      {
+        "label": "Accommodation (lodging) tax per unit per night",
+        "value": "400 ISK",
+        "src": [
+          "tjalda",
+          "parka"
         ]
       },
       {
-        "label": "Accommodation tax per unit per night",
-        "value": "400 ISK",
+        "label": "Showers",
+        "value": "Included (no extra charge)",
         "src": [
-          "tjalda"
+          "tjalda",
+          "own-camping"
         ]
       }
     ]
@@ -103,56 +159,111 @@
   "facts": {
     "electricity": {
       "has": "yes",
-      "value": "Yes (2,000 ISK/night)",
+      "value": "Yes – hook-ups for up to 40 caravans/motorhomes (2,000 ISK/night)",
       "src": [
-        "tjalda"
+        "own-is",
+        "tjalda",
+        "parka"
       ]
     },
     "kitchen": {
       "has": "no",
-      "value": "No shared kitchen or dining room for campsite guests in winter; Hygge Restaurant & Bar open daily 18:00–21:30",
+      "value": "No shared kitchen or dining room for campers (stated in the winter information). Parka.is lists a dishwashing facility. Hygge Restaurant & Bar is open daily 18:00–21:30.",
       "src": [
-        "tjalda"
+        "tjalda",
+        "parka"
       ]
     },
     "showers": {
       "has": "yes",
-      "value": "Winter bathhouse showers at no extra charge",
+      "value": "Yes – two bathhouses with showers, included in the price; in winter the bathhouse by area G is open",
       "src": [
+        "own-camping",
         "tjalda"
       ]
     },
     "toilets": {
-      "value": "Yes",
+      "value": "Yes – toilets for men and women in the bathhouses",
       "src": [
-        "tjalda"
-      ]
-    },
-    "wifi": {
-      "value": null,
-      "note": "Not stated in the sources checked."
-    },
-    "laundry": {
-      "value": "Washing machines and dryers listed",
-      "src": [
-        "tjalda"
-      ]
-    },
-    "camping_card": {
-      "value": null,
-      "note": "Not stated in the sources checked."
-    },
-    "contact": {
-      "value": "+354 487 8360 · hellisholar@hellisholar.is · hellisholar.is",
-      "src": [
+        "own-camping",
         "tjalda"
       ]
     },
     "dump_station": {
-      "has": null,
-      "value": null,
-      "note": "Not stated in the sources checked."
+      "has": "yes",
+      "value": "Listed: Parka.is includes 'Seyrulosun' (waste/grey-water disposal) among the facilities. Where it is and whether it takes cassette toilets is not stated, so ask at reception.",
+      "src": [
+        "parka"
+      ]
+    },
+    "wifi": {
+      "value": "Wi-Fi listed among the facilities",
+      "src": [
+        "parka"
+      ]
+    },
+    "laundry": {
+      "value": "Washing machines and dryers",
+      "src": [
+        "own-camping",
+        "tjalda",
+        "parka"
+      ]
+    },
+    "camping_card": {
+      "value": "No – Hellishólar is not on the Útilegukortið (Camping Card) 2026 list of participating campsites.",
+      "src": [
+        "utilegukort"
+      ]
+    },
+    "contact": {
+      "value": "+354 487 8360 · hellisholar@hellisholar.is · hellisholar.is",
+      "src": [
+        "own-contact",
+        "tjalda"
+      ]
     }
   },
-  "practical": []
+  "practical": [
+    {
+      "value": "Book and pay before setting up (tjalda.is says via parka.is or hellisholar.is). On 2026-10-25 the Parka.is page said online booking for this campsite had not been activated, so you may need to book via hellisholar.is or call +354 487 8360.",
+      "src": [
+        "tjalda",
+        "parka"
+      ]
+    },
+    {
+      "value": "Age limit 25 years unless you travel as a family with children.",
+      "src": [
+        "tjalda",
+        "parka"
+      ]
+    },
+    {
+      "value": "Security cameras cover the reception and restaurant building.",
+      "src": [
+        "tjalda"
+      ]
+    },
+    {
+      "value": "Fishing in Hellishólavatn lake and the 9-hole Þverárvöllur golf course are on site; there is also a playground with a bouncy pillow.",
+      "src": [
+        "own-camping",
+        "tjalda",
+        "parka"
+      ]
+    },
+    {
+      "value": "The site also has a 36-room hotel and 24 cottages, handy if the weather turns.",
+      "src": [
+        "tjalda"
+      ]
+    },
+    {
+      "value": "Dogs on a leash are allowed.",
+      "src": [
+        "parka"
+      ]
+    }
+  ]
 }
