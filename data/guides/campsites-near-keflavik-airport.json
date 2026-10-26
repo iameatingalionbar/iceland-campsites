@@ -21,12 +21,13 @@
       ]
     },
     {
-      "value": "In winter, Sandgerði, Garðskagi and Vogar are listed as open all year. Happy Campsite Keflavík's season is 1 May – 1 October.",
+      "value": "In winter, Sandgerði, Garðskagi and Vogar are listed as open all year (for Sandgerði, Parka.is's dates start on 9 January, so ring ahead in deep winter). Happy Campsite Keflavík's season is 1 May – 1 October.",
       "src": [
         "sandgerdi-airport-camping:tjalda",
         "gardskagi:tjalda",
         "vogar-reykjanes:own",
-        "happy-campsite-keflavik:tjalda"
+        "happy-campsite-keflavik:tjalda",
+        "sandgerdi-airport-camping:parka"
       ]
     }
   ],

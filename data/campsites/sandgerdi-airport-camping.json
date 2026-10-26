@@ -3,33 +3,61 @@
   "name": "Airport Camping – Sandgerði",
   "region": "reykjanes",
   "town": "Sandgerði",
-  "completeness": "stub",
-  "checked": "2026-10-24",
+  "completeness": "full",
+  "checked": "2026-10-26",
   "sources": {
     "tjalda": {
-      "title": "Tjalda.is – Airport camping – Sandgerði listing (2026 rates & services)",
+      "title": "Tjalda.is – Airport camping – Sandgerði listing (2026 price list & services)",
       "url": "https://tjalda.is/en/campsite/sandgerdi",
-      "checked": "2026-10-24"
+      "checked": "2026-10-26"
     },
     "own": {
-      "title": "airportcamping.is – Campsite in Sandgerði (operator's site)",
+      "title": "airportcamping.is – operator's home page (iStay)",
       "url": "https://airportcamping.is/",
-      "checked": "2026-10-24"
+      "checked": "2026-10-26"
+    },
+    "own-campsite": {
+      "title": "airportcamping.is – Campsite page (still shows 2021 prices)",
+      "url": "https://airportcamping.is/campsite/",
+      "checked": "2026-10-26"
+    },
+    "own-location": {
+      "title": "airportcamping.is – Location page",
+      "url": "https://airportcamping.is/location/",
+      "checked": "2026-10-26"
+    },
+    "parka": {
+      "title": "Parka.is – Airport camping – Sandgerði (price list, facility list, booking terms)",
+      "url": "https://parka.is/camping/sandgerdi/",
+      "checked": "2026-10-26"
+    },
+    "utilegukort": {
+      "title": "Útilegukortið (Camping Card) – Opening dates of participating camping sites 2026",
+      "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en",
+      "checked": "2026-10-26"
+    },
+    "ferdalag-winter": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service (Sandgerði not listed)",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-10-26"
     }
   },
   "intro": {
-    "value": "A small-town campsite in the fishing village of Sandgerði, which the operator puts 8 minutes' drive from Keflavík International Airport and about 35 minutes from the Reykjavík area. Cabins can also be rented.",
+    "value": "A small, central campsite on Byggðavegur in the fishing village of Sandgerði on the Reykjanes Peninsula (a UNESCO Global Geopark). The operator puts it 8 minutes' drive from Keflavík International Airport, about 24–25 minutes from the Blue Lagoon and 35 minutes from the Reykjavík area, which makes it a practical first or last night with a campervan. The service house has toilets, showers, outdoor sinks with hot and cold water, a washer and dryer; there is electricity for RVs, water refill, black and grey water disposal, free Wi-Fi and a playground. Small cabins for two can also be rented on site.",
     "src": [
       "tjalda",
-      "own"
+      "own",
+      "own-campsite",
+      "own-location"
     ]
   },
   "location": {
     "address": {
-      "value": "Byggðavegur, 245 Sandgerði",
+      "value": "Byggðavegur, 245 Sandgerði (Suðurnesjabær)",
       "src": [
         "tjalda",
-        "own"
+        "own",
+        "parka"
       ]
     },
     "lat": 64.039635,
@@ -39,24 +67,32 @@
     ]
   },
   "season": {
-    "value": "Open all year",
-    "src": [
-      "tjalda"
-    ]
-  },
-  "winter": {
-    "status": "open",
-    "value": "Tjalda.is lists it as 'Open: All year'. The operator's own site does not state a season, so ring ahead in deep winter.",
+    "value": "Open all year (Camping Card list 2026: 1 January – 31 December)",
     "src": [
       "tjalda",
-      "own"
+      "utilegukort",
+      "parka"
+    ],
+    "note": "Parka.is shows 'Opið: 09. Jan – 31. Des' next to an 'Open all year' tag; the operator's own site states no season."
+  },
+  "winter": {
+    "status": "call-ahead",
+    "value": "Listed as open all year by tjalda.is, the 2026 Camping Card list (1 Jan – 31 Dec) and Parka.is's 'winter opening' tag, but Parka.is's opening dates start on 9 January, the operator's own site states no season, and Sandgerði is not on ferdalag.is's official camper winter service list. Ring ahead (+354 854 8424) before relying on it in deep winter, especially in early January.",
+    "src": [
+      "tjalda",
+      "utilegukort",
+      "parka",
+      "own",
+      "ferdalag-winter"
     ]
   },
   "prices": {
     "applies_to": {
-      "value": "2026 rates",
+      "value": "2026 rates (tjalda.is and Parka.is price lists). The operator's own Campsite page still shows 2021 prices (adult 1,500 ISK, electricity 800 ISK), so expect the 2026 rates.",
       "src": [
-        "tjalda"
+        "tjalda",
+        "parka",
+        "own-campsite"
       ]
     },
     "currency": "ISK",
@@ -65,14 +101,16 @@
         "label": "Adult (15+) per person per night",
         "value": "2,200 ISK",
         "src": [
-          "tjalda"
+          "tjalda",
+          "parka"
         ]
       },
       {
         "label": "Seniors (67+) and disabled",
         "value": "1,500 ISK",
         "src": [
-          "tjalda"
+          "tjalda",
+          "parka"
         ]
       },
       {
@@ -86,14 +124,16 @@
         "label": "Electricity per night",
         "value": "1,200 ISK",
         "src": [
-          "tjalda"
+          "tjalda",
+          "parka"
         ]
       },
       {
         "label": "Overnight stay tax per unit",
         "value": "400 ISK",
         "src": [
-          "tjalda"
+          "tjalda",
+          "parka"
         ]
       },
       {
@@ -114,75 +154,110 @@
   },
   "facts": {
     "toilets": {
-      "value": "Yes",
+      "value": "Yes – toilets in the service house; tjalda.is tags the site wheelchair accessible",
       "src": [
-        "tjalda"
+        "tjalda",
+        "parka"
       ]
     },
     "wifi": {
-      "value": "Free WiFi",
+      "value": "Free Wi-Fi",
       "src": [
-        "tjalda"
+        "tjalda",
+        "own-campsite"
       ]
     },
     "laundry": {
-      "value": "Washing machine and dryer (500 ISK wash, 1,000 ISK wash & dry; dryer alone not possible)",
+      "value": "Washing machine and dryer (500 ISK wash, 1,000 ISK wash & dry; dryer alone not possible). Parka.is also lists a drying area.",
       "src": [
-        "tjalda"
+        "tjalda",
+        "parka"
       ]
     },
     "camping_card": {
-      "value": "Accepted – 100 ISK; not valid on the days of the town's festival",
+      "value": "Accepted – 100 ISK; not valid during the Suðurnesjabær town festival. Parka.is says the card covers 2 adults and 2 children per night; lodging tax and electricity are paid separately.",
       "src": [
-        "tjalda"
+        "tjalda",
+        "parka",
+        "utilegukort"
       ]
     },
     "contact": {
-      "value": "+354 854 8424 · info@airportcamping.is · airportcamping.is",
+      "value": "+354 854 8424 · info@airportcamping.is (tjalda.is; Parka.is gives istay@istay.is) · airportcamping.is · Instagram @sandgerdicamping",
       "src": [
         "tjalda",
-        "own"
+        "own",
+        "parka"
       ]
     },
     "electricity": {
       "has": "yes",
-      "value": "Yes – electricity for RVs (1,200 ISK/night)",
+      "value": "Yes – electricity for RVs, 1,200 ISK per night",
       "src": [
-        "tjalda"
+        "tjalda",
+        "parka",
+        "own-campsite"
       ]
     },
     "showers": {
       "has": "yes",
-      "value": "Yes – showers in the service house; not stated whether included",
+      "value": "Yes – showers in the service house; whether they are included or extra is not stated",
       "src": [
-        "tjalda"
+        "tjalda",
+        "own-campsite",
+        "parka"
       ]
     },
     "kitchen": {
-      "has": null,
-      "value": null,
-      "note": "No guest kitchen is listed; outdoor sinks with hot and cold water are."
+      "has": "no",
+      "value": "No guest kitchen listed by any source; there are outdoor sinks with hot and cold water and Parka.is lists a dishwashing facility",
+      "src": [
+        "tjalda",
+        "own-campsite",
+        "parka"
+      ]
     },
     "dump_station": {
       "has": "yes",
-      "value": "Yes – 'black and grey water disposal' and water-tank refill",
+      "value": "Yes – 'black and grey water disposal' and water-tank refill on site (Parka.is facility tag 'Seyrulosun'); exact location on site not stated",
       "src": [
-        "tjalda"
+        "tjalda",
+        "own-campsite",
+        "parka"
       ]
     }
   },
   "practical": [
     {
-      "value": "Tjalda.is says reservations are not possible except for large groups, so individual campers just turn up.",
+      "value": "Tjalda.is says reservations are not possible except for large groups, so individual campers just turn up. Parka.is shows a pitch-booking page, but it currently says online booking for this campsite has not been activated.",
       "src": [
-        "tjalda"
+        "tjalda",
+        "parka"
       ]
     },
     {
-      "value": "Grocery store, ATM, swimming pool and sauna are within walking distance, according to the listing.",
+      "value": "Parka.is says a night runs from 13:00 to 12:00 the next day.",
+      "src": [
+        "parka"
+      ]
+    },
+    {
+      "value": "Grocery store, ATM, post box, museum, gym, swimming pool and sauna are within walking distance, according to the operator.",
+      "src": [
+        "tjalda",
+        "own-location"
+      ]
+    },
+    {
+      "value": "Children 14 and under stay free; adults are counted from age 15.",
       "src": [
         "tjalda"
       ]
     }
+  ],
+  "alt_names": [
+    "Tjaldsvæðið í Sandgerði",
+    "Sandgerði Campsite",
+    "iStay Sandgerði"
   ]
 }
