@@ -14,6 +14,7 @@ Numbers marked "(3rd-party, unverified)" came only from search snippets / direct
   links is probably fine, but a site that is mostly booking widgets is a grey area. Moving to a custom domain + Cloudflare Pages/Netlify
   (see NOTES.md "Decisions") before heavy monetisation removes this risk. No program page checked here explicitly requires a custom
   domain, but manual reviewers (Guide to Iceland, Blue, Lava, CJ/Awin/Amazon) may judge a `*.github.io` site with little traffic as weak.
+  2026-10-27: site now on its own domain https://icelandcampsites.com (still GitHub Pages hosting; the commercial-use point stands).
 - Most programs pay only after the trip/rental is completed; cancellations earn nothing. Expect months between click and payout.
 - Affiliate disclosure page must be filled in before links go live (World Nomads even mandates their own disclaimer text).
 

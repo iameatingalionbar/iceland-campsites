@@ -9,7 +9,7 @@ Hi Campervan Iceland team,
 My name is Stefán Atli Rúnarsson. I'd like to apply for your campervan affiliate program (5% per confirmed booking, 30-day cookie, as described on your affiliate page).
 
 I run a small, independent English-language site about campsites for campervan and motorhome travellers in Iceland:
-https://iameatingalionbar.github.io/iceland-campsites/
+https://icelandcampsites.com/
 
 What's on it now:
 - 18 campsite pages, mostly on the South Coast plus Reykjavík and the Reykjanes Peninsula (near Keflavík Airport, where you pick up)
@@ -22,4 +22,4 @@ If you'd like to go ahead, please send me an affiliate link or tell me if you'd 
 
 Best regards,
 Stefán Atli Rúnarsson
-https://iameatingalionbar.github.io/iceland-campsites/
+https://icelandcampsites.com/

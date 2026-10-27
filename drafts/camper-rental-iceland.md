@@ -9,7 +9,7 @@ Hello Camper Rental Iceland,
 I'm Stefán Atli Rúnarsson, and I'd like to join your camper & RV affiliate program (5% of each completed booking, 30-day cookie, as listed on your affiliates page).
 
 My site is a new, independent guide to campsites for campervan travellers in Iceland:
-https://iameatingalionbar.github.io/iceland-campsites/
+https://icelandcampsites.com/
 
 It currently covers 18 campsites (South Coast, Reykjavík, and the Reykjanes Peninsula near Keflavík Airport), plus guides to winter campsites on the South Coast, campsites near KEF for the first and last night, and dump stations. Every fact (prices, seasons, electricity, dump points) links to its source with a "checked" date. Where we couldn't confirm something, the site says "Unconfirmed".
 
@@ -19,4 +19,4 @@ Could you set me up with an affiliate link, or let me know if the web form is th
 
 Thanks, and best regards,
 Stefán Atli Rúnarsson
-https://iameatingalionbar.github.io/iceland-campsites/
+https://icelandcampsites.com/

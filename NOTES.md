@@ -5,12 +5,27 @@ Hard rules: **no invented prices, hours or facilities.** Every fact has a source
 Anything not confirmed is rendered as a visible **Unconfirmed** badge. Vague source wording ("depending on weather",
 "upon request") or conflicting sources → winter status `call-ahead` (or `partial`), never `open`.
 
-## Deploy (GitHub Pages) — every nightly run MUST finish with `./deploy.sh`
+## Deploy (GitHub Pages, custom domain) — every nightly run MUST finish with `./deploy.sh`
 
-Live site: https://iameatingalionbar.github.io/iceland-campsites/  (repo iameatingalionbar/iceland-campsites, public)
-`./deploy.sh` = build with BASE_URL=https://iameatingalionbar.github.io/iceland-campsites → `check.py` → `serve_check.py`
-(aborts on any problem) → commit + push source to `main` → force-push `dist/` (+ `.nojekyll`) to `gh-pages` →
-ensure Pages source = gh-pages `/` via REST (GET /pages, then PUT, or POST if missing) → request a Pages build.
+Live site: **https://icelandcampsites.com/** (GitHub Pages, repo iameatingalionbar/iceland-campsites, public, gh-pages `/`).
+https://www.icelandcampsites.com/ and the old https://iameatingalionbar.github.io/iceland-campsites/... 301-redirect to the apex
+(path preserved). HTTPS enforced (Let's Encrypt cert issued by GitHub for apex + www, auto-renewed).
+`./deploy.sh` = build with BASE_URL=https://icelandcampsites.com (no path prefix) → `check.py` → `serve_check.py`
+(aborts on any problem) → verify dist/CNAME → commit + push source to `main` → force-push `dist/` (+ `.nojekyll`, `CNAME`) to `gh-pages` →
+ensure Pages source = gh-pages `/` + cname icelandcampsites.com via REST (GET /pages, then PUT, or POST if missing) → request a
+Pages build → if `https_enforced` is false, PUT it true (non-fatal; GitHub refuses until the cert exists).
+**dist/CNAME must stay**: build.py writes it from the BASE_URL host (skipped for *.github.io/localhost builds); without it a deploy
+drops the custom domain. All internal links are relative (`$root`), 404.html uses root-absolute `/...` links, so the site works at
+the domain root or under a prefix; check.py fails on a missing/wrong CNAME, stale github.io/example.com URLs or a hard-coded
+`/iceland-campsites` prefix.
+
+### Domain & DNS (icelandcampsites.com, bought by Stefán at Cloudflare 2026-10-27)
+Cloudflare DNS (nameservers bruce/kami.ns.cloudflare.com), all records **DNS only** (grey cloud — proxying would break GitHub's cert):
+`A @ 185.199.108.153 / 185.199.109.153 / 185.199.110.153 / 185.199.111.153`, `CNAME www iameatingalionbar.github.io`.
+Check: `dig +short icelandcampsites.com @1.1.1.1` (dig is not installed on the box; use DoH:
+`curl -s -H 'accept: application/dns-json' 'https://1.1.1.1/dns-query?name=icelandcampsites.com&type=A'`).
+Domain renewal is at Cloudflare (Stefán's account). Note: the box's egress proxy answers plain http:// with 500, so http→https
+redirects cannot be tested from the box.
 Auth: env var `GITHUB_TOKEN_CAMPSITES` (fine-grained; Contents/Pages/Administration write on this repo only), read by the
 repo-local git credential.helper and sent to the API via a stdin header. Never print it or write it to a file or git config.
 HTTPS only (SSH is blocked from the box). Non-zero exit = deploy failed; report the HTTP status/message.
@@ -20,7 +35,7 @@ HTTPS only (SSH is blocked from the box). Non-zero exit = deploy failed; report 
 ```bash
 cd /workspace/iceland-campsites
 python3 build.py                       # data/ + templates/ + static/ -> dist/  (fails on any unsourced fact)
-BASE_URL=https://your-domain.is python3 build.py   # canonical URLs, sitemap, robots use this
+BASE_URL=https://your-domain.is python3 build.py   # canonical URLs, sitemap, robots, llms.txt, CNAME use this (default: data/site.json base_url = https://icelandcampsites.com)
 python3 check.py                       # (BASE_URL path-prefix aware) internal links/anchors, tag balance, <title>/description/canonical/viewport, sitemap
 python3 -m http.server -d dist 8000    # preview at http://localhost:8000/
 python3 make_preview.py                # standalone guide with CSS inlined -> south-coast-winter-preview.html
@@ -29,7 +44,7 @@ python3 make_preview.py                # standalone guide with CSS inlined -> so
 ```
 
 Exit codes: `build.py` and `check.py` exit non-zero on failure. A nightly run should be: edit data → `./deploy.sh` (which runs every check).
-`python3 serve_check.py` serves dist under the base path (e.g. /iceland-campsites/) and crawls every link + sitemap URL.
+`python3 serve_check.py` serves dist under the base path (`/` for icelandcampsites.com; a prefix like /iceland-campsites/ also works) and crawls every link + sitemap URL.
 
 ## Layout
 
@@ -171,6 +186,7 @@ Keyword research and page ideas: KEYWORDS.md.
   https://www.reddit.com/r/VisitingIceland/comments/1gytpl5/campsite_recommendations/
 
 ## Monetization (awaiting Stefán)
+Site URL for applications: https://icelandcampsites.com/ (custom domain since 2026-10-27; drafts/ updated to it).
 Nothing signed up, no links placed. The affiliate disclosure page is a placeholder. Options to review:
 | program | url | stated terms (from their page, not verified further) |
 |---|---|---|
@@ -189,13 +205,18 @@ Nothing signed up, no links placed. The affiliate disclosure page is a placehold
 | Airalo (eSIM) | https://www.airalo.com/m/resources/airalo-affiliate-program | 10% via Impact |
 
 ## Decisions for Stefán (nothing bought)
-- Domain ideas (availability not checked): icelandcampsites.is, campervancampsites.is, wintercamping.is, campiceland.info.
-  .is costs ISK 8,220/year incl. VAT (ISNIC, https://www.isnic.is/en/payments?tab=isk, checked 2026-10-23).
-- Hosting (all static, free tiers): Cloudflare Pages Free (unlimited static bandwidth, 500 builds/mo; https://developers.cloudflare.com/pages/platform/limits/),
+- Domain: DONE 2026-10-27, Stefán bought icelandcampsites.com at Cloudflare; live on GitHub Pages with HTTPS (see Deploy).
+  (Earlier .is ideas, not bought: icelandcampsites.is etc.; .is costs ISK 8,220/year incl. VAT per ISNIC, checked 2026-10-23.)
+- Hosting: currently GitHub Pages + custom domain (free). Before heavy monetisation consider moving to Cloudflare Pages (DNS is
+  already at Cloudflare) because of GitHub Pages' commercial-use policy (see AFFILIATES.md). Free-tier options: Cloudflare Pages Free (unlimited static bandwidth, 500 builds/mo; https://developers.cloudflare.com/pages/platform/limits/),
   Netlify Free ($0, 300 credits/mo hard limit; https://www.netlify.com/pricing), or GitHub Pages (free for public repos).
 - Contacting campsites to fill Unconfirmed cells (email/phone) needs your approval.
 
 ## CHANGELOG
+- 2026-10-27: Custom domain https://icelandcampsites.com live (GitHub Pages, HTTPS enforced, cert for apex + www). BASE_URL and
+  data/site.json base_url → https://icelandcampsites.com (no prefix); build.py writes dist/CNAME; deploy.sh sets Pages cname and
+  enforces HTTPS; check.py verifies CNAME, robots.txt sitemap line, no stale github.io/example.com URLs or /iceland-campsites prefix.
+  www and old github.io URLs 301 to the apex. Affiliate application drafts (drafts/, still NOT sent) now cite the new URL.
 - 2026-10-27: llms.txt at the site root (<BASE_URL>/llms.txt), generated by scripts/gen_llms.py from data + built pages on every
   build (uses BASE_URL, so it follows a custom domain). New /ai-disclosure/ page (footer link, sitemap). About gained a short
   'Who runs this site' section linking both disclosures; affiliate disclosure adds 'other travel partners' (no partnerships claimed,

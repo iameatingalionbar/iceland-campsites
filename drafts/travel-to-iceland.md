@@ -9,7 +9,7 @@ Hi Travel to Iceland team,
 I'm Stefán Atli Rúnarsson. I'd like to apply for your affiliate program for camper and car rentals.
 
 I run a new, independent English-language site about campsites for campervan travellers in Iceland:
-https://iameatingalionbar.github.io/iceland-campsites/
+https://icelandcampsites.com/
 
 It covers 18 campsites so far (South Coast, Reykjavík, Reykjanes near Keflavík Airport) and has guides to winter campsites, campsites near KEF, and dump stations. Every price, season and facility is linked to its source with a checked date, and anything unconfirmed is labelled as such.
 
@@ -21,4 +21,4 @@ Two questions before I apply through your form:
 
 Best regards,
 Stefán Atli Rúnarsson
-https://iameatingalionbar.github.io/iceland-campsites/
+https://icelandcampsites.com/
