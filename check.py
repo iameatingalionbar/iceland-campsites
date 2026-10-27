@@ -86,6 +86,25 @@ for loc in re.findall(r"<loc>([^<]+)</loc>", sm):
     t=os.path.join(DIST, path, "index.html") if (path=="" or path.endswith("/")) else os.path.join(DIST,path)
     if not os.path.exists(t): problems.append(f"sitemap: {loc} has no file")
 
+# llms.txt (llmstxt.org): exists, H1 + blockquote, every link under BASE_URL resolves to a built file, every sitemap URL listed
+llms_path=os.path.join(DIST,"llms.txt"); llms_links=[]
+if not os.path.exists(llms_path): problems.append("llms.txt: missing from dist/")
+else:
+    lt=open(llms_path,encoding="utf-8").read(); lines=lt.splitlines()
+    if not lines or not lines[0].startswith("# "): problems.append("llms.txt: first line is not an H1")
+    if not any(l.startswith("> ") for l in lines[:4]): problems.append("llms.txt: no blockquote summary after the H1")
+    if "## Optional" not in lines: problems.append("llms.txt: no '## Optional' section")
+    llms_links=re.findall(r"^- \[[^\]]+\]\(([^)\s]+)\)", lt, re.M)
+    if not llms_links: problems.append("llms.txt: no links")
+    for url in llms_links:
+        if BASE_URL and not url.startswith(BASE_URL + "/"): problems.append(f"llms.txt: {url} not under BASE_URL {BASE_URL}"); continue
+        path=strip_base(urlparse(url).path)
+        t=os.path.join(DIST, path, "index.html") if (path=="" or path.endswith("/")) else os.path.join(DIST,path)
+        if path is None or not os.path.exists(t): problems.append(f"llms.txt: {url} has no built page")
+    for loc in re.findall(r"<loc>([^<]+)</loc>", sm):
+        if loc not in llms_links: problems.append(f"llms.txt: sitemap URL {loc} not listed")
+    print(f"llms.txt: {len(llms_links)} links checked.")
+
 unc=sum(open(f,encoding="utf-8").read().count('class="unconfirmed"') for f in pages)
 print(f"BASE_URL={BASE_URL!r} base path={BASE_PATH!r}")
 print(f"Checked {len(pages)} HTML files, {len(ext_links)} distinct external links (not fetched), {unc} visible 'Unconfirmed' markers.")

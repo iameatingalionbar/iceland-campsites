@@ -35,6 +35,9 @@ def get(u):
 seen,bad,queue=set(),[],[start]
 sm=open(os.path.join(DIST,"sitemap.xml")).read()
 queue+= [origin+urlparse(x).path for x in re.findall(r"<loc>([^<]+)</loc>",sm)]
+queue.append(f"{start}llms.txt")  # llms.txt itself, plus every page it links to
+if os.path.exists(os.path.join(DIST,"llms.txt")):
+    queue+= [origin+urlparse(x).path for x in re.findall(r"^- \[[^\]]+\]\(([^)\s]+)\)", open(os.path.join(DIST,"llms.txt"),encoding="utf-8").read(), re.M)]
 while queue:
     u=urldefrag(queue.pop())[0]
     if u in seen: continue

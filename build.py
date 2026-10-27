@@ -10,6 +10,8 @@ import json, os, sys, shutil, glob, datetime, re, math
 from html import escape
 from string import Template
 from urllib.parse import urlparse
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "scripts"))
+import gen_llms
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DIST = os.path.join(ROOT, "dist")
@@ -477,6 +479,8 @@ def render_static_pages(cs):
     write_page("about/index.html", f"About, sources & methodology | {SITE['site_name']}", "How this site researches Iceland campsites: sources, check dates and the Unconfirmed rule.",
         crumbs("../", [("About, sources & methodology", None)]) + """<header class="page-head"><p class="eyebrow">About</p><h1>About, sources &amp; methodology</h1>
 <p class="lede">An independent, English-language reference for campervan and motorhome travellers in Iceland. We are not affiliated with any campsite or with the official tourist board.</p></header><div class="prose">
+<h2>Who runs this site</h2>
+<p>This is an independent information site for motorhome and campervan travellers in Iceland. Facts are cited and dated from the campsites' own websites, <a href="https://tjalda.is/en" rel="nofollow noopener">tjalda.is</a>, <a href="https://www.ferdalag.is/en" rel="nofollow noopener">ferdalag.is</a> and municipality websites; anything we could not confirm is marked <span class="unconfirmed">Unconfirmed</span>. Content is prepared with AI assistance (see the <a href="../ai-disclosure/index.html">AI disclosure</a>), and the site may earn commissions from travel partners (see the <a href="../affiliate-disclosure/index.html">affiliate disclosure</a>).</p>
 <h2>Our rules</h2>
 <ul>
 <li><strong>Every fact has a source.</strong> Each fact on a campsite page links to the page it came from and shows the date we checked it. The site's build script will not publish a fact without a source.</li>
@@ -499,7 +503,14 @@ def render_static_pages(cs):
         crumbs("../", [("Affiliate disclosure", None)]) + """<header class="page-head"><p class="eyebrow">About</p><h1>Affiliate disclosure</h1></header><div class="prose">
 <p>This site may in future contain referral (affiliate) links to campervan and motorhome rental companies in Iceland. If you book through one of those links, we may earn a commission at no extra cost to you.</p>
 <p>Referral links will never affect which campsites we list or what we say about them. Campsite facts come only from the sources cited on each page.</p>
+<p>We may also earn commissions from other travel partners in the same way, always at no extra cost to you.</p>
 <p><strong>Current status:</strong> the site has no affiliate links yet. When we add any, we will label them clearly where they appear.</p></div>""")
+    write_page("ai-disclosure/index.html", f"AI disclosure | {SITE['site_name']}", "How AI assistance is used to prepare this site, and why you should verify hours and prices with the campsite.",
+        crumbs("../", [("AI disclosure", None)]) + """<header class="page-head"><p class="eyebrow">About</p><h1>AI disclosure</h1></header><div class="prose">
+<p>Content on this site is prepared with the help of AI tools: researching public sources, extracting facts, and drafting and checking pages.</p>
+<p>Facts about campsites come only from the public sources cited on each page (campsite websites, <a href="https://tjalda.is/en" rel="nofollow noopener">tjalda.is</a>, <a href="https://www.ferdalag.is/en" rel="nofollow noopener">ferdalag.is</a>, municipalities and national parks), each with the date it was checked. If a fact could not be confirmed from a source, it is marked <span class="unconfirmed">Unconfirmed</span> rather than filled in.</p>
+<p>AI-assisted research can still make mistakes, and campsites change their seasons and prices. Please verify opening hours, winter access and prices with the campsite before you travel.</p>
+<p>See <a href="../about/index.html">About, sources &amp; methodology</a> for how sources are chosen.</p></div>""")
     # 404.html is served for any missing URL at any depth, so it must use base-path-absolute links.
     base_path = urlparse(BASE_URL).path.rstrip("/") + "/"
     write_page("404.html", f"Page not found | {SITE['site_name']}", "Page not found.",
@@ -525,6 +536,7 @@ def main():
     for g in GUIDES: render_guide(g, by_slug)
     render_static_pages(cs)
     write_sitemap()
+    gen_llms.write(DIST, BASE_URL, SITE, cs, GUIDES)   # dist/llms.txt (llmstxt.org), from data + built pages
     if ERRORS: sys.exit("BUILD FAILED:\n" + "\n".join(ERRORS))
     print(f"Built {len(PAGES)} indexable pages ({len(cs)} campsites, {len(GUIDES)} guides) into dist/  base_url={BASE_URL}")
 
