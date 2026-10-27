@@ -2,7 +2,7 @@
 """Static site builder for Iceland Campsites. Python 3 standard library only.
 
 Usage:  python3 build.py              # builds into dist/
-        BASE_URL=https://mysite.is python3 build.py
+        BASE_URL=https://mysite.is python3 build.py   # default: data/site.json base_url (https://icelandcampsites.com)
 Reads data/site.json, data/campsites/*.json, data/guides/*.json and templates/base.html.
 Fails loudly if any fact has a value without a source, or cites an unknown source key.
 """
@@ -521,6 +521,14 @@ def write_sitemap():
     open(os.path.join(DIST, "sitemap.xml"), "w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}\n</urlset>\n')
     open(os.path.join(DIST, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE_URL}/sitemap.xml\n")
 
+def write_cname():
+    """GitHub Pages custom domain: dist/CNAME holds the bare host of BASE_URL so every deploy keeps the domain.
+    Not written for *.github.io / localhost builds (a CNAME there would redirect the github.io site away)."""
+    host = urlparse(BASE_URL).hostname or ""
+    if urlparse(BASE_URL).path.strip("/"): return   # custom domain must be served at the root
+    if host and not host.endswith(".github.io") and host not in ("localhost", "127.0.0.1") and "." in host:
+        open(os.path.join(DIST, "CNAME"), "w").write(host + "\n")
+
 def main():
     global GUIDES
     cs = load_dir("campsites"); GUIDES = load_dir("guides")
@@ -537,6 +545,7 @@ def main():
     render_static_pages(cs)
     write_sitemap()
     gen_llms.write(DIST, BASE_URL, SITE, cs, GUIDES)   # dist/llms.txt (llmstxt.org), from data + built pages
+    write_cname()
     if ERRORS: sys.exit("BUILD FAILED:\n" + "\n".join(ERRORS))
     print(f"Built {len(PAGES)} indexable pages ({len(cs)} campsites, {len(GUIDES)} guides) into dist/  base_url={BASE_URL}")
 

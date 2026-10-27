@@ -1,7 +1,8 @@
 {
   "site_name": "Iceland Campsites for Campervans",
   "tagline": "Sourced, dated facts about Icelandic campsites for campervan and motorhome travellers",
-  "base_url": "https://www.example.com",
+  "base_url": "https://icelandcampsites.com",
+  "custom_domain": "icelandcampsites.com",
   "language": "en",
   "default_checked": "2026-10-23",
   "regions": [

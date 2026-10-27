@@ -105,6 +105,26 @@ else:
         if loc not in llms_links: problems.append(f"llms.txt: sitemap URL {loc} not listed")
     print(f"llms.txt: {len(llms_links)} links checked.")
 
+# CNAME (GitHub Pages custom domain): must match the BASE_URL host for a root custom domain, absent for github.io builds
+_host = urlparse(BASE_URL).hostname or ""; _cn = os.path.join(DIST, "CNAME")
+if _host.endswith(".github.io") or not _host:
+    if os.path.exists(_cn): problems.append("CNAME present in a github.io build")
+else:
+    if BASE_PATH: problems.append(f"custom domain BASE_URL must have no path prefix, got {BASE_PATH!r}")
+    if not os.path.exists(_cn): problems.append("dist/CNAME missing for custom-domain build")
+    elif open(_cn).read().strip() != _host: problems.append(f"dist/CNAME {open(_cn).read().strip()!r} != BASE_URL host {_host!r}")
+    else: print(f"CNAME: {_host}")
+
+# robots.txt points at this BASE_URL's sitemap; no stale base URLs/prefixes anywhere in the output
+_rb = os.path.join(DIST, "robots.txt")
+if not os.path.exists(_rb) or f"Sitemap: {BASE_URL}/sitemap.xml" not in open(_rb).read(): problems.append("robots.txt: Sitemap line missing or not under BASE_URL")
+for _f in glob.glob(os.path.join(DIST, "**", "*"), recursive=True):
+    if os.path.isfile(_f) and _f.endswith((".html", ".xml", ".txt", ".js", ".css")):
+        _t = open(_f, encoding="utf-8").read()
+        for _stale in ("iameatingalionbar.github.io", "www.example.com"):
+            if _stale in _t and _stale not in BASE_URL: problems.append(f"{os.path.relpath(_f, DIST)}: contains stale base URL {_stale!r}")
+        if not BASE_PATH and re.search(r'(href|src|action)="/iceland-campsites', _t): problems.append(f"{os.path.relpath(_f, DIST)}: hard-coded /iceland-campsites prefix")
+
 unc=sum(open(f,encoding="utf-8").read().count('class="unconfirmed"') for f in pages)
 print(f"BASE_URL={BASE_URL!r} base path={BASE_PATH!r}")
 print(f"Checked {len(pages)} HTML files, {len(ext_links)} distinct external links (not fetched), {unc} visible 'Unconfirmed' markers.")

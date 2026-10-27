@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Serve dist/ under its BASE_URL path (e.g. /iceland-campsites/) on localhost and crawl every
+"""Serve dist/ under its BASE_URL path (root "/" for https://icelandcampsites.com; a prefix such as /iceland-campsites/ also works) on localhost and crawl every
 internal href/src/stylesheet from the home page, plus every sitemap URL and a missing URL (404 page assets).
 Exit 1 on any non-200. Stdlib only."""
 import os, sys, re, shutil, tempfile, threading, functools, http.server, urllib.request, urllib.error
@@ -63,4 +63,4 @@ if st!=404: bad.append(f"missing page returned {st}, expected 404")
 srv.shutdown(); shutil.rmtree(tmp, ignore_errors=True)
 print(f"Served dist at {BASE_PATH or '/'}; crawled {len(seen)} URLs.")
 if bad: print("BROKEN:\n"+"\n".join(bad)); sys.exit(1)
-print("OK: every internal link, stylesheet and sitemap URL returned 200 under the subpath.")
+print("OK: every internal link, stylesheet and sitemap URL returned 200 under the base path.")
