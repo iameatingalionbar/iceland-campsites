@@ -113,7 +113,7 @@ A nightly run should take the first `todo` (or `stub` → full) row by prio, res
 | B05 | 1 | done | campsite | hellisholar | Hellishólar (full page; dump?) | south | winter area G | hellisholar.is |
 | B06 | 1 | done | guide | dump-stations-iceland | Where to empty a cassette toilet in Iceland (by region) | all | dump-station theme hub needs data | uos.is disposal list, icetourist.is |
 | B07 | 1 | done | campsite | sandgerdi-airport-camping | Sandgerði / airport-area campsite | reykjanes | first/last night near KEF, all year | tjalda |
-| B08 | 1 | todo | campsite | hamrar-akureyri | Hamrar, Akureyri | north-east | all year | tjalda, hamrar.is |
+| B08 | 1 | done | campsite | hamrar-akureyri | Hamrar, Akureyri | north-east | all year | tjalda, hamrar.is |
 | B09 | 1 | todo | campsite | vogar-myvatn | Vogar, Mývatn | north-east | all year, chemical disposal | tjalda, vogarholidays.is |
 | B10 | 1 | todo | campsite | camp-egilsstadir | Camp Egilsstaðir | east | all year 24/7 | tjalda |
 | B11 | 2 | todo | guide | golden-circle-winter-campsites | Winter campsites on the Golden Circle (2026–27) | south | Úthlíð/Skjól/Geysir/Laugarvatn/Flúðir conflicts to resolve | ferdalag winter list |
@@ -193,6 +193,13 @@ Nothing signed up, no links placed. The affiliate disclosure page is a placehold
 - Contacting campsites to fill Unconfirmed cells (email/phone) needs your approval.
 
 ## CHANGELOG
+- 2026-10-27: Hamrar (Kjarnaskógur, Akureyri) full page – first North East campsite. 2026 rates from tjalda.is (own site shows the
+  same amounts under 'VERÐ 2025'): adult 2,500 (2,200 after first night if bought together), senior/disabled 2,100, under-18s with
+  family free, unit 500, electricity 1,500, showers and lodging tax included, sleeping loft 4,400. Winter = open (own site, reisa.is,
+  tjalda, ferdalag winter list) with reduced service: area A / ploughed parking areas only, staff weekdays 8–16, full service May–Oct,
+  otherwise ask warden for kitchen/shower access. Dump point yes (tjalda, reisa, ferdalag). Not on Camping Card 2026 list.
+  Conflicts noted: phone 461 2264 (own) vs 461 2260 (tjalda/ferdalag); postcode 600 vs 602. Jamboree 20–26 Jul 2026 special rates
+  unpublished → Unconfirmed. Nothing awaiting Stefán from this run.
 - 2026-10-26: Airport Camping – Sandgerði upgraded to a full page (2026 rates from tjalda + Parka: adult 2,200, senior/disabled 1,500,
   children ≤14 free, electricity 1,200, tax 400, washer 500 / wash+dry 1,000, Camping Card 100 ISK; black/grey water disposal + water
   refill → dump has=yes; no guest kitchen listed → kitchen has=no; showers yes, fee not stated). Winter status changed open → call-ahead:

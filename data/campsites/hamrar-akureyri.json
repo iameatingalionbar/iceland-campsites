@@ -1,0 +1,77 @@
+{
+  "slug": "hamrar-akureyri",
+  "name": "Hamrar Campsite, Akureyri (Kjarnaskógur)",
+  "alt_names": ["Tjaldsvæðið Hamrar", "Hamrar útilífsmiðstöð skáta", "Akureyri, Hamrar v/Kjarnaskóg"],
+  "region": "north-east",
+  "town": "Akureyri",
+  "completeness": "full",
+  "checked": "2026-10-27",
+  "sources": {
+    "own": {"title": "hamrar.is – Hamrar home page (season, facilities, price list headed 'VERÐ 2025')", "url": "https://www.hamrar.is/", "checked": "2026-10-27"},
+    "own-about": {"title": "hamrar.is – Um Hamra / Aðstaða (full-service season, winter access to facilities)", "url": "https://hamrar.is/hamrar", "checked": "2026-10-27"},
+    "own-rules": {"title": "hamrar.is – Tjaldsvæðin (rules: car traffic, frisbee golf)", "url": "https://hamrar.is/tjaldsvaedi", "checked": "2026-10-27"},
+    "reisa": {"title": "Reisa.is – Hamrar booking page (winter opening, area A, services)", "url": "https://reisa.is/hamrar/", "checked": "2026-10-27"},
+    "tjalda": {"title": "Tjalda.is – Akureyri, Hamrar v/Kjarnaskóg listing (2026 rates & services)", "url": "https://tjalda.is/en/campsite/hamrar", "checked": "2026-10-27"},
+    "ferdalag-winter": {"title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service", "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service", "checked": "2026-10-27"},
+    "utilegukort": {"title": "Útilegukortið (Camping Card) – Opening dates of participating camping sites 2026 (Hamrar not listed)", "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en", "checked": "2026-10-27"}
+  },
+  "intro": {
+    "value": "A large campsite run by the Akureyri scout association's operating company, on the edge of the Kjarnaskógur recreational forest in the hills just south of Akureyri, about 10 minutes from the town centre. It is divided into 16 flat, tree-lined fields of mostly 3,000–4,000 m², with electricity on every field, several service houses and a service building at the entrance with kitchen, dining room, showers and a washing machine. There is a disposal point for chemical toilets and grey water, a boat pond, playgrounds, mini-golf and an 18-hole frisbee golf course. It is open all year; in winter only part of the site is open and campers stay on the cleared parking areas by the entrance.",
+    "src": ["own", "own-about", "own-rules", "reisa", "tjalda", "ferdalag-winter"]
+  },
+  "location": {
+    "address": {
+      "value": "Hamrar, Kjarnaskógi, 600 Akureyri (tjalda.is); ferdalag.is gives 'Hamrar við Kjarnagötu, 602 Akureyri'",
+      "src": ["tjalda", "ferdalag-winter"],
+      "note": "Directions (tjalda.is/reisa.is): drive past Akureyri airport, take the first turn right up towards Kjarnaskógur, drive through the forest, then take the first turn left after it."
+    },
+    "lat": 65.647871,
+    "lon": -18.105236,
+    "coords_src": ["tjalda"]
+  },
+  "season": {
+    "value": "Open all year. Normal full-service season is from early May to the end of October; outside it, contact the warden for access to the kitchen, showers, washing machine etc.",
+    "src": ["own", "own-about", "reisa", "tjalda", "ferdalag-winter"]
+  },
+  "winter": {
+    "status": "open",
+    "value": "Open in winter (own site, reisa.is, tjalda.is and ferdalag.is's official camper winter service list), but with reduced service: only part of the site (area A) is open, and once it snows campers stay on the parking areas around the entrance, which are ploughed as needed; the road up to Hamrar is normally cleared every morning. The parking areas have electricity and are close to toilets, showers, kitchen and dining room. Staff are on site on weekdays 8–16 and check and clean on evenings and weekends. Outside May–October the own site says to contact the warden (461 2264 / 863 0725) for access to the kitchen, showers and washing machine. Heavier vehicles must stay on the parking areas and the fields can be wet. Gates stop admitting vehicles at midnight; later arrivals stay on the parking area until morning.",
+    "src": ["own", "own-about", "reisa", "tjalda", "ferdalag-winter"]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates per tjalda.is. The price list on hamrar.is is headed 'VERÐ 2025' but shows the same amounts. Lodging tax is included.",
+      "src": ["tjalda", "own"]
+    },
+    "currency": "ISK",
+    "items": [
+      {"label": "Adult per person per night", "value": "2,500 ISK (2,200 ISK per night after the first if several nights are bought at once)", "src": ["tjalda", "own"]},
+      {"label": "Seniors (67+) and disabled", "value": "2,100 ISK", "src": ["tjalda", "own"]},
+      {"label": "Children under 18 with their family (not groups)", "value": "Free", "src": ["tjalda", "own"]},
+      {"label": "Accommodation unit (tent/van/caravan)", "value": "500 ISK per unit", "src": ["tjalda", "own"]},
+      {"label": "Electricity per night", "value": "1,500 ISK", "src": ["tjalda", "own"]},
+      {"label": "Showers", "value": "Included", "src": ["tjalda", "reisa"]},
+      {"label": "Sleeping loft (indoor) per person", "value": "4,400 ISK", "src": ["own"]},
+      {"label": "Special rates during the Scout Jamboree (20–26 July 2026)", "value": null, "src": [], "note": "Reisa.is says a special price list and rules will apply around 18–28 July 2026; amounts not published at check date."}
+    ]
+  },
+  "facts": {
+    "electricity": {"has": "yes", "value": "Yes – electricity on all fields (three-pin plugs per tjalda.is; reisa.is says blue sockets) and on the winter parking areas; 1,500 ISK per night", "src": ["tjalda", "reisa", "own"]},
+    "kitchen": {"has": "yes", "value": "Yes – kitchen and dining room in the service building at the entrance (only at Hamrar per the own site). Outside May–October, access is via the warden.", "src": ["own", "own-about", "reisa", "ferdalag-winter"]},
+    "showers": {"has": "yes", "value": "Yes – included in the price, in the service houses and the entrance building", "src": ["tjalda", "reisa", "own"]},
+    "toilets": {"value": "Yes – in several service houses, including accessible toilets", "src": ["tjalda", "reisa"]},
+    "dump_station": {"has": "yes", "value": "Yes – disposal point for chemical toilets and grey water from campers and caravans ('Losun fyrir ferðaklósett'); exact location on site not stated", "src": ["tjalda", "reisa", "ferdalag-winter"]},
+    "wifi": {"value": "Wi-Fi included (reisa.is); the own site lists internet access at Hamrar", "src": ["reisa", "own"]},
+    "laundry": {"value": "Washing machine and dryer; price not stated", "src": ["own", "reisa", "tjalda"]},
+    "camping_card": {"value": "Not accepted – Hamrar is not on the 2026 Camping Card (Útilegukortið) list of participating sites", "src": ["utilegukort"]},
+    "contact": {"value": "+354 461 2264 (own site; tjalda.is and ferdalag.is give 461 2260) · +354 863 0725 · hamrar@hamrar.is · hamrar.is · Facebook Hamrar.camping", "src": ["own", "own-about", "tjalda", "ferdalag-winter"]}
+  },
+  "practical": [
+    {"value": "You can pay in advance on reisa.is; you book a stay, not a specific pitch, and choose your spot on arrival, then check in with the warden for tickets for your unit and car. In winter, enter your number plate in the booking so the night checks don't knock on your door.", "src": ["own", "reisa"]},
+    {"value": "Car traffic within the site is banned 00:00–08:00 and the speed limit is 15 km/h; quiet hours are midnight to 08:00.", "src": ["own-rules", "tjalda"]},
+    {"value": "Under-18s must be accompanied by a parent or guardian (family campsite); dogs must be on a leash; open fires are not allowed.", "src": ["own", "tjalda"]},
+    {"value": "Expect restricted access 18–28 July 2026 because of the National Scout Jamboree at Hamrar (20–26 July).", "src": ["reisa"]},
+    {"value": "Reisa.is lists Bónus supermarket and the airport about 5 minutes away and the swimming pool and town centre about 10 minutes; Kjarnaskógur has cross-country ski tracks in winter.", "src": ["reisa"]},
+    {"value": "The operator's other site, Þórunnarstræti in town, has closed.", "src": ["own"]}
+  ]
+}
