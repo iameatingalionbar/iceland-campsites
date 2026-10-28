@@ -1,0 +1,79 @@
+{
+  "slug": "vogar-myvatn",
+  "name": "Vogar Campsite, Mývatn (Vogar Travel Service)",
+  "alt_names": ["Vogar Camping Ground", "Tjaldsvæðið í Vogum, Mývatnssveit", "Vogar ferðaþjónusta", "Mývatn Campsite (Vogar)"],
+  "region": "north-east",
+  "town": "Mývatn (Vogar, near Reykjahlíð)",
+  "completeness": "full",
+  "checked": "2026-10-28",
+  "sources": {
+    "own": {"title": "vogartravelservice.com – home page (camping overview, distances, contact)", "url": "https://www.vogartravelservice.com/", "checked": "2026-10-28"},
+    "own-camping": {"title": "vogartravelservice.com – Camping at Mývatn (price list, no reservations, self check-in)", "url": "https://vogartravelservice.com/camping/", "checked": "2026-10-28"},
+    "own-rules": {"title": "vogartravelservice.com – Camping Rules", "url": "https://www.vogartravelservice.com/camping-rules", "checked": "2026-10-28"},
+    "own-faq": {"title": "vogartravelservice.com – FAQ (camping, laundry, local services)", "url": "https://www.vogartravelservice.com/faq", "checked": "2026-10-28"},
+    "reisa": {"title": "Reisa.is – Vogar Travel Service campsite page (2026 pricing, services, map legend)", "url": "https://reisa.is/en/vogar/", "checked": "2026-10-28"},
+    "tjalda": {"title": "Tjalda.is – Vogar Travel Service listing (2026 rates, services, GPS)", "url": "https://tjalda.is/en/campsite/Vogum", "checked": "2026-10-28"},
+    "ferdalag-winter": {"title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service", "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service", "checked": "2026-10-28"},
+    "utilegukort": {"title": "Útilegukortið (Camping Card) – Opening dates of participating camping sites 2026 (Vogar not listed)", "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en", "checked": "2026-10-28"}
+  },
+  "intro": {
+    "value": "A family-run campsite beside the Vogar guesthouse and Daddi's Pizza on the east side of Lake Mývatn, in lava fields with views of Hverfjall crater, about 5 minutes from Reykjahlíð. It is open all year and has a heated indoor kitchen and dining room, hot showers included in the price, free Wi-Fi in parts of the site, electric hook-ups in the campervan area, a black-water disposal station and a drinking-water refill hose. There are no reservations: you arrive, pick a spot and pay by QR code. Walking trails to Hverfjall and Grjótagjá start near the campsite.",
+    "src": ["own", "own-camping", "own-faq", "reisa", "tjalda", "ferdalag-winter"]
+  },
+  "location": {
+    "address": {
+      "value": "Vogar, 660 Mývatn",
+      "src": ["own", "reisa", "tjalda", "ferdalag-winter"],
+      "note": "Reisa.is describes it as 5 minutes from Reykjahlíð; the own site gives Hverfjall and Grjótagjá about 3 km, Dimmuborgir about 4 km, Mývatn Nature Baths about 6 km and Námafjall/Hverir about 8 km away."
+    },
+    "lat": 65.623595,
+    "lon": -16.916168,
+    "coords_src": ["tjalda"]
+  },
+  "season": {
+    "value": "Open all year round; the campground is not closed at night.",
+    "src": ["own", "own-camping", "own-faq", "reisa", "tjalda", "ferdalag-winter"]
+  },
+  "winter": {
+    "status": "open",
+    "value": "Open in winter: the own site, its FAQ ('Our campsite is open all year around'), tjalda.is, reisa.is and ferdalag.is's official camper winter service list all say it is open all year, and the indoor kitchen and dining room are heated all year round. No source describes reduced winter service, snow clearing or which pitches are used in winter, so call +354 464 4399 (also the 24/7 emergency number) before arriving in deep winter. Check road conditions on road.is.",
+    "src": ["own", "own-camping", "own-faq", "reisa", "tjalda", "ferdalag-winter"]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates per reisa.is ('Pricing for 2026'), matching the own Camping page. Tjalda.is's 'Rates 2026' gives a lower adult price (2,450 ISK); the other amounts agree.",
+      "src": ["reisa", "own-camping", "tjalda"]
+    },
+    "currency": "ISK",
+    "items": [
+      {"label": "Adult per person per night", "value": "2,550 ISK", "src": ["own-camping", "reisa"], "note": "Tjalda.is lists 2,450 ISK."},
+      {"label": "Children under 14", "value": "Free", "src": ["own-camping", "reisa", "tjalda", "own-faq"]},
+      {"label": "Tent / car / campervan per night", "value": "500 ISK", "src": ["own-camping", "reisa", "tjalda"]},
+      {"label": "Motorhome or caravan per night (electricity included)", "value": "1,600 ISK", "src": ["own-camping", "reisa", "tjalda"]},
+      {"label": "Electricity (for tents/cars/campervans) per night", "value": "1,100 ISK", "src": ["own-camping", "reisa", "tjalda"]},
+      {"label": "Lodging tax ('city tax')", "value": "400 ISK per unit per night", "src": ["own-camping", "reisa", "tjalda"]},
+      {"label": "Showers and indoor kitchen", "value": "Included", "src": ["own-faq", "reisa"]},
+      {"label": "Stay 3 nights in a row", "value": "4th night free", "src": ["own-camping", "reisa", "tjalda"]},
+      {"label": "Senior / disabled discount", "value": "None offered", "src": ["own-faq"]}
+    ]
+  },
+  "facts": {
+    "electricity": {"has": "yes", "value": "Yes – electric hook-ups in the campervan area; 1,100 ISK per night, included in the 1,600 ISK motorhome rate. Phones can be charged free in the dining room, kitchen or souvenir shop.", "src": ["own-camping", "own-faq", "reisa", "tjalda"]},
+    "kitchen": {"has": "yes", "value": "Yes – heated indoor kitchen and dining room for campers, in the building behind the souvenir shop; included in the price. No food staples or barbecue provided.", "src": ["own-camping", "own-faq", "reisa", "ferdalag-winter"]},
+    "showers": {"has": "yes", "value": "Yes – hot showers included in the price. The hot water smells of sulphur; drink the cold tap water only.", "src": ["own-camping", "own-faq", "reisa", "tjalda"]},
+    "toilets": {"value": "Yes – in the facility houses (cabin with toilets and showers). Facility houses close 15:00–17:00 for cleaning.", "src": ["reisa", "tjalda", "own-faq", "own-rules"]},
+    "dump_station": {"has": "yes", "value": "Yes – black-water / chemical toilet disposal station for motorhomes and campervans, plus a drinking-water hose on the outer wall of the toilet and shower cabin", "src": ["own-camping", "own-faq", "reisa", "tjalda", "ferdalag-winter"]},
+    "wifi": {"value": "Free Wi-Fi in some areas of the campground; best near the pizzeria and guesthouse buildings", "src": ["own-faq", "reisa", "tjalda"]},
+    "laundry": {"value": "Laundry service (washed, dried and folded, usually within 24 hours): 4,990 ISK per 6 kg per tjalda.is and reisa.is; the own FAQ says 4,500 ISK. No self-service machines mentioned.", "src": ["tjalda", "reisa", "own-faq"]},
+    "camping_card": {"value": "Not accepted – the own FAQ says they are not members of the Camping Card programme, and Vogar is not on the 2026 Útilegukortið list", "src": ["own-faq", "utilegukort"]},
+    "contact": {"value": "+354 464 4399 (24/7, also the emergency number) · info@vogahraun.is · vogartravelservice.com", "src": ["own", "own-camping", "tjalda", "reisa"]}
+  },
+  "practical": [
+    {"value": "No advance bookings for the campsite: find a spot and pay on arrival by scanning the QR code at the entrance, in the facility houses or on the reception door (Visa, Mastercard, Apple Pay), or at the self-service kiosk. Late-night arrivals are fine.", "src": ["own-camping", "own-faq", "reisa", "tjalda"]},
+    {"value": "Quiet hours are 23:00–06:00. The rules page says to leave before 12:00, while the FAQ says there is no specific check-out time for camping.", "src": ["own-rules", "own-faq"]},
+    {"value": "Dogs on a leash only; no open fires; no grills on grass or wooden decks; no own gas stoves inside the buildings; campers may not use the guesthouse facilities.", "src": ["own-rules", "own-faq"]},
+    {"value": "Campsite guests get 15% off menu pizzas at Daddi's Pizza next door; there is also a 24/7 honesty souvenir shop.", "src": ["own", "reisa", "tjalda"]},
+    {"value": "Nearest grocery store is Krambúðin in Reykjahlíð next to the N1 petrol station (about 5 minutes); the Vínbúðin liquor store in Reykjahlíð opens weekdays 16–18.", "src": ["own-faq", "reisa"]},
+    {"value": "There is no playground on site; the nearest is in Reykjahlíð next to the school.", "src": ["own-faq"]}
+  ]
+}

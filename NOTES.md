@@ -132,7 +132,7 @@ A nightly run should take the first `todo` (or `stub` → full) row by prio, res
 | B06 | 1 | done | guide | dump-stations-iceland | Where to empty a cassette toilet in Iceland (by region) | all | dump-station theme hub needs data | uos.is disposal list, icetourist.is |
 | B07 | 1 | done | campsite | sandgerdi-airport-camping | Sandgerði / airport-area campsite | reykjanes | first/last night near KEF, all year | tjalda |
 | B08 | 1 | done | campsite | hamrar-akureyri | Hamrar, Akureyri | north-east | all year | tjalda, hamrar.is |
-| B09 | 1 | todo | campsite | vogar-myvatn | Vogar, Mývatn | north-east | all year, chemical disposal | tjalda, vogarholidays.is |
+| B09 | 1 | done | campsite | vogar-myvatn | Vogar, Mývatn | north-east | all year, chemical disposal | tjalda, vogarholidays.is |
 | B10 | 1 | todo | campsite | camp-egilsstadir | Camp Egilsstaðir | east | all year 24/7 | tjalda |
 | B11 | 2 | todo | guide | golden-circle-winter-campsites | Winter campsites on the Golden Circle (2026–27) | south | Úthlíð/Skjól/Geysir/Laugarvatn/Flúðir conflicts to resolve | ferdalag winter list |
 | B12 | 2 | todo | campsite | uthlid | Úthlíð | south | winter service list | tjalda, ferdalag |
@@ -213,6 +213,13 @@ Nothing signed up, no links placed. The affiliate disclosure page is a placehold
 - Contacting campsites to fill Unconfirmed cells (email/phone) needs your approval.
 
 ## CHANGELOG
+- 2026-10-28: Vogar, Mývatn (Vogar Travel Service) full page – second North East campsite. 2026 rates from own Camping page +
+  reisa.is: adult 2,550 (tjalda.is says 2,450 – conflict shown), under-14s free, tent/car/campervan 500, motorhome 1,600 incl.
+  electricity, electricity 1,100, lodging tax 400/unit, 4th night free after 3; showers + heated indoor kitchen included; no
+  senior/disabled discount. Winter = open (own site/FAQ, tjalda, reisa, ferdalag winter list); no source describes reduced winter
+  service → page advises calling ahead. Dump yes (black water + drinking-water hose). No reservations, QR self check-in. Not on
+  Camping Card. Conflicts noted: laundry 4,990 (tjalda/reisa) vs 4,500 (FAQ); check-out before 12:00 (rules) vs none (FAQ).
+  Nothing awaiting Stefán from this run.
 - 2026-10-27: Custom domain https://icelandcampsites.com live (GitHub Pages, HTTPS enforced, cert for apex + www). BASE_URL and
   data/site.json base_url → https://icelandcampsites.com (no prefix); build.py writes dist/CNAME; deploy.sh sets Pages cname and
   enforces HTTPS; check.py verifies CNAME, robots.txt sitemap line, no stale github.io/example.com URLs or /iceland-campsites prefix.
