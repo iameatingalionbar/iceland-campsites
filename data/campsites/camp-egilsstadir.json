@@ -1,0 +1,80 @@
+{
+  "slug": "camp-egilsstadir",
+  "name": "Camp Egilsstaðir",
+  "alt_names": ["Egilsstaðir Campsite", "Tjaldsvæðið á Egilsstöðum", "Camp Egilsstadir"],
+  "region": "east",
+  "town": "Egilsstaðir",
+  "completeness": "full",
+  "checked": "2026-10-29",
+  "sources": {
+    "own": {"title": "campegilsstadir.is – home page (open all year 24/7, winter zone P, booking rules, contact)", "url": "https://campegilsstadir.is/", "checked": "2026-10-29"},
+    "own-prices": {"title": "campegilsstadir.is – Opening hours and prices (2026 prices, information centre hours, camp rules)", "url": "https://campegilsstadir.is/opening-hours-prices/", "checked": "2026-10-29"},
+    "own-facilities": {"title": "campegilsstadir.is – Facilities", "url": "https://campegilsstadir.is/facilities/", "checked": "2026-10-29"},
+    "own-faq": {"title": "campegilsstadir.is – FAQ (booking, payment, dump site, water, Camping Card, directions)", "url": "https://campegilsstadir.is/faq/", "checked": "2026-10-29"},
+    "own-location": {"title": "campegilsstadir.is – Location (bus stop)", "url": "https://campegilsstadir.is/location/", "checked": "2026-10-29"},
+    "own-terms": {"title": "campegilsstadir.is – Terms & conditions (operator, cancellation, check-in/out)", "url": "https://campegilsstadir.is/terms-conditions/", "checked": "2026-10-29"},
+    "reisa": {"title": "Reisa.is – Camp Egilsstaðir (zones A–E and P, winter zone, services)", "url": "https://reisa.is/en/egilsstadir/", "checked": "2026-10-29"},
+    "tjalda": {"title": "Tjalda.is – Camp Egilsstaðir listing (2026 rates, services, GPS)", "url": "https://tjalda.is/en/campsite/egilsstadir", "checked": "2026-10-29"},
+    "ferdalag-winter": {"title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service", "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service", "checked": "2026-10-29"}
+  },
+  "intro": {
+    "value": "A large town-centre campsite in Egilsstaðir, the main service town of East Iceland, sheltered beneath a line of cliffs about 200 m from Route 1 and within walking distance of the Bónus and Nettó supermarkets. It is open all year and its service building, with an indoor kitchen and dining room, showers, toilets and a 24-hour laundromat, is open 24/7. In winter, or whenever the grass zones are wet or snow-covered, campers use zone P, the campsite car park, which has electric hook-ups for five vehicles. The Egilsstaðastofa visitor centre is in the same building, and Vök Baths is about 4 km away.",
+    "src": ["own", "own-facilities", "own-faq", "reisa", "tjalda", "ferdalag-winter"]
+  },
+  "location": {
+    "address": {
+      "value": "Kaupvangur 17, 700 Egilsstaðir",
+      "src": ["own", "tjalda", "ferdalag-winter"],
+      "note": "Approx. 200 m from Route 1 in the centre of Egilsstaðir. Driving distances given by the campsite: Höfn 262 km and Djúpivogur 161 km from the south, Akureyri 269 km and Mývatn 164 km from the north."
+    },
+    "lat": 65.258045,
+    "lon": -14.408444,
+    "coords_src": ["tjalda"]
+  },
+  "season": {
+    "value": "Open all year round; the service building (toilets, showers, kitchen, laundry) is open 24/7.",
+    "src": ["own", "own-prices", "own-faq", "reisa", "tjalda", "ferdalag-winter"]
+  },
+  "winter": {
+    "status": "open",
+    "value": "Open in winter: the own site and FAQ ('open all year round with facilities open 24/7'), tjalda.is, reisa.is and ferdalag.is's official camper winter service list all agree. Zone P (the car park) is the winter zone, used when the main zones are wet or covered with snow, with electricity posts for 5 vehicles at the entrance to the main area. In low season (November to March per the own site) the reception may be closed on some days; you then pay by card at the self-service terminal or in cash in the honesty box. In winter, fresh water comes from a hose inside next to the washing machines. Check road conditions on road.is.",
+    "src": ["own", "own-faq", "reisa", "tjalda", "ferdalag-winter"]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 prices from the own 'Opening hours and prices' page, matching tjalda.is 'Rates 2026'. All prices include VAT.",
+      "src": ["own-prices", "tjalda", "own-terms"]
+    },
+    "currency": "ISK",
+    "items": [
+      {"label": "Adult (13–67) per night", "value": "2,950 ISK", "src": ["own-prices", "tjalda"], "note": "Shower included."},
+      {"label": "Senior (67+) / disabled per night", "value": "2,250 ISK", "src": ["own-prices", "tjalda"]},
+      {"label": "Children 12 and under", "value": "Free", "src": ["own-prices", "tjalda"]},
+      {"label": "Electricity per 24 h (per camper unit)", "value": "2,000 ISK", "src": ["own-prices", "own-faq", "tjalda"]},
+      {"label": "Lodging tax ('overnight tax')", "value": "400 ISK per unit per night", "src": ["own-prices", "tjalda"]},
+      {"label": "Toilets and showers", "value": "Included for campers", "src": ["own-prices", "own-faq", "tjalda"]},
+      {"label": "Washing machine / dryer per load", "value": "1,500 ISK each (detergent included)", "src": ["own-prices", "tjalda"], "note": "The own Facilities page and FAQ still say 1,250 ISK per load."},
+      {"label": "Wi-Fi", "value": "Free", "src": ["own-prices", "own-faq"]},
+      {"label": "Non-guests: shower / kitchen / WC", "value": "1,000 / 1,000 / 100 ISK", "src": ["own-prices", "tjalda"]}
+    ]
+  },
+  "facts": {
+    "electricity": {"has": "yes", "value": "Yes – 2,000 ISK per 24 h per camper unit, not included in the nightly rate. In the winter zone (P, the car park) an electricity post at the entrance to the main area has connections for 5 vehicles.", "src": ["own-prices", "own-faq", "reisa", "tjalda"]},
+    "kitchen": {"has": "yes", "value": "Yes – indoor kitchen and large dining room/lounge in the service building, open 24/7 (stovetops, microwave, kettle, toaster per tjalda.is, which says 8 hobs), plus a covered outdoor dish-washing shelter; included for campers.", "src": ["own-facilities", "own-faq", "reisa", "tjalda"]},
+    "showers": {"has": "yes", "value": "Yes – 7 showers in the service building, open 24/7, included for campers; one shower and toilet adapted for disabled guests.", "src": ["own-facilities", "own-faq", "tjalda"]},
+    "toilets": {"value": "Yes – open 24/7, including an accessible toilet. The own Facilities page says 8 WCs; tjalda.is says 14. The campsite notes the main doors do not yet have smooth step-free access.", "src": ["own-facilities", "own-faq", "tjalda"]},
+    "dump_station": {"has": "yes", "value": "Yes – a dump site for camper toilets beside the trash containers. Fresh water: in summer from a hose near the trash containers; in winter from a hose inside next to the washing machines, which you connect to the sink and pass out of the window.", "src": ["own-faq", "reisa", "tjalda"]},
+    "wifi": {"value": "Free Wi-Fi inside and outside; password posted at the camp, best signal near the main building", "src": ["own-prices", "own-faq", "reisa"]},
+    "laundry": {"value": "24/7 laundromat in the service building (tjalda.is and reisa.is: 9 washers and 9 dryers); pay by card or cash. 1,500 ISK per load on the 2026 price list (own site and tjalda.is); the own Facilities page and FAQ say 1,250 ISK.", "src": ["own-prices", "own-facilities", "own-faq", "reisa", "tjalda"]},
+    "camping_card": {"value": "Not accepted – the own FAQ says the campsite is not part of the Camping Card", "src": ["own-faq"]},
+    "contact": {"value": "+354 470 0750 · campegilsstadir@campegilsstadir.is (booking changes: camping@egilsstadir.is) · campegilsstadir.is", "src": ["own", "own-faq", "tjalda"]}
+  },
+  "practical": [
+    {"value": "Booking: the own home page says that in high season (April to October) every spot must be booked and paid online at campegilsstadir.is, while reisa.is says no reservation is needed from October to April. In low season you pick any free spot in zones A–E or P after paying and adding your licence plate to the booking. Zone D is for tents only, without electricity.", "src": ["own", "own-faq", "reisa"]},
+    {"value": "High-season check-in is from 15:00 and check-out by 12:00; in low season arrival and departure times are flexible. Cancellation up to 24 h before gives a full refund minus a 500 ISK fee.", "src": ["own-faq", "own-terms"]},
+    {"value": "Quiet hours 23:00–07:00, with no driving in that time; speed limit 10 km/h; open fires forbidden; no gas cookers inside the service house; pets must be tied up and not left alone.", "src": ["own-prices"]},
+    {"value": "Guests get 10% off Vök Baths online bookings with the code CAMP10 (stated by the campsite).", "src": ["own", "own-prices"]},
+    {"value": "Gas cylinders are sold at N1 and the Húsasmiðjan hardware store, both within walking distance. Buses to Akureyri, Seyðisfjörður, Borgarfjörður eystri and Reyðarfjörður stop at the campsite car park.", "src": ["own-faq", "own-location"]},
+    {"value": "The Egilsstaðastofa information centre in the campsite building is closed in low season; the own site gives May and September weekdays 9:00–15:00 and June–August daily 8:00–17:00 (tjalda.is lists 2025 hours starting 8:30).", "src": ["own-prices", "tjalda"]}
+  ]
+}

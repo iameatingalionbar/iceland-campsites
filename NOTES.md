@@ -133,7 +133,7 @@ A nightly run should take the first `todo` (or `stub` → full) row by prio, res
 | B07 | 1 | done | campsite | sandgerdi-airport-camping | Sandgerði / airport-area campsite | reykjanes | first/last night near KEF, all year | tjalda |
 | B08 | 1 | done | campsite | hamrar-akureyri | Hamrar, Akureyri | north-east | all year | tjalda, hamrar.is |
 | B09 | 1 | done | campsite | vogar-myvatn | Vogar, Mývatn | north-east | all year, chemical disposal | tjalda, vogarholidays.is |
-| B10 | 1 | todo | campsite | camp-egilsstadir | Camp Egilsstaðir | east | all year 24/7 | tjalda |
+| B10 | 1 | done | campsite | camp-egilsstadir | Camp Egilsstaðir | east | all year 24/7 | tjalda |
 | B11 | 2 | todo | guide | golden-circle-winter-campsites | Winter campsites on the Golden Circle (2026–27) | south | Úthlíð/Skjól/Geysir/Laugarvatn/Flúðir conflicts to resolve | ferdalag winter list |
 | B12 | 2 | todo | campsite | uthlid | Úthlíð | south | winter service list | tjalda, ferdalag |
 | B13 | 2 | todo | campsite | skjol | Skjól (Geysir area) | south | conflict: year-round vs card dates 21 May–15 Sep | tjalda, utilegukortid |
@@ -213,6 +213,13 @@ Nothing signed up, no links placed. The affiliate disclosure page is a placehold
 - Contacting campsites to fill Unconfirmed cells (email/phone) needs your approval.
 
 ## CHANGELOG
+- 2026-10-29: Camp Egilsstaðir full page – first East Iceland campsite. 2026 prices from own 'Opening hours and prices' page,
+  matching tjalda.is: adult 2,950, senior/disabled 2,250, children ≤12 free, electricity 2,000/24 h, lodging tax 400/unit,
+  WC + showers included, Wi-Fi free. Winter = open (own site/FAQ, tjalda, reisa, ferdalag winter list); winter zone P = car park
+  with 5 electric connections; reception may be closed in low season → self-service card terminal / honesty box; winter water hose
+  indoors. Dump yes (beside trash containers). Not on Camping Card (own FAQ). Conflicts noted: laundry 1,500 (price list/tjalda) vs
+  1,250 (Facilities/FAQ); WCs 8 (own) vs 14 (tjalda); booking season April–October (own) vs no booking October–April (reisa);
+  info-centre hours 9:00 vs 8:30 (tjalda 2025). Nothing awaiting Stefán from this run.
 - 2026-10-28: Vogar, Mývatn (Vogar Travel Service) full page – second North East campsite. 2026 rates from own Camping page +
   reisa.is: adult 2,550 (tjalda.is says 2,450 – conflict shown), under-14s free, tent/car/campervan 500, motorhome 1,600 incl.
   electricity, electricity 1,100, lodging tax 400/unit, 4th night free after 3; showers + heated indoor kitchen included; no
