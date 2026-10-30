@@ -156,7 +156,7 @@ A nightly run should take the first `todo` (or `stub` → full) row by prio, res
 | B30 | 3 | todo | campsite | vestrahorn-stokksnes | Vestrahorn / Stokksnes camping | south | photo spot | tjalda |
 | B31 | 3 | todo | guide | camping-card-2026 | Is the Camping Card (Útilegukortið) worth it in 2026? | all | demand | utilegukortid.is |
 | B32 | 3 | todo | task | south-coast-stubs-dump | Confirm dump/electricity for Starlight, Farmhouse Lodge, Smáratún, Kirkjubær (Hellishólar: dump listed on Parka 2026-10-25, location/cassette use still unconfirmed) | south | Unconfirmed cells in guide B01 | email/phone needs Stefán's OK |
-| B33 | 1 | todo | guide | winter-campsites-iceland | Campsites Open in Winter in Iceland (all regions, 2026–27) | all | KEYWORDS #1, hub for regional winter guides | Visit Iceland camper winter service, ferdalag winter list, tjalda |
+| B33 | 1 | done | guide | winter-campsites-iceland | Campsites Open in Winter in Iceland (all regions, 2026–27) | all | KEYWORDS #1, hub for regional winter guides | Visit Iceland camper winter service, ferdalag winter list, tjalda |
 | B34 | 1 | todo | guide | campsites-near-reykjavik | Campsites near Reykjavík (city, Mosfellsdalur, Hafnarfjörður) | capital-area | KEYWORDS #4 | tjalda, reykjavikcampsite.is |
 | B35 | 1 | todo | guide | north-iceland-winter-campsites | Winter campsites around Akureyri and Mývatn | north-east | KEYWORDS #5 | tjalda, visitakureyri.is, northiceland.is camper winter service |
 | B36 | 2 | todo | guide | ring-road-campsites | Ring Road campsites in order (with map) | all | KEYWORDS #6 | tjalda coordinates |
@@ -213,6 +213,15 @@ Nothing signed up, no links placed. The affiliate disclosure page is a placehold
 - Contacting campsites to fill Unconfirmed cells (email/phone) needs your approval.
 
 ## CHANGELOG
+- 2026-10-30: Guide "Campsites Open in Winter in Iceland (All Regions, 2026–27)" (/guides/winter-campsites-iceland/, B33). Table of all
+  21 profiled campsites (winter status pulled from campsite files, incl. closed Vík/Hvolsvöllur/Happy Campsite), then the 38-entry
+  ferdalag.is Camper winter service list cross-checked against tjalda.is (2026-10-30): all-year on both (Úthlíð, Hlíð Mývatn –
+  reception closed in winter, CJA Laugar, Djúpivogur, Þingeyraroddi; Ártún all year except Dec–Jan); listed but tjalda gives a summer
+  season (Hólmavík 15 May–15 Sep, Grettislaug Jun–Aug, Seyðisfjörður Apr–Oct, Laugarvatn 20 May–1 Oct, Flúðir May–Oct, Geysir
+  15 May–15 Sep, Hvolsvöllur to 1 Nov); not active on tjalda 2026 / no dates (Skjól, Þingvellir, Fjalladýrð, Grindavík, Fossatún) and
+  unmatched (Borgarfjörður Eystri, Hrafnagil, Mjóeyri, Freezer Hostel, Guesthouse Skeið) → Unconfirmed. Tips: Reykjavík Eco prebook/gate
+  code, reduced winter service, umferdin.is + safetravel.is. Candidate new campsite rows from the list: Hlíð, CJA Laugar, Djúpivogur
+  (B23), Þingeyraroddi (B26), Ártún. Nothing awaiting Stefán from this run.
 - 2026-10-29: Camp Egilsstaðir full page – first East Iceland campsite. 2026 prices from own 'Opening hours and prices' page,
   matching tjalda.is: adult 2,950, senior/disabled 2,250, children ≤12 free, electricity 2,000/24 h, lodging tax 400/unit,
   WC + showers included, Wi-Fi free. Winter = open (own site/FAQ, tjalda, reisa, ferdalag winter list); winter zone P = car park

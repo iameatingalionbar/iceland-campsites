@@ -1,0 +1,372 @@
+{
+  "slug": "winter-campsites-iceland",
+  "title": "Campsites Open in Winter in Iceland (All Regions, 2026–27)",
+  "short": "Winter campsites, all of Iceland",
+  "description": "Which Icelandic campsites take campervans in winter 2026–27, region by region: sourced winter status, electricity, dump stations and prices, plus where the official winter list conflicts with campsites' own seasons.",
+  "region": "all",
+  "checked": "2026-10-30",
+  "sources": {
+    "ferdalag-winter": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service (38 listings)",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-10-30"
+    },
+    "visiticeland-winter": {
+      "title": "Visit Iceland – Camper winter service in South Iceland",
+      "url": "https://www.visiticeland.com/things-to-do/south/accommodation/camper-winter-service/",
+      "checked": "2026-10-30"
+    },
+    "tjalda-api": {
+      "title": "Tjalda.is – campsite directory (public listing data: season text and opening flag)",
+      "url": "https://tjalda.is/en",
+      "checked": "2026-10-30"
+    },
+    "tj-uthlid": {
+      "title": "Tjalda.is – Úthlíð, Biskupstungur",
+      "url": "https://tjalda.is/en/campsite/uthlid",
+      "checked": "2026-10-30"
+    },
+    "tj-hlid": {
+      "title": "Tjalda.is – Hlíð, Mývatn",
+      "url": "https://tjalda.is/en/campsite/hlid",
+      "checked": "2026-10-30"
+    },
+    "tj-cja": {
+      "title": "Tjalda.is – CJA camping, Laugar",
+      "url": "https://tjalda.is/en/campsite/cja",
+      "checked": "2026-10-30"
+    },
+    "tj-djupivogur": {
+      "title": "Tjalda.is – Djúpivogur",
+      "url": "https://tjalda.is/en/campsite/djupivogur",
+      "checked": "2026-10-30"
+    },
+    "tj-thingeyraroddi": {
+      "title": "Tjalda.is – Þingeyraroddi (Þingeyri)",
+      "url": "https://tjalda.is/en/campsite/thingeyraroddi",
+      "checked": "2026-10-30"
+    },
+    "tj-artun": {
+      "title": "Tjalda.is – Ártún (Grýtubakkahreppur)",
+      "url": "https://tjalda.is/en/campsite/artun",
+      "checked": "2026-10-30"
+    },
+    "tj-holmavik": {
+      "title": "Tjalda.is – Hólmavík",
+      "url": "https://tjalda.is/en/campsite/holmavik",
+      "checked": "2026-10-30"
+    },
+    "tj-grettislaug": {
+      "title": "Tjalda.is – Reykhólahreppur – Grettislaug",
+      "url": "https://tjalda.is/en/campsite/reykholahreppur",
+      "checked": "2026-10-30"
+    },
+    "tj-seydisfjordur": {
+      "title": "Tjalda.is – Seyðisfjörður",
+      "url": "https://tjalda.is/en/campsite/seyisfjordur",
+      "checked": "2026-10-30"
+    },
+    "tj-laugarvatn": {
+      "title": "Tjalda.is – Laugarvatn",
+      "url": "https://tjalda.is/en/campsite/laugarvatn",
+      "checked": "2026-10-30"
+    },
+    "tj-fludir": {
+      "title": "Tjalda.is – Flúðir",
+      "url": "https://tjalda.is/en/campsite/fludir",
+      "checked": "2026-10-30"
+    },
+    "tj-geysir": {
+      "title": "Tjalda.is – Geysir, Haukadalur",
+      "url": "https://tjalda.is/en/campsite/geysir",
+      "checked": "2026-10-30"
+    },
+    "tj-skjol": {
+      "title": "Tjalda.is – Skjól",
+      "url": "https://tjalda.is/en/campsite/skjol",
+      "checked": "2026-10-30"
+    },
+    "tj-thingvellir": {
+      "title": "Tjalda.is – Þingvellir",
+      "url": "https://tjalda.is/en/campsite/thingvellir",
+      "checked": "2026-10-30"
+    },
+    "tj-fjalladyrd": {
+      "title": "Tjalda.is – Möðrudalur á Fjöllum – Fjalladýrð",
+      "url": "https://tjalda.is/en/campsite/fjalladyrd-modrudal",
+      "checked": "2026-10-30"
+    },
+    "tj-grindavik": {
+      "title": "Tjalda.is – Grindavík",
+      "url": "https://tjalda.is/en/campsite/grindavik",
+      "checked": "2026-10-30"
+    },
+    "tj-fossatun": {
+      "title": "Tjalda.is – Fossatún",
+      "url": "https://tjalda.is/en/campsite/fossatun",
+      "checked": "2026-10-30"
+    },
+    "tj-hvolsvollur": {
+      "title": "Tjalda.is – Hvolsvöllur",
+      "url": "https://tjalda.is/en/campsite/hvolsvollur",
+      "checked": "2026-10-30"
+    },
+    "reddit-vik": {
+      "title": "r/VisitingIceland – 'Winter campground in Vik?' (Jan 2024; seen via search-engine result, Reddit blocks direct fetch)",
+      "url": "https://www.reddit.com/r/VisitingIceland/comments/193fqbr/winter_campground_in_vik/",
+      "checked": "2026-10-30"
+    },
+    "reddit-recs": {
+      "title": "r/VisitingIceland – 'Campsite recommendations' (Nov 2024; seen via search-engine result)",
+      "url": "https://www.reddit.com/r/VisitingIceland/comments/1gytpl5/campsite_recommendations/",
+      "checked": "2026-10-30"
+    },
+    "umferdin": {
+      "title": "Umferdin.is – Road and traffic information (Icelandic Road and Coastal Administration)",
+      "url": "https://umferdin.is/en",
+      "checked": "2026-10-30"
+    },
+    "safetravel": {
+      "title": "Safetravel.is – travel conditions and travel plans",
+      "url": "https://safetravel.is/",
+      "checked": "2026-10-30"
+    },
+    "vik-own": {
+      "title": "Vík Camping – Opening hours summer 2026",
+      "url": "https://www.vikcamping.is/",
+      "checked": "2026-10-30"
+    }
+  },
+  "intro": [
+    {
+      "value": "Iceland's Tourist Board publishes an official 'Camper winter service' list on ferdalag.is. On 30 October 2026 it had 38 entries, mostly campsites but also a few businesses that are not campsites, such as the Activity Park in Reykjavík.",
+      "src": [
+        "ferdalag-winter"
+      ]
+    },
+    {
+      "value": "Being on that list does not always mean a campsite is open in winter. For at least six listed campsites, the tjalda.is campsite directory gives a summer-only season, for example Hólmavík (15 May – 15 September), Geysir (15 May – 15 September) and Laugarvatn (20 May – 1 October). This guide shows each campsite's sourced winter status and flags those conflicts, so you know whom to call before driving.",
+      "src": [
+        "ferdalag-winter",
+        "tj-holmavik",
+        "tj-geysir",
+        "tj-laugarvatn"
+      ]
+    }
+  ],
+  "scope_note": "Scope: every campsite with its own page on this site that is open, partly open or call-ahead in winter, plus three well-known campsites that are closed, then every campsite on the official winter list that we have not profiled yet, grouped by what tjalda.is says about its season. Regional detail is in the South Coast and Keflavík Airport guides.",
+  "demand": {
+    "value": "Winter camping is one of the most common campervan questions. In r/VisitingIceland threads, people planning November and April trips report finding no winter campsite in Vík and being pointed elsewhere, and one reply advised checking tjalda.is and contacting campsites to confirm they are open: 'Do not wing this!'",
+    "src": [
+      "reddit-vik",
+      "reddit-recs"
+    ]
+  },
+  "campsites": [
+    "reykjavik-eco-campsite",
+    "sandgerdi-airport-camping",
+    "gardskagi",
+    "vogar-reykjanes",
+    "happy-campsite-keflavik",
+    "hveragerdi-reykjamork",
+    "selfoss-gesthus",
+    "hella-arhus",
+    "hvolsvollur",
+    "hellisholar",
+    "smaratun-fljotshlid",
+    "starlight-lambafell",
+    "skogafoss",
+    "farmhouse-lodge-skeidflot",
+    "vik-camping",
+    "kirkjubaer-ii",
+    "skaftafell",
+    "hofn",
+    "camp-egilsstadir",
+    "vogar-myvatn",
+    "hamrar-akureyri"
+  ],
+  "table": "winter",
+  "glance_title": "Campsites on this site: winter status",
+  "table_caption": "Roughly clockwise from Reykjavík: capital area, Reykjanes, South, East, North East. Status and facts come from each campsite's own page on this site, with sources.",
+  "sections": [
+    {
+      "id": "listed-all-year",
+      "title": "On the official winter list and 'open all year' on tjalda.is (not profiled here yet)",
+      "paras": [
+        {
+          "value": "These campsites are on the ferdalag.is winter list, and tjalda.is also says they are open all year. Two independent listings agree, but we have not yet checked prices or winter facilities, so treat them as call ahead.",
+          "src": [
+            "ferdalag-winter",
+            "tjalda-api"
+          ]
+        }
+      ],
+      "items": [
+        {
+          "value": "Úthlíð (Biskupstungur, Golden Circle, South): tjalda.is says 'Open year-round.'",
+          "src": [
+            "ferdalag-winter",
+            "tj-uthlid"
+          ]
+        },
+        {
+          "value": "Hlíð (Mývatn, North East): 'We are open all year round. The reception is closed during the winter', with information on a notice on the reception door and on the campsite's website.",
+          "src": [
+            "ferdalag-winter",
+            "tj-hlid"
+          ]
+        },
+        {
+          "value": "CJA camping (Laugar, North East): tjalda.is says 'Open all year'.",
+          "src": [
+            "ferdalag-winter",
+            "tj-cja"
+          ]
+        },
+        {
+          "value": "Djúpivogur (East): tjalda.is says 'Open year-round.'",
+          "src": [
+            "ferdalag-winter",
+            "tj-djupivogur"
+          ]
+        },
+        {
+          "value": "Þingeyraroddi (Þingeyri, Westfjords): tjalda.is says 'Open year-round.' It is the only Westfjords campsite on the official list that tjalda.is also lists as open all year.",
+          "src": [
+            "ferdalag-winter",
+            "tj-thingeyraroddi",
+            "tj-holmavik",
+            "tj-grettislaug"
+          ]
+        },
+        {
+          "value": "Ártún (Grýtubakkahreppur, near Grenivík, North East): 'Open all year, except in December and January', so it is a shoulder-season option only.",
+          "src": [
+            "ferdalag-winter",
+            "tj-artun"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conflicts",
+      "title": "On the official winter list, but tjalda.is gives a summer season",
+      "paras": [
+        {
+          "value": "For these campsites the two sources disagree. The season below is what tjalda.is shows for 2026. Do not plan a winter night here without confirming directly with the campsite.",
+          "src": [
+            "ferdalag-winter",
+            "tjalda-api"
+          ]
+        }
+      ],
+      "items": [
+        {
+          "value": "Hólmavík (Westfjords): 15 May – 15 September.",
+          "src": [
+            "ferdalag-winter",
+            "tj-holmavik"
+          ]
+        },
+        {
+          "value": "Grettislaug (Reykhólahreppur, Westfjords): 1 June – 31 August.",
+          "src": [
+            "ferdalag-winter",
+            "tj-grettislaug"
+          ]
+        },
+        {
+          "value": "Seyðisfjörður (East): 1 April – 31 October.",
+          "src": [
+            "ferdalag-winter",
+            "tj-seydisfjordur"
+          ]
+        },
+        {
+          "value": "Laugarvatn (Golden Circle, South): 20 May – 1 October.",
+          "src": [
+            "ferdalag-winter",
+            "tj-laugarvatn"
+          ]
+        },
+        {
+          "value": "Flúðir (South): May – October.",
+          "src": [
+            "ferdalag-winter",
+            "tj-fludir"
+          ]
+        },
+        {
+          "value": "Geysir, Haukadalur (Golden Circle, South): 15 May – 15 September.",
+          "src": [
+            "ferdalag-winter",
+            "tj-geysir"
+          ]
+        },
+        {
+          "value": "Hvolsvöllur (South): 1 May – 1 November. This campsite has its own page here, marked closed in winter.",
+          "src": [
+            "ferdalag-winter",
+            "tj-hvolsvollur"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unclear",
+      "title": "On the official winter list, with no current season on tjalda.is",
+      "paras": [
+        {
+          "value": "Tjalda.is says that Skjól, Þingvellir and Fjalladýrð (Möðrudalur) are not active participants in 2026, so its information on them 'may be outdated'. For Grindavík and Fossatún it gives no season dates and does not list them as open all year. Winter status for all five is Unconfirmed.",
+          "src": [
+            "tj-skjol",
+            "tj-thingvellir",
+            "tj-fjalladyrd",
+            "tj-grindavik",
+            "tj-fossatun"
+          ]
+        }
+      ],
+      "items": [
+        {
+          "value": "Also on the official list, but not matched to a tjalda.is listing by us: Borgarfjörður Eystri Campsite, Hrafnagil (near Akureyri), Mjóeyri Fjordlife (Eskifjörður), The Freezer Hostel (Rif, Snæfellsnes) and Guesthouse Skeið (Svarfaðardalur). Winter status Unconfirmed.",
+          "src": [
+            "ferdalag-winter"
+          ]
+        }
+      ]
+    }
+  ],
+  "tips_title": "Winter tips",
+  "tips": [
+    {
+      "value": "Reykjavík Eco Campsite asks winter guests to prebook on its website; the booking gives the code to the locked RV and camping area.",
+      "src": [
+        "ferdalag-winter"
+      ]
+    },
+    {
+      "value": "Several all-year campsites run reduced service in winter. Camp Egilsstaðir's reception may be closed in low season, when you pay at a self-service card terminal or in an honesty box, and Hlíð at Mývatn closes its reception for the winter.",
+      "src": [
+        "ferdalag-winter",
+        "tj-hlid"
+      ]
+    },
+    {
+      "value": "The South Coast has a gap: the Vík campsite is open 20 April – 1 November 2026 and says 'In winter the campsite is closed', and Hvolsvöllur's season ends 1 November. Visit Iceland's South Iceland winter list also includes Hvolsvöllur, so check before relying on it.",
+      "src": [
+        "vik-own",
+        "tj-hvolsvollur",
+        "visiticeland-winter"
+      ]
+    },
+    {
+      "value": "Check road conditions and closures before each drive on umferdin.is, the Icelandic Road and Coastal Administration's traffic site, and consider leaving a travel plan on safetravel.is.",
+      "src": [
+        "umferdin",
+        "safetravel"
+      ]
+    }
+  ],
+  "warning": "Winter seasons and services change at short notice, and the official winter list and tjalda.is often disagree. Contact the campsite before relying on it, especially anything marked Call ahead or Unconfirmed."
+}
