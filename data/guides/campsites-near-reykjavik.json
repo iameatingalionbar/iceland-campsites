@@ -1,0 +1,119 @@
+{
+ "slug": "campsites-near-reykjavik",
+ "title": "Campsites Near Reykjavík for Campervans (2026): City, Hafnarfjörður and Mosfellsdalur",
+ "short": "Near Reykjavík",
+ "description": "The campsites in and near Reykjavík for campervans: Reykjavík Eco-Campsite (open all year), Hafnarfjörður and Mosskógar, with 2026 prices, winter status, electricity and toilet disposal. Every fact sourced.",
+ "region": "capital-area",
+ "checked": "2026-10-31",
+ "sources": {
+  "tjalda-api": {
+   "title": "Tjalda.is public campsite data (https://tjalda.is/api/campsites), capital-area listings",
+   "url": "https://tjalda.is/api/campsites",
+   "checked": "2026-10-31"
+  }
+ },
+ "intro": [
+  {
+   "value": "Three campsites in the capital area publish 2026 information: Reykjavík Eco-Campsite in Laugardalur, about 3 km from the city centre; Hafnarfjörður's campsite on Víðistaðatún, about 5 minutes from the town centre; and Mosskógar, in a sheltered grove in Mosfellsdalur valley.",
+   "src": [
+    "reykjavik-eco-campsite:tjalda",
+    "hafnarfjordur:reisa",
+    "mosskogar:tjalda"
+   ]
+  },
+  {
+   "value": "Only Reykjavík Eco-Campsite is open all year, and from 15 October to 15 April only its Area A is open, for motorhomes and campervans. Mosskógar is open 1 March – 1 December, and Hafnarfjörður 15 May – 30 September.",
+   "src": [
+    "reykjavik-eco-campsite:own-home",
+    "reykjavik-eco-campsite:own-campsite",
+    "mosskogar:tjalda",
+    "hafnarfjordur:tjalda",
+    "hafnarfjordur:reisa"
+   ]
+  }
+ ],
+ "scope_note": "Scope: campsites within the capital area (Höfuðborgarsvæðið) listed on tjalda.is with 2026 information, checked 2026-10-31. The town campsite in Mosfellsbær (Skólabraut) is not included: its tjalda.is entry is hidden from the public site and still shows 2022 prices, so its 2026 status is Unconfirmed.",
+ "campsites": [
+  "reykjavik-eco-campsite",
+  "hafnarfjordur",
+  "mosskogar"
+ ],
+ "table": "overview",
+ "glance_title": "At a glance",
+ "table_caption": "Prices are 2026 rates as published. Reykjavík's rate is per pitch including one adult; Mosskógar's is per adult; Hafnarfjörður's is per vehicle including one adult.",
+ "sections": [
+  {
+   "id": "which",
+   "title": "Which one to pick",
+   "paras": [],
+   "items": [
+    {
+     "value": "You are travelling between mid-October and mid-April: Reykjavík Eco-Campsite is the only one of the three that is open, and only Area A, for motorhomes and campervans. Caravans and trailer tents are allowed only 15 May – 15 October.",
+     "src": [
+      "reykjavik-eco-campsite:own-home",
+      "reykjavik-eco-campsite:own-campsite"
+     ]
+    },
+    {
+     "value": "You want an indoor kitchen: Reykjavík Eco-Campsite has a guest kitchen, and Mosskógar a kitchenette. Hafnarfjörður has no indoor kitchen, only outdoor sinks, grills and a roofed outdoor kitchen.",
+     "src": [
+      "reykjavik-eco-campsite:tjalda",
+      "mosskogar:tjalda",
+      "hafnarfjordur:reisa"
+     ]
+    },
+    {
+     "value": "You need to empty a cassette toilet: Hafnarfjörður lists cassette-toilet disposal on site. Reykjavík Eco-Campsite has none and sends you to Klettagarðar 14, about 5 minutes' drive. Mosskógar lists 'waste disposal for mobile homes', but whether it takes cassettes is Unconfirmed.",
+     "src": [
+      "hafnarfjordur:reisa",
+      "reykjavik-eco-campsite:own-home",
+      "mosskogar:tjalda"
+     ]
+    },
+    {
+     "value": "Lowest listed price for two adults in one campervan without electricity: Hafnarfjörður at 3,500 + 2,500 ISK plus 400 ISK lodging tax, Mosskógar at 2 × 3,000 ISK with tax included, and Reykjavík Eco at 3,735 + 3,150 ISK plus 400 ISK tax.",
+     "src": [
+      "hafnarfjordur:tjalda",
+      "mosskogar:tjalda",
+      "reykjavik-eco-campsite:own-prices"
+     ]
+    },
+    {
+     "value": "You want to be in the city without driving: Reykjavík Eco-Campsite is next to Laugardalslaug pool, bus 14 stops in front, and airport and tour buses stop by the hostel next door.",
+     "src": [
+      "reykjavik-eco-campsite:tjalda"
+     ]
+    }
+   ]
+  }
+ ],
+ "tips_title": "Practical tips",
+ "tips": [
+  {
+   "value": "Reykjavík Eco-Campsite: check-in is online, and the confirmation email contains a code that opens the gates to your area and the service building. Book ahead on its website.",
+   "src": [
+    "reykjavik-eco-campsite:tjalda"
+   ]
+  },
+  {
+   "value": "Hafnarfjörður: vehicles on pitches in Zones B and C can be at most 8 metres long, and only Zone B has power sockets.",
+   "src": [
+    "hafnarfjordur:reisa"
+   ]
+  },
+  {
+   "value": "Hafnarfjörður and Reykjavík Eco-Campsite both have a maximum stay of 7 nights (Reykjavík: 7 nights within a month).",
+   "src": [
+    "hafnarfjordur:tjalda",
+    "reykjavik-eco-campsite:tjalda"
+   ]
+  },
+  {
+   "value": "The Environment and Energy Agency lists two public portable-toilet disposal points in the capital area: Klettagarðar in Reykjavík and Hraunavík in Hafnarfjörður.",
+   "src": [
+    "reykjavik-eco-campsite:uos"
+   ]
+  }
+ ],
+ "warning": "Seasons, prices and facilities can change at short notice. Contact the campsite before relying on it, especially in winter."
+}

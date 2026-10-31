@@ -1,0 +1,194 @@
+{
+  "slug": "hafnarfjordur",
+  "name": "Hafnarfjörður Campsite (Víðistaðatún)",
+  "region": "capital-area",
+  "town": "Hafnarfjörður",
+  "completeness": "stub",
+  "checked": "2026-10-31",
+  "sources": {
+    "tjalda": {
+      "title": "Tjalda.is – Hafnarfjörður listing (2026 rates & services)",
+      "url": "https://tjalda.is/en/campsite/hafnarfjordur",
+      "checked": "2026-10-31"
+    },
+    "reisa": {
+      "title": "Reisa.is – Hafnarfjörður campsite (booking page, zones & facilities)",
+      "url": "https://reisa.is/hafnarfjordur/",
+      "checked": "2026-10-31"
+    }
+  },
+  "intro": {
+    "value": "A small, family-friendly campsite on Víðistaðatún, a sculpture park surrounded by lava in Hafnarfjörður, about 5 minutes from the town centre. It is run by the Hraunbúar scout association, and profits go to youth scouting.",
+    "src": [
+      "tjalda",
+      "reisa"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Víðistaðatún, 220 Hafnarfjörður (drive in along the path beside Lava Hostel / the scout hall)",
+      "src": [
+        "tjalda",
+        "reisa"
+      ]
+    },
+    "lat": 64.0750158,
+    "lon": -21.9649507,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "15 May – 30 September",
+    "src": [
+      "tjalda",
+      "reisa"
+    ]
+  },
+  "winter": {
+    "status": "closed",
+    "value": "Closed in winter: the season is 15 May – 30 September. On 31 October 2026 the booking page showed the site as closed, reopening 15 May.",
+    "src": [
+      "tjalda",
+      "reisa"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Car, motorhome or caravan, incl. 1 adult, per night",
+        "value": "3,500 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Tent, incl. 1 adult, per night",
+        "value": "3,000 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Additional adult (14 years and older)",
+        "value": "2,500 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Children 13 years and younger",
+        "value": "Free",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Electricity per night",
+        "value": "1,300 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Lodging tax per tent/vehicle/caravan per night",
+        "value": "400 ISK",
+        "src": [
+          "tjalda"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "has": "yes",
+      "value": "Yes – Zone B has 9 bookable pitches, all with a power socket (1,300 ISK/night). Zone C's 11 pitches have no sockets; you need a long extension cable to reach the sockets in Zone B across the road.",
+      "src": [
+        "reisa",
+        "tjalda"
+      ]
+    },
+    "kitchen": {
+      "has": "no",
+      "value": "No indoor kitchen or indoor guest area. There are outdoor sinks for washing up, charcoal grills, outdoor tables and a roofed outdoor kitchen with a grill.",
+      "src": [
+        "reisa",
+        "tjalda"
+      ]
+    },
+    "showers": {
+      "has": "yes",
+      "value": "Yes – showers included in the price",
+      "src": [
+        "reisa",
+        "tjalda"
+      ]
+    },
+    "toilets": {
+      "value": "Yes",
+      "src": [
+        "reisa",
+        "tjalda"
+      ]
+    },
+    "dump_station": {
+      "has": "yes",
+      "value": "Yes – listed as 'Losun fyrir ferðasalerna' (portable/cassette toilet disposal) on the booking page and 'Waste disposal for mobile homes' on tjalda.is. Exact location on site: Unconfirmed.",
+      "src": [
+        "reisa",
+        "tjalda"
+      ]
+    },
+    "wifi": {
+      "value": "Free Wi-Fi, but only by the gate",
+      "src": [
+        "reisa"
+      ]
+    },
+    "laundry": {
+      "value": "Washing machine and dryer, included in the price",
+      "src": [
+        "reisa"
+      ]
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 565 0901 · info@lavahostel.is",
+      "src": [
+        "tjalda"
+      ]
+    }
+  },
+  "practical": [
+    {
+      "value": "Maximum vehicle length on pitches in Zones B and C is 8 metres. Zone A is for tents only; cars with rooftop tents must book Zone B or C.",
+      "src": [
+        "reisa"
+      ]
+    },
+    {
+      "value": "Maximum stay 7 nights. One motorhome, caravan or trailer per pitch. Dogs allowed on a lead. American Express is not accepted.",
+      "src": [
+        "tjalda",
+        "reisa"
+      ]
+    },
+    {
+      "value": "Pitches can be booked online through Reisa.is; drop-in guests are also accepted.",
+      "src": [
+        "reisa",
+        "tjalda"
+      ]
+    }
+  ]
+}

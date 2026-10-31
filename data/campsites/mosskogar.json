@@ -1,0 +1,177 @@
+{
+  "slug": "mosskogar",
+  "name": "Mosskógar Campsite (Mosfellsdalur)",
+  "region": "capital-area",
+  "town": "Mosfellsdalur, Mosfellsbær",
+  "completeness": "stub",
+  "checked": "2026-10-31",
+  "sources": {
+    "tjalda": {
+      "title": "Tjalda.is – Mosskógar listing (2026 rates & services)",
+      "url": "https://tjalda.is/en/campsite/mosskogar",
+      "checked": "2026-10-31"
+    }
+  },
+  "intro": {
+    "value": "A quiet campsite in a sheltered grove in Mosfellsdalur valley, a short drive from Mosfellsbær on the edge of the capital area. Nearby are horse rental, a golf course, walking paths and Gljúfrasteinn, the museum of Nobel laureate Halldór Laxness.",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Mosskógar, 271 Mosfellsbær",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "lat": null,
+    "lon": null,
+    "coords_src": []
+  },
+  "season": {
+    "value": "1 March – 1 December",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "winter": {
+    "status": "partial",
+    "value": "Shoulder season only: tjalda.is gives 'Open from 1st of March to 1st of December' (its 'open all year' flag conflicts with that text, so we use the dates). Closed December – February.",
+    "src": [
+      "tjalda"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult (13 and older) per night, lodging tax included",
+        "value": "3,000 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Children 12 and younger",
+        "value": "Free",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Electricity per unit per night",
+        "value": "2,000 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Washing machine per use",
+        "value": "1,500 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Tumble dryer per use",
+        "value": "1,000 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Showers",
+        "value": "Free",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Camping in the greenhouse, per person per night",
+        "value": "4,000 ISK",
+        "src": [
+          "tjalda"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "has": "yes",
+      "value": "Yes – 'several electricity plugs' (2,000 ISK per unit per night). Number of hook-ups: Unconfirmed.",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "kitchen": {
+      "has": "yes",
+      "value": "Yes – a kitchenette guests can use to prepare, cook and eat a meal",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "showers": {
+      "has": "yes",
+      "value": "Yes – free",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "toilets": {
+      "value": "Flushing toilets; drinking water",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "dump_station": {
+      "has": "yes",
+      "value": "Listed by tjalda.is as 'Waste disposal for mobile homes'. Whether it takes cassette toilets, and where it is: Unconfirmed.",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "wifi": {
+      "value": "Free",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "laundry": {
+      "value": "Washing machine 1,500 ISK and dryer 1,000 ISK per use",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 663 6173 · mosskogar@simnet.is · facebook.com/mosskogar.johannsson",
+      "src": [
+        "tjalda"
+      ]
+    }
+  },
+  "practical": [
+    {
+      "value": "Drop-in guests are accepted; tjalda.is lists no pre-booking.",
+      "src": [
+        "tjalda"
+      ]
+    },
+    {
+      "value": "From the beginning of July there is a vegetable market every Saturday, 10:00–15:00.",
+      "src": [
+        "tjalda"
+      ]
+    }
+  ]
+}

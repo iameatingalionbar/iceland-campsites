@@ -104,7 +104,7 @@ tips[FACT], tips_title?, table? ("winter"|"overview"|"dump"), table_caption?, gl
 - Status badges: Open in winter (green) / Call ahead (amber) / Shoulder season only (orange) / Closed in winter (red) / Unconfirmed (purple).
 - Maps: inline SVG of the Natural Earth outline with equirectangular projection (build.py `proj()`); markers only for campsites with
   `location.lat/lon` + `coords_src`. No tile server, no Leaflet. Each campsite page links to OpenStreetMap + Google Maps at the sourced coords.
-- **Campsites without sourced coordinates (not on maps):** smaratun-fljotshlid (not found in tjalda API search 2026-10-24).
+- **Campsites without sourced coordinates (not on maps):** smaratun-fljotshlid (not found in tjalda API search 2026-10-24); mosskogar (tjalda API gives the same coords as the Mosfellsbær town site, 64.174286/-21.617192, so not trusted, 2026-10-31).
 - Tables: `table.facts` and guide tables (`table.stack`) stack into label/value cards under 40rem (td `data-label`), scroll
   horizontally 40–64rem, and fit with a sticky header at ≥64rem.
 - /campsites/ filters: region, winter, electricity, showers, dump station, kitchen, name search (diacritic-insensitive); state in the
@@ -143,7 +143,7 @@ A nightly run should take the first `todo` (or `stub` → full) row by prio, res
 | B17 | 2 | todo | campsite | hverinn-kleppjarnsreykir | Hverinn, Kleppjárnsreykir | west | hot spring site | tjalda |
 | B18 | 2 | todo | campsite | stykkisholmur | Stykkishólmur | west | Snæfellsnes base | tjalda |
 | B19 | 2 | todo | campsite | grundarfjordur | Grundarfjörður | west | Kirkjufell | tjalda |
-| B20 | 2 | todo | campsite | mosskogar | Mosskógar (Mosfellsdalur) | capital-area | 2nd capital option | tjalda |
+| B20 | 2 | stub | campsite | mosskogar | Mosskógar (Mosfellsdalur) | capital-area | 2nd capital option | tjalda |
 | B21 | 2 | stub | campsite | gardskagi | Garðskagi | reykjanes | lighthouse, near KEF | tjalda |
 | B22 | 2 | todo | campsite | grindavik | Grindavík | reykjanes | check post-eruption status | tjalda, grindavik.is |
 | B23 | 2 | todo | campsite | djupivogur | Djúpivogur | east | Ring Road east | tjalda |
@@ -157,7 +157,7 @@ A nightly run should take the first `todo` (or `stub` → full) row by prio, res
 | B31 | 3 | todo | guide | camping-card-2026 | Is the Camping Card (Útilegukortið) worth it in 2026? | all | demand | utilegukortid.is |
 | B32 | 3 | todo | task | south-coast-stubs-dump | Confirm dump/electricity for Starlight, Farmhouse Lodge, Smáratún, Kirkjubær (Hellishólar: dump listed on Parka 2026-10-25, location/cassette use still unconfirmed) | south | Unconfirmed cells in guide B01 | email/phone needs Stefán's OK |
 | B33 | 1 | done | guide | winter-campsites-iceland | Campsites Open in Winter in Iceland (all regions, 2026–27) | all | KEYWORDS #1, hub for regional winter guides | Visit Iceland camper winter service, ferdalag winter list, tjalda |
-| B34 | 1 | todo | guide | campsites-near-reykjavik | Campsites near Reykjavík (city, Mosfellsdalur, Hafnarfjörður) | capital-area | KEYWORDS #4 | tjalda, reykjavikcampsite.is |
+| B34 | 1 | done | guide | campsites-near-reykjavik | Campsites near Reykjavík (city, Mosfellsdalur, Hafnarfjörður) | capital-area | KEYWORDS #4 | tjalda, reykjavikcampsite.is |
 | B35 | 1 | todo | guide | north-iceland-winter-campsites | Winter campsites around Akureyri and Mývatn | north-east | KEYWORDS #5 | tjalda, visitakureyri.is, northiceland.is camper winter service |
 | B36 | 2 | todo | guide | ring-road-campsites | Ring Road campsites in order (with map) | all | KEYWORDS #6 | tjalda coordinates |
 | B37 | 2 | todo | guide | snaefellsnes-campsites | Snæfellsnes campsites | west | KEYWORDS #7 | tjalda |
@@ -172,6 +172,8 @@ A nightly run should take the first `todo` (or `stub` → full) row by prio, res
 | B46 | 3 | todo | guide | lodging-tax-camping | Lodging tax on campsites explained | all | KEYWORDS #20 | skatturinn.is |
 | B47 | 3 | todo | guide | do-you-need-to-book-campsites | Do you need to book campsites in Iceland? | all | KEYWORDS #21 | tjalda reservation texts |
 | B48 | 3 | todo | guide | parka-app-campsites | Paying for campsites with the Parka app | all | KEYWORDS #25 | parka.is |
+| B50 | 2 | stub | campsite | hafnarfjordur | Hafnarfjörður (Víðistaðatún) – upgrade to full | capital-area | capital-area option with cassette disposal; summer only | reisa.is, tjalda |
+| B51 | 3 | todo | task | mosfellsbaer-town-campsite | Check whether Mosfellsbær town campsite (Skólabraut) operates in 2026 | capital-area | tjalda entry hidden, 2022 prices | mos.is |
 | B49 | 2 | todo | task | reykjanes-stubs-upgrade | Upgrade Reykjanes stubs; confirm dump points at Vogar and Happy Campsite | reykjanes | Unconfirmed cells in the KEF guide | operator sites; contact needs Stefán's OK |
 
 Done South Coast stubs (status `stub`, individual pages exist): hveragerdi-reykjamork, hella-arhus, hvolsvollur, smaratun-fljotshlid,
@@ -213,6 +215,12 @@ Nothing signed up, no links placed. The affiliate disclosure page is a placehold
 - Contacting campsites to fill Unconfirmed cells (email/phone) needs your approval.
 
 ## CHANGELOG
+- 2026-10-31: Guide "Campsites Near Reykjavík for Campervans (2026)" (/guides/campsites-near-reykjavik/, B34) with two new capital-area
+  stubs: Hafnarfjörður – Víðistaðatún (tjalda + reisa.is booking page: 15 May–30 Sep, closed now; car/motorhome incl. 1 adult 3,500,
+  extra adult 2,500, electricity 1,300, tax 400; Zone B 9 electric pitches, Zone C none, max 8 m; showers, washer/dryer included;
+  cassette disposal listed; no indoor kitchen; Wi-Fi only at the gate) and Mosskógar, Mosfellsdalur (tjalda: 1 Mar–1 Dec → partial,
+  its 'all year' flag conflicts; adult 3,000 incl. tax, electricity 2,000, kitchenette, free showers; dump listed but cassette use
+  Unconfirmed; coords not used). Mosfellsbær town campsite excluded (hidden on tjalda, 2022 prices) → B51. Nothing awaiting Stefán.
 - 2026-10-30: Guide "Campsites Open in Winter in Iceland (All Regions, 2026–27)" (/guides/winter-campsites-iceland/, B33). Table of all
   21 profiled campsites (winter status pulled from campsite files, incl. closed Vík/Hvolsvöllur/Happy Campsite), then the 38-entry
   ferdalag.is Camper winter service list cross-checked against tjalda.is (2026-10-30): all-year on both (Úthlíð, Hlíð Mývatn –
