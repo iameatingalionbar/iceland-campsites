@@ -1,0 +1,79 @@
+# Iceland Campsites for Campervans
+
+> Sourced, dated facts about Icelandic campsites for campervan and motorhome travellers.
+
+Static English reference site. Every campsite fact links to its source and shows the date it was checked; facts that could not be confirmed are marked Unconfirmed. Confirm seasons and prices with the campsite before travelling.
+
+## Guides
+
+- [Campsites Near Keflavík Airport (KEF) for Your First or Last Night (2026)](https://icelandcampsites.com/guides/campsites-near-keflavik-airport/): Campsites near Keflavík Airport for a campervan's first or last night in Iceland: Sandgerði, Garðskagi, Vogar, Happy Campsite and Reykjavík, with 2026 prices, winter status and facilities. Every fact sourced.
+- [Campsites Near Reykjavík for Campervans (2026): City, Hafnarfjörður and Mosfellsdalur](https://icelandcampsites.com/guides/campsites-near-reykjavik/): The campsites in and near Reykjavík for campervans: Reykjavík Eco-Campsite (open all year), Hafnarfjörður and Mosskógar, with 2026 prices, winter status, electricity and toilet disposal. Every fact sourced.
+- [Where to Empty a Campervan Toilet in Iceland: Dump Stations by Region (2026)](https://icelandcampsites.com/guides/dump-stations-iceland/): Where to empty a cassette or chemical toilet in Iceland: official disposal points, campsites with a dump station on the South Coast and near Keflavík, and the rules. Every entry sourced and dated.
+- [Campsites Open in Winter on Iceland's South Coast (2026–27)](https://icelandcampsites.com/guides/south-coast-winter-campsites/): Which South Coast campsites take campervans in winter 2026–27, from Hveragerði to Höfn: winter status, electricity, dump stations and 2026 prices, each fact sourced and dated.
+- [Campsites Open in Winter in Iceland (All Regions, 2026–27)](https://icelandcampsites.com/guides/winter-campsites-iceland/): Which Icelandic campsites take campervans in winter 2026–27, region by region: sourced winter status, electricity, dump stations and prices, plus where the official winter list conflicts with campsites' own seasons.
+
+## Campsites: Capital area
+
+- [Hafnarfjörður Campsite (Víðistaðatún)](https://icelandcampsites.com/campsites/hafnarfjordur/): Hafnarfjörður, Capital area. Winter: Closed in winter. Short entry (stub); facts sourced, checked 2026-10-31.
+- [Mosskógar Campsite (Mosfellsdalur)](https://icelandcampsites.com/campsites/mosskogar/): Mosfellsdalur, Mosfellsbær, Capital area. Winter: Shoulder season only. Short entry (stub); facts sourced, checked 2026-10-31.
+- [Reykjavík Eco-Campsite (Laugardalur)](https://icelandcampsites.com/campsites/reykjavik-eco-campsite/): Reykjavík, Capital area. Winter: Open in winter. Full page; facts sourced, checked 2026-10-23.
+
+## Campsites: Reykjanes
+
+- [Airport Camping – Sandgerði](https://icelandcampsites.com/campsites/sandgerdi-airport-camping/): Sandgerði, Reykjanes. Winter: Call ahead. Full page; facts sourced, checked 2026-10-26.
+- [Garðskagi Campsite (lighthouses)](https://icelandcampsites.com/campsites/gardskagi/): Garður, Suðurnesjabær, Reykjanes. Winter: Open in winter. Short entry (stub); facts sourced, checked 2026-10-24.
+- [Happy Campsite Keflavík](https://icelandcampsites.com/campsites/happy-campsite-keflavik/): Reykjanesbær, Reykjanes. Winter: Closed in winter. Short entry (stub); facts sourced, checked 2026-10-24.
+- [Vogar Camping & Chalets (Reykjanes)](https://icelandcampsites.com/campsites/vogar-reykjanes/): Vogar, Reykjanes. Winter: Open in winter. Short entry (stub); facts sourced, checked 2026-10-24.
+
+## Campsites: North East
+
+- [Hamrar Campsite, Akureyri (Kjarnaskógur)](https://icelandcampsites.com/campsites/hamrar-akureyri/): Akureyri, North East. Winter: Open in winter. Full page; facts sourced, checked 2026-10-27.
+- [Vogar Campsite, Mývatn (Vogar Travel Service)](https://icelandcampsites.com/campsites/vogar-myvatn/): Mývatn (Vogar, near Reykjahlíð), North East. Winter: Open in winter. Full page; facts sourced, checked 2026-10-28.
+
+## Campsites: East Iceland
+
+- [Camp Egilsstaðir](https://icelandcampsites.com/campsites/camp-egilsstadir/): Egilsstaðir, East Iceland. Winter: Open in winter. Full page; facts sourced, checked 2026-10-29.
+
+## Campsites: South Iceland
+
+- [Farmhouse Lodge Campsite (Skeiðflöt, near Vík)](https://icelandcampsites.com/campsites/farmhouse-lodge-skeidflot/): Skeiðflöt, Mýrdalur, South Iceland. Winter: Call ahead. Short entry (stub); facts sourced, checked 2026-10-23.
+- [Hellishólar Campsite (Fljótshlíð)](https://icelandcampsites.com/campsites/hellisholar/): Hellishólar, Fljótshlíð, South Iceland. Winter: Open in winter. Full page; facts sourced, checked 2026-10-25.
+- [Hveragerði Campsite (Reykjamörk)](https://icelandcampsites.com/campsites/hveragerdi-reykjamork/): Hveragerði, South Iceland. Winter: Call ahead. Short entry (stub); facts sourced, checked 2026-10-23.
+- [Hvolsvöllur Campsite](https://icelandcampsites.com/campsites/hvolsvollur/): Hvolsvöllur, South Iceland. Winter: Closed in winter. Short entry (stub); facts sourced, checked 2026-10-23.
+- [Höfn Campsite (Höfn í Hornafirði)](https://icelandcampsites.com/campsites/hofn/): Höfn í Hornafirði, South Iceland. Winter: Open in winter. Short entry (stub); facts sourced, checked 2026-10-23.
+- [Kirkjubær II Campsite (Kirkjubæjarklaustur)](https://icelandcampsites.com/campsites/kirkjubaer-ii/): Kirkjubæjarklaustur, South Iceland. Winter: Shoulder season only. Short entry (stub); facts sourced, checked 2026-10-23.
+- [Selfoss Campsite – Gesthús](https://icelandcampsites.com/campsites/selfoss-gesthus/): Selfoss, South Iceland. Winter: Open in winter. Full page; facts sourced, checked 2026-10-24.
+- [Skaftafell Campground (Vatnajökull National Park)](https://icelandcampsites.com/campsites/skaftafell/): Skaftafell, Öræfi, South Iceland. Winter: Open in winter. Full page; facts sourced, checked 2026-10-23.
+- [Skógafoss Campsite (Skógar)](https://icelandcampsites.com/campsites/skogafoss/): Skógar, South Iceland. Winter: Call ahead. Short entry (stub); facts sourced, checked 2026-10-23.
+- [Smáratún / Hotel Fljótshlíð Campsite](https://icelandcampsites.com/campsites/smaratun-fljotshlid/): Fljótshlíð, South Iceland. Winter: Open in winter. Short entry (stub); facts sourced, checked 2026-10-23.
+- [Starlight Campsite and Pods (Lambafell)](https://icelandcampsites.com/campsites/starlight-lambafell/): Lambafell, near Skógar, South Iceland. Winter: Open in winter. Short entry (stub); facts sourced, checked 2026-10-23.
+- [Vík Camping](https://icelandcampsites.com/campsites/vik-camping/): Vík, South Iceland. Winter: Closed in winter. Short entry (stub); facts sourced, checked 2026-10-23.
+- [Árhús Cottage and Camping (Hella)](https://icelandcampsites.com/campsites/hella-arhus/): Hella, South Iceland. Winter: Shoulder season only. Short entry (stub); facts sourced, checked 2026-10-23.
+
+## Hubs
+
+- [All campsites – filter by winter, electricity & dump station](https://icelandcampsites.com/campsites/): All Iceland campsites on this site. Filter by region, open in winter, electricity, showers, dump station and kitchen.
+- [Campsites in Capital area, Iceland](https://icelandcampsites.com/regions/capital-area/): 3 campsite(s). Reykjavík and the surrounding towns (Kópavogur, Hafnarfjörður, Garðabær, Mosfellsbær).
+- [Campsites in Reykjanes, Iceland](https://icelandcampsites.com/regions/reykjanes/): 4 campsite(s). The peninsula around Keflavík International Airport, including Grindavík, Sandgerði and Garður.
+- [Campsites in North East, Iceland](https://icelandcampsites.com/regions/north-east/): 2 campsite(s). Akureyri, Mývatn, Húsavík, Siglufjörður and the north-east coast.
+- [Campsites in East Iceland, Iceland](https://icelandcampsites.com/regions/east/): 1 campsite(s). Egilsstaðir, Seyðisfjörður, the Eastfjords and Djúpivogur.
+- [Campsites in South Iceland, Iceland](https://icelandcampsites.com/regions/south/): 13 campsite(s). Hveragerði and Selfoss east along the Ring Road to Vík, Skaftafell and Höfn, plus the Golden Circle.
+- [Open in winter – Iceland campsites](https://icelandcampsites.com/themes/open-in-winter/): Campsites whose own published information (or an official listing) says they take campers in winter. Status is shown exactly as sourced; 'call ahead' means the source uses vague wording such as 'depending on weather' or 'upon request'.
+- [Dump stations / chemical toilet disposal by region – Iceland campsites](https://icelandcampsites.com/themes/dump-stations/): Campsites where a source confirms a disposal point for chemical (cassette) toilets and/or grey water, grouped by region. Sites where disposal is unconfirmed or absent are not listed here.
+
+## About this site
+
+- [About, sources & methodology](https://icelandcampsites.com/about/): How this site researches Iceland campsites: sources, check dates and the Unconfirmed rule.
+- [Affiliate disclosure](https://icelandcampsites.com/affiliate-disclosure/): Affiliate and referral link disclosure.
+- [AI disclosure](https://icelandcampsites.com/ai-disclosure/): How AI assistance is used to prepare this site, and why you should verify hours and prices with the campsite.
+
+## Optional
+
+- [Iceland Campsites for Campervans – sourced campsite facts for Iceland](https://icelandcampsites.com/): Sourced, dated facts about Icelandic campsites for campervan and motorhome travellers
+- [Guides](https://icelandcampsites.com/guides/): Guides to camping in Iceland by campervan.
+- [Regions](https://icelandcampsites.com/regions/): Iceland campsites by region.
+- [Campsites in North West, Iceland](https://icelandcampsites.com/regions/north-west/): No campsites added yet. Hvammstangi, Blönduós, Skagaströnd, Sauðárkrókur and the Skagafjörður area.
+- [Campsites in West Iceland, Iceland](https://icelandcampsites.com/regions/west/): No campsites added yet. Akranes, Borgarnes, Snæfellsnes and the Dalir district.
+- [Campsites in Westfjords, Iceland](https://icelandcampsites.com/regions/westfjords/): No campsites added yet. Ísafjörður, Patreksfjörður, Þingeyri, Hólmavík and the fjords in between.
+- [Themes](https://icelandcampsites.com/themes/): Iceland campsites by theme: winter opening, dump stations.
+- [Sitemap](https://icelandcampsites.com/sitemap.xml): XML sitemap of all indexable pages
