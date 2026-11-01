@@ -1,0 +1,166 @@
+{
+  "slug": "north-iceland-winter-campsites",
+  "title": "Winter Campsites Around Akureyri and Mývatn (2026–27)",
+  "short": "Winter: Akureyri & Mývatn",
+  "description": "Which campsites near Akureyri, Lake Mývatn and Laugar are open in winter 2026–27 for campervans: Hamrar, Vaglaskógur, CJA, Vogar, Hlíð and Ártún, with winter rules, prices, electricity and toilet disposal. Every fact sourced.",
+  "region": "north-east",
+  "checked": "2026-11-01",
+  "sources": {
+    "ferdalag-winter": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-11-01"
+    },
+    "tjalda-api": {
+      "title": "Tjalda.is – campsite directory, North Iceland listings (season text and opening flag)",
+      "url": "https://tjalda.is/en",
+      "checked": "2026-11-01"
+    },
+    "tj-husavik": {
+      "title": "Tjalda.is – Húsavík",
+      "url": "https://tjalda.is/en/campsite/husavik",
+      "checked": "2026-11-01"
+    },
+    "tj-hrafnagil": {
+      "title": "Tjalda.is – Eyjafjarðarsveit (Hrafnagil)",
+      "url": "https://tjalda.is/en/campsite/eyjafjardarsveit",
+      "checked": "2026-11-01"
+    },
+    "tj-systragil": {
+      "title": "Tjalda.is – Systragil",
+      "url": "https://tjalda.is/en/campsite/systragil",
+      "checked": "2026-11-01"
+    },
+    "tj-laugar": {
+      "title": "Tjalda.is – Laugar Camping",
+      "url": "https://tjalda.is/en/campsite/laugar-camping",
+      "checked": "2026-11-01"
+    },
+    "umferdin": {
+      "title": "Umferdin.is – Road and traffic information (Icelandic Road and Coastal Administration)",
+      "url": "https://umferdin.is/en",
+      "checked": "2026-11-01"
+    },
+    "safetravel": {
+      "title": "Safetravel.is – travel conditions and travel plans",
+      "url": "https://safetravel.is/",
+      "checked": "2026-11-01"
+    }
+  },
+  "intro": [
+    {
+      "value": "Six campsites between Akureyri and Lake Mývatn say they take campers in winter 2026–27: Hamrar in Akureyri, Vaglaskógur in Fnjóskadalur, CJA at Laugar, and Vogar and Hlíð at Mývatn are listed as open all year, and Ártún near Grenivík says it is open all year except December and January.",
+      "src": [
+        "hamrar-akureyri:tjalda",
+        "vaglaskogur:tjalda",
+        "cja-laugar:own",
+        "vogar-myvatn:tjalda",
+        "hlid-myvatn:tjalda",
+        "artun:tjalda"
+      ]
+    },
+    {
+      "value": "Winter service is reduced almost everywhere: Hamrar opens only area A and its parking areas, Vaglaskógur only a car park with no electricity, CJA only its gravel parking spaces, and Hlíð closes its reception.",
+      "src": [
+        "hamrar-akureyri:own",
+        "vaglaskogur:parka",
+        "cja-laugar:own",
+        "hlid-myvatn:tjalda"
+      ]
+    }
+  ],
+  "scope_note": "Scope: campsites in the Akureyri – Eyjafjörður – Fnjóskadalur – Reykjadalur – Mývatn area that tjalda.is or ferdalag.is's official camper winter service list show as open in winter, checked 2026-11-01. Not included because their 2026 season ends before winter (tjalda.is): Húsavík (15 May – 31 October), Hrafnagil / Eyjafjarðarsveit (20 May – 31 August, although it is on the ferdalag.is winter list), Systragil (26 May – 30 September) and Laugar Camping (10 May – 30 September).",
+  "campsites": [
+    "hamrar-akureyri",
+    "vaglaskogur",
+    "artun",
+    "cja-laugar",
+    "vogar-myvatn",
+    "hlid-myvatn"
+  ],
+  "table": "winter",
+  "glance_title": "At a glance",
+  "table_caption": "West to east from Akureyri to Mývatn. Status and facts come from each campsite's own page on this site, with sources; prices are 2026 adult rates as published (Vaglaskógur's winter rate is 1,700 ISK per person).",
+  "sections": [
+    {
+      "id": "which",
+      "title": "Which one to pick in winter",
+      "paras": [],
+      "items": [
+        {
+          "value": "You want an indoor kitchen and showers in winter: Hamrar has a kitchen and dining room in the service building (outside May–October you get access through the warden), and Vogar's indoor kitchen and dining room are heated all year.",
+          "src": [
+            "hamrar-akureyri:own",
+            "vogar-myvatn:own"
+          ]
+        },
+        {
+          "value": "You need electricity: Hamrar's winter parking areas have electricity. Vaglaskógur has no electricity at the campsite in winter. At CJA, Hlíð and Ártún, whether power is available in winter is Unconfirmed.",
+          "src": [
+            "hamrar-akureyri:reisa",
+            "vaglaskogur:parka",
+            "vaglaskogur:tjalda"
+          ]
+        },
+        {
+          "value": "You need to empty a cassette toilet: Hamrar and Vogar both list a chemical-toilet disposal point, and Ártún and CJA list sludge disposal on site. Vaglaskógur is listed with 'waste disposal for mobile homes', but its winter availability is Unconfirmed. No disposal point is listed for Hlíð.",
+          "src": [
+            "hamrar-akureyri:tjalda",
+            "vogar-myvatn:own-camping",
+            "artun:tjalda",
+            "cja-laugar:tjalda",
+            "vaglaskogur:tjalda"
+          ]
+        },
+        {
+          "value": "You want the lowest listed price: CJA charges 1,900 ISK per adult plus 400 ISK per unit and 400 ISK lodging tax, Vaglaskógur 1,700 ISK per person in winter plus 400 ISK lodging tax and a 500 ISK registration fee, and Ártún 1,800 ISK per adult plus 400 ISK lodging tax.",
+          "src": [
+            "cja-laugar:own",
+            "vaglaskogur:parka",
+            "artun:tjalda"
+          ]
+        },
+        {
+          "value": "You want to stay right at Mývatn: Vogar and Hlíð are both open all year. Hlíð is by the village of Reykjahlíð, a 5-minute walk from the tourist information centre and supermarket, but its kitchen is a tent and its reception is closed in winter.",
+          "src": [
+            "vogar-myvatn:tjalda",
+            "hlid-myvatn:tjalda",
+            "hlid-myvatn:ferdalag-winter",
+            "hlid-myvatn:own"
+          ]
+        }
+      ]
+    }
+  ],
+  "tips_title": "Practical tips",
+  "tips": [
+    {
+      "value": "Vaglaskógur takes bookings only through Parka, but on 1 November 2026 Parka said online booking had not been activated, so phone +354 860 4714 first.",
+      "src": [
+        "vaglaskogur:parka",
+        "vaglaskogur:tjalda"
+      ]
+    },
+    {
+      "value": "Ártún's two listings disagree: tjalda.is says all year except December and January, while ferdalag.is gives 1 May – 30 September with off-season stays on request. Call +354 892 3591 before going.",
+      "src": [
+        "artun:tjalda",
+        "artun:ferdalag-winter"
+      ]
+    },
+    {
+      "value": "At Hamrar, gates stop admitting vehicles at midnight; later arrivals stay on the parking area until morning.",
+      "src": [
+        "hamrar-akureyri:own"
+      ]
+    },
+    {
+      "value": "Check road conditions and closures before each drive on umferdin.is, the Icelandic Road and Coastal Administration's traffic site, and consider leaving a travel plan on safetravel.is.",
+      "src": [
+        "umferdin",
+        "safetravel"
+      ]
+    }
+  ],
+  "warning": "Winter seasons, prices and facilities can change at short notice, and several of these campsites describe only limited winter service. Contact the campsite before relying on it."
+}

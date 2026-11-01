@@ -158,7 +158,7 @@ A nightly run should take the first `todo` (or `stub` → full) row by prio, res
 | B32 | 3 | todo | task | south-coast-stubs-dump | Confirm dump/electricity for Starlight, Farmhouse Lodge, Smáratún, Kirkjubær (Hellishólar: dump listed on Parka 2026-10-25, location/cassette use still unconfirmed) | south | Unconfirmed cells in guide B01 | email/phone needs Stefán's OK |
 | B33 | 1 | done | guide | winter-campsites-iceland | Campsites Open in Winter in Iceland (all regions, 2026–27) | all | KEYWORDS #1, hub for regional winter guides | Visit Iceland camper winter service, ferdalag winter list, tjalda |
 | B34 | 1 | done | guide | campsites-near-reykjavik | Campsites near Reykjavík (city, Mosfellsdalur, Hafnarfjörður) | capital-area | KEYWORDS #4 | tjalda, reykjavikcampsite.is |
-| B35 | 1 | todo | guide | north-iceland-winter-campsites | Winter campsites around Akureyri and Mývatn | north-east | KEYWORDS #5 | tjalda, visitakureyri.is, northiceland.is camper winter service |
+| B35 | 1 | done | guide | north-iceland-winter-campsites | Winter campsites around Akureyri and Mývatn | north-east | KEYWORDS #5 | tjalda, visitakureyri.is, northiceland.is camper winter service |
 | B36 | 2 | todo | guide | ring-road-campsites | Ring Road campsites in order (with map) | all | KEYWORDS #6 | tjalda coordinates |
 | B37 | 2 | todo | guide | snaefellsnes-campsites | Snæfellsnes campsites | west | KEYWORDS #7 | tjalda |
 | B38 | 3 | todo | guide | westfjords-campsites | Westfjords campsites | westfjords | KEYWORDS #10 | tjalda |
@@ -175,6 +175,7 @@ A nightly run should take the first `todo` (or `stub` → full) row by prio, res
 | B50 | 2 | stub | campsite | hafnarfjordur | Hafnarfjörður (Víðistaðatún) – upgrade to full | capital-area | capital-area option with cassette disposal; summer only | reisa.is, tjalda |
 | B51 | 3 | todo | task | mosfellsbaer-town-campsite | Check whether Mosfellsbær town campsite (Skólabraut) operates in 2026 | capital-area | tjalda entry hidden, 2022 prices | mos.is |
 | B49 | 2 | todo | task | reykjanes-stubs-upgrade | Upgrade Reykjanes stubs; confirm dump points at Vogar and Happy Campsite | reykjanes | Unconfirmed cells in the KEF guide | operator sites; contact needs Stefán's OK |
+| B52 | 2 | stub | campsite | hlid-myvatn / cja-laugar / vaglaskogur / artun | Upgrade the four North East stubs (2026-11-01) to full pages | north-east | winter facilities (Hlíð kitchen tent, CJA power) Unconfirmed | operator sites; contact needs Stefán's OK |
 
 Done South Coast stubs (status `stub`, individual pages exist): hveragerdi-reykjamork, hella-arhus, hvolsvollur, smaratun-fljotshlid,
 starlight-lambafell, skogafoss, farmhouse-lodge-skeidflot, vik-camping, kirkjubaer-ii, hofn.
@@ -215,6 +216,18 @@ Nothing signed up, no links placed. The affiliate disclosure page is a placehold
 - Contacting campsites to fill Unconfirmed cells (email/phone) needs your approval.
 
 ## CHANGELOG
+- 2026-11-01: Guide "Winter Campsites Around Akureyri and Mývatn (2026–27)" (/guides/north-iceland-winter-campsites/, B35) with
+  four new North East stubs, all from tjalda.is (+ own site / Parka / ferdalag winter list), checked 2026-11-01:
+  Hlíð, Mývatn (own camping page: adult 2,700, tax 400/unit, electricity 900, showers incl.; tjalda: open all year, reception
+  closed in winter → open; kitchen is a tent, winter facilities and dump point Unconfirmed; phone 781 8628 vs 899 6203, postcode
+  610 vs 660); CJA, Laugar (own 'Verðskrá 2026' = tjalda: adult 1,900, unit 400 + tax 400, electricity 900; open all year, winter
+  only gravel parking; heated service house, unheated kitchen; sludge disposal → dump yes); Vaglaskógur (Land og skógur; tjalda +
+  Parka: winter service 15 Sep 2026 – 30 Apr 2027, campers only on car park F, 1,700/person, no electricity in winter, heated
+  toilets; Parka says online booking not activated and gives 'open 3 Jun – 30 Apr' → May Unconfirmed); Ártún near Grenivík
+  (tjalda: all year except Dec–Jan, adult 1,800, electricity 1,200; ferdalag: 1 May – 30 Sep, off-season on request → call-ahead;
+  sludge disposal → dump yes). Winter-in-Iceland guide (B33) now includes the four in its table and drops them from the
+  'not profiled' list. Excluded with summer seasons on tjalda: Húsavík, Hrafnagil (on ferdalag list), Systragil, Laugar Camping.
+  New backlog row B52 (upgrade the four stubs). Nothing awaiting Stefán from this run.
 - 2026-10-31: Guide "Campsites Near Reykjavík for Campervans (2026)" (/guides/campsites-near-reykjavik/, B34) with two new capital-area
   stubs: Hafnarfjörður – Víðistaðatún (tjalda + reisa.is booking page: 15 May–30 Sep, closed now; car/motorhome incl. 1 adult 3,500,
   extra adult 2,500, electricity 1,300, tax 400; Zone B 9 electric pitches, Zone C none, max 8 m; showers, washer/dryer included;

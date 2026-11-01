@@ -1,0 +1,209 @@
+{
+  "slug": "vaglaskogur",
+  "name": "Vaglaskógur Campsite (Fnjóskadalur)",
+  "alt_names": [
+    "Vaglaskógur"
+  ],
+  "region": "north-east",
+  "town": "Fnjóskadalur, near Akureyri",
+  "completeness": "stub",
+  "checked": "2026-11-01",
+  "sources": {
+    "tjalda": {
+      "title": "Tjalda.is – Vaglaskógur listing (2026 rates, season & services)",
+      "url": "https://tjalda.is/en/campsite/vaglaskogur",
+      "checked": "2026-11-01"
+    },
+    "parka": {
+      "title": "Parka.is – Vaglaskógur campsite (winter service, area F, prices)",
+      "url": "https://www.parka.is/camping/vaglaskogur/",
+      "checked": "2026-11-01"
+    }
+  },
+  "intro": {
+    "value": "A campsite run by Land og skógur (Iceland's land and forestry agency) in Vaglaskógur, one of Iceland's largest forests, in Fnjóskadalur valley about 17 km from Akureyri through the Vaðlaheiði tunnel. In summer it has five camping areas; in winter only a car park for campers is open.",
+    "src": [
+      "tjalda",
+      "parka"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Vaglaskógur / Vaglir, Fnjóskadalur, 607 Akureyri",
+      "src": [
+        "tjalda",
+        "parka"
+      ]
+    },
+    "lat": 65.701399,
+    "lon": -17.888884,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "All year, with limited winter service 15 September 2026 – 30 April 2027 (tjalda.is). Parka gives 'Open: 3 June – 30 April', so May is Unconfirmed.",
+    "src": [
+      "tjalda",
+      "parka"
+    ]
+  },
+  "winter": {
+    "status": "open",
+    "value": "Winter service 15 September 2026 – 30 April 2027 with limited services: campers (motorhomes) only, on the car park opposite the bridge into Vaglaskógur (area F); heated toilets with hot water; no electricity at the campsite in winter; electric-car charging for a fee. Winter price 1,700 ISK per person.",
+    "src": [
+      "tjalda",
+      "parka"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates; winter rate for 2026–27",
+      "src": [
+        "tjalda",
+        "parka"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Winter (15 Sep 2026 – 30 Apr 2027), per person per night",
+        "value": "1,700 ISK",
+        "src": [
+          "tjalda",
+          "parka"
+        ]
+      },
+      {
+        "label": "Summer adult (15–67) per night",
+        "value": "2,200 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Summer senior / disabled per night",
+        "value": "1,800 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Children 14 and under with a guardian",
+        "value": "Free",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Lodging tax per unit per night",
+        "value": "400 ISK",
+        "src": [
+          "tjalda",
+          "parka"
+        ]
+      },
+      {
+        "label": "Registration fee",
+        "value": "500 ISK",
+        "src": [
+          "tjalda",
+          "parka"
+        ]
+      },
+      {
+        "label": "Electricity per night (summer only)",
+        "value": "1,500 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Shower (summer, coin-operated, 5 min)",
+        "value": "500 ISK",
+        "src": [
+          "tjalda"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Summer: yes, in areas B, C and E (not guaranteed in lower area D, none in A), 1,500 ISK per night. Winter: no electricity at the campsite.",
+      "src": [
+        "tjalda",
+        "parka"
+      ],
+      "has": "yes"
+    },
+    "kitchen": {
+      "has": null,
+      "value": null,
+      "note": "No guest kitchen is listed. A forest cabin with a fireplace, barbecue facilities and seating for up to 50 is available in winter."
+    },
+    "showers": {
+      "value": "Summer: yes, in areas C and E, 500 ISK for 5 minutes (coin-operated). Winter: only heated toilets with hot water are listed; showers Unconfirmed.",
+      "src": [
+        "tjalda"
+      ],
+      "has": "yes"
+    },
+    "toilets": {
+      "value": "Yes, including wheelchair-accessible toilets in most areas; heated toilets in winter",
+      "src": [
+        "tjalda",
+        "parka"
+      ]
+    },
+    "dump_station": {
+      "value": "Listed by tjalda.is as 'Waste disposal for mobile homes'. Location, cassette use and winter availability: Unconfirmed.",
+      "src": [
+        "tjalda"
+      ],
+      "has": "yes"
+    },
+    "wifi": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "laundry": {
+      "value": "Summer: washing machine and tumble dryer, 500 ISK each per use (coin-operated); change from the wardens",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 860 4714 · vaglir@landogskogur.is · island.is/s/land-og-skogur",
+      "src": [
+        "tjalda",
+        "parka"
+      ]
+    }
+  },
+  "practical": [
+    {
+      "value": "Bookings go through Parka (parka.is/camping/vaglaskogur/), and tjalda.is says not to camp unless a slot can be booked there. On 1 November 2026 Parka's page said online booking for Vaglaskógur had not been activated, so call the campsite.",
+      "src": [
+        "tjalda",
+        "parka"
+      ]
+    },
+    {
+      "value": "Winter activities on site: walking trails and a cross-country ski area when conditions allow.",
+      "src": [
+        "tjalda",
+        "parka"
+      ]
+    },
+    {
+      "value": "Dogs and cats are allowed on a leash; the minimum age without a parent or guardian is 18.",
+      "src": [
+        "tjalda"
+      ]
+    }
+  ]
+}

@@ -183,7 +183,11 @@
     "hofn",
     "camp-egilsstadir",
     "vogar-myvatn",
-    "hamrar-akureyri"
+    "hamrar-akureyri",
+    "vaglaskogur",
+    "artun",
+    "cja-laugar",
+    "hlid-myvatn"
   ],
   "table": "winter",
   "glance_title": "Campsites on this site: winter status",
@@ -210,20 +214,6 @@
           ]
         },
         {
-          "value": "Hlíð (Mývatn, North East): 'We are open all year round. The reception is closed during the winter', with information on a notice on the reception door and on the campsite's website.",
-          "src": [
-            "ferdalag-winter",
-            "tj-hlid"
-          ]
-        },
-        {
-          "value": "CJA camping (Laugar, North East): tjalda.is says 'Open all year'.",
-          "src": [
-            "ferdalag-winter",
-            "tj-cja"
-          ]
-        },
-        {
           "value": "Djúpivogur (East): tjalda.is says 'Open year-round.'",
           "src": [
             "ferdalag-winter",
@@ -237,13 +227,6 @@
             "tj-thingeyraroddi",
             "tj-holmavik",
             "tj-grettislaug"
-          ]
-        },
-        {
-          "value": "Ártún (Grýtubakkahreppur, near Grenivík, North East): 'Open all year, except in December and January', so it is a shoulder-season option only.",
-          "src": [
-            "ferdalag-winter",
-            "tj-artun"
           ]
         }
       ]

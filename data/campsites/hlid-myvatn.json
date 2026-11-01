@@ -1,0 +1,202 @@
+{
+  "slug": "hlid-myvatn",
+  "name": "Hlíð Campsite, Mývatn (Reykjahlíð)",
+  "alt_names": [
+    "Hlíð Travel Service",
+    "Mývatn Accommodation – Camping"
+  ],
+  "region": "north-east",
+  "town": "Reykjahlíð, Mývatn",
+  "completeness": "stub",
+  "checked": "2026-11-01",
+  "sources": {
+    "own": {
+      "title": "Mývatn Accommodation (Hlíð) – Camping page",
+      "url": "https://myvatnaccommodation.is/accommodation/camping/",
+      "checked": "2026-11-01"
+    },
+    "tjalda": {
+      "title": "Tjalda.is – Hlíð, Mývatni listing (2026 rates, season & services)",
+      "url": "https://tjalda.is/en/campsite/hlid",
+      "checked": "2026-11-01"
+    },
+    "ferdalag-winter": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-11-01"
+    }
+  },
+  "intro": {
+    "value": "A large, unmarked campsite on the edge of a lava field by the village of Reykjahlíð on the north shore of Lake Mývatn: you pick your own spot on grass or in sheltered lava hollows. It is about 1 km from the lake shore, and the operator says that, with little tree cover, there are far fewer midges than elsewhere around Mývatn. The tourist information centre and supermarket are about a 5-minute walk away.",
+    "src": [
+      "own",
+      "tjalda",
+      "ferdalag-winter"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Hlíð, 660 Mývatn (Reykjahlíð)",
+      "src": [
+        "tjalda",
+        "ferdalag-winter"
+      ],
+      "note": "tjalda.is gives postcode 610 and ferdalag.is 660 (Hraunbrún, 660 Mývatn)."
+    },
+    "lat": 65.650937,
+    "lon": -16.922078,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "All year",
+    "src": [
+      "tjalda",
+      "ferdalag-winter"
+    ]
+  },
+  "winter": {
+    "status": "open",
+    "value": "Open all year according to tjalda.is, and listed on ferdalag.is's official camper winter service list. The reception is closed in winter; information is on a notice on the reception door and on the website. Which facilities (shower building, kitchen tent, electricity) are available in winter is not stated: Unconfirmed, so call ahead.",
+    "src": [
+      "tjalda",
+      "ferdalag-winter"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult per night",
+        "value": "2,700 ISK",
+        "src": [
+          "own",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Children under 15 with a parent or guardian",
+        "value": "Free",
+        "src": [
+          "own",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Lodging tax per unit per night",
+        "value": "400 ISK",
+        "src": [
+          "own",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Electricity per car per night",
+        "value": "900 ISK",
+        "src": [
+          "own",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Hot showers",
+        "value": "Included",
+        "src": [
+          "own",
+          "tjalda"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes – sockets across the site, 900 ISK per night. Number of hook-ups and winter availability: Unconfirmed.",
+      "src": [
+        "own",
+        "tjalda"
+      ],
+      "has": "yes"
+    },
+    "kitchen": {
+      "value": "A large kitchen tent with gas stoves, open to all campers, plus dish-washing facilities. Not an indoor kitchen; whether it is up in winter is Unconfirmed.",
+      "src": [
+        "own",
+        "tjalda"
+      ],
+      "has": "yes"
+    },
+    "showers": {
+      "value": "Yes – a shower building; hot showers included in the price",
+      "src": [
+        "own",
+        "tjalda"
+      ],
+      "has": "yes"
+    },
+    "toilets": {
+      "value": "Two toilet buildings; several washing points with hot and cold water",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "dump_station": {
+      "has": null,
+      "value": null,
+      "note": "No chemical-toilet or grey-water disposal is mentioned on the own site, tjalda.is or ferdalag.is."
+    },
+    "wifi": {
+      "value": "Yes (listed on the own site)",
+      "src": [
+        "own"
+      ]
+    },
+    "laundry": {
+      "value": "Laundry service available (price not stated)",
+      "src": [
+        "ferdalag-winter"
+      ]
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 781 8628 (tjalda.is; ferdalag.is gives 899 6203) · info@myvatnaccommodation.is · myvatnaccommodation.is",
+      "src": [
+        "tjalda",
+        "ferdalag-winter"
+      ]
+    }
+  },
+  "practical": [
+    {
+      "value": "No booking needed: the operator says there is always space.",
+      "src": [
+        "own",
+        "tjalda"
+      ]
+    },
+    {
+      "value": "Reception hours on the own site are 8–10 and 17–22, but the reception is closed in winter.",
+      "src": [
+        "own",
+        "tjalda"
+      ]
+    },
+    {
+      "value": "A small shop in the reception building sells snacks, soft drinks, dairy products and postcards; bike rental is offered.",
+      "src": [
+        "own",
+        "tjalda",
+        "ferdalag-winter"
+      ]
+    }
+  ]
+}

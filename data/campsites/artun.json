@@ -1,0 +1,183 @@
+{
+  "slug": "artun",
+  "name": "Ártún Campsite (near Grenivík)",
+  "alt_names": [
+    "Ártún Travel Service"
+  ],
+  "region": "north-east",
+  "town": "Grýtubakkahreppur, near Grenivík",
+  "completeness": "stub",
+  "checked": "2026-11-01",
+  "sources": {
+    "tjalda": {
+      "title": "Tjalda.is – Ártún listing (2026 rates, season & services)",
+      "url": "https://tjalda.is/en/campsite/artun",
+      "checked": "2026-11-01"
+    },
+    "ferdalag-winter": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-11-01"
+    }
+  },
+  "intro": {
+    "value": "A farm campsite on road 83 on the east side of Eyjafjörður, between Laufás church and the village of Grenivík (8 km), about 30 km or 30 minutes' drive from Akureyri. The farm also runs a B&B and a restaurant and bar open to campers.",
+    "src": [
+      "tjalda",
+      "ferdalag-winter"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Ártún, Grýtubakkahreppur (road 83), 616 Grenivík",
+      "src": [
+        "tjalda",
+        "ferdalag-winter"
+      ],
+      "note": "tjalda.is gives postcode 600, ferdalag.is 616."
+    },
+    "lat": 65.907365,
+    "lon": -18.068918,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "Sources conflict: tjalda.is says open all year except December and January; ferdalag.is says 1 May – 30 September, with off-season stays possible on request, depending on weather and other conditions.",
+    "src": [
+      "tjalda",
+      "ferdalag-winter"
+    ]
+  },
+  "winter": {
+    "status": "call-ahead",
+    "value": "Listed on ferdalag.is's official camper winter service list, but its own text there says the campsite is open 1 May – 30 September and off-season stays are 'possible upon request, pending weather and other conditions'. tjalda.is says open all year except December and January. Call ahead; assume closed in December and January.",
+    "src": [
+      "tjalda",
+      "ferdalag-winter"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult per night",
+        "value": "1,800 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Children under 16",
+        "value": "Free",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Electricity per night",
+        "value": "1,200 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Lodging tax per unit per night",
+        "value": "400 ISK",
+        "src": [
+          "tjalda"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes (1,200 ISK per night). Number of hook-ups: Unconfirmed.",
+      "src": [
+        "tjalda",
+        "ferdalag-winter"
+      ],
+      "has": "yes"
+    },
+    "kitchen": {
+      "value": "Indoor facilities for eating (a communal dining hall); a cooking facility is listed by tjalda.is",
+      "src": [
+        "tjalda",
+        "ferdalag-winter"
+      ],
+      "has": "yes"
+    },
+    "showers": {
+      "value": "Yes – toilets with showers",
+      "src": [
+        "tjalda",
+        "ferdalag-winter"
+      ],
+      "has": "yes"
+    },
+    "toilets": {
+      "value": "Yes",
+      "src": [
+        "tjalda",
+        "ferdalag-winter"
+      ]
+    },
+    "dump_station": {
+      "value": "Yes – sludge disposal on site ('Seyrulosun er á staðnum'; ferdalag.is: 'Sludge discharge possible'). Exact location: ask on arrival.",
+      "src": [
+        "tjalda",
+        "ferdalag-winter"
+      ],
+      "has": "yes"
+    },
+    "wifi": {
+      "value": "Wireless internet available",
+      "src": [
+        "tjalda",
+        "ferdalag-winter"
+      ]
+    },
+    "laundry": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 892 3591 · artun@artun.is",
+      "src": [
+        "tjalda",
+        "ferdalag-winter"
+      ]
+    }
+  },
+  "practical": [
+    {
+      "value": "Drop-in only; tjalda.is lists no pre-booking.",
+      "src": [
+        "tjalda"
+      ]
+    },
+    {
+      "value": "Quiet hours are 24:00–08:00, and guests under 21 must be with a guardian.",
+      "src": [
+        "tjalda"
+      ]
+    },
+    {
+      "value": "Grenivík, 8 km away, has a grocery store and a swimming pool.",
+      "src": [
+        "tjalda",
+        "ferdalag-winter"
+      ]
+    }
+  ]
+}

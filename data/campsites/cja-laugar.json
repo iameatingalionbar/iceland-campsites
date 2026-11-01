@@ -1,0 +1,226 @@
+{
+  "slug": "cja-laugar",
+  "name": "CJA Camping (Hjalli, Laugar)",
+  "alt_names": [
+    "CJA camping"
+  ],
+  "region": "north-east",
+  "town": "Laugar, Reykjadalur",
+  "completeness": "stub",
+  "checked": "2026-11-01",
+  "sources": {
+    "own": {
+      "title": "CJA – gisting (own site, Icelandic), 'Verðskrá 2026'",
+      "url": "https://cja.is/",
+      "checked": "2026-11-01"
+    },
+    "tjalda": {
+      "title": "Tjalda.is – CJA camping, Laugar listing (2026 rates, season & services)",
+      "url": "https://tjalda.is/en/campsite/cja",
+      "checked": "2026-11-01"
+    },
+    "ferdalag-winter": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-11-01"
+    }
+  },
+  "intro": {
+    "value": "A small campsite on the forest farm Hjalli in Reykjadalur valley, 2 km from the village of Laugar and about halfway between Akureyri and Mývatn. In summer each guest gets a private, hedged grass section; in winter only open gravel parking spaces are used. The owners run a small guesthouse on the same farm.",
+    "src": [
+      "own",
+      "tjalda",
+      "ferdalag-winter"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Hjalli, 650 Laugar",
+      "src": [
+        "tjalda",
+        "ferdalag-winter",
+        "own"
+      ]
+    },
+    "lat": 65.702223,
+    "lon": -17.349993,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "All year",
+    "src": [
+      "own",
+      "tjalda",
+      "ferdalag-winter"
+    ]
+  },
+  "winter": {
+    "status": "open",
+    "value": "Open all year (own site, tjalda.is, and ferdalag.is's official camper winter service list). In winter only the open gravel parking spaces are used, not the grass sections. The service house with toilets, showers and a small lounge is heated; the kitchen and dish-washing room is not.",
+    "src": [
+      "own",
+      "tjalda",
+      "ferdalag-winter"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates",
+      "src": [
+        "own",
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult (18+) per night",
+        "value": "1,900 ISK",
+        "src": [
+          "own",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Teenager (13–17) per night",
+        "value": "700 ISK",
+        "src": [
+          "own",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Child (0–12)",
+        "value": "Free",
+        "src": [
+          "own",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Pitch/unit per night",
+        "value": "400 ISK + 400 ISK lodging tax (tjalda.is: 800 ISK including tax)",
+        "src": [
+          "own",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Electricity per night",
+        "value": "900 ISK",
+        "src": [
+          "own",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Washing machine / washer + dryer",
+        "value": "900 ISK / 1,700 ISK per use",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Electric-car charging",
+        "value": "35 ISK per kWh",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Discount",
+        "value": "10% for stays of more than two nights",
+        "src": [
+          "tjalda"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes – plugs for motorhomes in areas G–H and L–M, 900 ISK per night. Whether the winter gravel spaces have power: Unconfirmed.",
+      "src": [
+        "own",
+        "tjalda"
+      ],
+      "has": "yes"
+    },
+    "kitchen": {
+      "value": "Yes, but basic and unheated: a simple cooking and dish-washing room that gives shelter from wind and rain",
+      "src": [
+        "tjalda",
+        "ferdalag-winter"
+      ],
+      "has": "yes"
+    },
+    "showers": {
+      "value": "Yes – in the heated service house",
+      "src": [
+        "tjalda",
+        "ferdalag-winter"
+      ],
+      "has": "yes"
+    },
+    "toilets": {
+      "value": "Yes – in the heated service house, which also has a small lounge",
+      "src": [
+        "tjalda",
+        "ferdalag-winter"
+      ]
+    },
+    "dump_station": {
+      "value": "Yes – tjalda.is (Icelandic text) says there is a facility for sludge disposal ('aðstaða er til seirulosunar'). Its exact location and whether it suits cassette toilets: ask on arrival.",
+      "src": [
+        "tjalda"
+      ],
+      "has": "yes"
+    },
+    "wifi": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "laundry": {
+      "value": "Washing machine 900 ISK, washer + dryer 1,700 ISK per use",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 864 3757 · cja@cja.is · cja.is",
+      "src": [
+        "own",
+        "tjalda",
+        "ferdalag-winter"
+      ]
+    }
+  },
+  "practical": [
+    {
+      "value": "Directions: from Route 1 turn onto road 846 at Laugar, cross the bridge and turn right, then halfway up the slope turn right (south) onto an unmarked gravel road and follow it to the end, about 2 km. Camping signs on light posts mark the way.",
+      "src": [
+        "tjalda",
+        "ferdalag-winter"
+      ]
+    },
+    {
+      "value": "You can book by email or phone in advance or on the day, or online through Parka; the own site warns that booking through third parties can cost more.",
+      "src": [
+        "own",
+        "tjalda",
+        "ferdalag-winter"
+      ]
+    },
+    {
+      "value": "Laugar village has a swimming pool, a gym, a shop and a restaurant.",
+      "src": [
+        "tjalda"
+      ]
+    }
+  ]
+}
