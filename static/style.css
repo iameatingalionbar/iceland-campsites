@@ -231,3 +231,10 @@ footer.site .meta{color:#9fb5c3}
 @media(min-width:64rem){.foot{grid-template-columns:2fr 1fr}.foot .meta{grid-column:1/-1}footer.site ul{flex-direction:column}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 @media print{header.site,footer.site,nav,.filters,.map-fig{display:none}a{color:#000}.card{box-shadow:none}}
+/* Affiliate tours box (data/tours.json) */
+.tours{margin:2rem 0 1.5rem;padding:1rem 1.15rem}
+.tours h2{margin:0 0 .35rem;font-size:1.15rem}
+.tours .aff-note{font-size:.85rem;color:var(--muted);margin:0 0 .6rem}
+.tours ul{margin:0 0 .6rem;padding-left:1.1rem}
+.tours li{margin:.25rem 0}
+.tours .meta{font-size:.8rem}

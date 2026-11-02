@@ -1,0 +1,26 @@
+{
+  "_doc": "Affiliate tour links (see NOTES.md > Monetization). Pages reference these ids via a 'tours' list (guides, campsites, regions in site.json). 'label' is the page heading as shown on the target page (checked date = when the URL was confirmed). build.py adds the tracking parameters; never put them in 'url'.",
+  "programs": {
+    "viator": {"name": "Viator", "params": "pid=P00327922&mcid=42383&medium=link&campaign=campsites"},
+    "gti": {"name": "Guide to Iceland", "params": "a=1145642"}
+  },
+  "tours": {
+    "viator-golden-circle": {"program": "viator", "label": "Golden Circle Tours and Tickets", "url": "https://www.viator.com/Reykjavik-attractions/Golden-Circle/d905-a2046", "checked": "2026-11-02"},
+    "viator-blue-lagoon": {"program": "viator", "label": "Blue Lagoon Tours and Tickets", "url": "https://www.viator.com/Reykjavik-attractions/Blue-Lagoon/d905-a2044", "checked": "2026-11-02"},
+    "viator-reykjavik-northern-lights": {"program": "viator", "label": "Top Reykjavik Northern Lights", "url": "https://www.viator.com/Reykjavik-tours/Northern-Lights/d905-tag22109", "checked": "2026-11-02"},
+    "viator-skaftafell": {"program": "viator", "label": "Skaftafell National Park Tours and Tickets", "url": "https://www.viator.com/Reykjavik-attractions/Skaftafell-National-Park/d905-a11650", "checked": "2026-11-02"},
+    "viator-solheimajokull": {"program": "viator", "label": "Sólheimajökull Glacier Tours and Tickets", "url": "https://www.viator.com/Vik-attractions/Solheimajokull-Glacier/d25269-a15336", "checked": "2026-11-02"},
+    "viator-akureyri-whales": {"program": "viator", "label": "Top Akureyri Whale Watching", "url": "https://www.viator.com/Akureyri-tours/Dolphin-and-Whale-Watching/d4341-g3-c77", "checked": "2026-11-02"},
+    "viator-lake-myvatn": {"program": "viator", "label": "Lake Mývatn Tours and Tickets", "url": "https://www.viator.com/Akureyri-attractions/Lake-Myvatn/d4341-a15295", "checked": "2026-11-02"},
+    "viator-godafoss": {"program": "viator", "label": "Godafoss Tours and Tickets", "url": "https://www.viator.com/Akureyri-attractions/Godafoss/d4341-a15300", "checked": "2026-11-02"},
+    "gti-golden-circle": {"program": "gti", "label": "Best Golden Circle Tours", "url": "https://guidetoiceland.is/book-trips-holiday/nature-tours/golden-circle", "checked": "2026-11-02"},
+    "gti-blue-lagoon": {"program": "gti", "label": "Best Blue Lagoon Tours in Iceland", "url": "https://guidetoiceland.is/book-trips-holiday/nature-tours/blue-lagoon", "checked": "2026-11-02"},
+    "gti-northern-lights": {"program": "gti", "label": "Best Northern Lights Tours in Iceland", "url": "https://guidetoiceland.is/book-trips-holiday/nature-tours/northern-lights", "checked": "2026-11-02"},
+    "gti-glacier-hiking": {"program": "gti", "label": "Best Glacier Tours in Iceland", "url": "https://guidetoiceland.is/book-trips-holiday/adventure-tours/glacier-hiking", "checked": "2026-11-02"},
+    "gti-ice-caves": {"program": "gti", "label": "Best Ice Cave Tours in Iceland", "url": "https://guidetoiceland.is/book-trips-holiday/nature-tours/caves", "checked": "2026-11-02"},
+    "gti-south-coast": {"program": "gti", "label": "Best South Coast Tours", "url": "https://guidetoiceland.is/book-trips-holiday/day-tours/south-coast-tours", "checked": "2026-11-02"},
+    "gti-whale-watching": {"program": "gti", "label": "Best Whale Watching & Puffin Tours in Iceland", "url": "https://guidetoiceland.is/book-trips-holiday/adventure-tours/whale-watching", "checked": "2026-11-02"},
+    "gti-akureyri": {"program": "gti", "label": "Best Akureyri Tours in Iceland", "url": "https://guidetoiceland.is/book-trips-holiday/day-tours/from-akureyri", "checked": "2026-11-02"},
+    "gti-myvatn": {"program": "gti", "label": "Best Myvatn Tours in Iceland", "url": "https://guidetoiceland.is/book-trips-holiday/day-tours/myvatn-tours-1", "checked": "2026-11-02"}
+  }
+}

@@ -130,5 +130,6 @@
         "ferdalag-hofn"
       ]
     }
-  ]
+  ],
+  "tours": ["gti-south-coast", "viator-solheimajokull", "gti-glacier-hiking", "gti-ice-caves"]
 }

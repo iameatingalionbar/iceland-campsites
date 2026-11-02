@@ -282,5 +282,6 @@
         "own-campsite"
       ]
     }
-  ]
+  ],
+  "tours": ["viator-golden-circle", "viator-reykjavik-northern-lights", "gti-northern-lights"]
 }

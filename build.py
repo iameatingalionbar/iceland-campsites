@@ -35,6 +35,9 @@ FACT_LABELS = [
 ]
 ERRORS = []
 PAGES = []  # (path, lastmod)
+# Affiliate tour links (data/tours.json). Tracking parameters live ONLY in "programs" and are added here; check.py verifies them.
+TOURS_DATA = json.load(open(os.path.join(ROOT, "data", "tours.json"), encoding="utf-8"))
+AFFILIATE_REL = "sponsored noopener nofollow"
 
 # ---------- helpers ----------
 def load_dir(sub):
@@ -133,6 +136,27 @@ def validate(c):
     if c.get("winter", {}).get("status") not in WINTER: ERRORS.append(f"{owner}: bad winter.status")
     if c["location"].get("lat") is not None and not c["location"].get("coords_src"):
         ERRORS.append(f"{owner}: coordinates without coords_src")
+
+def tour_url(t):
+    params = TOURS_DATA["programs"][t["program"]]["params"]
+    return t["url"] + ("&" if "?" in t["url"] else "?") + params
+
+def tours_block(ids, root, owner):
+    """'Tours & things to do nearby' box: 2-4 clearly labelled affiliate links (rel=sponsored, new tab)."""
+    if not ids: return ""
+    if not 1 <= len(ids) <= 4: ERRORS.append(f"{owner}: tours list must have 1-4 entries, has {len(ids)}")
+    lis = []
+    for tid in ids:
+        t = TOURS_DATA["tours"].get(tid)
+        if not t: ERRORS.append(f"{owner}: unknown tour id '{tid}'"); continue
+        if t["program"] not in TOURS_DATA["programs"]: ERRORS.append(f"{owner}: tour '{tid}' has unknown program"); continue
+        if "?" in t["url"]: ERRORS.append(f"data/tours.json: {tid} url must not contain a query string"); continue
+        prog = TOURS_DATA["programs"][t["program"]]["name"]
+        lis.append(f'<li><a href="{escape(tour_url(t))}" rel="{AFFILIATE_REL}" target="_blank">{escape(t["label"])}</a> <span class="meta">on {escape(prog)}</span></li>')
+    return ('<section class="tours card" aria-labelledby="tours-h"><h2 id="tours-h">Tours &amp; things to do nearby</h2>'
+            f'<p class="aff-note">Affiliate links: we may earn a commission at no extra cost to you. <a href="{root}affiliate-disclosure/index.html">How this works</a>.</p>'
+            '<ul>' + "".join(lis) + '</ul>'
+            '<p class="meta">Links open the tour site in a new tab. Tours are run by third parties; we have not checked their availability, prices or winter schedules.</p></section>')
 
 # ---------- facility flags, cards & map ----------
 FACILITIES = [("electricity", "Electricity"), ("showers", "Showers"), ("dump_station", "Dump station"), ("kitchen", "Kitchen")]
@@ -287,6 +311,7 @@ def render_campsite(c):
             + head + '<div class="with-side"><div class="main-col">'
             + stub + intro + f'<h2 id="facts">Key facts</h2>{facts_table}'
             + f'<h2 id="prices">Prices</h2>{prices}' + practical
+            + tours_block(c.get("tours"), root, c["_file"])
             + f'<h2 id="sources">Sources</h2>{cites.listing()}'
             + '<p class="meta">Spotted something out of date? The campsite\'s own website is always the authority. Prices and seasons change from year to year.</p>'
             + "</div>" + side + "</div>")
@@ -305,7 +330,7 @@ def render_region(r, cs):
     mp = (f'<figure class="map-fig">{map_svg(mine, root, "Map of campsites in " + r["name"])}<figcaption>{map_legend()}{map_credit()}</figcaption></figure>' if any(c["location"].get("lat") for c in mine) else "")
     body = (crumbs(root, [("Regions", "regions/index.html"), (r["name"], None)])
             + page_head(f'Region · {escape(r["is"])}', f'Campsites in {escape(r["name"])}', escape(r["blurb"]))
-            + guides + f"<h2>Campsites ({len(mine)})</h2>" + mp + cards(mine, root))
+            + guides + f"<h2>Campsites ({len(mine)})</h2>" + mp + cards(mine, root) + tours_block(r.get("tours"), root, f"data/site.json region {r['slug']}"))
     write_page(f"regions/{r['slug']}/index.html", f"Campsites in {r['name']}, Iceland | {SITE['site_name']}",
                f"Campervan-friendly campsites in {r['name']} ({r['is']}), Iceland, with sourced winter opening, electricity and dump station info.", body)
 
@@ -404,6 +429,7 @@ def render_guide(g, cs_by_slug):
             + page_head(f'Guide · checked {escape(g["checked"])}', escape(g["title"]), extra=intro)
             + f'<p class="callout">{escape(g["scope_note"])}</p>'
             + f'<h2 id="glance">{escape(g.get("glance_title", "At a glance"))}</h2>' + legend + mp + table + sections + tips + demand
+            + tours_block(g.get("tours"), root, owner)
             + f'<div class="callout warn">{escape(g.get("warning", "Winter seasons, prices and facilities can change at short notice. Contact the campsite before relying on it, especially sites marked Call ahead."))}</div>'
             + f'<h2 id="sources">Sources</h2>{cites.listing()}')
     ld = {"@context": "https://schema.org", "@type": "Article", "headline": g["title"], "description": g["description"],
@@ -490,7 +516,7 @@ def render_static_pages(cs):
         crumbs("../", [("About, sources & methodology", None)]) + """<header class="page-head"><p class="eyebrow">About</p><h1>About, sources &amp; methodology</h1>
 <p class="lede">An independent, English-language reference for campervan and motorhome travellers in Iceland. We are not affiliated with any campsite or with the official tourist board.</p></header><div class="prose">
 <h2>Who runs this site</h2>
-<p>This is an independent information site for motorhome and campervan travellers in Iceland. Facts are cited and dated from the campsites' own websites, <a href="https://tjalda.is/en" rel="nofollow noopener">tjalda.is</a>, <a href="https://www.ferdalag.is/en" rel="nofollow noopener">ferdalag.is</a> and municipality websites; anything we could not confirm is marked <span class="unconfirmed">Unconfirmed</span>. Content is prepared with AI assistance (see the <a href="../ai-disclosure/index.html">AI disclosure</a>), and the site may earn commissions from travel partners (see the <a href="../affiliate-disclosure/index.html">affiliate disclosure</a>).</p>
+<p>This is an independent information site for motorhome and campervan travellers in Iceland. Facts are cited and dated from the campsites' own websites, <a href="https://tjalda.is/en" rel="nofollow noopener">tjalda.is</a>, <a href="https://www.ferdalag.is/en" rel="nofollow noopener">ferdalag.is</a> and municipality websites; anything we could not confirm is marked <span class="unconfirmed">Unconfirmed</span>. Content is prepared with AI assistance (see the <a href="../ai-disclosure/index.html">AI disclosure</a>), and some pages carry clearly labelled affiliate links to tours on Viator and Guide to Iceland, which may earn the site a commission at no extra cost to you (see the <a href="../affiliate-disclosure/index.html">affiliate disclosure</a>). We have no affiliate arrangement with any campsite, and commissions never affect campsite facts.</p>
 <h2>Our rules</h2>
 <ul>
 <li><strong>Every fact has a source.</strong> Each fact on a campsite page links to the page it came from and shows the date we checked it. The site's build script will not publish a fact without a source.</li>
@@ -509,12 +535,23 @@ def render_static_pages(cs):
 <p>Traveller forums such as Reddit are used only as evidence of what travellers ask or report, and are always labelled as such. We never treat them as a source for a campsite's facts.</p>
 <h2>Corrections</h2>
 <p>Seasons and prices change every year. If you run a campsite and something here is out of date, the campsite's own website is always the authority. A corrections contact will be added here.</p></div>""")
-    write_page("affiliate-disclosure/index.html", f"Affiliate disclosure | {SITE['site_name']}", "Affiliate and referral link disclosure.",
+    write_page("affiliate-disclosure/index.html", f"Affiliate disclosure | {SITE['site_name']}", "Which affiliate programs this site uses (Viator and Guide to Iceland), how the links are labelled, and what it means for you.",
         crumbs("../", [("Affiliate disclosure", None)]) + """<header class="page-head"><p class="eyebrow">About</p><h1>Affiliate disclosure</h1></header><div class="prose">
-<p>This site may in future contain referral (affiliate) links to campervan and motorhome rental companies in Iceland. If you book through one of those links, we may earn a commission at no extra cost to you.</p>
-<p>Referral links will never affect which campsites we list or what we say about them. Campsite facts come only from the sources cited on each page.</p>
-<p>We may also earn commissions from other travel partners in the same way, always at no extra cost to you.</p>
-<p><strong>Current status:</strong> the site has no affiliate links yet. When we add any, we will label them clearly where they appear.</p></div>""")
+<p>Some pages on this site include a small box headed <strong>Tours &amp; things to do nearby</strong>. The links in that box are affiliate links. If you click one and then book, we may earn a commission. You pay the same price as you would going to the site directly.</p>
+<h2>Active affiliate programs</h2>
+<ul>
+<li><strong>Viator</strong> (viator.com, tours and activities marketplace).</li>
+<li><strong>Guide to Iceland</strong> (guidetoiceland.is, Icelandic tours and travel booking platform).</li>
+</ul>
+<p>These are the only affiliate programs active on this site. We have no affiliate or referral arrangement with any campsite, and none with any campervan or motorhome rental company.</p>
+<h2>What this means for you</h2>
+<ul>
+<li><strong>No extra cost.</strong> Booking through one of our links does not change the price you pay.</li>
+<li><strong>Clearly labelled.</strong> Affiliate links appear only in the labelled tours box, open in a new tab and are marked <code>rel="sponsored"</code> for search engines. Other links on this site (to campsites, tjalda.is, municipalities and so on) are not affiliate links.</li>
+<li><strong>Campsite facts are not affected.</strong> Which campsites we list and what we say about them comes only from the sources cited on each page. Commissions never change that.</li>
+<li><strong>We do not review the tours.</strong> We link to tour categories that fit the area, using the titles shown on the partner's site. We have not taken these tours and make no claims about their prices, ratings, availability or winter schedules. Check the details with the operator before booking.</li>
+</ul>
+<p>See also <a href="../about/index.html">About, sources &amp; methodology</a>.</p></div>""")
     write_page("ai-disclosure/index.html", f"AI disclosure | {SITE['site_name']}", "How AI assistance is used to prepare this site, and why you should verify hours and prices with the campsite.",
         crumbs("../", [("AI disclosure", None)]) + """<header class="page-head"><p class="eyebrow">About</p><h1>AI disclosure</h1></header><div class="prose">
 <p>Content on this site is prepared with the help of AI tools: researching public sources, extracting facts, and drafting and checking pages.</p>

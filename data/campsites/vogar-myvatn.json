@@ -75,5 +75,6 @@
     {"value": "Campsite guests get 15% off menu pizzas at Daddi's Pizza next door; there is also a 24/7 honesty souvenir shop.", "src": ["own", "reisa", "tjalda"]},
     {"value": "Nearest grocery store is Krambúðin in Reykjahlíð next to the N1 petrol station (about 5 minutes); the Vínbúðin liquor store in Reykjahlíð opens weekdays 16–18.", "src": ["own-faq", "reisa"]},
     {"value": "There is no playground on site; the nearest is in Reykjahlíð next to the school.", "src": ["own-faq"]}
-  ]
+  ],
+  "tours": ["viator-lake-myvatn", "gti-myvatn", "viator-godafoss"]
 }

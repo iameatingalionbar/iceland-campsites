@@ -283,5 +283,6 @@
         "vjp-area"
       ]
     }
-  ]
+  ],
+  "tours": ["viator-skaftafell", "gti-glacier-hiking", "gti-ice-caves"]
 }

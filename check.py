@@ -3,7 +3,7 @@
 SEO meta present, sitemap entries exist. Exit code 1 on any problem. Stdlib only."""
 import os, sys, re, glob
 from html.parser import HTMLParser
-from urllib.parse import urlparse, unquote
+from urllib.parse import urlparse, unquote, parse_qs
 
 DIST = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dist")
 def detect_base():
@@ -25,13 +25,13 @@ problems, ext_links = [], set()
 
 class P(HTMLParser):
     def __init__(s):
-        super().__init__(); s.stack=[]; s.links=[]; s.ids=[]; s.meta={}; s.has_title=False; s.h1=0; s.lang=None
+        super().__init__(); s.stack=[]; s.links=[]; s.alinks=[]; s.ids=[]; s.meta={}; s.has_title=False; s.h1=0; s.lang=None
     def handle_starttag(s, t, a):
         a=dict(a)
         if t=="html": s.lang=a.get("lang")
         if t not in VOID: s.stack.append((t, s.getpos()))
         if "id" in a: s.ids.append(a["id"])
-        if t=="a" and "href" in a: s.links.append(a["href"])
+        if t=="a" and "href" in a: s.links.append(a["href"]); s.alinks.append((a["href"], a.get("rel") or "", a.get("target") or ""))
         if t=="link" and a.get("rel")=="stylesheet": s.links.append(a["href"])
         if t=="link" and a.get("rel")=="canonical":
             s.meta["canonical"]=a.get("href")
@@ -78,6 +78,27 @@ for f,p in pages.items():
         if not os.path.exists(target): problems.append(f"{p.file}: broken link {href}"); continue
         if u.fragment and target in pages and u.fragment not in pages[target].ids:
             problems.append(f"{p.file}: missing anchor #{u.fragment} in {href}")
+
+# Affiliate links: exact tracking parameters, rel="sponsored", new tab, and a visible label on the page
+AFF_REQUIRED = {"viator.com": {"pid": "P00327922", "mcid": "42383", "campaign": "campsites"}, "guidetoiceland.is": {"a": "1145642"}}
+AFF_LABEL = "Affiliate links: we may earn a commission"
+aff_count = 0
+for f,p in pages.items():
+    page_has_aff = False
+    for href, rel, target in p.alinks:
+        u = urlparse(href); host = (u.hostname or "").lower()
+        prog = next((d for d in AFF_REQUIRED if host == d or host.endswith("." + d)), None)
+        if not prog: continue
+        q = parse_qs(u.query)
+        page_has_aff = True; aff_count += 1
+        for k, v in AFF_REQUIRED[prog].items():
+            if q.get(k) != [v]: problems.append(f"{p.file}: affiliate link {href} must have {k}={v} (has {q.get(k)})")
+        if prog == "viator.com" and q.get("medium") != ["link"]: problems.append(f"{p.file}: Viator link {href} must have medium=link")
+        if "sponsored" not in rel.split(): problems.append(f"{p.file}: affiliate link {href} lacks rel=\"sponsored\"")
+        if target != "_blank": problems.append(f"{p.file}: affiliate link {href} lacks target=\"_blank\"")
+    if page_has_aff and AFF_LABEL not in open(f, encoding="utf-8").read():
+        problems.append(f"{p.file}: affiliate links without the visible '{AFF_LABEL}' label")
+print(f"Affiliate links checked: {aff_count}.")
 
 sm=open(os.path.join(DIST,"sitemap.xml")).read()
 for loc in re.findall(r"<loc>([^<]+)</loc>", sm):

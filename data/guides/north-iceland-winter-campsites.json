@@ -162,5 +162,6 @@
       ]
     }
   ],
-  "warning": "Winter seasons, prices and facilities can change at short notice, and several of these campsites describe only limited winter service. Contact the campsite before relying on it."
+  "warning": "Winter seasons, prices and facilities can change at short notice, and several of these campsites describe only limited winter service. Contact the campsite before relying on it.",
+  "tours": ["viator-akureyri-whales", "gti-whale-watching", "viator-lake-myvatn", "viator-godafoss"]
 }

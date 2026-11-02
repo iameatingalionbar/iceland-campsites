@@ -73,5 +73,6 @@
     {"value": "Expect restricted access 18–28 July 2026 because of the National Scout Jamboree at Hamrar (20–26 July).", "src": ["reisa"]},
     {"value": "Reisa.is lists Bónus supermarket and the airport about 5 minutes away and the swimming pool and town centre about 10 minutes; Kjarnaskógur has cross-country ski tracks in winter.", "src": ["reisa"]},
     {"value": "The operator's other site, Þórunnarstræti in town, has closed.", "src": ["own"]}
-  ]
+  ],
+  "tours": ["viator-akureyri-whales", "gti-whale-watching", "gti-akureyri"]
 }

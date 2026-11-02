@@ -104,5 +104,6 @@
       ]
     }
   ],
-  "warning": "Seasons, prices and facilities can change at short notice. Contact the campsite before relying on it, especially in winter."
+  "warning": "Seasons, prices and facilities can change at short notice. Contact the campsite before relying on it, especially in winter.",
+  "tours": ["viator-blue-lagoon", "gti-blue-lagoon", "gti-northern-lights"]
 }

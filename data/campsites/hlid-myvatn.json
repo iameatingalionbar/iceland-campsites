@@ -198,5 +198,6 @@
         "ferdalag-winter"
       ]
     }
-  ]
+  ],
+  "tours": ["viator-lake-myvatn", "gti-myvatn", "viator-godafoss"]
 }

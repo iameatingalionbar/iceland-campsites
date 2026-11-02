@@ -115,5 +115,6 @@
    ]
   }
  ],
- "warning": "Seasons, prices and facilities can change at short notice. Contact the campsite before relying on it, especially in winter."
+ "warning": "Seasons, prices and facilities can change at short notice. Contact the campsite before relying on it, especially in winter.",
+  "tours": ["viator-golden-circle", "gti-golden-circle", "viator-reykjavik-northern-lights", "gti-northern-lights"]
 }

@@ -52,6 +52,7 @@ Exit codes: `build.py` and `check.py` exit non-zero on failure. A nightly run sh
 data/site.json               site name, base_url, regions (8), themes (2)
 data/campsites/<slug>.json   one file per campsite -> dist/campsites/<slug>/index.html
 data/guides/<slug>.json      editorial guides       -> dist/guides/<slug>/index.html
+data/tours.json              affiliate tour links (Viator, Guide to Iceland) referenced by optional "tours": [ids] in guides/campsites/regions
 templates/base.html          page shell (string.Template: $title $description $canonical $body $root ...)
 static/style.css             the only stylesheet (system fonts, no web fonts, no framework)
 static/filter.js             ~1 KB progressive-enhancement filters for /campsites/ (page works fully without it)
@@ -189,9 +190,28 @@ Keyword research and page ideas: KEYWORDS.md.
   https://www.reddit.com/r/VisitingIceland/comments/193fqbr/winter_campground_in_vik/ and
   https://www.reddit.com/r/VisitingIceland/comments/1gytpl5/campsite_recommendations/
 
-## Monetization (awaiting Stefán)
+## Monetization
+### Active affiliate programs (approved by Stefán 2026-11-02)
+| program | status | tracking (build.py adds it from data/tours.json "programs"; NEVER change) |
+|---|---|---|
+| Viator | ACTIVE since 2026-11-02 | `?pid=P00327922&mcid=42383&medium=link&campaign=campsites` on viator.com URLs. Never change pid or mcid; campaign must be `campsites`. |
+| Guide to Iceland | ACTIVE since 2026-11-02 | `?a=1145642` (or `&a=1145642` if the URL has a query). Stated terms (theirs): 5% tours, 8% packages, 30-day cookie. |
+These are the ONLY active programs; the affiliate disclosure page names only these two. Do not name rental companies there until approved and live.
+How it works: `data/tours.json` = catalog of tour links (id -> program, label = heading on the target page, url without query,
+checked date). Guides, campsites and regions (data/site.json) list 1-4 ids in `"tours": [...]`; build.py `tours_block()` renders a
+"Tours & things to do nearby" box with the label "Affiliate links: we may earn a commission at no extra cost to you" (links to
+/affiliate-disclosure/), every link `rel="sponsored noopener nofollow" target="_blank"`. Unknown ids / a query in `url` fail the build.
+check.py FAILS if any viator.com link lacks pid=P00327922, mcid=42383, medium=link, campaign=campsites, any guidetoiceland.is link
+lacks a=1145642, any such link lacks rel sponsored or target=_blank, or a page with such links lacks the visible label.
+Viator URLs return 403 to curl/WebFetch (bot block); they were taken from search results 2026-11-02. GTI URLs fetched 200 (406 WAF on
+some curl retries; confirmed via WebFetch). Do not add claims, prices or ratings next to tour links.
+Placed 2026-11-02: guides south-coast-winter-campsites, campsites-near-keflavik-airport, campsites-near-reykjavik,
+north-iceland-winter-campsites; campsites skaftafell, reykjavik-eco-campsite, sandgerdi-airport-camping, vogar-myvatn, hlid-myvatn,
+hamrar-akureyri; regions south, capital-area, reykjanes, north-east. Golden Circle guide (B11) should get tours when written.
+
+### Other programs (not active)
 Site URL for applications: https://icelandcampsites.com/ (custom domain since 2026-10-27; drafts/ updated to it).
-Nothing signed up, no links placed. The affiliate disclosure page is a placeholder. Options to review:
+Options reviewed earlier (none of these are active; nothing else signed up by this agent):
 | program | url | stated terms (from their page, not verified further) |
 |---|---|---|
 | Go Campers | https://www.gocampers.is/partner-with-us/ | 5% commission, ~$120 average commission per booking, 5-month cookie, 25% reader discount. 2026-10-24: Stefán sent an application email to go@gorentals.is from athafnamadurinn@mail.grokbot.com; awaiting reply |
@@ -200,12 +220,12 @@ Nothing signed up, no links placed. The affiliate disclosure page is a placehold
 | Travel to Iceland | https://www.traveltoiceland.is/affiliate-program | Stated by them, not verified (checked 2026-10-24): 30% of net profit per completed car/camper/rooftop-tent rental, 50% after 250 confirmed bookings; 30-day cookie; payout every 6 months by PayPal or bank transfer, no minimum; dashboard + banners + API; cancelled bookings earn nothing. Contact info@traveltoiceland.is. Draft: drafts/travel-to-iceland.md (NOT sent) |
 | Top picks from AFFILIATES.md (2026-10-24, stated by them, not verified, nothing signed up) | see AFFILIATES.md | |
 | Northbound (marketplace, campers/motorhomes) | https://www.northbound.is/affiliate | 20% of their commission, avg ~$45/booking, 365-day attribution, payout from 10,000 ISK; form |
-| Guide to Iceland | https://guidetoiceland.is/affiliates | 5% tours / 8% packages, self-drive, hotels / 15% at $5K+/mo; 30-day cookie; $100 min payout; wants a real audience. 2026-10-27 08:43 (Reykjavik): Guide to Iceland (partners@guidetoiceland.is) emailed athafnamadurinn@mail.grokbot.com "You're Approved": affiliate application approved, commission link ID 1145642 (append ?a=1145642 to any guidetoiceland.is URL, or use the $ button on their pages). Link does not expire. No new terms stated. Likely Íshellavefurinn's application (ice cave site), not sent by this agent; links not clicked. Awaiting Stefán: OK to use the same ID on the campsites site? |
+| Guide to Iceland | https://guidetoiceland.is/affiliates | 5% tours / 8% packages, self-drive, hotels / 15% at $5K+/mo; 30-day cookie; $100 min payout; wants a real audience. 2026-10-27 08:43 (Reykjavik): Guide to Iceland (partners@guidetoiceland.is) emailed athafnamadurinn@mail.grokbot.com "You're Approved": affiliate application approved, commission link ID 1145642 (append ?a=1145642 to any guidetoiceland.is URL, or use the $ button on their pages). Link does not expire. No new terms stated. 2026-11-02: Stefán approved using ID 1145642 on this site -> ACTIVE (see above). |
 | CampEasy | https://campeasy.com/agent-portal/affiliate-links-and-coupon-codes/ | Tapfiliate; 30-day; rate not stated; paid Jan/Jul, $300 min |
 | CampervanPlanet | https://www.campervanplanet.com/affiliate-program | 30% of net profit, up to 50%; self-signup |
 | Discover Cars | https://www.discovercars.com/affiliate | 70% of profit + 30% Full Coverage, ~$20/booking, 365-day cookie; direct or via Travelpayouts |
 | Lava Car Rental | https://affiliate.lavacarrental.is/ | 5% + 5% reader discount, 30-day; min payout 50,000 ISK |
-| GetYourGuide / Viator | partner.getyourguide.support / partnerresources.viator.com | 8% each, 31 / 30-day cookie  2026-10-24 22:02 (Reykjavik): GetYourGuide sent an account-activation email to athafnamadurinn@mail.grokbot.com (someone signed up for the Partner Program with that address; not done by this agent per records). Activation link valid 24h; not clicked. Awaiting Stefán. 2026-10-24 22:04 (Reykjavik): Viator sent a "Verify your email address" email for a new Viator Partner account at athafnamadurinn@mail.grokbot.com (verification link to partners.viator.com; not clicked, not done by this agent). Awaiting Stefán. 2026-10-24 22:33 (Reykjavik): Viator sent a reminder "Stefán Atli, please verify your Viator account" (Partner Program signup, verify button; not clicked). Same pending verification, no new terms. |
+| GetYourGuide / Viator (Viator now ACTIVE, see above; GetYourGuide not used) | partner.getyourguide.support / partnerresources.viator.com | 8% each, 31 / 30-day cookie  2026-10-24 22:02 (Reykjavik): GetYourGuide sent an account-activation email to athafnamadurinn@mail.grokbot.com (someone signed up for the Partner Program with that address; not done by this agent per records). Activation link valid 24h; not clicked. Awaiting Stefán. 2026-10-24 22:04 (Reykjavik): Viator sent a "Verify your email address" email for a new Viator Partner account at athafnamadurinn@mail.grokbot.com (verification link to partners.viator.com; not clicked, not done by this agent). Awaiting Stefán. 2026-10-24 22:33 (Reykjavik): Viator sent a reminder "Stefán Atli, please verify your Viator account" (Partner Program signup, verify button; not clicked). Same pending verification, no new terms. |
 | Airalo (eSIM) | https://www.airalo.com/m/resources/airalo-affiliate-program | 10% via Impact |
 
 ## Decisions for Stefán (nothing bought)
@@ -217,6 +237,11 @@ Nothing signed up, no links placed. The affiliate disclosure page is a placehold
 - Contacting campsites to fill Unconfirmed cells (email/phone) needs your approval.
 
 ## CHANGELOG
+- 2026-11-02: Affiliate links live (Stefán approved Viator with campaign=campsites and Guide to Iceland a=1145642). New
+  data/tours.json + build.py tours_block(): labelled "Tours & things to do nearby" box (2-4 links, rel="sponsored noopener nofollow",
+  target=_blank) on 4 guides, 6 campsites, 4 regions (list in Monetization). check.py now validates affiliate params/rel/target/label.
+  Affiliate disclosure rewritten (Viator + Guide to Iceland only; no extra cost; facts unaffected; we do not review tours); About
+  updated to match. Small CSS for .tours.
 - 2026-11-02: Guide "Campsites with Electric Hook-up in Iceland (2026): Prices, Winter Power and Plugs"
   (/guides/campsites-with-electricity/, B40). New guide table type `electricity` (build.py `elec_price()`, CSS widths): the 25
   profiled campsites with electricity has=yes, with electricity fact, electricity price item and winter badge pulled from the
