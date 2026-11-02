@@ -1,0 +1,171 @@
+{
+ "slug": "campsites-with-electricity",
+ "title": "Campsites with Electric Hook-up in Iceland (2026): Prices, Winter Power and Plugs",
+ "short": "Electric hook-up",
+ "description": "Iceland campsites with electric hook-up for campervans and motorhomes: 2026 electricity prices, which sites keep power in winter, number of sockets and plug tips. Every fact sourced.",
+ "region": "all",
+ "checked": "2026-11-02",
+ "sources": {
+  "tjalda-api": {
+   "title": "Tjalda.is public campsite data (https://tjalda.is/api/campsites): 'Electricity' service tag on publicly listed campsites",
+   "url": "https://tjalda.is/api/campsites",
+   "checked": "2026-11-02"
+  },
+  "iec-plugs": {
+   "title": "IEC – World Plugs: Iceland (230 V, 50 Hz, plug types C / F)",
+   "url": "https://www.iec.ch/world-plugs",
+   "checked": "2026-11-02"
+  },
+  "fossatun": {
+   "title": "Fossatún (Borgarnes) – Camping page: electrical plugs two or three pin by area",
+   "url": "https://fossatun.is/campsite/",
+   "checked": "2026-11-02"
+  },
+  "rijo-faq": {
+   "title": "Rijo Campers – FAQ (campervan includes a 5-metre power cable for campsites)",
+   "url": "https://rijocampers.is/faqs/",
+   "checked": "2026-11-02"
+  },
+  "kodiak": {
+   "title": "Kodiak Campers – FAQ on home page (rentals include camper power cable and extension lead)",
+   "url": "https://kodiakcampers.is/",
+   "checked": "2026-11-02"
+  },
+  "reddit-outlets": {
+   "title": "r/VisitingIceland – 'Electical outlets for campervans' (Feb 2025, traveller discussion; seen via search result)",
+   "url": "https://www.reddit.com/r/VisitingIceland/comments/1irnbw6/electical_outlets_for_campervans/",
+   "checked": "2026-11-02"
+  },
+  "reddit-van": {
+   "title": "r/VisitingIceland – 'VAN- question about campsite' (Apr 2025, traveller discussion; seen via search result)",
+   "url": "https://www.reddit.com/r/VisitingIceland/comments/1k8jeh9/van_question_about_campsite/",
+   "checked": "2026-11-02"
+  }
+ },
+ "intro": [
+  {
+   "value": "Electric hook-up is common at Icelandic campsites: of the 155 campsites publicly listed on tjalda.is, 121 carry its 'Electricity' service tag. It is almost always an extra charge, and in winter many sites offer power on only a few spaces, or none at all.",
+   "src": ["tjalda-api"]
+  },
+  {
+   "value": "Of the 27 campsites profiled on this site, 25 confirm electricity. Published 2026 prices for a hook-up run from 900 ISK per night (Hlíð at Mývatn and CJA at Laugar) to 2,500 ISK per night (Farmhouse Lodge, Skeiðflöt); at Hella (Árhús) it is included in the camping fee.",
+   "src": ["hlid-myvatn:own", "cja-laugar:own", "farmhouse-lodge-skeidflot:tjalda", "hella-arhus:tjalda"]
+  }
+ ],
+ "scope_note": "Scope: the campsites profiled on this site whose own page or tjalda.is listing confirms electricity, checked 2026-11-02 against the campsite files (each row links to the full page). Skógafoss and Starlight (Lambafell) are left out because no source we checked lists electricity there. Electricity prices are 2026 rates as published; 'Unconfirmed' means no price was found.",
+ "campsites": [
+  "reykjavik-eco-campsite", "hafnarfjordur", "mosskogar",
+  "sandgerdi-airport-camping", "gardskagi", "happy-campsite-keflavik", "vogar-reykjanes",
+  "hveragerdi-reykjamork", "selfoss-gesthus", "hella-arhus", "hvolsvollur", "hellisholar", "smaratun-fljotshlid",
+  "farmhouse-lodge-skeidflot", "vik-camping", "kirkjubaer-ii", "skaftafell", "hofn",
+  "camp-egilsstadir",
+  "vogar-myvatn", "hlid-myvatn", "cja-laugar", "vaglaskogur", "hamrar-akureyri", "artun"
+ ],
+ "table": "electricity",
+ "glance_title": "Campsites with electricity at a glance",
+ "table_caption": "Grouped by region: capital area, Reykjanes, South Coast (west to east), East, North East. Electricity prices are 2026 rates as published, per night unless stated.",
+ "sections": [
+  {
+   "id": "winter",
+   "title": "Electricity in winter",
+   "paras": [
+    {
+     "value": "A campsite being open in winter does not mean every pitch has power. These are the winter arrangements the sources describe:",
+     "src": ["reykjavik-eco-campsite:own-home", "skaftafell:vjp", "vaglaskogur:tjalda"]
+    }
+   ],
+   "items": [
+    {
+     "value": "Reykjavík Eco-Campsite: from 15 October to 15 April only Area A is open, for motorhomes and campervans; it has 16A hook-ups on marked pitches, and tjalda.is says up to 50 vehicles can be connected there at the same time.",
+     "src": ["reykjavik-eco-campsite:own-home", "reykjavik-eco-campsite:own-campsite", "reykjavik-eco-campsite:tjalda"]
+    },
+    {
+     "value": "Skaftafell: zones A and C stay open in winter, with separate pitches and good access to electricity (1,500 ISK per 24 hours).",
+     "src": ["skaftafell:vjp", "skaftafell:vjp-prices"]
+    },
+    {
+     "value": "Camp Egilsstaðir: the winter zone P (the car park) has an electricity post with connections for 5 vehicles, so power in winter is limited.",
+     "src": ["camp-egilsstadir:own-faq", "camp-egilsstadir:own"]
+    },
+    {
+     "value": "Hamrar, Akureyri: electricity is available on all fields and on the winter parking areas (1,500 ISK per night).",
+     "src": ["hamrar-akureyri:tjalda", "hamrar-akureyri:reisa", "hamrar-akureyri:own"]
+    },
+    {
+     "value": "Vaglaskógur: open for campers on car park F during the winter service (15 September 2026 – 30 April 2027), but with no electricity at the campsite in winter.",
+     "src": ["vaglaskogur:tjalda", "vaglaskogur:parka"]
+    },
+    {
+     "value": null,
+     "note": "CJA (Laugar) and Hlíð (Mývatn) are open all year, but whether their winter spaces have power is Unconfirmed in the sources checked. Ask before you rely on it."
+    }
+   ]
+  },
+  {
+   "id": "limited",
+   "title": "Where hook-ups are limited",
+   "paras": [],
+   "items": [
+    {
+     "value": "Happy Campsite, Keflavík: electricity only in zone B with few connections (tjalda.is says 3), so book electricity in advance. The campsite is closed in winter (season 1 May – 1 October).",
+     "src": ["happy-campsite-keflavik:tjalda", "happy-campsite-keflavik:own"]
+    },
+    {
+     "value": "Hafnarfjörður (Víðistaðatún): only Zone B's 9 bookable pitches have a power socket (1,300 ISK per night). Zone C has none, and you need a long extension cable to reach the Zone B sockets across the road. Season 15 May – 30 September.",
+     "src": ["hafnarfjordur:reisa", "hafnarfjordur:tjalda"]
+    },
+    {
+     "value": "Larger numbers of hook-ups are published for Skaftafell (100 outlets in zones A–D), Hellishólar (up to 40 caravans/motorhomes) and Selfoss Gesthús (40 pitches in the RV area).",
+     "src": ["skaftafell:vjp", "hellisholar:own-is", "selfoss-gesthus:own-campsite"]
+    }
+   ]
+  },
+  {
+   "id": "prices",
+   "title": "How electricity is charged",
+   "paras": [],
+   "items": [
+    {
+     "value": "Most campsites charge electricity on top of the per-person rate. Some charge per night and some per 24 hours, for example Skaftafell (1,500 ISK per 24 h), Camp Egilsstaðir (2,000 ISK per 24 h per camper unit), Garðskagi (1,000 ISK per 24 h) and Kirkjubær II (1,500 ISK per 24 h).",
+     "src": ["skaftafell:vjp-prices", "camp-egilsstadir:own-prices", "gardskagi:tjalda", "kirkjubaer-ii:tjalda"]
+    },
+    {
+     "value": "Some build it into the pitch price instead: Reykjavík Eco-Campsite charges 5,715 ISK for a campervan/motorhome pitch with 16A electricity versus 3,735 ISK without (both including one adult), and Vogar at Mývatn charges motorhomes and caravans 1,600 ISK including electricity.",
+     "src": ["reykjavik-eco-campsite:own-prices", "vogar-myvatn:own-camping"]
+    },
+    {
+     "value": "Hella (Árhús) includes electricity in the camping fee.",
+     "src": ["hella-arhus:tjalda"]
+    }
+   ]
+  }
+ ],
+ "tips_title": "Practical tips for plugging in",
+ "tips": [
+  {
+   "value": "Mains power in Iceland is 230 V, 50 Hz; domestic sockets are types C and F (two round pins, Schuko).",
+   "src": ["iec-plugs"]
+  },
+  {
+   "value": "Socket types at campsites vary. Hamrar is described as having three-pin plugs (tjalda.is) or blue sockets (reisa.is), Reykjavík Eco-Campsite has 16A hook-ups, and Fossatún near Borgarnes says its areas have either two- or three-pin plugs, shown on its site map.",
+   "src": ["hamrar-akureyri:tjalda", "hamrar-akureyri:reisa", "reykjavik-eco-campsite:own-campsite", "fossatun"]
+  },
+  {
+   "value": "Check that your rental includes a cable, and how long it is. For example, Rijo Campers lists a 5-metre power cable for plugging in at campsites, and Kodiak Campers lists a camper power cable and an extension lead.",
+   "src": ["rijo-faq", "kodiak"]
+  },
+  {
+   "value": "Campsite hook-ups are not EV chargers. Skaftafell says its electricity system is neither powerful nor safe enough for charging vehicles. CJA at Laugar lists electric-car charging separately at 35 ISK per kWh.",
+   "src": ["skaftafell:vjp", "cja-laugar:tjalda"]
+  },
+  {
+   "value": "Tjalda.is shows an 'Electricity' service icon on each campsite listing, which is a quick first check for sites not covered here. Confirm with the campsite, because tjalda.is data sometimes conflicts with the operator's own pages.",
+   "src": ["tjalda-api"]
+  }
+ ],
+ "demand": {
+  "value": "Travellers renting campervans that need mains power ask whether most campsites have outlets, and whether they need a long extension cord. Replies note that not all campsites have hook-ups, that electricity costs extra, and that rental companies usually supply the cable.",
+  "src": ["reddit-outlets", "reddit-van"]
+ },
+ "warning": "Electricity prices, the number of hook-ups and winter availability can change at short notice. Contact the campsite before relying on power, especially in winter or if your campervan needs mains power for heating."
+}

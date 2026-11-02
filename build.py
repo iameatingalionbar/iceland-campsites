@@ -148,6 +148,10 @@ def has(c, key):
 def adult_price(c):
     return next((i for i in c["prices"]["items"] if i["label"].lower().startswith(("adult", "per person", "campervan"))), None)
 
+def elec_price(c):
+    """Price item for electricity from the campsite file (label starting 'Electricity'), or None."""
+    return next((i for i in c["prices"]["items"] if i["label"].lower().startswith("electricity")), None)
+
 def chips(c):
     out = []
     for key, label in FACILITIES:
@@ -331,9 +335,10 @@ GUIDE_COLS = {
     "winter": ["location", "winter", "electricity", "dump", "price", "sources", "checked"],
     "overview": ["location", "winter", "electricity", "dump", "price", "sources", "checked"],
     "dump": ["location", "dump", "winter_badge", "price", "sources", "checked"],
+    "electricity": ["location", "electricity", "elec_price", "winter_badge", "sources", "checked"],
 }
 COL_HEAD = {"location": "Location", "winter": "Winter status", "winter_badge": "Winter", "electricity": "Electricity", "dump": "Dump station",
-            "price": "Price (if confirmed)", "sources": "Sources", "checked": "Checked"}
+            "price": "Price (if confirmed)", "elec_price": "Electricity price", "sources": "Sources", "checked": "Checked"}
 
 def render_guide(g, cs_by_slug):
     root = "../../"
@@ -363,7 +368,12 @@ def render_guide(g, cs_by_slug):
         adult = adult_price(c)
         price = fact_html(nf(adult), cites, owner, with_checked=False) if adult else '<span class="unconfirmed">Unconfirmed</span>'
         if adult and adult.get("value"): price = escape(adult["label"]) + ": " + price
-        srcs = sorted({k for f in [nf(w), el, dump, nf(adult), nf(c["season"])] if f and f.get("value") for k in f.get("src", [])})
+        ep = elec_price(c)
+        if ep is None: eprice = '<span class="unconfirmed">Unconfirmed</span><span class="unc-note">No electricity price in the sources checked.</span>'
+        else:
+            eprice = fact_html(nf(ep), cites, owner, with_checked=False)
+            if ep.get("value"): eprice = escape(ep["label"]) + ": " + eprice
+        srcs = sorted({k for f in [nf(w), el, dump, nf(adult), nf(c["season"])] + ([nf(ep)] if "elec_price" in cols and ep else []) if f and f.get("value") for k in f.get("src", [])})
         loc = c["location"]; ml = map_links(c)
         cell = {
             "location": escape(c.get("town", "")) + (f'<br><span class="meta">{loc["lat"]:.4f}, {loc["lon"]:.4f}</span>' if ml else ""),
@@ -371,7 +381,7 @@ def render_guide(g, cs_by_slug):
             "winter_badge": winter_badge(w.get("status")),
             "electricity": fact_html(el, cites, owner, with_checked=False),
             "dump": fact_html(dump, cites, owner, with_checked=False),
-            "price": price, "sources": cites.sup(srcs) or "–", "checked": f'<span class="checked">{escape(c["checked"])}</span>',
+            "price": price, "elec_price": eprice, "sources": cites.sup(srcs) or "–", "checked": f'<span class="checked">{escape(c["checked"])}</span>',
         }
         rows.append(f'<tr><th scope="row"><a href="{campsite_url(slug, root)}">{escape(c["name"])}</a></th>'
                     + "".join(f'<td data-label="{COL_HEAD[k]}" class="col-{k}"><div class="cv">{cell[k]}</div></td>' for k in cols) + "</tr>")

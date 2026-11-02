@@ -202,6 +202,7 @@ table.guide thead th{font-size:.7rem}
  .col-name{width:13%}.col-location{width:11%}.col-winter{width:22%}.col-electricity{width:14%}.col-dump{width:17%}.col-price{width:11%}.col-sources{width:6.5%}.col-checked{width:7.5%}
  table.guide .col-location{hyphens:auto}
  .t-dump .col-dump{width:30%}.t-dump .col-winter_badge{width:14%}.t-dump .col-price{width:16%}.t-dump .col-location{width:11%}
+ .t-electricity .col-name{width:15%}.t-electricity .col-electricity{width:34%}.t-electricity .col-elec_price{width:16%}.t-electricity .col-winter_badge{width:12%}
  table.guide td{overflow-wrap:break-word}}
 tbody tr:hover>*{background-color:#fafcfc}
 table.facts tbody tr:hover>th{background:#f1f6f7}

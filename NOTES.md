@@ -96,7 +96,7 @@ Theme filters: `open-in-winter` lists `winter.status` ∈ {open, call-ahead, par
 Facility flags: `electricity`, `showers`, `kitchen` and `dump_station` carry `"has": "yes|no|nearby|null"`. The card chips and the
 /campsites/ filters use ONLY these flags (null = Unconfirmed, and a ticked filter hides it). Set `has` only from the sourced value.
 Guide schema: `slug, title, short?, description, region, checked, sources{}, intro[FACT], scope_note, demand FACT, campsites[slugs],
-tips[FACT], tips_title?, table? ("winter"|"overview"|"dump"), table_caption?, glance_title?, warning?, sections?[{id,title,paras[FACT],items[FACT]}]`.
+tips[FACT], tips_title?, table? ("winter"|"overview"|"dump"|"electricity"), table_caption?, glance_title?, warning?, sections?[{id,title,paras[FACT],items[FACT]}]`.
 
 ## Design (2026-10-24 overhaul)
 - Mobile-first, one stylesheet, system font stack, inline SVG only (logo, map, icons). No web fonts, no images, so no layout shift
@@ -111,6 +111,7 @@ tips[FACT], tips_title?, table? ("winter"|"overview"|"dump"), table_caption?, gl
   URL (`?region=south&winter=open&dump=yes`), so the home hero form (GET to /campsites/) and shareable links work. Without JS the
   form stays hidden and every card is listed.
 Guide tables pull each campsite's winter/electricity/dump/adult price straight from the campsite files, so update the campsite file, not the guide.
+The `electricity` table type (2026-11-02) adds an "Electricity price" column = the first price item whose label starts with "Electricity" (build.py `elec_price()`); no such item → Unconfirmed.
 
 Status rules: `open` = an official or own source says it is open through winter, with no conflicting source. `call-ahead` = listed as winter-open but the wording is vague or sources conflict. `partial` = shoulder season (e.g. to Nov/Dec, or from March). `closed` = published season ends before winter.
 
@@ -163,7 +164,7 @@ A nightly run should take the first `todo` (or `stub` → full) row by prio, res
 | B37 | 2 | todo | guide | snaefellsnes-campsites | Snæfellsnes campsites | west | KEYWORDS #7 | tjalda |
 | B38 | 3 | todo | guide | westfjords-campsites | Westfjords campsites | westfjords | KEYWORDS #10 | tjalda |
 | B39 | 3 | todo | campsite | landmannalaugar | Landmannalaugar campsite (summer, F-road) | south | KEYWORDS #11 | fi.is |
-| B40 | 1 | todo | guide | campsites-with-electricity | Campsites with electric hook-up | all | KEYWORDS #13 | campsite has-flags |
+| B40 | 1 | done | guide | campsites-with-electricity | Campsites with electric hook-up | all | KEYWORDS #13 | campsite has-flags |
 | B41 | 1 | todo | guide | overnight-parking-rules | Can you sleep in a campervan outside campsites in Iceland? | all | KEYWORDS #14 | Nature Conservation Act / UOS pages |
 | B42 | 2 | todo | guide | campsite-prices-2026 | Iceland campsite prices 2026 (table) | all | KEYWORDS #16 | campsite data |
 | B43 | 2 | todo | guide | campsites-with-hot-tubs | Campsites with hot tubs or a pool nearby | all | KEYWORDS #17 | operator pages |
@@ -216,6 +217,21 @@ Nothing signed up, no links placed. The affiliate disclosure page is a placehold
 - Contacting campsites to fill Unconfirmed cells (email/phone) needs your approval.
 
 ## CHANGELOG
+- 2026-11-02: Guide "Campsites with Electric Hook-up in Iceland (2026): Prices, Winter Power and Plugs"
+  (/guides/campsites-with-electricity/, B40). New guide table type `electricity` (build.py `elec_price()`, CSS widths): the 25
+  profiled campsites with electricity has=yes, with electricity fact, electricity price item and winter badge pulled from the
+  campsite files. Key sourced facts: tjalda.is API 2026-11-02: 121 of 155 publicly listed campsites carry the 'Electricity' tag;
+  2026 hook-up prices 900 ISK (Hlíð, CJA) to 2,500 ISK (Farmhouse Lodge), included at Hella Árhús, built into the pitch price at
+  Reykjavík Eco (5,715 vs 3,735) and Vogar Mývatn motorhomes (1,600); per-24 h charging at Skaftafell/Egilsstaðir/Garðskagi/
+  Kirkjubær. Winter power: Reykjavík Area A 16A (up to 50 vehicles), Skaftafell zones A + C, Egilsstaðir zone P 5 connections,
+  Hamrar winter parking areas, Vaglaskógur none in winter; CJA/Hlíð winter power Unconfirmed. Limited hook-ups: Happy Campsite
+  (3, book ahead), Hafnarfjörður (Zone B 9 pitches, long cable for Zone C). Tips: 230 V 50 Hz, sockets C/F (IEC World Plugs, seen
+  via search result because iec.ch returns 403 to the box); socket types vary (Hamrar three-pin vs blue, Fossatún two/three-pin by
+  area); rental cables (Rijo Campers 5 m, Kodiak cable + extension lead – cited as examples, no links to rentals beyond the
+  source list, no affiliate links); hook-ups are not EV chargers (Skaftafell), CJA EV charging 35 ISK/kWh. Demand: two Reddit
+  threads (seen via search). Excluded: Skógafoss and Starlight (no source lists electricity); Vík electricity price not published
+  (vikcamping.is re-checked 2026-11-02, Unconfirmed). No campsite files changed. Nothing awaiting Stefán from this run (affiliate
+  links remain off pending his decision).
 - 2026-11-01: Guide "Winter Campsites Around Akureyri and Mývatn (2026–27)" (/guides/north-iceland-winter-campsites/, B35) with
   four new North East stubs, all from tjalda.is (+ own site / Parka / ferdalag winter list), checked 2026-11-01:
   Hlíð, Mývatn (own camping page: adult 2,700, tax 400/unit, electricity 900, showers incl.; tjalda: open all year, reception
