@@ -166,7 +166,7 @@ A nightly run should take the first `todo` (or `stub` → full) row by prio, res
 | B38 | 3 | todo | guide | westfjords-campsites | Westfjords campsites | westfjords | KEYWORDS #10 | tjalda |
 | B39 | 3 | todo | campsite | landmannalaugar | Landmannalaugar campsite (summer, F-road) | south | KEYWORDS #11 | fi.is |
 | B40 | 1 | done | guide | campsites-with-electricity | Campsites with electric hook-up | all | KEYWORDS #13 | campsite has-flags |
-| B41 | 1 | todo | guide | overnight-parking-rules | Can you sleep in a campervan outside campsites in Iceland? | all | KEYWORDS #14 | Nature Conservation Act / UOS pages |
+| B41 | 1 | done | guide | overnight-parking-rules | Can you sleep in a campervan outside campsites in Iceland? | all | KEYWORDS #14 | Nature Conservation Act / UOS pages |
 | B42 | 2 | todo | guide | campsite-prices-2026 | Iceland campsite prices 2026 (table) | all | KEYWORDS #16 | campsite data |
 | B43 | 2 | todo | guide | campsites-with-hot-tubs | Campsites with hot tubs or a pool nearby | all | KEYWORDS #17 | operator pages |
 | B44 | 2 | todo | guide | campsites-with-kitchen-showers-winter | Winter campsites with indoor kitchen and showers | all | KEYWORDS #18 | has-flags |
@@ -237,6 +237,13 @@ Options reviewed earlier (none of these are active; nothing else signed up by th
 - Contacting campsites to fill Unconfirmed cells (email/phone) needs your approval.
 
 ## CHANGELOG
+- 2026-11-03: Guide "Can You Sleep in a Campervan Outside Campsites in Iceland? The Rules (2026)"
+  (/guides/overnight-parking-rules/, B41). Sources checked 2026-11-03: Nature Conservation Act 60/2013 on althingi.is
+  (art. 5, 17, 22, 23, 31), ust.is English camping and access-rights pages (incl. protected-area list), Ferðamálastofa,
+  Reykjavík police bylaw 1097/2008 art. 9 (via reykjavik.is PDF), UOS toilet-emptying page, Reddit demand thread 1o6r7kg.
+  Winter table of 14 campsites on this site. Unconfirmed: fine amounts, "immediate vicinity" distance, other towns'
+  police bylaws, and whether amendment l. 85/2026 (in force 1 Jan 2027) changes camping rules -> recheck in January 2027.
+  No tour links on this page (not relevant). Nothing awaiting Stefán's decision.
 - 2026-11-02: Affiliate links live (Stefán approved Viator with campaign=campsites and Guide to Iceland a=1145642). New
   data/tours.json + build.py tours_block(): labelled "Tours & things to do nearby" box (2-4 links, rel="sponsored noopener nofollow",
   target=_blank) on 4 guides, 6 campsites, 4 regions (list in Monetization). check.py now validates affiliate params/rel/target/label.

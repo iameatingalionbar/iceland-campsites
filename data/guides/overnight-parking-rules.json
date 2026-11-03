@@ -1,0 +1,252 @@
+{
+  "slug": "overnight-parking-rules",
+  "title": "Can You Sleep in a Campervan Outside Campsites in Iceland? The Rules (2026)",
+  "short": "Overnight parking rules",
+  "description": "Is wild camping in a campervan legal in Iceland? What the Nature Conservation Act and Reykjavík's police bylaw say about sleeping in a campervan, motorhome or caravan outside campsites, with sources checked 2026-11-03.",
+  "region": "all",
+  "checked": "2026-11-03",
+  "sources": {
+    "act": {
+      "title": "Althingi – Lög um náttúruvernd nr. 60/2013 (Nature Conservation Act), consolidated text, lagasafn 1 October 2026 (útgáfa 158a)",
+      "url": "https://www.althingi.is/lagas/nuna/2013060.html",
+      "checked": "2026-11-03"
+    },
+    "ust-camp": {
+      "title": "Umhverfisstofnun / Náttúruverndarstofnun – Where can you camp? (English)",
+      "url": "https://ust.is/english/visiting-iceland/travel-information/where-can-you-camp/",
+      "checked": "2026-11-03"
+    },
+    "ust-access": {
+      "title": "Umhverfisstofnun / Náttúruverndarstofnun – Access rights (English)",
+      "url": "https://ust.is/english/visiting-iceland/travel-information/access-rights/",
+      "checked": "2026-11-03"
+    },
+    "ferdamalastofa": {
+      "title": "Ferðamálastofa (Icelandic Tourist Board) – May I camp anywhere?",
+      "url": "https://www.ferdamalastofa.is/en/news/may-i-camp-anywhere",
+      "checked": "2026-11-03"
+    },
+    "rvk-bylaw": {
+      "title": "Reykjavík City – proposal to revise the police bylaw, with Lögreglusamþykkt fyrir Reykjavíkurborg nr. 1097/2008 attached (PDF)",
+      "url": "https://fundur.reykjavik.is/sites/default/files/agenda-items/11%20Tillaga%20um%20endursko%C3%B0un%20l%C3%B6greglusam%C3%BEykktar%20fyrir%20Reykjav%C3%ADkurborg%20%28MSS24090007%29.pdf",
+      "checked": "2026-11-03"
+    },
+    "reddit-lots": {
+      "title": "r/VisitingIceland – 'Overnight camping in parking lots, how screwed am I?' (October 2025)",
+      "url": "https://www.reddit.com/r/VisitingIceland/comments/1o6r7kg/overnight_camping_in_parking_lots_how_screwed_am_i/",
+      "checked": "2026-11-03"
+    },
+    "uos": {
+      "title": "Umhverfis- og orkustofnun – Emptying portable toilets",
+      "url": "https://uos.is/en/environment/ocean-water/emptying-portable-toilets",
+      "checked": "2026-11-03"
+    }
+  },
+  "intro": [
+    {
+      "value": "No, not without permission. Outside urban areas, Iceland's Nature Conservation Act (no. 60/2013, article 22) requires the landowner's or rightholder's permission to use a tent trailer, folding camper, caravan, motorhome or similar equipment outside an organised campsite.",
+      "src": [
+        "act"
+      ]
+    },
+    {
+      "value": "The government's English guidance puts it plainly: it is illegal to spend the night in tent trailers, tent campers, caravans, camper vans or similar outside organised campsites or urban areas unless the landowner or rightholder has given permission. The Icelandic Tourist Board says this rule came in with the conservation legislation that took effect in November 2015.",
+      "src": [
+        "ust-camp",
+        "ferdamalastofa"
+      ]
+    },
+    {
+      "value": "Towns are not a free-for-all either. Reykjavík's police bylaw says you may not stay overnight in tents, motorhomes, caravans or tent trailers on public land in the urban area outside specially marked areas.",
+      "src": [
+        "rvk-bylaw"
+      ]
+    }
+  ],
+  "scope_note": "Scope: what the law and official guidance say, as of the check date. This is a plain-English summary, not legal advice. Fines are not covered because we found no official source stating amounts. The table shows campsites on this site along the main routes with their winter status, so you can find a legal place to sleep in any season.",
+  "demand": {
+    "value": "Many visitors only learn the rule on the road. In an October 2025 r/VisitingIceland thread, a traveller who had used an app to find free overnight spots asked what would happen after seeing a 'Campsite prohibited' sign; replies told them not to wild camp again and to park only at legal sites.",
+    "src": [
+      "reddit-lots"
+    ]
+  },
+  "campsites": [
+    "reykjavik-eco-campsite",
+    "hafnarfjordur",
+    "happy-campsite-keflavik",
+    "sandgerdi-airport-camping",
+    "gardskagi",
+    "vogar-reykjanes",
+    "hveragerdi-reykjamork",
+    "selfoss-gesthus",
+    "hella-arhus",
+    "vik-camping",
+    "skaftafell",
+    "hofn",
+    "camp-egilsstadir",
+    "hamrar-akureyri"
+  ],
+  "table": "winter",
+  "glance_title": "Legal places to sleep: campsites on this site and their winter opening",
+  "table_caption": "West to east. Winter opening is what each campsite's cited source says; Unconfirmed means no source states it.",
+  "sections": [
+    {
+      "id": "vehicles",
+      "title": "Campervans, motorhomes and caravans",
+      "paras": [
+        {
+          "value": "The permission rule covers anything you sleep in on wheels: the act lists tent trailers (tjaldvagnar), folding campers (fellihýsi), caravans (hjólhýsi), motorhomes (húsbílar) and similar equipment. Unlike a tent, there is no free one-night allowance for these.",
+          "src": [
+            "act",
+            "ust-camp"
+          ]
+        },
+        {
+          "value": "If a landowner has set up a camping area on their land, they may direct you to it and charge a fee. If there is a campsite nearby, they may direct you there instead.",
+          "src": [
+            "act",
+            "ust-camp"
+          ]
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "urban",
+      "title": "What counts as an urban area",
+      "paras": [
+        {
+          "value": "The act defines an urban area (þéttbýli) as a settlement of at least 50 people where houses are generally no more than 200 metres apart, or an area defined as urban in the municipality's master plan.",
+          "src": [
+            "act"
+          ]
+        },
+        {
+          "value": "Inside urban areas, municipal police bylaws apply. In Reykjavík, the bylaw (no. 1097/2008, article 9) bans overnight stays in tents, motorhomes, caravans and tent trailers on public land outside specially marked areas. Reykjavík city has proposed revising this bylaw.",
+          "src": [
+            "rvk-bylaw"
+          ]
+        },
+        {
+          "value": null,
+          "note": "We have not yet checked the police bylaws of other towns. Look for signs and assume a campsite is the legal option."
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "roads",
+      "title": "Parking by the road and the off-road driving ban",
+      "paras": [
+        {
+          "value": "Driving motor vehicles off roads is banned under article 31 of the act. The act allows stopping a car's width from the road if it causes no damage or accident risk and is consistent with traffic law; that is a rule about stopping and parking, not permission to sleep there.",
+          "src": [
+            "act"
+          ]
+        },
+        {
+          "value": "Breaking the off-road driving ban is a punishable offence under the act.",
+          "src": [
+            "act"
+          ]
+        },
+        {
+          "value": null,
+          "note": "Fine amounts for sleeping in a campervan outside a campsite: Unconfirmed. We found no official source that states them."
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "protected",
+      "title": "Places where overnight stays are banned outright",
+      "paras": [
+        {
+          "value": "The agency's camping page lists protected areas with their own rules. In Þingvellir National Park, overnight stays are not allowed outside marked camping areas. In Vatnajökull National Park, campervans and caravans must use organised campsites.",
+          "src": [
+            "ust-camp"
+          ]
+        }
+      ],
+      "items": [
+        {
+          "value": "No camping or overnight stays at all: Dyrhólaey, Álafoss, Dimmuborgir, Hverfjall/Hverfell, Ingólfshöfði, Teigarhorn, Kirkjugólf, Kattarauga and Skútustaðagígar, among others on the official list.",
+          "src": [
+            "ust-camp"
+          ]
+        },
+        {
+          "value": "Only in marked camping areas: Skógafoss, Mývatn, Arnarstapi and Hellnar, Vatnsfjörður and Hornstrandir.",
+          "src": [
+            "ust-camp"
+          ]
+        },
+        {
+          "value": "Dynjandi: no camping or overnight stays, except that hikers and cyclists may camp for one night.",
+          "src": [
+            "ust-camp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tents",
+      "title": "If you carry a tent instead",
+      "paras": [
+        {
+          "value": "A traditional tent has more freedom. Along public routes in inhabited areas you may pitch one for one night on uncultivated land if there is no campsite in the immediate vicinity and the landowner has not posted restrictions. You need permission near homes or farms, for more than one night, for more than three tents, or on cultivated land.",
+          "src": [
+            "act",
+            "ust-camp",
+            "ust-access"
+          ]
+        },
+        {
+          "value": null,
+          "note": "How far away a campsite must be before it no longer counts as 'in the immediate vicinity': Unconfirmed. Neither the act nor the guidance gives a distance."
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "change-2027",
+      "title": "A change coming on 1 January 2027",
+      "paras": [
+        {
+          "value": "The consolidated text of the act notes an amendment, law no. 85/2026, that takes effect on 1 January 2027.",
+          "src": [
+            "act"
+          ]
+        },
+        {
+          "value": null,
+          "note": "Whether law 85/2026 changes the camping or overnight-parking rules: Unconfirmed. We will recheck this page after it takes effect."
+        }
+      ],
+      "items": []
+    }
+  ],
+  "tips": [
+    {
+      "value": "Use a campsite or get the landowner's clear permission. A 'no camping' sign is the landowner using their right to restrict stays, so respect it.",
+      "src": [
+        "ust-camp",
+        "act"
+      ]
+    },
+    {
+      "value": "Take your rubbish with you: the act says waste must not be left in nature. Empty toilet waste only at a designated disposal point (see our dump stations guide).",
+      "src": [
+        "act",
+        "uos"
+      ]
+    },
+    {
+      "value": "Not every campsite stays open in winter: Vík Camping, for example, closes for the season. Check the table above, or our winter campsites guide, before you plan a night.",
+      "src": [
+        "vik-camping:own"
+      ]
+    }
+  ],
+  "warning": "Rules can change, and local signs and bylaws apply on top of the national law. This page is a summary, not legal advice."
+}
