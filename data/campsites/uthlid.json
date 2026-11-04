@@ -1,0 +1,208 @@
+{
+  "slug": "uthlid",
+  "name": "Úthlíð Campsite (Biskupstungur)",
+  "alt_names": [
+    "Úthlíð í Biskupstungu",
+    "Uthlid"
+  ],
+  "region": "south",
+  "town": "Úthlíð, Biskupstungur (Bláskógabyggð)",
+  "completeness": "stub",
+  "checked": "2026-11-04",
+  "sources": {
+    "own": {
+      "title": "Úthlíð – Tjaldstæði (campsite page, Icelandic)",
+      "url": "https://uthlid.icefloe.website/tjaldstaedi",
+      "checked": "2026-11-04"
+    },
+    "tjalda": {
+      "title": "Tjalda.is – Úthlíð, Biskupstungu (2026 rates, season & services)",
+      "url": "https://tjalda.is/en/campsite/uthlid",
+      "checked": "2026-11-04"
+    },
+    "ferdalag-winter": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-11-04"
+    }
+  },
+  "intro": {
+    "value": "A family campsite on the hillside below Réttin restaurant in Biskupstungur, on the Golden Circle about 10 km from Geysir and 20 km from Gullfoss. Úthlíð also has holiday cottages, a 9-hole golf course, horse rental, a small shop and a swimming pool with hot tubs.",
+    "src": [
+      "tjalda",
+      "own",
+      "ferdalag-winter"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Úthlíð í Biskupstungu, Bláskógabyggð",
+      "src": [
+        "tjalda",
+        "ferdalag-winter"
+      ],
+      "note": "tjalda.is gives postcode 870, ferdalag.is 806 Selfoss and the operator's site 801 Selfoss."
+    },
+    "lat": 64.274965,
+    "lon": -20.440303,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "Open all year",
+    "src": [
+      "own",
+      "tjalda"
+    ]
+  },
+  "winter": {
+    "status": "open",
+    "value": "Open all year (own site and tjalda.is; also on ferdalag.is's camper winter service list). In winter, motorhomes and campervans park in the area around Réttin restaurant and use the toilets in the swimming-pool building.",
+    "src": [
+      "own",
+      "tjalda",
+      "ferdalag-winter"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates (tjalda.is; the operator's page gives the same amounts without a year)",
+      "src": [
+        "tjalda",
+        "own"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult per night",
+        "value": "2,000 ISK",
+        "src": [
+          "tjalda",
+          "own"
+        ],
+        "note": "Showers and hot tubs included."
+      },
+      {
+        "label": "Children 7–16",
+        "value": "1,000 ISK",
+        "src": [
+          "tjalda",
+          "own"
+        ]
+      },
+      {
+        "label": "Children 0–6",
+        "value": "Free",
+        "src": [
+          "tjalda",
+          "own"
+        ]
+      },
+      {
+        "label": "Electricity per night",
+        "value": "1,000 ISK",
+        "src": [
+          "tjalda",
+          "own"
+        ],
+        "note": "Own page: per 24 hours."
+      },
+      {
+        "label": "Lodging tax per unit per night",
+        "value": "400 ISK",
+        "src": [
+          "tjalda"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes (1,000 ISK per night). Number of hook-ups and winter hook-ups: Unconfirmed.",
+      "src": [
+        "tjalda",
+        "own"
+      ],
+      "has": "yes"
+    },
+    "kitchen": {
+      "value": "Indoor area for eating and washing up is included in the price; the operator's page lists cooking facilities as outdoor only ('Já útiaðstaða'). No indoor kitchen is listed.",
+      "src": [
+        "tjalda",
+        "own"
+      ],
+      "has": null
+    },
+    "showers": {
+      "value": "Yes, included in the price (as are the hot tubs)",
+      "src": [
+        "tjalda",
+        "own"
+      ],
+      "has": "yes"
+    },
+    "toilets": {
+      "value": "Yes (flush toilets); in winter the toilets in the swimming-pool building are used",
+      "src": [
+        "own",
+        "tjalda"
+      ]
+    },
+    "dump_station": {
+      "value": "Yes – sludge disposal for motorhomes ('Seyrulosun fyrir húsbíla: já') and a drinking-water hose, per the operator's page. Exact location and winter availability: ask on arrival.",
+      "src": [
+        "own"
+      ],
+      "has": "yes"
+    },
+    "wifi": {
+      "value": "Free Wi-Fi in Réttin restaurant",
+      "src": [
+        "tjalda",
+        "own"
+      ]
+    },
+    "laundry": {
+      "value": "Washing machine and tumble dryer, for an extra fee (amount not published)",
+      "src": [
+        "tjalda",
+        "own"
+      ]
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 699 5500 · uthlid@uthlid.is",
+      "src": [
+        "tjalda",
+        "own"
+      ]
+    }
+  },
+  "practical": [
+    {
+      "value": "Families only: the age limit is 25 unless travelling with adults.",
+      "src": [
+        "tjalda"
+      ]
+    },
+    {
+      "value": "Drop-in; groups must book in advance by phone (699 5500).",
+      "src": [
+        "tjalda",
+        "own"
+      ]
+    },
+    {
+      "value": "Quiet from 23:00; personal sound systems are discouraged.",
+      "src": [
+        "tjalda",
+        "own"
+      ]
+    }
+  ]
+}

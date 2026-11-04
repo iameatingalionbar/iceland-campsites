@@ -1,0 +1,195 @@
+{
+  "slug": "hraunborgir",
+  "name": "Hraunborgir Campsite (Grímsnes)",
+  "alt_names": [
+    "Hraunborgir Campsite – Golden Circle Iceland"
+  ],
+  "region": "south",
+  "town": "Grímsnes (Grímsnes- og Grafningshreppur)",
+  "completeness": "stub",
+  "checked": "2026-11-04",
+  "sources": {
+    "own": {
+      "title": "Hraunborgir Campsite – home page (English)",
+      "url": "https://hraunborgircamping.is/en/",
+      "checked": "2026-11-04"
+    },
+    "own-camp": {
+      "title": "Hraunborgir – Tjaldsvæði (campsite page, Icelandic)",
+      "url": "https://hraunborgircamping.is/tjaldsvaedi/",
+      "checked": "2026-11-04"
+    },
+    "tjalda": {
+      "title": "Tjalda.is – Hraunborgir (2026 rates, season & services)",
+      "url": "https://tjalda.is/en/campsite/hraunborgir",
+      "checked": "2026-11-04"
+    }
+  },
+  "intro": {
+    "value": "A campsite by the Hraunborgir service centre in Grímsnes, near the Golden Circle and about an hour from Reykjavík, with a swimming pool, hot tubs, sauna, restaurant, bar, TV lounge and playground.",
+    "src": [
+      "tjalda",
+      "own"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Hraunborgir, Grímsnes, 805 Selfoss",
+      "src": [
+        "tjalda",
+        "own-camp"
+      ]
+    },
+    "lat": 64.032983,
+    "lon": -20.815009,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "Open all year",
+    "src": [
+      "tjalda",
+      "own"
+    ],
+    "note": "In summer the service centre is open 09:00–21:00 on weekdays and until 23:00 at weekends (tjalda.is). Winter service-centre hours: Unconfirmed."
+  },
+  "winter": {
+    "status": "open",
+    "value": "Open all year (tjalda.is). Its own site says 'Open this winter' and advertises winter camping for campervans and motorhomes, with hot tubs, shower access and a TV lounge; the site manager helps with access to the facilities. Not on ferdalag.is's camper winter service list (checked 2026-11-04).",
+    "src": [
+      "tjalda",
+      "own"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult per night",
+        "value": "3,500 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Child per night",
+        "value": "1,750 ISK",
+        "src": [
+          "tjalda"
+        ],
+        "note": "Age range not stated."
+      },
+      {
+        "label": "Electricity per night",
+        "value": "1,800 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Lodging tax per unit per night",
+        "value": "400 ISK",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Winter seasonal pitch (1 Sep 2026 – 15 May 2027)",
+        "value": "180,000 ISK",
+        "src": [
+          "own"
+        ],
+        "note": "For leaving a caravan in place all winter; electricity charged by usage; limited pitches."
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes – 'electrical hook-ups' (1,800 ISK per night). Number of hook-ups: Unconfirmed.",
+      "src": [
+        "own",
+        "tjalda"
+      ],
+      "has": "yes"
+    },
+    "kitchen": {
+      "value": null,
+      "note": "No guest kitchen is listed; the campsite page lists outdoor sinks for washing up, and there is a restaurant and bar on site."
+    },
+    "showers": {
+      "value": "Yes – campsite guests have access to showers during their stay. Whether a fee applies: Unconfirmed.",
+      "src": [
+        "own",
+        "tjalda"
+      ],
+      "has": "yes"
+    },
+    "toilets": {
+      "value": "Yes (outdoor toilets on the campsite)",
+      "src": [
+        "own",
+        "own-camp"
+      ]
+    },
+    "dump_station": {
+      "value": "'Waste disposal for mobile homes' is listed by tjalda.is. Not mentioned on the operator's own pages; exact location: ask on arrival.",
+      "src": [
+        "tjalda"
+      ],
+      "has": "yes"
+    },
+    "wifi": {
+      "value": "Wi-Fi listed",
+      "src": [
+        "tjalda"
+      ]
+    },
+    "laundry": {
+      "value": "Washing machine and dryer at the service centre",
+      "src": [
+        "own-camp"
+      ]
+    },
+    "camping_card": {
+      "value": null,
+      "note": "Not stated in the sources checked."
+    },
+    "contact": {
+      "value": "+354 661 7000 · hraunborgir33@gmail.com · site manager Sara: +354 832 3007",
+      "src": [
+        "own",
+        "own-camp",
+        "tjalda"
+      ]
+    }
+  },
+  "practical": [
+    {
+      "value": "Online booking on the operator's site shows the total price before you pay; tjalda.is also lists drop-in.",
+      "src": [
+        "own",
+        "tjalda"
+      ]
+    },
+    {
+      "value": "The swimming pool, hot tubs and sauna are at the service centre next to the campsite; whether pool entry is included in the camping fee: Unconfirmed.",
+      "src": [
+        "own",
+        "own-camp"
+      ]
+    },
+    {
+      "value": "EV charging is listed by tjalda.is.",
+      "src": [
+        "tjalda"
+      ]
+    }
+  ]
+}

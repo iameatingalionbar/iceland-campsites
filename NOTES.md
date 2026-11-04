@@ -136,12 +136,13 @@ A nightly run should take the first `todo` (or `stub` → full) row by prio, res
 | B08 | 1 | done | campsite | hamrar-akureyri | Hamrar, Akureyri | north-east | all year | tjalda, hamrar.is |
 | B09 | 1 | done | campsite | vogar-myvatn | Vogar, Mývatn | north-east | all year, chemical disposal | tjalda, vogarholidays.is |
 | B10 | 1 | done | campsite | camp-egilsstadir | Camp Egilsstaðir | east | all year 24/7 | tjalda |
-| B11 | 2 | todo | guide | golden-circle-winter-campsites | Winter campsites on the Golden Circle (2026–27) | south | Úthlíð/Skjól/Geysir/Laugarvatn/Flúðir conflicts to resolve | ferdalag winter list |
-| B12 | 2 | todo | campsite | uthlid | Úthlíð | south | winter service list | tjalda, ferdalag |
-| B13 | 2 | todo | campsite | skjol | Skjól (Geysir area) | south | conflict: year-round vs card dates 21 May–15 Sep | tjalda, utilegukortid |
-| B14 | 2 | todo | campsite | thingvellir-leirar | Þingvellir – Leirar | south | national park, winter? | thingvellir.is |
-| B15 | 2 | todo | campsite | hotel-laugarvatn-camping | Laugarvatn | south | winter service list | ferdalag |
-| B16 | 2 | todo | campsite | fludir | Flúðir | south | winter service list | ferdalag, tjalda |
+| B11 | 2 | done | guide | golden-circle-winter-campsites | Winter campsites on the Golden Circle (2026–27) | south | Úthlíð/Skjól/Geysir/Laugarvatn/Flúðir conflicts to resolve | ferdalag winter list |
+| B12 | 2 | stub | campsite | uthlid | Úthlíð | south | winter service list | tjalda, ferdalag |
+| B13 | 2 | todo | campsite | skjol | Skjól (Geysir area) | south | conflict: year-round vs card dates 21 May–15 Sep; 2026-11-04: tjalda says inactive 2026, own site no season -> Unconfirmed | tjalda, utilegukortid |
+| B14 | 2 | stub | campsite | thingvellir-leirar | Þingvellir – Leirar | south | national park, winter? | thingvellir.is |
+| B15 | 2 | todo | campsite | hotel-laugarvatn-camping | Laugarvatn | south | winter service list; 2026-11-04: tjalda hidden, 20 May–1 Oct, 2023 prices | ferdalag |
+| B16b | 2 | stub | campsite | hraunborgir | Hraunborgir (Grímsnes) | south | added 2026-11-04 for B11; open all year per own site + tjalda; kitchen Unconfirmed | own, tjalda |
+| B16 | 2 | todo | campsite | fludir | Flúðir | south | winter service list; 2026-11-04: own site 1 May–30 Sep (closed winter), adult 2,200 | ferdalag, tjalda |
 | B17 | 2 | todo | campsite | hverinn-kleppjarnsreykir | Hverinn, Kleppjárnsreykir | west | hot spring site | tjalda |
 | B18 | 2 | todo | campsite | stykkisholmur | Stykkishólmur | west | Snæfellsnes base | tjalda |
 | B19 | 2 | todo | campsite | grundarfjordur | Grundarfjörður | west | Kirkjufell | tjalda |
@@ -207,7 +208,7 @@ Viator URLs return 403 to curl/WebFetch (bot block); they were taken from search
 some curl retries; confirmed via WebFetch). Do not add claims, prices or ratings next to tour links.
 Placed 2026-11-02: guides south-coast-winter-campsites, campsites-near-keflavik-airport, campsites-near-reykjavik,
 north-iceland-winter-campsites; campsites skaftafell, reykjavik-eco-campsite, sandgerdi-airport-camping, vogar-myvatn, hlid-myvatn,
-hamrar-akureyri; regions south, capital-area, reykjanes, north-east. Golden Circle guide (B11) should get tours when written.
+hamrar-akureyri; regions south, capital-area, reykjanes, north-east. Golden Circle guide (B11) placed 2026-11-04: viator-golden-circle, gti-golden-circle, gti-northern-lights.
 
 ### Other programs (not active)
 Site URL for applications: https://icelandcampsites.com/ (custom domain since 2026-10-27; drafts/ updated to it).
@@ -237,6 +238,13 @@ Options reviewed earlier (none of these are active; nothing else signed up by th
 - Contacting campsites to fill Unconfirmed cells (email/phone) needs your approval.
 
 ## CHANGELOG
+- 2026-11-04: Guide "Campsites Open in Winter on the Golden Circle (2026–27)" (/guides/golden-circle-winter-campsites/, B11)
+  plus campsite stubs uthlid (B12), thingvellir-leirar (B14) and hraunborgir (new). Sources checked 2026-11-04: thingvellir.is
+  camping page, uthlid.icefloe.website, hraunborgircamping.is, tjaldmidstod.is, hotelgeysir.is, skjolcenter.is, tjalda.is,
+  ferdalag.is winter list. Open in winter: Þingvellir (Nyrðri-Leirar), Úthlíð, Hraunborgir. Closed: Geysir, Flúðir, Árnes.
+  Unconfirmed: Laugarvatn, Skjól, Reykholt; kitchen/dump at Þingvellir, kitchen at Úthlíð and Hraunborgir, Þingvellir child price.
+  Also updated winter-campsites-iceland (3 new sites in table) and south-coast scope note. Tours: Golden Circle + northern lights.
+  Nothing awaiting Stefán's decision.
 - 2026-11-03: Guide "Can You Sleep in a Campervan Outside Campsites in Iceland? The Rules (2026)"
   (/guides/overnight-parking-rules/, B41). Sources checked 2026-11-03: Nature Conservation Act 60/2013 on althingi.is
   (art. 5, 17, 22, 23, 31), ust.is English camping and access-rights pages (incl. protected-area list), Ferðamálastofa,

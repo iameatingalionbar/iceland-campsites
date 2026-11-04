@@ -154,7 +154,7 @@
       ]
     }
   ],
-  "scope_note": "Scope: every campsite with its own page on this site that is open, partly open or call-ahead in winter, plus three well-known campsites that are closed, then every campsite on the official winter list that we have not profiled yet, grouped by what tjalda.is says about its season. Regional detail is in the South Coast and Keflavík Airport guides.",
+  "scope_note": "Scope: every campsite with its own page on this site that is open, partly open or call-ahead in winter, plus three well-known campsites that are closed, then every campsite on the official winter list that we have not profiled yet, grouped by what tjalda.is says about its season. Regional detail is in the South Coast, Golden Circle and Keflavík Airport guides.",
   "demand": {
     "value": "Winter camping is one of the most common campervan questions. In r/VisitingIceland threads, people planning November and April trips report finding no winter campsite in Vík and being pointed elsewhere, and one reply advised checking tjalda.is and contacting campsites to confirm they are open: 'Do not wing this!'",
     "src": [
@@ -170,6 +170,9 @@
     "happy-campsite-keflavik",
     "hveragerdi-reykjamork",
     "selfoss-gesthus",
+    "thingvellir-leirar",
+    "hraunborgir",
+    "uthlid",
     "hella-arhus",
     "hvolsvollur",
     "hellisholar",
@@ -191,7 +194,7 @@
   ],
   "table": "winter",
   "glance_title": "Campsites on this site: winter status",
-  "table_caption": "Roughly clockwise from Reykjavík: capital area, Reykjanes, South, East, North East. Status and facts come from each campsite's own page on this site, with sources.",
+  "table_caption": "Roughly clockwise from Reykjavík: capital area, Reykjanes, South (incl. the Golden Circle), East, North East. Status and facts come from each campsite's own page on this site, with sources.",
   "sections": [
     {
       "id": "listed-all-year",
@@ -206,13 +209,6 @@
         }
       ],
       "items": [
-        {
-          "value": "Úthlíð (Biskupstungur, Golden Circle, South): tjalda.is says 'Open year-round.'",
-          "src": [
-            "ferdalag-winter",
-            "tj-uthlid"
-          ]
-        },
         {
           "value": "Djúpivogur (East): tjalda.is says 'Open year-round.'",
           "src": [
@@ -300,7 +296,7 @@
       "title": "On the official winter list, with no current season on tjalda.is",
       "paras": [
         {
-          "value": "Tjalda.is says that Skjól, Þingvellir and Fjalladýrð (Möðrudalur) are not active participants in 2026, so its information on them 'may be outdated'. For Grindavík and Fossatún it gives no season dates and does not list them as open all year. Winter status for all five is Unconfirmed.",
+          "value": "Tjalda.is says that Skjól and Fjalladýrð (Möðrudalur) are not active participants in 2026, so its information on them 'may be outdated'. For Grindavík and Fossatún it gives no season dates and does not list them as open all year. Winter status for all four is Unconfirmed. (Þingvellir is also inactive on tjalda.is, but the national park's own page confirms Nyrðri-Leirar is open year-round; it now has its own page here.)",
           "src": [
             "tj-skjol",
             "tj-thingvellir",

@@ -1,0 +1,244 @@
+{
+  "slug": "golden-circle-winter-campsites",
+  "title": "Campsites Open in Winter on the Golden Circle (2026–27)",
+  "short": "Winter: Golden Circle",
+  "description": "Which Golden Circle campsites take campervans in winter 2026–27: Þingvellir (Leirar), Úthlíð and Hraunborgir are open all year; Geysir, Laugarvatn and Flúðir are summer-only. Winter rules, prices, electricity and toilet disposal, every fact sourced.",
+  "region": "south",
+  "checked": "2026-11-04",
+  "sources": {
+    "ferdalag-winter": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-11-04"
+    },
+    "tj-geysir": {
+      "title": "Tjalda.is – Geysir, Haukadal",
+      "url": "https://tjalda.is/en/campsite/geysir",
+      "checked": "2026-11-04"
+    },
+    "geysir-own": {
+      "title": "Hótel Geysir – Geysir Campsite (price list 2026)",
+      "url": "https://hotelgeysir.is/geysir-center/camp-site/",
+      "checked": "2026-11-04"
+    },
+    "tj-laugarvatn": {
+      "title": "Tjalda.is – Laugarvatn",
+      "url": "https://tjalda.is/en/campsite/laugarvatn",
+      "checked": "2026-11-04"
+    },
+    "tj-fludir": {
+      "title": "Tjalda.is – Flúðir",
+      "url": "https://tjalda.is/en/campsite/fludir",
+      "checked": "2026-11-04"
+    },
+    "fludir-own": {
+      "title": "Tjaldmiðstöðin Flúðum (Flúðir Camping Centre) – home page and FAQ",
+      "url": "https://www.tjaldmidstod.is/",
+      "checked": "2026-11-04"
+    },
+    "tj-skjol": {
+      "title": "Tjalda.is – Skjól",
+      "url": "https://tjalda.is/en/campsite/skjol",
+      "checked": "2026-11-04"
+    },
+    "skjol-own": {
+      "title": "Skjól Center – home page",
+      "url": "https://www.skjolcenter.is/",
+      "checked": "2026-11-04"
+    },
+    "tj-reykholt": {
+      "title": "Tjalda.is – Reykholt, Aratunga",
+      "url": "https://tjalda.is/en/campsite/reykholt",
+      "checked": "2026-11-04"
+    },
+    "tj-arnes": {
+      "title": "Tjalda.is – Árnes",
+      "url": "https://tjalda.is/en/campsite/arnes",
+      "checked": "2026-11-04"
+    },
+    "umferdin": {
+      "title": "Umferdin.is – Road and traffic information (Icelandic Road and Coastal Administration)",
+      "url": "https://umferdin.is/en",
+      "checked": "2026-11-04"
+    },
+    "safetravel": {
+      "title": "Safetravel.is – travel conditions and travel plans",
+      "url": "https://safetravel.is/",
+      "checked": "2026-11-04"
+    }
+  },
+  "intro": [
+    {
+      "value": "Three campsites on or near the Golden Circle publish year-round opening for 2026–27: Nyrðri-Leirar in Þingvellir National Park, Úthlíð in Biskupstungur between Laugarvatn and Geysir, and Hraunborgir in Grímsnes.",
+      "src": [
+        "thingvellir-leirar:park",
+        "uthlid:own",
+        "uthlid:tjalda",
+        "hraunborgir:tjalda",
+        "hraunborgir:own"
+      ]
+    },
+    {
+      "value": "The campsites closest to Geysir, Laugarvatn and Flúðir publish summer seasons only, even though some of them appear on the official camper winter service list, so check before you drive.",
+      "src": [
+        "geysir-own",
+        "tj-laugarvatn",
+        "fludir-own",
+        "ferdalag-winter"
+      ]
+    }
+  ],
+  "scope_note": "Scope: campsites on the Golden Circle (Þingvellir – Laugarvatn – Geysir – Gullfoss) and the nearby Grímsnes, Biskupstungur and Flúðir area, checked against operator pages, tjalda.is and ferdalag.is's camper winter service list on 2026-11-04. Hveragerði and Selfoss, which many Golden Circle drivers also use, are covered in the South Coast winter guide.",
+  "campsites": [
+    "thingvellir-leirar",
+    "hraunborgir",
+    "uthlid"
+  ],
+  "table": "winter",
+  "glance_title": "Open in winter: at a glance",
+  "table_caption": "West to east: Þingvellir, Grímsnes, Biskupstungur. Status and facts come from each campsite's own page on this site, with sources; prices are published adult rates.",
+  "sections": [
+    {
+      "id": "which",
+      "title": "Which one to pick in winter",
+      "paras": [],
+      "items": [
+        {
+          "value": "You want the cheapest night: Úthlíð charges 2,000 ISK per adult including showers and hot tubs, and Þingvellir 1,800 ISK per adult (900 ISK for seniors), each plus 400 ISK lodging tax per unit. Hraunborgir charges 3,500 ISK per adult.",
+          "src": [
+            "uthlid:tjalda",
+            "thingvellir-leirar:park",
+            "hraunborgir:tjalda"
+          ]
+        },
+        {
+          "value": "You want a hot tub after a cold day: Úthlíð includes its hot tubs in the camping fee, and Hraunborgir advertises winter camping with hot tubs, shower access and a TV lounge.",
+          "src": [
+            "uthlid:own",
+            "hraunborgir:own"
+          ]
+        },
+        {
+          "value": "You need electricity: all three list hook-ups. At Þingvellir in winter you park in front of the visitor centre or along the campsite access road, where motorhomes can connect (1,100 ISK per 24 hours).",
+          "src": [
+            "thingvellir-leirar:park",
+            "uthlid:tjalda",
+            "hraunborgir:tjalda"
+          ]
+        },
+        {
+          "value": "You need to empty a cassette toilet: Úthlíð's own page lists sludge disposal for motorhomes and a drinking-water hose, and tjalda.is lists 'waste disposal for mobile homes' at Hraunborgir. No disposal point is mentioned for the Þingvellir campsite.",
+          "src": [
+            "uthlid:own",
+            "hraunborgir:tjalda",
+            "thingvellir-leirar:park"
+          ]
+        },
+        {
+          "value": "You want laundry and showers in winter: at Þingvellir, toilets, showers and laundry stay available in winter, although the outdoor sinks are closed and parts of the campsite may close in heavy snow or thaw.",
+          "src": [
+            "thingvellir-leirar:park"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "summer-only",
+      "title": "Golden Circle campsites that are closed in winter",
+      "paras": [
+        {
+          "value": "These campsites publish a summer season for 2026. Some of them are on ferdalag.is's camper winter service list, which conflicts with their own dates, so do not plan a winter night there without confirming directly.",
+          "src": [
+            "ferdalag-winter"
+          ]
+        }
+      ],
+      "items": [
+        {
+          "value": "Geysir, Haukadalur: open 15 May – 15 September (own price list 2026 and tjalda.is).",
+          "src": [
+            "geysir-own",
+            "tj-geysir"
+          ]
+        },
+        {
+          "value": "Laugarvatn: tjalda.is gives 'Open from 20 May until 1 October', but its listing is hidden and shows 2023 prices. Hotel Laugarvatn is on the ferdalag.is winter list; whether that means winter camping is Unconfirmed.",
+          "src": [
+            "tj-laugarvatn",
+            "ferdalag-winter"
+          ]
+        },
+        {
+          "value": "Flúðir: the campsite's own FAQ says open 1 May – 30 September; tjalda.is says May – October. Either way it is closed in winter, although it is on the ferdalag.is winter list.",
+          "src": [
+            "fludir-own",
+            "tj-fludir",
+            "ferdalag-winter"
+          ]
+        },
+        {
+          "value": "Reykholt (Aratunga): tjalda.is gives no season and shows 2025 rates; winter status Unconfirmed.",
+          "src": [
+            "tj-reykholt"
+          ]
+        },
+        {
+          "value": "Árnes (Þjórsárdalur road): open 30 May – 15 September (tjalda.is).",
+          "src": [
+            "tj-arnes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unclear",
+      "title": "Unclear: Skjól between Geysir and Gullfoss",
+      "paras": [
+        {
+          "value": "Skjól Center is on ferdalag.is's camper winter service list and its own site welcomes campervan travellers, with a bistro open daily 10:00–20:00. Its website publishes no camping season or prices, and tjalda.is says Skjól is not an active participant in 2026, so its information there 'may be outdated'. Winter camping at Skjól is Unconfirmed; contact Skjól before you go.",
+          "src": [
+            "ferdalag-winter",
+            "skjol-own",
+            "tj-skjol"
+          ]
+        }
+      ],
+      "items": []
+    }
+  ],
+  "tips_title": "Practical winter tips",
+  "tips": [
+    {
+      "value": "Check road conditions before every drive on umferdin.is (the road authority's map) and alerts on safetravel.is; conditions on the Golden Circle can change quickly in winter.",
+      "src": [
+        "umferdin",
+        "safetravel"
+      ]
+    },
+    {
+      "value": "At Úthlíð in winter, motorhomes and campervans park in the area around Réttin restaurant and use the toilets in the swimming-pool building.",
+      "src": [
+        "uthlid:own",
+        "uthlid:tjalda"
+      ]
+    },
+    {
+      "value": "At Þingvellir, pay for three nights and the fourth is free (service centre only). Winter hours: information desk 09:00–16:00, store and service centre at Leirar 09:00–18:00.",
+      "src": [
+        "thingvellir-leirar:park",
+        "thingvellir-leirar:ferdalag-winter"
+      ]
+    },
+    {
+      "value": "At Hraunborgir, the site manager helps with access to the facilities in winter (Sara, +354 832 3007).",
+      "src": [
+        "hraunborgir:own"
+      ]
+    }
+  ],
+  "tours": [
+    "viator-golden-circle",
+    "gti-golden-circle",
+    "gti-northern-lights"
+  ]
+}

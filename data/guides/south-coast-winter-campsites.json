@@ -72,7 +72,7 @@
       ]
     }
   ],
-  "scope_note": "Scope: campsites along the Ring Road (Route 1) between Hveragerði and Höfn, plus Fljótshlíð. Golden Circle and inland sites (e.g. Úthlíð, Hraunborgir, Skjól, Þingvellir) are not covered here and are in the backlog for a separate guide.",
+  "scope_note": "Scope: campsites along the Ring Road (Route 1) between Hveragerði and Höfn, plus Fljótshlíð. Golden Circle sites (Þingvellir, Hraunborgir, Úthlíð, Geysir, Laugarvatn, Flúðir, Skjól) are in the separate Golden Circle winter guide.",
   "demand": {
     "value": "Travellers regularly ask this. In r/VisitingIceland threads, people planning April and November campervan trips report finding no winter campsite in Vík and being pointed to Skógar and Kirkjubæjarklaustur instead. One commenter (Jan 2024) said Kirkjubæjarklaustur was also closed that winter. Another advised using tjalda.is and contacting campsites to confirm they are open: 'Do not wing this!'",
     "src": [
@@ -131,5 +131,10 @@
       ]
     }
   ],
-  "tours": ["gti-south-coast", "viator-solheimajokull", "gti-glacier-hiking", "gti-ice-caves"]
+  "tours": [
+    "gti-south-coast",
+    "viator-solheimajokull",
+    "gti-glacier-hiking",
+    "gti-ice-caves"
+  ]
 }
