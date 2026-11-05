@@ -137,7 +137,7 @@ A nightly run should take the first `todo` (or `stub` → full) row by prio, res
 | B09 | 1 | done | campsite | vogar-myvatn | Vogar, Mývatn | north-east | all year, chemical disposal | tjalda, vogarholidays.is |
 | B10 | 1 | done | campsite | camp-egilsstadir | Camp Egilsstaðir | east | all year 24/7 | tjalda |
 | B11 | 2 | done | guide | golden-circle-winter-campsites | Winter campsites on the Golden Circle (2026–27) | south | Úthlíð/Skjól/Geysir/Laugarvatn/Flúðir conflicts to resolve | ferdalag winter list |
-| B12 | 2 | stub | campsite | uthlid | Úthlíð | south | winter service list | tjalda, ferdalag |
+| B12 | 2 | done | campsite | uthlid | Úthlíð | south | winter service list; full page 2026-11-05 | tjalda, ferdalag |
 | B13 | 2 | todo | campsite | skjol | Skjól (Geysir area) | south | conflict: year-round vs card dates 21 May–15 Sep; 2026-11-04: tjalda says inactive 2026, own site no season -> Unconfirmed | tjalda, utilegukortid |
 | B14 | 2 | stub | campsite | thingvellir-leirar | Þingvellir – Leirar | south | national park, winter? | thingvellir.is |
 | B15 | 2 | todo | campsite | hotel-laugarvatn-camping | Laugarvatn | south | winter service list; 2026-11-04: tjalda hidden, 20 May–1 Oct, 2023 prices | ferdalag |
@@ -238,6 +238,13 @@ Options reviewed earlier (none of these are active; nothing else signed up by th
 - Contacting campsites to fill Unconfirmed cells (email/phone) needs your approval.
 
 ## CHANGELOG
+- 2026-11-05: Úthlíð (Biskupstungur) upgraded from stub to a full page (/campsites/uthlid/, B12). Sources checked 2026-11-05:
+  operator's campsite, home, Réttin and activities pages (uthlid.icefloe.website), tjalda.is (API 'Rates 2026'), ferdalag.is
+  winter list, Camping Card 2026 list. Open all year; winter = motorhome area around Réttin + pool-building toilets. 2026: adult
+  2,000 (showers + hot tubs incl.), children 7–16 1,000, 0–6 free, electricity 1,000/night, tax 400/unit; drop-in only (not on
+  Parka), families only (age limit 25). Indoor eating/washing-up area but no indoor kitchen listed; sludge disposal + water hose
+  (own page). Not on Camping Card 2026. Réttin hours added (no season stated). Unconfirmed: laundry fee, pool hours, winter
+  hook-ups/dining area/dump availability, Réttin winter hours. Tours: Golden Circle + northern lights. Nothing awaiting Stefán.
 - 2026-11-04: Guide "Campsites Open in Winter on the Golden Circle (2026–27)" (/guides/golden-circle-winter-campsites/, B11)
   plus campsite stubs uthlid (B12), thingvellir-leirar (B14) and hraunborgir (new). Sources checked 2026-11-04: thingvellir.is
   camping page, uthlid.icefloe.website, hraunborgircamping.is, tjaldmidstod.is, hotelgeysir.is, skjolcenter.is, tjalda.is,

@@ -7,31 +7,52 @@
   ],
   "region": "south",
   "town": "Úthlíð, Biskupstungur (Bláskógabyggð)",
-  "completeness": "stub",
-  "checked": "2026-11-04",
+  "completeness": "full",
+  "checked": "2026-11-05",
   "sources": {
     "own": {
       "title": "Úthlíð – Tjaldstæði (campsite page, Icelandic)",
       "url": "https://uthlid.icefloe.website/tjaldstaedi",
-      "checked": "2026-11-04"
+      "checked": "2026-11-05"
     },
     "tjalda": {
       "title": "Tjalda.is – Úthlíð, Biskupstungu (2026 rates, season & services)",
       "url": "https://tjalda.is/en/campsite/uthlid",
-      "checked": "2026-11-04"
+      "checked": "2026-11-05"
     },
     "ferdalag-winter": {
       "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
       "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
-      "checked": "2026-11-04"
+      "checked": "2026-11-05"
+    },
+    "own-home": {
+      "title": "Úthlíð – home page (cottages, Réttin shop: milk, bread, coffee, gas for the grill)",
+      "url": "https://uthlid.icefloe.website/",
+      "checked": "2026-11-05"
+    },
+    "own-rettin": {
+      "title": "Úthlíð – Réttin veitingastaður (restaurant opening hours, free Wi-Fi, reception and tourist information)",
+      "url": "https://uthlid.icefloe.website/rettin-veitingastadur",
+      "checked": "2026-11-05"
+    },
+    "utilegukort": {
+      "title": "Útilegukortið (Camping Card) – Opening dates of participating camping sites 2026 (Úthlíð not listed)",
+      "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en",
+      "checked": "2026-11-05"
+    },
+    "own-activities": {
+      "title": "Úthlíð – Afþreying (activities: golf, horse rental, walks)",
+      "url": "https://uthlid.icefloe.website/afthreying",
+      "checked": "2026-11-05"
     }
   },
   "intro": {
-    "value": "A family campsite on the hillside below Réttin restaurant in Biskupstungur, on the Golden Circle about 10 km from Geysir and 20 km from Gullfoss. Úthlíð also has holiday cottages, a 9-hole golf course, horse rental, a small shop and a swimming pool with hot tubs.",
+    "value": "A family campsite on the hillside below Réttin restaurant in Biskupstungur, in the middle of the Golden Circle about 10 km from Geysir and 20 km from Gullfoss (ferdalag.is: about an hour's drive from Reykjavík and 25 minutes from Þingvellir). It is open all year: in winter, motorhomes and campervans park in the area around Réttin and use the toilets in the swimming-pool building. The camping fee includes showers, the hot tubs and an indoor area for eating and washing up. Úthlíð also has holiday cottages, a 9-hole golf course, horse rental, a small shop in Réttin and a petrol station.",
     "src": [
-      "tjalda",
       "own",
-      "ferdalag-winter"
+      "tjalda",
+      "ferdalag-winter",
+      "own-home"
     ]
   },
   "location": {
@@ -50,7 +71,7 @@
     ]
   },
   "season": {
-    "value": "Open all year",
+    "value": "Open all year round ('Tjaldsvæðið er opið allan ársins hring'; tjalda.is: 'Open year-round').",
     "src": [
       "own",
       "tjalda"
@@ -58,7 +79,7 @@
   },
   "winter": {
     "status": "open",
-    "value": "Open all year (own site and tjalda.is; also on ferdalag.is's camper winter service list). In winter, motorhomes and campervans park in the area around Réttin restaurant and use the toilets in the swimming-pool building.",
+    "value": "Open all year (own site and tjalda.is; also on ferdalag.is's official camper winter service list). In winter, motorhomes and campervans park in the area around Réttin restaurant instead of the summer field, and guests use the toilets in the swimming-pool building. No source says whether electric hook-ups, the indoor dining area or the sludge disposal point work in winter, or whether the area is ploughed, so call +354 699 5500 before arriving in deep winter, and check road conditions on umferdin.is.",
     "src": [
       "own",
       "tjalda",
@@ -115,6 +136,18 @@
         "src": [
           "tjalda"
         ]
+      },
+      {
+        "label": "Longer stays and groups",
+        "value": "Special offers on request",
+        "src": [
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Washing machine / tumble dryer",
+        "value": null,
+        "note": "Available for an extra fee; amount not published."
       }
     ]
   },
@@ -128,10 +161,12 @@
       "has": "yes"
     },
     "kitchen": {
-      "value": "Indoor area for eating and washing up is included in the price; the operator's page lists cooking facilities as outdoor only ('Já útiaðstaða'). No indoor kitchen is listed.",
+      "value": "No indoor kitchen is listed. Included in the price is an indoor area for eating and washing up (tjalda.is tags: indoor dining facility, covered dining area, dishwashing facilities); the operator's page lists cooking facilities as outdoor only ('Já útiaðstaða') and sinks with hot water in the swimming-pool building. ferdalag.is mentions grill facilities. Gas for the grill is sold on site.",
       "src": [
         "tjalda",
-        "own"
+        "own",
+        "ferdalag-winter",
+        "own-home"
       ],
       "has": null
     },
@@ -158,10 +193,11 @@
       "has": "yes"
     },
     "wifi": {
-      "value": "Free Wi-Fi in Réttin restaurant",
+      "value": "Free Wi-Fi in Réttin restaurant (camping guests welcome); no Wi-Fi on the pitches is mentioned",
       "src": [
-        "tjalda",
-        "own"
+        "own",
+        "own-rettin",
+        "tjalda"
       ]
     },
     "laundry": {
@@ -172,8 +208,10 @@
       ]
     },
     "camping_card": {
-      "value": null,
-      "note": "Not stated in the sources checked."
+      "value": "Not accepted – Úthlíð is not on the 2026 Camping Card (Útilegukortið) list of participating sites",
+      "src": [
+        "utilegukort"
+      ]
     },
     "contact": {
       "value": "+354 699 5500 · uthlid@uthlid.is",
@@ -191,10 +229,29 @@
       ]
     },
     {
-      "value": "Drop-in; groups must book in advance by phone (699 5500).",
+      "value": "Drop-in only, no online booking (not bookable with Parka); groups must book in advance by phone (+354 699 5500).",
       "src": [
         "tjalda",
         "own"
+      ]
+    },
+    {
+      "value": "Réttin restaurant is also the reception and tourist information point. Published hours: lunch buffet 12:00–13:00; Sunday–Friday 17:00–21:00 (food can be ordered by phone, 699 5500); Saturdays 11:00–22:00. The page gives no season, so winter hours are Unconfirmed.",
+      "src": [
+        "own-rettin"
+      ]
+    },
+    {
+      "value": "A small shop in Réttin sells basics such as dairy products, bread, coffee, biscuits, sweets and ice cream, plus gas for the grill and batteries.",
+      "src": [
+        "own-home"
+      ]
+    },
+    {
+      "value": "Hot tubs are included in the camping fee; the swimming pool's own opening hours are not published on the operator's site (Unconfirmed).",
+      "src": [
+        "own",
+        "tjalda"
       ]
     },
     {
@@ -203,6 +260,17 @@
         "tjalda",
         "own"
       ]
+    },
+    {
+      "value": "The 9-hole golf course (par 35) is open all summer, and only for club members outside that period.",
+      "src": [
+        "own-activities"
+      ]
     }
+  ],
+  "tours": [
+    "viator-golden-circle",
+    "gti-golden-circle",
+    "gti-northern-lights"
   ]
 }
