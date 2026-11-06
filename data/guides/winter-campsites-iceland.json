@@ -4,7 +4,7 @@
   "short": "Winter campsites, all of Iceland",
   "description": "Which Icelandic campsites take campervans in winter 2026–27, region by region: sourced winter status, electricity, dump stations and prices, plus where the official winter list conflicts with campsites' own seasons.",
   "region": "all",
-  "checked": "2026-10-30",
+  "checked": "2026-11-06",
   "sources": {
     "ferdalag-winter": {
       "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service (38 listings)",
@@ -84,7 +84,7 @@
     "tj-skjol": {
       "title": "Tjalda.is – Skjól",
       "url": "https://tjalda.is/en/campsite/skjol",
-      "checked": "2026-10-30"
+      "checked": "2026-11-06"
     },
     "tj-thingvellir": {
       "title": "Tjalda.is – Þingvellir",
@@ -135,6 +135,16 @@
       "title": "Vík Camping – Opening hours summer 2026",
       "url": "https://www.vikcamping.is/",
       "checked": "2026-10-30"
+    },
+    "skjol-own": {
+      "title": "Skjól Center – Campsite page",
+      "url": "https://www.skjolcenter.is/campsite",
+      "checked": "2026-11-06"
+    },
+    "utilegukort-skjol": {
+      "title": "Útilegukortið – Opening dates 2026 (Skjól: 21 May – 15 September)",
+      "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en",
+      "checked": "2026-11-06"
     }
   },
   "intro": [
@@ -173,6 +183,7 @@
     "thingvellir-leirar",
     "hraunborgir",
     "uthlid",
+    "skjol",
     "hella-arhus",
     "hvolsvollur",
     "hellisholar",
@@ -296,13 +307,16 @@
       "title": "On the official winter list, with no current season on tjalda.is",
       "paras": [
         {
-          "value": "Tjalda.is says that Skjól and Fjalladýrð (Möðrudalur) are not active participants in 2026, so its information on them 'may be outdated'. For Grindavík and Fossatún it gives no season dates and does not list them as open all year. Winter status for all four is Unconfirmed. (Þingvellir is also inactive on tjalda.is, but the national park's own page confirms Nyrðri-Leirar is open year-round; it now has its own page here.)",
+          "value": "Skjól now has a full page on this site with winter status call-ahead: its own site and ferdalag.is say year-round, but the 2026 Camping Card list gives 21 May – 15 September, and tjalda.is still marks it inactive for 2026. Tjalda.is also says Fjalladýrð (Möðrudalur) is not an active 2026 participant. For Grindavík and Fossatún it gives no season dates and does not list them as open all year — winter status for those two (and Fjalladýrð) remains Unconfirmed. (Þingvellir is also inactive on tjalda.is, but the national park's own page confirms Nyrðri-Leirar is open year-round.)",
           "src": [
+            "skjol-own",
+            "utilegukort-skjol",
             "tj-skjol",
             "tj-thingvellir",
             "tj-fjalladyrd",
             "tj-grindavik",
-            "tj-fossatun"
+            "tj-fossatun",
+            "ferdalag-winter"
           ]
         }
       ],

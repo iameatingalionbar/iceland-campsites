@@ -2,14 +2,14 @@
   "slug": "golden-circle-winter-campsites",
   "title": "Campsites Open in Winter on the Golden Circle (2026–27)",
   "short": "Winter: Golden Circle",
-  "description": "Which Golden Circle campsites take campervans in winter 2026–27: Þingvellir (Leirar), Úthlíð and Hraunborgir are open all year; Geysir, Laugarvatn and Flúðir are summer-only. Winter rules, prices, electricity and toilet disposal, every fact sourced.",
+  "description": "Which Golden Circle campsites take campervans in winter 2026–27: Þingvellir (Leirar), Úthlíð and Hraunborgir are open all year; Skjól is call-ahead (year-round vs Camping Card dates); Geysir, Laugarvatn and Flúðir are summer-only. Winter rules, prices, electricity and toilet disposal, every fact sourced.",
   "region": "south",
-  "checked": "2026-11-04",
+  "checked": "2026-11-06",
   "sources": {
     "ferdalag-winter": {
       "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
       "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
-      "checked": "2026-11-04"
+      "checked": "2026-11-06"
     },
     "tj-geysir": {
       "title": "Tjalda.is – Geysir, Haukadal",
@@ -39,12 +39,12 @@
     "tj-skjol": {
       "title": "Tjalda.is – Skjól",
       "url": "https://tjalda.is/en/campsite/skjol",
-      "checked": "2026-11-04"
+      "checked": "2026-11-06"
     },
     "skjol-own": {
-      "title": "Skjól Center – home page",
-      "url": "https://www.skjolcenter.is/",
-      "checked": "2026-11-04"
+      "title": "Skjól Center – Campsite page (year-round claim, 2026 prices)",
+      "url": "https://www.skjolcenter.is/campsite",
+      "checked": "2026-11-06"
     },
     "tj-reykholt": {
       "title": "Tjalda.is – Reykholt, Aratunga",
@@ -65,6 +65,16 @@
       "title": "Safetravel.is – travel conditions and travel plans",
       "url": "https://safetravel.is/",
       "checked": "2026-11-04"
+    },
+    "skjol-home": {
+      "title": "Skjól Center – home page",
+      "url": "https://www.skjolcenter.is/",
+      "checked": "2026-11-06"
+    },
+    "utilegukort-skjol": {
+      "title": "Útilegukortið – Opening dates 2026 (Skjól: 21 May – 15 September)",
+      "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en",
+      "checked": "2026-11-06"
     }
   },
   "intro": [
@@ -92,7 +102,8 @@
   "campsites": [
     "thingvellir-leirar",
     "hraunborgir",
-    "uthlid"
+    "uthlid",
+    "skjol"
   ],
   "table": "winter",
   "glance_title": "Open in winter: at a glance",
@@ -192,14 +203,17 @@
     },
     {
       "id": "unclear",
-      "title": "Unclear: Skjól between Geysir and Gullfoss",
+      "title": "Call ahead: Skjól between Geysir and Gullfoss",
       "paras": [
         {
-          "value": "Skjól Center is on ferdalag.is's camper winter service list and its own site welcomes campervan travellers, with a bistro open daily 10:00–20:00. Its website publishes no camping season or prices, and tjalda.is says Skjól is not an active participant in 2026, so its information there 'may be outdated'. Winter camping at Skjól is Unconfirmed; contact Skjól before you go.",
+          "value": "Skjól Center's own site and ferdalag.is's camper winter service list say the campsite is open all year (24/7). The 2026 Camping Card list gives 21 May – 15 September only, and tjalda.is marks Skjól as not an active 2026 participant. Winter status on this site is therefore call-ahead. Published camping fee: 2,000 ISK per adult (18+), children free, showers 500 ISK separate; no kitchen. Full page: /campsites/skjol/.",
           "src": [
-            "ferdalag-winter",
             "skjol-own",
-            "tj-skjol"
+            "skjol-home",
+            "ferdalag-winter",
+            "utilegukort-skjol",
+            "tj-skjol",
+            "skjol:own"
           ]
         }
       ],

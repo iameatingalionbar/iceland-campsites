@@ -138,7 +138,7 @@ A nightly run should take the first `todo` (or `stub` → full) row by prio, res
 | B10 | 1 | done | campsite | camp-egilsstadir | Camp Egilsstaðir | east | all year 24/7 | tjalda |
 | B11 | 2 | done | guide | golden-circle-winter-campsites | Winter campsites on the Golden Circle (2026–27) | south | Úthlíð/Skjól/Geysir/Laugarvatn/Flúðir conflicts to resolve | ferdalag winter list |
 | B12 | 2 | done | campsite | uthlid | Úthlíð | south | winter service list; full page 2026-11-05 | tjalda, ferdalag |
-| B13 | 2 | todo | campsite | skjol | Skjól (Geysir area) | south | conflict: year-round vs card dates 21 May–15 Sep; 2026-11-04: tjalda says inactive 2026, own site no season -> Unconfirmed | tjalda, utilegukortid |
+| B13 | 2 | done | campsite | skjol | Skjól (Geysir area) | south | full page 2026-11-06; winter call-ahead (own+ferdalag year-round vs Camping Card 21 May–15 Sep); tjalda inactive 2026 | own, tjalda, ferdalag, utilegukortid |
 | B14 | 2 | stub | campsite | thingvellir-leirar | Þingvellir – Leirar | south | national park, winter? | thingvellir.is |
 | B15 | 2 | todo | campsite | hotel-laugarvatn-camping | Laugarvatn | south | winter service list; 2026-11-04: tjalda hidden, 20 May–1 Oct, 2023 prices | ferdalag |
 | B16b | 2 | stub | campsite | hraunborgir | Hraunborgir (Grímsnes) | south | added 2026-11-04 for B11; open all year per own site + tjalda; kitchen Unconfirmed | own, tjalda |
@@ -238,6 +238,7 @@ Options reviewed earlier (none of these are active; nothing else signed up by th
 - Contacting campsites to fill Unconfirmed cells (email/phone) needs your approval.
 
 ## CHANGELOG
+- 2026-11-06: Skjól (Geysir area) full page (/campsites/skjol/, B13). Sources checked 2026-11-06: own campsite/home/contact (skjolcenter.is), tjalda.is (not active 2026; 2025 rates), ferdalag.is camper winter service (EN + IS Ferðaþjónusta Skjótur), Camping Card 2026 opening-dates list + Skjól page. Own + ferdalag: open year-round 24/7; Camping Card: 21 May – 15 September → winter = call-ahead. 2026 published: adult (18+) 2,000, children free, showers 500 separate; no kitchen. Electricity has=yes but hook-up count conflicts (17 vs 64) and 2026 price Unconfirmed (tjalda 2025: 1,000/day). Dump has=yes from ferdalag IS Skjótur (seyrulosun); own page silent. Lodging tax, laundry, winter dump/hook-ups Unconfirmed. On Camping Card 2026 in-season. Tours: Golden Circle + northern lights. Golden Circle winter guide and all-Iceland winter guide updated for the new page. Nothing awaiting Stefán.
 - 2026-11-05: Úthlíð (Biskupstungur) upgraded from stub to a full page (/campsites/uthlid/, B12). Sources checked 2026-11-05:
   operator's campsite, home, Réttin and activities pages (uthlid.icefloe.website), tjalda.is (API 'Rates 2026'), ferdalag.is
   winter list, Camping Card 2026 list. Open all year; winter = motorhome area around Réttin + pool-building toilets. 2026: adult

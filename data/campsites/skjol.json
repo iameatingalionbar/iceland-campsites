@@ -1,0 +1,262 @@
+{
+  "slug": "skjol",
+  "name": "Skjól Campsite (Geysir area)",
+  "alt_names": [
+    "Skjól Center",
+    "Ferðaþjónusta Skjótur",
+    "Skjol"
+  ],
+  "region": "south",
+  "town": "Kjóastaðir (between Geysir and Gullfoss)",
+  "completeness": "full",
+  "checked": "2026-11-06",
+  "sources": {
+    "own": {
+      "title": "Skjól Center – Campsite page (season, prices, facilities, FAQ)",
+      "url": "https://www.skjolcenter.is/campsite",
+      "checked": "2026-11-06"
+    },
+    "own-home": {
+      "title": "Skjól Center – home page (year-round claim, 64 hook-ups, bistro hours)",
+      "url": "https://www.skjolcenter.is/",
+      "checked": "2026-11-06"
+    },
+    "own-contact": {
+      "title": "Skjól Center – Contact us (address, phone, campsite and bistro hours, FAQ)",
+      "url": "https://www.skjolcenter.is/contact-us",
+      "checked": "2026-11-06"
+    },
+    "tjalda": {
+      "title": "Tjalda.is – Skjól (not an active 2026 participant; 2025 rates and services may be outdated)",
+      "url": "https://tjalda.is/en/campsite/skjol",
+      "checked": "2026-11-06"
+    },
+    "ferdalag-winter": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service (Skjól Center listed; English page)",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-11-06"
+    },
+    "ferdalag-winter-is": {
+      "title": "Ferdalag.is – Vetrarþjónusta við campera / húsbíla (Ferðaþjónusta Skjótur entry: seyrulosun, wifi)",
+      "url": "https://www.ferdalag.is/is/gisting/i-tjaldi-og-a-fjollum/vetrarthjonusta-vid-campera-husbila",
+      "checked": "2026-11-06"
+    },
+    "utilegukort": {
+      "title": "Útilegukortið (Camping Card) – Opening dates of participating camping sites 2026 (Skjól: 21 May – 15 September)",
+      "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en",
+      "checked": "2026-11-06"
+    },
+    "utilegukort-skjol": {
+      "title": "Útilegukortið – Skjól campsite page (open May 21 – September; distances to Geysir/Gullfoss)",
+      "url": "https://utilegukortid.is/skjol/?lang=en",
+      "checked": "2026-11-06"
+    }
+  },
+  "intro": {
+    "value": "A large grass campsite on the farm Kjóastaðir on road 35, right between Geysir (about 3.5 km) and Gullfoss (about 6 km) on the Golden Circle. Skjól Center also runs a bistro and summer activities (buggy tours, horseback riding, e-bike rental). Check-in is at the bistro; no campsite reservations. Sources disagree on whether it is open in winter — see Winter below before relying on it outside the Camping Card season.",
+    "src": [
+      "own",
+      "own-home",
+      "utilegukort-skjol",
+      "ferdalag-winter"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Kjóastaðir 1, 806 Selfoss (Bláskógabyggð)",
+      "src": [
+        "own",
+        "own-contact",
+        "ferdalag-winter"
+      ],
+      "note": "Camping Card page uses postcode 801 Geysir; tjalda.is shows 'Skjól 860 Klóastaðir'."
+    },
+    "lat": 64.311246,
+    "lon": -20.233775,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "Operator and ferdalag.is say open year-round, 24/7. The 2026 Camping Card list gives 21 May – 15 September only. tjalda.is is not an active 2026 participant and publishes no 2026 season.",
+    "src": [
+      "own",
+      "own-contact",
+      "ferdalag-winter",
+      "utilegukort",
+      "tjalda"
+    ]
+  },
+  "winter": {
+    "status": "call-ahead",
+    "value": "Own site (campsite, home and contact pages) and ferdalag.is's camper winter service list say the campsite is open all year, including winter. The 2026 Camping Card opening-dates list and the Camping Card Skjól page give 21 May – 15 September only. tjalda.is marks Skjól as not an active 2026 participant, so its listing may be outdated. Call +354 899 4541 before arriving outside mid-May to mid-September, and check road conditions on umferdin.is.",
+    "src": [
+      "own",
+      "own-home",
+      "own-contact",
+      "ferdalag-winter",
+      "utilegukort",
+      "utilegukort-skjol",
+      "tjalda"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "Rates published on the operator's campsite page (no year stated; checked 2026-11-06). tjalda.is still shows 'Rates 2025' and warns it is not an active 2026 participant.",
+      "src": [
+        "own",
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult (18+) per night",
+        "value": "2,000 ISK",
+        "src": [
+          "own",
+          "own-contact"
+        ],
+        "note": "tjalda.is's outdated 2025 list said adults 16+ at the same amount."
+      },
+      {
+        "label": "Children",
+        "value": "Free",
+        "src": [
+          "own",
+          "own-contact"
+        ],
+        "note": "Own FAQ: 'Kids stay for free.' tjalda 2025 listed free for ages 0–15."
+      },
+      {
+        "label": "Shower per person",
+        "value": "500 ISK",
+        "src": [
+          "own",
+          "own-contact"
+        ],
+        "note": "Paid separately at the service house; not included in the camping fee."
+      },
+      {
+        "label": "Electricity per night",
+        "value": null,
+        "note": "Hook-ups exist (see Electricity), but the operator's site does not publish a 2026 electricity price. tjalda.is's outdated 2025 list said 1,000 ISK per day."
+      },
+      {
+        "label": "Lodging tax per unit per night",
+        "value": null,
+        "note": "Not published on the operator's site. tjalda.is's outdated 2025 list said 400 ISK."
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes. The dedicated campsite page and one ferdalag.is entry say 17 electric hook-up stations; the home page, contact FAQ and another ferdalag.is Skjól Center entry say 64. Price for 2026: Unconfirmed (see prices).",
+      "src": [
+        "own",
+        "own-home",
+        "own-contact",
+        "ferdalag-winter"
+      ],
+      "has": "yes"
+    },
+    "kitchen": {
+      "value": "No indoor cooking or kitchen facilities (own FAQ: guests bring their own camping stoves).",
+      "src": [
+        "own",
+        "own-contact"
+      ],
+      "has": "no"
+    },
+    "showers": {
+      "value": "Yes – 500 ISK per person, paid separately at the service house (not included in the camping fee)",
+      "src": [
+        "own",
+        "own-contact"
+      ],
+      "has": "yes"
+    },
+    "toilets": {
+      "value": "Yes – WCs next to the restaurant/bar area (ferdalag.is second Skjól Center entry); showers are in the hostel building for camping guests",
+      "src": [
+        "ferdalag-winter",
+        "own"
+      ]
+    },
+    "dump_station": {
+      "value": "Yes – sludge disposal (seyrulosun) is listed on ferdalag.is's Icelandic camper winter service entry for Ferðaþjónusta Skjótur (same address, phone and email as Skjól Center). The operator's own campsite page does not mention a dump point; ask on arrival. Winter availability: Unconfirmed.",
+      "src": [
+        "ferdalag-winter-is"
+      ],
+      "has": "yes"
+    },
+    "wifi": {
+      "value": "Free Wi-Fi is mentioned on ferdalag.is's Ferðaþjónusta Skjótur winter-service entry and in tjalda.is's (outdated) description; the operator's campsite page does not mention Wi-Fi.",
+      "src": [
+        "ferdalag-winter-is",
+        "tjalda"
+      ]
+    },
+    "laundry": {
+      "value": null,
+      "note": "No washing machine or dryer is listed on the operator's site or on tjalda.is's service tags."
+    },
+    "camping_card": {
+      "value": "Accepted in the Camping Card season – Skjól is on the 2026 Útilegukortið list with opening dates 21 May – 15 September (Camping Card page sidebar also says May 21 – September).",
+      "src": [
+        "utilegukort",
+        "utilegukort-skjol"
+      ]
+    },
+    "contact": {
+      "value": "+354 899 4541 · info@skjolcenter.is",
+      "src": [
+        "own",
+        "own-contact",
+        "tjalda",
+        "ferdalag-winter"
+      ]
+    }
+  },
+  "practical": [
+    {
+      "value": "No campsite reservations – drop in and check in at the bistro.",
+      "src": [
+        "own",
+        "own-contact"
+      ]
+    },
+    {
+      "value": "Skjól Bistro hours: home page says open every day 10:00–20:00; the site footer on several pages says 'Kitchen · 12:00–20:00'. Winter bistro hours beyond those published figures: Unconfirmed.",
+      "src": [
+        "own-home",
+        "own-contact"
+      ]
+    },
+    {
+      "value": "Distances from the Camping Card page: Geysir about 3.5 km, Gullfoss about 6 km, Brúarhlöðir about 4 km; grocery stores within about 25 km; about 110 km from Reykjavík.",
+      "src": [
+        "utilegukort-skjol"
+      ]
+    },
+    {
+      "value": "Flat grassy area for tents and vans (own campsite page). One ferdalag.is entry describes about two hectares with space for hundreds of campers and caravans.",
+      "src": [
+        "own",
+        "ferdalag-winter"
+      ]
+    },
+    {
+      "value": "Summer activities from the site include buggy rides, the 'Golden Ride' horseback tour and e-bike rental (own home and ferdalag.is).",
+      "src": [
+        "own-home",
+        "ferdalag-winter"
+      ]
+    }
+  ],
+  "tours": [
+    "viator-golden-circle",
+    "gti-golden-circle",
+    "gti-northern-lights"
+  ]
+}
