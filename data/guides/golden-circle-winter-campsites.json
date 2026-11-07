@@ -4,7 +4,7 @@
   "short": "Winter: Golden Circle",
   "description": "Which Golden Circle campsites take campervans in winter 2026–27: Þingvellir (Leirar), Úthlíð and Hraunborgir are open all year; Skjól is call-ahead (year-round vs Camping Card dates); Geysir, Laugarvatn and Flúðir are summer-only. Winter rules, prices, electricity and toilet disposal, every fact sourced.",
   "region": "south",
-  "checked": "2026-11-06",
+  "checked": "2026-11-07",
   "sources": {
     "ferdalag-winter": {
       "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
@@ -138,11 +138,11 @@
           ]
         },
         {
-          "value": "You need to empty a cassette toilet: Úthlíð's own page lists sludge disposal for motorhomes and a drinking-water hose, and tjalda.is lists 'waste disposal for mobile homes' at Hraunborgir. No disposal point is mentioned for the Þingvellir campsite.",
+          "value": "You need to empty a cassette toilet: Úthlíð's own page lists sludge disposal for motorhomes and a drinking-water hose, and tjalda.is lists 'waste disposal for mobile homes' at Hraunborgir. At Þingvellir, the park's Icelandic campsite page lists chemical-toilet disposal (losun ferðasalerna) at Syðri-Leirar (summer 1 June – 15 September only); winter disposal at year-round Nyrðri-Leirar is Unconfirmed.",
           "src": [
             "uthlid:own",
             "hraunborgir:tjalda",
-            "thingvellir-leirar:park"
+            "thingvellir-leirar:park-is"
           ]
         },
         {
@@ -237,9 +237,10 @@
       ]
     },
     {
-      "value": "At Þingvellir, pay for three nights and the fourth is free (service centre only). Winter hours: information desk 09:00–16:00, store and service centre at Leirar 09:00–18:00.",
+      "value": "At Þingvellir, pay for three nights and the fourth is free (service centre only). Service-centre hours: park IS page says summer 09:00–18:00 and winter 09:00–17:00; ferdalag.is instead lists information desk 09:00–16:00 and store/service centre 09:00–18:00 in winter — confirm on arrival. Full page: /campsites/thingvellir-leirar/.",
       "src": [
         "thingvellir-leirar:park",
+        "thingvellir-leirar:park-is",
         "thingvellir-leirar:ferdalag-winter"
       ]
     },

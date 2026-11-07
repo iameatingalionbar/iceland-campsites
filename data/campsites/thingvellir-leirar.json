@@ -4,40 +4,69 @@
   "alt_names": [
     "Thingvellir camping",
     "Nyrðri-Leirar",
-    "Syðri-Leirar"
+    "Syðri-Leirar",
+    "Fagrabrekka",
+    "Vatnskot"
   ],
   "region": "south",
   "town": "Þingvellir National Park",
-  "completeness": "stub",
-  "checked": "2026-11-04",
+  "completeness": "full",
+  "checked": "2026-11-07",
   "sources": {
     "park": {
-      "title": "Thingvellir National Park – Camping (opening hours and price list)",
+      "title": "Thingvellir National Park – Camping (EN: opening hours and price list)",
       "url": "https://www.thingvellir.is/en/service/camping/",
-      "checked": "2026-11-04"
+      "checked": "2026-11-07"
+    },
+    "park-is": {
+      "title": "Þjóðgarðurinn á Þingvöllum – Tjaldsvæði (IS: facilities by area, dump at Syðri-Leirar, winter service hours)",
+      "url": "https://www.thingvellir.is/thjonusta/tjaldsvaedi/",
+      "checked": "2026-11-07"
     },
     "tjalda": {
-      "title": "Tjalda.is – Þingvellir",
+      "title": "Tjalda.is – Þingvellir (not an active 2026 participant; coords only trusted)",
       "url": "https://tjalda.is/en/campsite/thingvellir",
-      "checked": "2026-11-04"
+      "checked": "2026-11-07"
     },
     "ferdalag-winter": {
-      "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service (Thingvellir National park entry, English)",
       "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
-      "checked": "2026-11-04"
+      "checked": "2026-11-07"
+    },
+    "ferdalag-winter-is": {
+      "title": "Ferdalag.is – Vetrarþjónusta við campera / húsbíla (Þingvellir entry: salerni, sturtur, þvottaaðstaða, útivaska, kolagrill)",
+      "url": "https://www.ferdalag.is/is/gisting/i-tjaldi-og-a-fjollum/vetrarthjonusta-vid-campera-husbila",
+      "checked": "2026-11-07"
+    },
+    "ferdalag-service": {
+      "title": "Ferdalag.is – Thingvellir National park service page (open all year; same facilities summary)",
+      "url": "https://www.ferdalag.is/en/service/thingvellir-national-park",
+      "checked": "2026-11-07"
+    },
+    "utilegukort": {
+      "title": "Útilegukortið (Camping Card) – Opening dates / South Iceland / all camping sites 2026 (Þingvellir not listed)",
+      "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en",
+      "checked": "2026-11-07"
+    },
+    "utilegukort-south": {
+      "title": "Útilegukortið – South Iceland camping sites (Þingvellir / Leirar not listed among participants)",
+      "url": "https://utilegukortid.is/flokkur/camping-sites/south-iceland/?lang=en",
+      "checked": "2026-11-07"
     }
   },
   "intro": {
-    "value": "The national park runs four campsites: Nyrðri-Leirar and Syðri-Leirar by the service centre, where motorhomes can get electricity, and Fagrabrekka and Vatnskot, which are for tents only. Payment and information are at the service centre at Leirar.",
+    "value": "The national park runs four campsites around the Leirar service centre (junction of roads 36, 361 and 52): Nyrðri-Leirar and Syðri-Leirar take tents and motorhomes with electricity, while Fagrabrekka and Vatnskot are for tents only in summer. Nyrðri-Leirar stays open year-round. Guests pick their own pitch; there is no formal check-in. Pay at the Leirar service centre or on the park website (or the morning after if you arrive outside desk hours).",
     "src": [
-      "park"
+      "park",
+      "park-is"
     ]
   },
   "location": {
     "address": {
-      "value": "Leirar service centre, Þingvellir National Park, 806 Selfoss",
+      "value": "Leirar service centre, Þingvellir National Park, 806 Selfoss (Gestastofa / visitor centre area)",
       "src": [
         "park",
+        "park-is",
         "ferdalag-winter"
       ]
     },
@@ -48,24 +77,29 @@
     ]
   },
   "season": {
-    "value": "Summer season 1 June – 15 September (all four campsites, unless otherwise stated); Nyrðri-Leirar is open year-round.",
+    "value": "Summer 1 June – 15 September: all four campsites (Nyrðri-Leirar, Syðri-Leirar, Fagrabrekka, Vatnskot) unless otherwise stated. Winter 16 September – 31 May: Nyrðri-Leirar only, open year-round. Syðri-Leirar, Fagrabrekka and Vatnskot are summer-only.",
     "src": [
-      "park"
+      "park",
+      "park-is"
     ]
   },
   "winter": {
     "status": "open",
-    "value": "Winter (16 September – 31 May): Nyrðri-Leirar is open year-round. Park in front of the visitor centre or along the campsite access road, where motorhomes can connect to electricity. Toilets, showers and laundry stay available, but outdoor sinks are not accessible in winter, and in heavy snow or thaw parts of the campsite may be closed.",
+    "value": "Official park pages (EN and IS) state Nyrðri-Leirar is open year-round. In winter park in front of the visitor centre or along the campsite access road, where motorhomes can connect to electricity. Toilets, showers and laundry stay available; outdoor sinks are not accessible in winter; in heavy snow or thaw parts of the campsite may close. Ferdalag.is lists Thingvellir on its camper winter service list and marks the park open all year. No conflicting source found 2026-11-07 (tjalda.is is inactive for 2026 and publishes no season).",
     "src": [
       "park",
-      "ferdalag-winter"
+      "park-is",
+      "ferdalag-winter",
+      "ferdalag-service",
+      "tjalda"
     ]
   },
   "prices": {
     "applies_to": {
-      "value": "Current price list on the park's website (year not stated)",
+      "value": "Current price list on the park's camping pages (EN and IS; year not stated; checked 2026-11-07)",
       "src": [
-        "park"
+        "park",
+        "park-is"
       ]
     },
     "currency": "ISK",
@@ -74,121 +108,166 @@
         "label": "Adult (18–66) per night",
         "value": "1,800 ISK",
         "src": [
-          "park"
+          "park",
+          "park-is"
         ]
       },
       {
         "label": "Seniors (67+) and disabled visitors",
         "value": "900 ISK",
         "src": [
-          "park"
+          "park",
+          "park-is"
         ]
+      },
+      {
+        "label": "Children under 18",
+        "value": null,
+        "note": "Not stated on the park's EN or IS price list (only adults 18–66 and seniors/disabled are listed)."
       },
       {
         "label": "Electricity for motorhomes per 24 h",
         "value": "1,100 ISK",
         "src": [
-          "park"
+          "park",
+          "park-is"
         ]
       },
       {
         "label": "Lodging tax per unit per night",
         "value": "400 ISK",
         "src": [
-          "park"
-        ]
+          "park",
+          "park-is"
+        ],
+        "note": "Per tent, motorhome, camper, etc."
       },
       {
         "label": "Washing machine / dryer",
         "value": "1,000 ISK each",
         "src": [
-          "park"
-        ]
-      },
-      {
-        "label": "Children under 18",
-        "value": null,
-        "note": "Not stated on the park's price list."
+          "park",
+          "park-is"
+        ],
+        "note": "IS page: machines take special coins sold at the service centre."
       }
     ]
   },
   "facts": {
     "electricity": {
-      "value": "Yes – for motorhomes at Nyrðri-Leirar and Syðri-Leirar (1,100 ISK per 24 h); in winter at the visitor-centre parking or the campsite access road.",
+      "value": "Yes – for motorhomes at Nyrðri-Leirar and Syðri-Leirar (1,100 ISK per 24 h). At Nyrðri-Leirar sockets stand along the gravel track into the field; in winter use visitor-centre parking or the campsite access road.",
       "src": [
-        "park"
+        "park",
+        "park-is"
       ],
       "has": "yes"
     },
     "kitchen": {
-      "value": null,
-      "note": "No kitchen is listed; ferdalag.is mentions an outside grill and a small cafeteria (soup, sandwiches, pizza) in the service centre."
-    },
-    "showers": {
-      "value": "Yes, available all year",
+      "value": "No indoor kitchen. Service houses have outdoor sinks (útivaskar), picnic tables and grill facilities; outdoor sinks are not accessible in winter. Ferdalag.is also mentions an outside grill and a small cafeteria (soup, sandwiches, pizza) in the service centre.",
       "src": [
         "park",
+        "park-is",
+        "ferdalag-winter",
+        "ferdalag-winter-is"
+      ],
+      "has": "no"
+    },
+    "showers": {
+      "value": "Yes – included in the camping fee (IS page asks guests to use water sparingly; no geothermal heat on site). Available all year at Nyrðri-Leirar; Syðri-Leirar also has showers in summer.",
+      "src": [
+        "park",
+        "park-is",
         "ferdalag-winter"
       ],
       "has": "yes"
     },
     "toilets": {
-      "value": "Yes, available all year",
+      "value": "Yes – available all year at Nyrðri-Leirar (service house with four toilets). Syðri-Leirar, Fagrabrekka and Vatnskot also have toilets in summer.",
       "src": [
         "park",
+        "park-is",
         "ferdalag-winter"
       ]
     },
     "dump_station": {
-      "value": null,
-      "note": "No chemical-toilet or grey-water disposal point is mentioned on the park's camping page or ferdalag.is."
+      "value": "Yes in summer at Syðri-Leirar: the park's Icelandic campsite page states chemical-toilet disposal (losun ferðasalerna) a short way north of the Syðri-Leirar service house, with recycling bins nearby. Syðri-Leirar is open only 1 June – 15 September. Winter disposal at Nyrðri-Leirar is not mentioned on the park EN/IS pages or on ferdalag.is → Unconfirmed in winter. The EN camping page does not mention a dump point.",
+      "src": [
+        "park-is"
+      ],
+      "has": "yes",
+      "note": "Winter dump availability at the year-round Nyrðri-Leirar area: Unconfirmed."
     },
     "wifi": {
       "value": null,
-      "note": "Not stated in the sources checked."
+      "note": "Not stated on the park camping pages, ferdalag.is or tjalda.is."
     },
     "laundry": {
-      "value": "Washing machine and dryer, 1,000 ISK each; available in winter",
+      "value": "Washing machine and dryer at Nyrðri-Leirar (1,000 ISK each); available in winter. IS page: special coins sold at the service centre.",
       "src": [
-        "park"
+        "park",
+        "park-is"
       ]
     },
     "camping_card": {
-      "value": null,
-      "note": "Not stated in the sources checked."
+      "value": "Not listed as a 2026 Útilegukortið (Camping Card) participant – absent from the opening-dates list and the South Iceland / all camping-sites directories (checked 2026-11-07).",
+      "src": [
+        "utilegukort",
+        "utilegukort-south"
+      ]
     },
     "contact": {
       "value": "+354 488 1800 · thingvellir@thingvellir.is",
       "src": [
         "park",
+        "park-is",
         "ferdalag-winter"
       ]
     }
   },
   "practical": [
     {
-      "value": "Advance booking is not required but is available on the national park's website; you can also pay at the Leirar service centre.",
+      "value": "Advance booking is not required but is available on the national park's website; you can also pay at the Leirar service centre. If you arrive outside desk hours, the IS page asks you to pay online or at the centre the next morning. No formal check-out; leave by the following evening.",
       "src": [
-        "park"
+        "park",
+        "park-is"
       ]
     },
     {
-      "value": "Pay for three nights and the fourth is free, then every second night after that (at the service centre only).",
+      "value": "Pay for three nights and the fourth is free, then every second night after that (service centre only). Groups of 10+ get 15% off adults (18–66) when paying in one transaction at the service centre; discount excludes electricity and lodging tax; group web booking is not offered (email thingvellir@thingvellir.is).",
       "src": [
-        "park"
+        "park",
+        "park-is"
       ]
     },
     {
-      "value": "Winter opening hours (September – May): information desk 09:00–16:00, store and service centre at Leirar 09:00–18:00.",
+      "value": "Service-centre hours: park IS page says summer 09:00–18:00 and winter 09:00–17:00. Ferdalag.is's winter-service entry instead gives information desk 09:00–16:00 and store/service centre at Leirar 09:00–18:00 (September–May). Prefer the park's own hours and confirm on arrival if arriving late.",
       "src": [
+        "park-is",
         "ferdalag-winter"
       ]
     },
     {
-      "value": "tjalda.is says this campsite is not an active participant there in 2026, so use the park's own page for current details.",
+      "value": "Nyrðri-Leirar: large grass field by the visitor centre north of Þingvallavegur; gravel track with motorhome power points along the edge; service house with four toilets, two showers, picnic tables, grill, and a laundry room. Syðri-Leirar (summer): south of the road, drinking-water hose at the service house, dump point and recycling a short way north. Fagrabrekka and Vatnskot: tents only, summer.",
+      "src": [
+        "park-is"
+      ]
+    },
+    {
+      "value": "tjalda.is says this campsite is not an active participant there in 2026, so use the park's own pages for current details. Coordinates on this page come from the tjalda.is API listing (64.279586, −21.087002).",
       "src": [
         "tjalda"
       ]
+    },
+    {
+      "value": "Camping overnight is only allowed on marked campsites in the park; keep quiet 23:00–08:00. Dogs on leash. Fishing permits are sold at the service centre.",
+      "src": [
+        "park-is"
+      ]
     }
+  ],
+  "tours": [
+    "viator-golden-circle",
+    "gti-golden-circle",
+    "gti-northern-lights"
   ]
 }
