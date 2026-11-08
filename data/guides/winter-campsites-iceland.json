@@ -4,12 +4,12 @@
   "short": "Winter campsites, all of Iceland",
   "description": "Which Icelandic campsites take campervans in winter 2026–27, region by region: sourced winter status, electricity, dump stations and prices, plus where the official winter list conflicts with campsites' own seasons.",
   "region": "all",
-  "checked": "2026-11-06",
+  "checked": "2026-11-08",
   "sources": {
     "ferdalag-winter": {
       "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service (38 listings)",
       "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
-      "checked": "2026-10-30"
+      "checked": "2026-11-08"
     },
     "visiticeland-winter": {
       "title": "Visit Iceland – Camper winter service in South Iceland",
@@ -67,9 +67,9 @@
       "checked": "2026-10-30"
     },
     "tj-laugarvatn": {
-      "title": "Tjalda.is – Laugarvatn",
+      "title": "Tjalda.is – Laugarvatn (listing hidden; season text dated 2023)",
       "url": "https://tjalda.is/en/campsite/laugarvatn",
-      "checked": "2026-10-30"
+      "checked": "2026-11-08"
     },
     "tj-fludir": {
       "title": "Tjalda.is – Flúðir",
@@ -145,6 +145,26 @@
       "title": "Útilegukortið – Opening dates 2026 (Skjól: 21 May – 15 September)",
       "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en",
       "checked": "2026-11-06"
+    },
+    "ferdalag-laugarvatn": {
+      "title": "Ferdalag.is – Laugarvatn Camping Ground (Háholt 2c; season 22 May–15 September)",
+      "url": "https://www.ferdalag.is/en/service/laugarvatn-camping-ground",
+      "checked": "2026-11-08"
+    },
+    "utilegukort-laugarvatn": {
+      "title": "Útilegukortið – Laugarvatn (2026 opening dates 1 June – 1 October)",
+      "url": "https://utilegukortid.is/laugarvatn/?lang=en",
+      "checked": "2026-11-08"
+    },
+    "hotel-ferdalag": {
+      "title": "Ferdalag.is – Hotel Laugarvatn service page (tagged Camper winter service; hotel description only)",
+      "url": "https://www.ferdalag.is/en/service/hotel-laugarvatn",
+      "checked": "2026-11-08"
+    },
+    "hotel-own": {
+      "title": "Hotel Laugarvatn – own website (no campsite mentioned)",
+      "url": "https://www.hotellaugarvatn.is/",
+      "checked": "2026-11-08"
     }
   },
   "intro": [
@@ -155,12 +175,14 @@
       ]
     },
     {
-      "value": "Being on that list does not always mean a campsite is open in winter. For at least six listed campsites, the tjalda.is campsite directory gives a summer-only season, for example Hólmavík (15 May – 15 September), Geysir (15 May – 15 September) and Laugarvatn (20 May – 1 October). This guide shows each campsite's sourced winter status and flags those conflicts, so you know whom to call before driving.",
+      "value": "Being on that list does not always mean a campsite is open in winter. For several listed campsites, the tjalda.is campsite directory gives a summer-only season, for example Hólmavík (15 May – 15 September) and Geysir (15 May – 15 September). Hotel Laugarvatn also appears on the official list, but that entry describes the hotel at Dalbraut 10 rather than the village campsite, which publishes a summer season only (see /campsites/hotel-laugarvatn-camping/).",
       "src": [
         "ferdalag-winter",
         "tj-holmavik",
         "tj-geysir",
-        "tj-laugarvatn"
+        "tj-laugarvatn",
+        "ferdalag-laugarvatn",
+        "hotel-ferdalag"
       ]
     }
   ],
@@ -184,6 +206,7 @@
     "hraunborgir",
     "uthlid",
     "skjol",
+    "hotel-laugarvatn-camping",
     "hella-arhus",
     "hvolsvollur",
     "hellisholar",
@@ -273,10 +296,16 @@
           ]
         },
         {
-          "value": "Laugarvatn (Golden Circle, South): 20 May – 1 October.",
+          "value": "Laugarvatn village campsite now has a full page on this site (/campsites/hotel-laugarvatn-camping/) and is marked closed in winter: published seasons end by 1 October (Camping Card 2026: 1 June – 1 October; ferdalag.is campsite page: 22 May – 15 September; tjalda.is hidden listing: 20 May – 1 October). The official winter-list entry is for Hotel Laugarvatn, whose listing describes hotel rooms only.",
           "src": [
             "ferdalag-winter",
-            "tj-laugarvatn"
+            "tj-laugarvatn",
+            "ferdalag-laugarvatn",
+            "utilegukort-laugarvatn",
+            "hotel-ferdalag",
+            "hotel-own",
+            "hotel-laugarvatn-camping:ferdalag",
+            "hotel-laugarvatn-camping:utilegukort"
           ]
         },
         {

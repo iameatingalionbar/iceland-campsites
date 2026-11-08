@@ -4,12 +4,12 @@
   "short": "Winter: Golden Circle",
   "description": "Which Golden Circle campsites take campervans in winter 2026–27: Þingvellir (Leirar), Úthlíð and Hraunborgir are open all year; Skjól is call-ahead (year-round vs Camping Card dates); Geysir, Laugarvatn and Flúðir are summer-only. Winter rules, prices, electricity and toilet disposal, every fact sourced.",
   "region": "south",
-  "checked": "2026-11-07",
+  "checked": "2026-11-08",
   "sources": {
     "ferdalag-winter": {
       "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
       "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
-      "checked": "2026-11-06"
+      "checked": "2026-11-08"
     },
     "tj-geysir": {
       "title": "Tjalda.is – Geysir, Haukadal",
@@ -22,9 +22,9 @@
       "checked": "2026-11-04"
     },
     "tj-laugarvatn": {
-      "title": "Tjalda.is – Laugarvatn",
+      "title": "Tjalda.is – Laugarvatn (listing hidden / not an active 2026 participant; season text dated 2023)",
       "url": "https://tjalda.is/en/campsite/laugarvatn",
-      "checked": "2026-11-04"
+      "checked": "2026-11-08"
     },
     "tj-fludir": {
       "title": "Tjalda.is – Flúðir",
@@ -75,6 +75,31 @@
       "title": "Útilegukortið – Opening dates 2026 (Skjól: 21 May – 15 September)",
       "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en",
       "checked": "2026-11-06"
+    },
+    "ferdalag-laugarvatn": {
+      "title": "Ferdalag.is – Laugarvatn Camping Ground (Háholt 2c; season 22 May–15 September)",
+      "url": "https://www.ferdalag.is/en/service/laugarvatn-camping-ground",
+      "checked": "2026-11-08"
+    },
+    "utilegukort-laugarvatn": {
+      "title": "Útilegukortið – Laugarvatn (2026 opening dates 1 June – 1 October)",
+      "url": "https://utilegukortid.is/laugarvatn/?lang=en",
+      "checked": "2026-11-08"
+    },
+    "utilegukort-dates": {
+      "title": "Útilegukortið – Opening dates of camping sites this year (Laugarvatn: 1 June – 1 October)",
+      "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en",
+      "checked": "2026-11-08"
+    },
+    "hotel-own": {
+      "title": "Hotel Laugarvatn – own website (rooms only; no campsite mentioned)",
+      "url": "https://www.hotellaugarvatn.is/",
+      "checked": "2026-11-08"
+    },
+    "hotel-ferdalag": {
+      "title": "Ferdalag.is – Hotel Laugarvatn service page (tagged Camper winter service; hotel description only)",
+      "url": "https://www.ferdalag.is/en/service/hotel-laugarvatn",
+      "checked": "2026-11-08"
     }
   },
   "intro": [
@@ -89,25 +114,28 @@
       ]
     },
     {
-      "value": "The campsites closest to Geysir, Laugarvatn and Flúðir publish summer seasons only, even though some of them appear on the official camper winter service list, so check before you drive.",
+      "value": "The campsites closest to Geysir, Laugarvatn and Flúðir publish summer seasons only. Geysir and Flúðir also appear on the official camper winter service list, which conflicts with their own dates. Hotel Laugarvatn is on that list too, but that entry describes the hotel at Dalbraut 10, not the village campsite.",
       "src": [
         "geysir-own",
         "tj-laugarvatn",
         "fludir-own",
-        "ferdalag-winter"
+        "ferdalag-winter",
+        "ferdalag-laugarvatn",
+        "hotel-ferdalag"
       ]
     }
   ],
   "scope_note": "Scope: campsites on the Golden Circle (Þingvellir – Laugarvatn – Geysir – Gullfoss) and the nearby Grímsnes, Biskupstungur and Flúðir area, checked against operator pages, tjalda.is and ferdalag.is's camper winter service list on 2026-11-04. Hveragerði and Selfoss, which many Golden Circle drivers also use, are covered in the South Coast winter guide.",
   "campsites": [
     "thingvellir-leirar",
+    "hotel-laugarvatn-camping",
     "hraunborgir",
     "uthlid",
     "skjol"
   ],
   "table": "winter",
   "glance_title": "Open in winter: at a glance",
-  "table_caption": "West to east: Þingvellir, Grímsnes, Biskupstungur. Status and facts come from each campsite's own page on this site, with sources; prices are published adult rates.",
+  "table_caption": "West to east along the Golden Circle and nearby Grímsnes. Status and facts come from each campsite's own page on this site, with sources; prices are published adult rates (Laugarvatn has no 2026 list yet).",
   "sections": [
     {
       "id": "which",
@@ -173,10 +201,17 @@
           ]
         },
         {
-          "value": "Laugarvatn: tjalda.is gives 'Open from 20 May until 1 October', but its listing is hidden and shows 2023 prices. Hotel Laugarvatn is on the ferdalag.is winter list; whether that means winter camping is Unconfirmed.",
+          "value": "Laugarvatn village campsite (Háholt 2c / Dalbraut): published seasons all end by 1 October (Camping Card 2026: 1 June – 1 October; ferdalag.is and Visit Iceland: 22 May – 15 September; tjalda.is hidden listing: 20 May – 1 October, Icelandic text dated 2023). Winter status is closed. Hotel Laugarvatn (Dalbraut 10) is on the ferdalag.is winter list and tagged 'Camper winter service', but its own website and ferdalag hotel page describe hotel rooms only, not a campsite. Full page: /campsites/hotel-laugarvatn-camping/.",
           "src": [
+            "ferdalag-laugarvatn",
+            "utilegukort-laugarvatn",
+            "utilegukort-dates",
             "tj-laugarvatn",
-            "ferdalag-winter"
+            "ferdalag-winter",
+            "hotel-ferdalag",
+            "hotel-own",
+            "hotel-laugarvatn-camping:ferdalag",
+            "hotel-laugarvatn-camping:utilegukort"
           ]
         },
         {

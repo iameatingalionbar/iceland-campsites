@@ -1,0 +1,312 @@
+{
+  "slug": "hotel-laugarvatn-camping",
+  "name": "Laugarvatn Camping Ground",
+  "alt_names": [
+    "Tjaldsvæðið Laugarvatni",
+    "Laugarvatn Campsite",
+    "Vinastræti camping",
+    "Hotel Laugarvatn Camping"
+  ],
+  "region": "south",
+  "town": "Laugarvatn",
+  "completeness": "full",
+  "checked": "2026-11-08",
+  "sources": {
+    "ferdalag": {
+      "title": "Ferdalag.is – Laugarvatn Camping Ground (EN: address Háholt 2c, season 22 May–15 September, facilities incl. waste tank discharge 0.2 km)",
+      "url": "https://www.ferdalag.is/en/service/laugarvatn-camping-ground",
+      "checked": "2026-11-08"
+    },
+    "ferdalag-is": {
+      "title": "Ferdalag.is – Tjaldsvæðið Laugarvatni (IS: same season and address; losun skólptanka 0.2 km)",
+      "url": "https://www.ferdalag.is/is/thjonusta/tjaldsvaedid-laugarvatni",
+      "checked": "2026-11-08"
+    },
+    "visiticeland": {
+      "title": "Visit Iceland – Laugarvatn Camping Ground (same listing: Háholt 2c, 22 May–15 September, phone 888-8890)",
+      "url": "https://www.visiticeland.com/things-to-do/laugarvatn-camping-ground/",
+      "checked": "2026-11-08"
+    },
+    "tjalda": {
+      "title": "Tjalda.is – Laugarvatn (listing hidden / not shown as an active 2026 participant; Icelandic season text dated 2023; prices labelled 2023 EN / 2024 IS)",
+      "url": "https://tjalda.is/en/campsite/laugarvatn",
+      "checked": "2026-11-08"
+    },
+    "ferdalag-winter": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service (Hotel Laugarvatn entry: hotel description only)",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-11-08"
+    },
+    "ferdalag-winter-is": {
+      "title": "Ferdalag.is – Vetrarþjónusta við campera / húsbíla (Hótel Laugarvatn entry: hotel rooms only)",
+      "url": "https://www.ferdalag.is/is/gisting/i-tjaldi-og-a-fjollum/vetrarthjonusta-vid-campera-husbila",
+      "checked": "2026-11-08"
+    },
+    "hotel-ferdalag": {
+      "title": "Ferdalag.is – Hotel Laugarvatn service page (Dalbraut 10; tagged Camper winter service; hotel season 1 Feb–30 Nov; no campsite described)",
+      "url": "https://www.ferdalag.is/en/service/hotel-laugarvatn",
+      "checked": "2026-11-08"
+    },
+    "hotel-own": {
+      "title": "Hotel Laugarvatn – own website (rooms, bar, restaurant; no campsite mentioned)",
+      "url": "https://www.hotellaugarvatn.is/",
+      "checked": "2026-11-08"
+    },
+    "own": {
+      "title": "Vinastræti – Camping page (SalesCloud page titled Camping; no season, prices or facilities published when checked)",
+      "url": "https://www.vinastraeti.is/camping",
+      "checked": "2026-11-08"
+    },
+    "own-home": {
+      "title": "Vinastræti Veitingahús – restaurant home page (family-run restaurant; hours Mon–Sun 11:30–20:30)",
+      "url": "https://www.vinastraeti.is/",
+      "checked": "2026-11-08"
+    },
+    "utilegukort": {
+      "title": "Útilegukortið (Camping Card) – Opening dates of participating camping sites 2026 (Laugarvatn: 1 June – 1 October)",
+      "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en",
+      "checked": "2026-11-08"
+    },
+    "utilegukort-laugarvatn": {
+      "title": "Útilegukortið – Laugarvatn campsite page (open 1 June–1 October; showers included; 20% off at Vinastræti)",
+      "url": "https://utilegukortid.is/laugarvatn/?lang=en",
+      "checked": "2026-11-08"
+    },
+    "utilegukort-south": {
+      "title": "Útilegukortið – South Iceland camping sites (Laugarvatn listed as a 2026 participant)",
+      "url": "https://utilegukortid.is/flokkur/camping-sites/south-iceland/?lang=en",
+      "checked": "2026-11-08"
+    }
+  },
+  "intro": {
+    "value": "A spacious village campsite in Laugarvatn on the Golden Circle, run alongside Vinastræti restaurant (ferdalag.is and Visit Iceland give the address as Háholt 2c; tjalda.is and the Camping Card page say Dalbraut). Shops and restaurants are close by, showers are included, and the site is on the 2026 Camping Card. Every published season ends by 1 October, so it is closed in winter. Hotel Laugarvatn at Dalbraut 10 is a separate hotel that appears on the official camper winter service list but does not describe a campsite — see Winter below.",
+    "src": [
+      "ferdalag",
+      "visiticeland",
+      "tjalda",
+      "utilegukort-laugarvatn",
+      "ferdalag-winter",
+      "hotel-own"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Háholt 2c, 840 Laugarvatn",
+      "src": [
+        "ferdalag",
+        "ferdalag-is",
+        "visiticeland"
+      ],
+      "note": "tjalda.is and the Camping Card page list the address as Dalbraut, 840 Laugarvatn (Camping Card also prints '806' in the zip line). Hotel Laugarvatn, a separate business, is at Dalbraut 10."
+    },
+    "lat": 64.222301,
+    "lon": -20.732167,
+    "coords_src": [
+      "tjalda"
+    ]
+  },
+  "season": {
+    "value": "Summer only; published dates disagree. The 2026 Camping Card opening-dates list and the Camping Card Laugarvatn page give 1 June – 1 October. Ferdalag.is (EN and IS service pages) and Visit Iceland give 22 May – 15 September. tjalda.is (hidden listing) says 'Open from 20 May until 1 October' and dates the Icelandic season text to 2023 ('20. maí til 1. október 2023'). The operator's own camping page published no season when checked on 2026-11-08.",
+    "src": [
+      "utilegukort",
+      "utilegukort-laugarvatn",
+      "ferdalag",
+      "ferdalag-is",
+      "visiticeland",
+      "tjalda",
+      "own"
+    ]
+  },
+  "winter": {
+    "status": "closed",
+    "value": "Closed in winter. Every published campsite season ends by 1 October (Camping Card 2026: 1 June – 1 October; official ferdalag.is / Visit Iceland campsite listing: 22 May – 15 September; outdated tjalda.is: 20 May – 1 October). Hotel Laugarvatn (Dalbraut 10, +354 899 5409) appears on ferdalag.is's camper winter service list, and its separate hotel service page is tagged 'Camper winter service' and 'Open year round', but that page also gives hotel season dates 1 February – 30 November and describes hotel rooms, a restaurant and a living room only — no campsite. The hotel's own website likewise describes rooms and hotel services, not camping. Whether the hotel offers any separate winter service to campervans is Unconfirmed.",
+    "src": [
+      "utilegukort",
+      "utilegukort-laugarvatn",
+      "ferdalag",
+      "visiticeland",
+      "tjalda",
+      "ferdalag-winter",
+      "hotel-ferdalag",
+      "hotel-own"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "No 2026 price list found on the operator's site, ferdalag.is or the Camping Card page (checked 2026-11-08). tjalda.is still publishes older figures labelled 'Price 2023' in English and 'Verð 2024' in Icelandic.",
+      "src": [
+        "own",
+        "ferdalag",
+        "utilegukort-laugarvatn",
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult (16+) per night",
+        "value": null,
+        "note": "No 2026 rate published. tjalda.is's older list (EN 'Price 2023' / IS 'Verð 2024') said 2,950 ISK for ages 16 and older."
+      },
+      {
+        "label": "Children (10–16) per night",
+        "value": null,
+        "note": "No 2026 rate published. tjalda.is's older list said 1,500 ISK."
+      },
+      {
+        "label": "Children under 10",
+        "value": null,
+        "note": "No 2026 rate published. tjalda.is's older list said free."
+      },
+      {
+        "label": "Electricity per night",
+        "value": null,
+        "note": "No 2026 rate published. tjalda.is's older list said 1,500 ISK."
+      },
+      {
+        "label": "Lodging tax per unit per night",
+        "value": null,
+        "note": "No 2026 rate published. tjalda.is's older list said 333 ISK per unit (many 2026 lists now show 400 ISK)."
+      },
+      {
+        "label": "Showers",
+        "value": "Included",
+        "src": [
+          "utilegukort-laugarvatn",
+          "tjalda"
+        ],
+        "note": "Camping Card page: 'Access to showers is included!' tjalda.is's older price list also said showers were included."
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes according to tjalda.is, which gives this hidden listing an Electricity service tag and an older (2023/2024) electricity price. The official ferdalag.is campsite facility list (checked 2026-11-08) does not mention electricity, so confirm hook-ups on arrival.",
+      "src": [
+        "tjalda"
+      ],
+      "has": "yes"
+    },
+    "kitchen": {
+      "value": "No indoor kitchen or cooking facilities are listed on tjalda.is (no 'Cooking facilities' tag), on ferdalag.is's campsite pages, or on the Camping Card page. The Camping Card page said a communal barbecue area 'will be added' this summer; whether that was installed is Unconfirmed.",
+      "src": [
+        "tjalda",
+        "ferdalag",
+        "ferdalag-is",
+        "utilegukort-laugarvatn"
+      ],
+      "has": "no"
+    },
+    "showers": {
+      "value": "Yes – included (Camping Card page: 'Access to showers is included!'). tjalda.is also lists a Shower service tag and said showers were included in its older price list.",
+      "src": [
+        "utilegukort-laugarvatn",
+        "tjalda",
+        "ferdalag"
+      ],
+      "has": "yes"
+    },
+    "toilets": {
+      "value": "Yes – tjalda.is lists toilets; ferdalag.is lists public lavatories (almenningssalerni). The Camping Card page said restroom facilities would be updated 'this summer'.",
+      "src": [
+        "tjalda",
+        "ferdalag",
+        "ferdalag-is",
+        "utilegukort-laugarvatn"
+      ]
+    },
+    "dump_station": {
+      "value": "Nearby, not on the pitch: ferdalag.is lists waste tank discharge / losun skólptanka 0.2 km from the campsite. tjalda.is does not give this listing the 'Waste disposal for mobile homes' service tag. On-site cassette / chemical-toilet disposal is Unconfirmed.",
+      "src": [
+        "ferdalag",
+        "ferdalag-is",
+        "tjalda"
+      ],
+      "has": "nearby"
+    },
+    "wifi": {
+      "value": null,
+      "note": "Not mentioned on tjalda.is (no Wi-Fi service tag), the ferdalag.is campsite pages or the Camping Card page."
+    },
+    "laundry": {
+      "value": null,
+      "note": "No washing machine or dryer is listed on tjalda.is's service tags, the ferdalag.is campsite pages or the Camping Card page."
+    },
+    "camping_card": {
+      "value": "Accepted in the Camping Card season – Laugarvatn is on the 2026 Útilegukortið opening-dates list (1 June – 1 October) and on the South Iceland participant directory.",
+      "src": [
+        "utilegukort",
+        "utilegukort-laugarvatn",
+        "utilegukort-south"
+      ]
+    },
+    "contact": {
+      "value": "+354 888 8890 · vinastraeti840@gmail.com",
+      "src": [
+        "ferdalag",
+        "ferdalag-is",
+        "visiticeland",
+        "utilegukort-laugarvatn"
+      ],
+      "note": "The Camping Card page prints the email as 'vinarstraeti840@gmail.com' (extra r) and the website as www.vinarstraeti.is. tjalda.is's hidden listing still shows +354 771 4777 and laugarvatncamping@gmail.com. The operator's own camping page showed a placeholder phone 456-1234."
+    }
+  },
+  "practical": [
+    {
+      "value": "Directions from tjalda.is: when entering Laugarvatn from the direction of Reykjavík, drive through the village and turn left just before exiting.",
+      "src": [
+        "tjalda"
+      ]
+    },
+    {
+      "value": "Age limit: ferdalag.is and Visit Iceland say 18 years except when accompanied by an adult. tjalda.is's short description also says under-18s must be with a parent or guardian, but its longer about-text says the age limit is 20 years.",
+      "src": [
+        "ferdalag",
+        "visiticeland",
+        "tjalda"
+      ]
+    },
+    {
+      "value": "Quiet after 24:00 (ferdalag.is, Visit Iceland and tjalda.is).",
+      "src": [
+        "ferdalag",
+        "visiticeland",
+        "tjalda"
+      ]
+    },
+    {
+      "value": "The Camping Card page says all campsite guests receive a 20% discount on food at Vinastræti restaurant, and that a new restaurant has opened directly across from it. Vinastræti's own home page (a family-run restaurant, Vinastræti veitingahús ehf.) lists opening hours Monday–Sunday 11:30–20:30; whether those hours apply in the camping off-season is Unconfirmed.",
+      "src": [
+        "utilegukort-laugarvatn",
+        "own-home"
+      ]
+    },
+    {
+      "value": "Nearby according to ferdalag.is: restaurant 0.1 km, swimming pool 0.5 km, golf course 4 km; also a playground, sports field, walking path, horse riding and fishing permits. The Camping Card page (78 km from Reykjavík) said a new playground, updated restrooms and a communal barbecue were planned 'this summer'.",
+      "src": [
+        "ferdalag",
+        "ferdalag-is",
+        "utilegukort-laugarvatn"
+      ]
+    },
+    {
+      "value": "tjalda.is hides this listing from its public 2026 directory (show_campsite_on_tjalda is false) and still shows 2023 season wording and 2023/2024 prices, so prefer the ferdalag.is / Visit Iceland and Camping Card details for current opening dates and contact. Coordinates on this page (64.222301, −20.732167) come from that tjalda.is API listing.",
+      "src": [
+        "tjalda"
+      ]
+    },
+    {
+      "value": "Do not confuse this campsite with Hotel Laugarvatn at Dalbraut 10 (+354 899 5409, stay@hotellaugarvatn.is / info@hotellaugarvatn.is), a separate hotel whose own site and ferdalag.is page describe rooms, not camping.",
+      "src": [
+        "hotel-own",
+        "hotel-ferdalag",
+        "ferdalag-winter"
+      ]
+    }
+  ],
+  "tours": [
+    "viator-golden-circle",
+    "gti-golden-circle",
+    "gti-northern-lights"
+  ]
+}
