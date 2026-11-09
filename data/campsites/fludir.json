@@ -1,0 +1,366 @@
+{
+  "slug": "fludir",
+  "name": "Flúðir Camping Centre (Tjaldmiðstöðin Flúðum)",
+  "alt_names": [
+    "Tjaldmiðstöðin Flúðum",
+    "Flúðir Camping Ground",
+    "Flúðir Campsite",
+    "Tjaldsvæðið Flúðum"
+  ],
+  "region": "south",
+  "town": "Flúðir",
+  "completeness": "full",
+  "checked": "2026-11-09",
+  "sources": {
+    "own-season": {
+      "title": "Tjaldmiðstöðin Flúðum – Camping Season (EN): May–September open every day; November to April closed",
+      "url": "https://www.tjaldmidstod.is/en/campingseason",
+      "checked": "2026-11-09"
+    },
+    "own-home": {
+      "title": "Tjaldmiðstöðin Flúðum – home page and FAQ (EN: 'May to October' banner; FAQ: open 1 May to 30 September, no pre-reservations)",
+      "url": "https://www.tjaldmidstod.is/en",
+      "checked": "2026-11-09"
+    },
+    "own-home-is": {
+      "title": "Tjaldmiðstöðin Flúðum – heimasíða (IS: 'Maí til oktober' banner; algengar spurningar: opið 1. maí til 30. september; 25 ára aldurstakmark)",
+      "url": "https://www.tjaldmidstod.is/",
+      "checked": "2026-11-09"
+    },
+    "own-prices": {
+      "title": "Tjaldmiðstöðin Flúðum – Price list (EN): adult 2,200, electricity 1,500, washer/dryer 600, free Wi-Fi in office house",
+      "url": "https://www.tjaldmidstod.is/en/pricelist",
+      "checked": "2026-11-09"
+    },
+    "own-rules": {
+      "title": "Tjaldmiðstöðin Flúðum – Campsite rules (EN)",
+      "url": "https://www.tjaldmidstod.is/en/campsiterules",
+      "checked": "2026-11-09"
+    },
+    "tjalda": {
+      "title": "Tjalda.is – Flúðir (API: 'Rates 2026', season May–October, coordinates, service tags)",
+      "url": "https://tjalda.is/en/campsite/fludir",
+      "checked": "2026-11-09"
+    },
+    "tjalda-api": {
+      "title": "Tjalda.is public API – Flúðir entry (season 1 May–31 Oct; services incl. waste disposal for mobile homes, showers, Wi-Fi, washing machine)",
+      "url": "https://tjalda.is/api/campsites",
+      "checked": "2026-11-09"
+    },
+    "ferdalag": {
+      "title": "Ferdalag.is – Flúðir Camping Ground (EN: tagged Camper winter service, Camping, Waste tank discharge)",
+      "url": "https://www.ferdalag.is/en/service/fludir-camping-ground",
+      "checked": "2026-11-09"
+    },
+    "ferdalag-is": {
+      "title": "Ferdalag.is – Tjaldmiðstöðin Flúðum (IS: dates 15/05–15/09, tagged winter service, losun skólptanka)",
+      "url": "https://www.ferdalag.is/is/thjonusta/fludir-camping-ground",
+      "checked": "2026-11-09"
+    },
+    "ferdalag-winter": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service list (Flúðir Camping Ground listed)",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-11-09"
+    },
+    "utilegukort": {
+      "title": "Útilegukortið (Camping Card) – Opening dates of participating camping sites 2026 (Flúðir not listed)",
+      "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en",
+      "checked": "2026-11-09"
+    },
+    "utilegukort-south": {
+      "title": "Útilegukortið – South Iceland camping sites directory (Flúðir not listed)",
+      "url": "https://utilegukortid.is/flokkur/camping-sites/south-iceland/?lang=en",
+      "checked": "2026-11-09"
+    }
+  },
+  "intro": {
+    "value": "A large riverside campsite on the banks of Litla Laxá in Flúðir (Hrunamannahreppur), about 100 km from the Reykjavík area, run from the Camping Centre (Tjaldmiðstöðin). It has service buildings with toilets and showers, laundry, free Wi-Fi in the service building, water and electricity across most of the site, outdoor barbecues and a playground, and the village's shop, restaurants and swimming pool are within walking distance. It is a summer campsite: the operator's own season page says May–September open and November–April closed, so plan other options for winter.",
+    "src": [
+      "own-season",
+      "own-home",
+      "own-prices",
+      "tjalda",
+      "ferdalag-is"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Tjaldmiðstöðin, 845 Flúðir, Hrunamannahreppur",
+      "src": [
+        "own-home",
+        "tjalda",
+        "ferdalag-is"
+      ],
+      "note": "No street address is published; tjalda.is gives the address as 'Flúðir', postcode 845. The campsite is within walking distance of the village centre."
+    },
+    "lat": 64.137569,
+    "lon": -20.327129,
+    "coords_src": [
+      "own-home"
+    ]
+  },
+  "season": {
+    "value": "Summer only. The operator's own Camping Season page (EN) lists May, June, July, August and September as open every day (night service on weekends or when needed), and November to April as closed; the FAQ on both language versions says 'open 1 May to 30 September'. The EN home page banner and tjalda.is say 'May to October' (tjalda.is: 1 May – 31 October), and ferdalag.is's Icelandic page shows 15 May – 15 September. The operator also warns that early-summer conditions are weather-dependent, so some facilities and areas may be limited or temporarily unavailable. October is not covered by the season page, so call before relying on it.",
+    "src": [
+      "own-season",
+      "own-home",
+      "own-home-is",
+      "tjalda-api",
+      "ferdalag-is"
+    ]
+  },
+  "winter": {
+    "status": "closed",
+    "value": "Closed in winter. The campsite's own Camping Season page says 'November to April: Closed', and its FAQ gives 1 May – 30 September; tjalda.is gives May – October. Ferdalag.is nevertheless tags the campsite 'Camper winter service' and includes it on its camper winter service list, but its own Icelandic page for the same campsite gives 15 May – 15 September, so that tag conflicts with the operator and is not relied on here. Nobody publishes winter hours or winter facilities. In winter, use a campsite that publishes a year-round season instead (see the Golden Circle winter guide).",
+    "src": [
+      "own-season",
+      "own-home",
+      "tjalda-api",
+      "ferdalag",
+      "ferdalag-is",
+      "ferdalag-winter"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates (the operator's price list; tjalda.is carries the same figures labelled 'Rates 2026'). Fees are per person per night and are paid on arrival at the Camping Centre.",
+      "src": [
+        "own-prices",
+        "tjalda"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult per night (single nights)",
+        "value": "2,200 ISK",
+        "src": [
+          "own-prices",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Adult per night (3 nights or longer)",
+        "value": "1,800 ISK",
+        "src": [
+          "own-prices",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Children 11–17 per night",
+        "value": "1,500 ISK",
+        "src": [
+          "own-prices",
+          "tjalda"
+        ],
+        "note": "1,200 ISK per night for stays of 3 nights or longer."
+      },
+      {
+        "label": "Children 10 and under",
+        "value": "Free",
+        "src": [
+          "own-prices",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Senior citizens per night",
+        "value": "1,750 ISK",
+        "src": [
+          "own-prices",
+          "tjalda"
+        ],
+        "note": "1,500 ISK per night for stays of 3 nights or longer."
+      },
+      {
+        "label": "People with disabilities per night",
+        "value": "1,750 ISK",
+        "src": [
+          "own-prices",
+          "tjalda"
+        ],
+        "note": "1,500 ISK per night for stays of 3 nights or longer."
+      },
+      {
+        "label": "Electricity per night",
+        "value": "1,500 ISK",
+        "src": [
+          "own-prices",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Washing machine per use",
+        "value": "600 ISK",
+        "src": [
+          "own-prices",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Tumble dryer per use",
+        "value": "600 ISK",
+        "src": [
+          "own-prices",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Weekly offer (two adults and children with electricity, one unit)",
+        "value": "25,000 ISK",
+        "src": [
+          "own-prices",
+          "tjalda"
+        ]
+      },
+      {
+        "label": "Commerce Day weekend (Verslunarmannahelgi) week pass, adult",
+        "value": "8,000 ISK",
+        "src": [
+          "own-prices",
+          "tjalda"
+        ],
+        "note": "Only week passes (up to seven nights) are sold that weekend. Children 5,000 ISK; disabled 7,000 ISK (tjalda.is 'Rates 2026'); electricity 1,500 ISK per day. The operator's price page gives the 2025 dates (27 July – 3 August); the 2026 dates are not stated."
+      },
+      {
+        "label": "Lodging tax per unit per night",
+        "value": null,
+        "note": "Not listed on the operator's price list or tjalda.is."
+      },
+      {
+        "label": "Showers",
+        "value": null,
+        "note": "Showers are listed as a facility, but neither the price list nor tjalda.is says whether they are free or charged."
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes – water and electricity are available across most of the site (ferdalag.is IS page, tjalda.is). Electricity costs 1,500 ISK per night, paid separately. Number of hook-ups and socket type are not published.",
+      "src": [
+        "own-prices",
+        "tjalda",
+        "ferdalag-is",
+        "own-rules"
+      ],
+      "has": "yes"
+    },
+    "kitchen": {
+      "value": null,
+      "note": "No indoor guest kitchen is described by the operator, tjalda.is or ferdalag.is, but none is explicitly ruled out either. They list large outdoor barbecue areas."
+    },
+    "showers": {
+      "value": "Yes – service buildings with toilets and showers (ferdalag.is, tjalda.is service tag Shower). Whether showers are free or charged is not published.",
+      "src": [
+        "tjalda",
+        "tjalda-api",
+        "ferdalag-is"
+      ],
+      "has": "yes"
+    },
+    "toilets": {
+      "value": "Yes – several service buildings with toilets (ferdalag.is, tjalda.is).",
+      "src": [
+        "tjalda",
+        "ferdalag-is"
+      ]
+    },
+    "dump_station": {
+      "value": "Listed: ferdalag.is tags the campsite 'Waste tank discharge' and tjalda.is gives it the service tag 'Waste disposal for mobile homes'. The operator's rules say discharges from travel toilets may only take place in designated areas. The location of the disposal point and whether it takes cassette toilets are not published – ask at the Camping Centre.",
+      "src": [
+        "ferdalag",
+        "ferdalag-is",
+        "tjalda-api",
+        "own-rules"
+      ],
+      "has": "yes"
+    },
+    "wifi": {
+      "value": "Yes – free Wi-Fi in the service building / office house (the operator's price list); ferdalag.is also says there is Wi-Fi on the site.",
+      "src": [
+        "own-prices",
+        "tjalda",
+        "ferdalag-is"
+      ]
+    },
+    "laundry": {
+      "value": "Yes – washing machine and tumble dryer at the Camping Centre, 600 ISK per machine use.",
+      "src": [
+        "own-prices",
+        "tjalda",
+        "ferdalag-is"
+      ]
+    },
+    "camping_card": {
+      "value": "Not on the 2026 Útilegukortið (Camping Card) – Flúðir does not appear on the 2026 opening-dates list or the South Iceland participant directory (checked 2026-11-09), so pay the normal rates.",
+      "src": [
+        "utilegukort",
+        "utilegukort-south"
+      ]
+    },
+    "contact": {
+      "value": "+354 618 5005 · tjaldmidstod@fludir.is · www.tjaldmidstod.is",
+      "src": [
+        "own-home",
+        "own-home-is",
+        "tjalda",
+        "ferdalag-is"
+      ],
+      "note": "tjalda.is prints the phone as 6185005."
+    }
+  },
+  "practical": [
+    {
+      "value": "Age limit: 25 years unless accompanied by a guardian (operator's Icelandic page and price notice; tjalda.is; ferdalag.is). Children under 12 must be supervised by parents or guardians.",
+      "src": [
+        "own-home-is",
+        "own-rules",
+        "tjalda",
+        "ferdalag-is"
+      ]
+    },
+    {
+      "value": "No pre-booking: the operator says the site has no marked zones and spots cannot be reserved, but it is large and usually has space (its English FAQ says plenty of space on non-holiday weekends). The Commerce Day weekend is the exception: it is much busier and only week passes are sold.",
+      "src": [
+        "own-home",
+        "own-home-is",
+        "own-prices"
+      ]
+    },
+    {
+      "value": "Pay on arrival at the Camping Centre (the red house at the top of the site; ferdalag.is). It sells ice cream, soft drinks, charcoal and basic camping supplies, gas cylinders and refills, and has brochures about South Iceland (tjalda.is description).",
+      "src": [
+        "own-prices",
+        "ferdalag-is",
+        "tjalda"
+      ]
+    },
+    {
+      "value": "Rules (operator): speed limit 15 km/h on the site; unnecessary traffic and noise not allowed after 24:00; pets must be on a leash; travel-toilet discharge only in designated areas; breaking the rules can mean expulsion. tjalda.is's rules text also says vehicle traffic is not permitted 23:00–09:00 and quiet hours start at midnight.",
+      "src": [
+        "own-rules",
+        "tjalda"
+      ]
+    },
+    {
+      "value": "Nearby (own site's activities links and ferdalag.is): Flúðir swimming pool, Secret Lagoon, Kaffi Sel and golf course, Farmers Bistro, Minilik Ethiopian restaurant, Litla Melabúðin shop, football floor, guided walks in Hrunamannahreppur; Gullfoss and Geysir are a short drive.",
+      "src": [
+        "own-home",
+        "ferdalag-is"
+      ]
+    },
+    {
+      "value": "Long-term pitches: the operator takes long-term enquiries (one month or more for caravans or mobile homes) through its contact form and has separate rules for them.",
+      "src": [
+        "own-home",
+        "own-rules"
+      ]
+    }
+  ],
+  "tours": [
+    "viator-golden-circle",
+    "gti-golden-circle",
+    "gti-northern-lights"
+  ]
+}
