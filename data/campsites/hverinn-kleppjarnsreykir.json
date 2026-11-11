@@ -1,0 +1,296 @@
+{
+  "slug": "hverinn-kleppjarnsreykir",
+  "name": "Hverinn Campsite, Kleppjárnsreykir",
+  "alt_names": [
+    "Hverinn, Kleppjárnsreykjum",
+    "Hverinn Restaurant & Campsite",
+    "Tjaldsvæði Hversins"
+  ],
+  "region": "west",
+  "town": "Kleppjárnsreykir (Borgarfjörður)",
+  "completeness": "full",
+  "checked": "2026-11-11",
+  "sources": {
+    "own": {
+      "title": "Hverinn – home page (Icelandic: family-run restaurant, campsite and greenhouses; campsite facilities; contact; 'Vinnutími 10:00–20:00')",
+      "url": "https://www.hverinn.is/",
+      "checked": "2026-11-11"
+    },
+    "own-camp-en": {
+      "title": "Hverinn – Campsite price list 2026 (English)",
+      "url": "https://www.hverinn.is/camping_en",
+      "checked": "2026-11-11"
+    },
+    "own-camp-is": {
+      "title": "Hverinn – Verðlisti tjaldstæði 2026 (Icelandic price list)",
+      "url": "https://www.hverinn.is/camping_is",
+      "checked": "2026-11-11"
+    },
+    "tjalda": {
+      "title": "Tjalda.is – Hverinn, Kleppjárnsreykjum (Price List 2026, 'Open all year', services)",
+      "url": "https://tjalda.is/en/campsite/hverinn",
+      "checked": "2026-11-11"
+    },
+    "tjalda-api": {
+      "title": "Tjalda.is public API – Hverinn entry (opening text 'Open all year', GPS, service tags, drop-in only, no pre-booking)",
+      "url": "https://tjalda.is/api/campsites",
+      "checked": "2026-11-11"
+    },
+    "reisa": {
+      "title": "Reisa.is – Hverinn (Open all year, 60 of 80–100 spots with electricity, pay on arrival, 'Pricing for 2025')",
+      "url": "https://reisa.is/en/hverinn/",
+      "checked": "2026-11-11"
+    },
+    "ferdalag": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Hverinn service page, English (dates 01/04–30/09, 'Open in the summer', 100 places incl. 60 with electricity, sludge disposal)",
+      "url": "https://www.ferdalag.is/en/service/hverinn",
+      "checked": "2026-11-11"
+    },
+    "ferdalag-is": {
+      "title": "Ferdalag.is – Hverinn service page, Icelandic (60 pitches with 3.3 kW electricity with RCD; seyrulosun; pool 150 m away)",
+      "url": "https://www.ferdalag.is/is/thjonusta/hverinn",
+      "checked": "2026-11-11"
+    },
+    "ferdalag-winter": {
+      "title": "Ferdalag.is – Camper winter service list (Hverinn not listed)",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-11-11"
+    },
+    "utilegukort": {
+      "title": "Útilegukortið (Camping Card) – Opening dates of participating camping sites 2026 (Hverinn not listed)",
+      "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en",
+      "checked": "2026-11-11"
+    }
+  },
+  "intro": {
+    "value": "A family-run restaurant, campsite and geothermal greenhouse at Kleppjárnsreykir on Route 50 (Borgarfjarðarbraut) in Borgarfjörður, West Iceland, about 25 minutes' drive from Borgarnes towards Húsafell. The sheltered, shrub-lined site takes tents, campervans, motorhomes and caravans, sits next to the local school and the Kleppjárnsreykir swimming pool, and the restaurant is known for its soup buffet made from vegetables grown in its own greenhouses. Krauma geothermal baths, Snorrastofa in Reykholt and The Cave (Víðgelmir) are named by the operator as nearby sights.",
+    "src": [
+      "own",
+      "tjalda-api",
+      "reisa"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Kleppjárnsreykir, 320 Reykholt í Borgarfirði (on Route 50, Borgarfjarðarbraut)",
+      "src": [
+        "tjalda-api",
+        "reisa",
+        "ferdalag"
+      ]
+    },
+    "lat": 64.655667,
+    "lon": -21.402508,
+    "coords_src": [
+      "tjalda-api"
+    ]
+  },
+  "season": {
+    "value": "Sources conflict. tjalda.is and reisa.is both say 'Open all year'; ferdalag.is gives 01/04–30/09 and tags it 'Open in the summer'. The operator's own price list says only 'Open for travelers' and gives no season.",
+    "src": [
+      "tjalda-api",
+      "reisa",
+      "ferdalag",
+      "own-camp-en"
+    ],
+    "note": "The restaurant's published hours are 10:00–20:00 (own home page); whether these apply all year is not stated."
+  },
+  "winter": {
+    "status": "call-ahead",
+    "value": "Call ahead. tjalda.is and reisa.is list the campsite as open all year (reisa.is showed it as OPEN for 10–11 November 2026 when checked), but ferdalag.is gives a 1 April – 30 September season, the operator's own site states no season, and Hverinn is not on ferdalag.is's camper winter service list (checked 2026-11-11). No source describes winter service: whether the heated toilets, showers, hook-ups, water and the sludge disposal point work in winter, and whether the restaurant (where you pay) is open, are not published. Phone +354 820 1310 or email birgir@isa.is before you drive there.",
+    "src": [
+      "tjalda-api",
+      "reisa",
+      "ferdalag",
+      "ferdalag-winter",
+      "own",
+      "own-camp-en"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates (operator's 'Campsite price list 2026'; tjalda.is 'Price List 2026' gives the same camping fees). Fees are per person per day; pay on arrival.",
+      "src": [
+        "own-camp-en",
+        "own-camp-is",
+        "tjalda-api"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult per night",
+        "value": "2,200 ISK",
+        "src": [
+          "own-camp-en",
+          "own-camp-is",
+          "tjalda",
+          "tjalda-api"
+        ]
+      },
+      {
+        "label": "Senior citizen / disabled guest per night",
+        "value": "1,900 ISK",
+        "src": [
+          "own-camp-en",
+          "own-camp-is",
+          "tjalda-api"
+        ]
+      },
+      {
+        "label": "Children under 16",
+        "value": "Free",
+        "src": [
+          "own-camp-en",
+          "own-camp-is",
+          "tjalda-api"
+        ],
+        "note": "tjalda.is words it as '15 years and younger'."
+      },
+      {
+        "label": "Electricity per night",
+        "value": "1,500 ISK",
+        "src": [
+          "own-camp-en",
+          "own-camp-is",
+          "tjalda-api"
+        ],
+        "note": "Icelandic price list: per 24 hours (sólarhring)."
+      },
+      {
+        "label": "Lodging tax per unit per night",
+        "value": "400 ISK",
+        "src": [
+          "own-camp-en",
+          "own-camp-is",
+          "tjalda-api"
+        ]
+      },
+      {
+        "label": "Washing machine / dryer",
+        "value": "800 ISK per load",
+        "src": [
+          "own-camp-en",
+          "own-camp-is"
+        ],
+        "note": "Conflict: tjalda.is 2026 lists 1,000 ISK per use for the washing machine and 1,000 ISK per use for the dryer."
+      },
+      {
+        "label": "Showers",
+        "value": null,
+        "note": "Showers are listed by the operator, tjalda.is and ferdalag.is, but no source on the operator's or tjalda.is price list says whether they are included or charged."
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes – 1,500 ISK per night. ferdalag.is (Icelandic page) says 60 of the 100 pitches have 3.3 kW electricity with a residual-current breaker; reisa.is also says 60 spots have plugs, while tjalda.is says electricity is available on all sites. Socket type and winter availability: not published.",
+      "src": [
+        "own-camp-en",
+        "ferdalag-is",
+        "reisa",
+        "tjalda-api"
+      ],
+      "has": "yes"
+    },
+    "kitchen": {
+      "value": null,
+      "note": "No campers' kitchen is described by the operator, tjalda.is, reisa.is or ferdalag.is. ferdalag.is mentions a shared kitchen only for guests renting the rooms, and an outdoor barbecue; the on-site restaurant serves food."
+    },
+    "showers": {
+      "value": "Yes – showers in heated service buildings (operator; tjalda.is; ferdalag.is). Fee not stated.",
+      "src": [
+        "own",
+        "tjalda-api",
+        "ferdalag"
+      ],
+      "has": "yes"
+    },
+    "toilets": {
+      "value": "Yes – heated toilets, hot and cold running water (operator home page; tjalda.is).",
+      "src": [
+        "own",
+        "tjalda-api"
+      ]
+    },
+    "dump_station": {
+      "value": "Yes – the operator lists a chemical waste disposal point and fresh water; ferdalag.is lists sludge disposal for campers (seyrulosun) and tjalda.is lists 'Waste disposal for mobile homes'. Exact location and winter use are not published.",
+      "src": [
+        "own",
+        "ferdalag",
+        "ferdalag-is",
+        "tjalda-api"
+      ],
+      "has": "yes"
+    },
+    "wifi": {
+      "value": null,
+      "note": "Wi-Fi is not mentioned by the operator, tjalda.is, reisa.is or ferdalag.is."
+    },
+    "laundry": {
+      "value": "Washing machine and dryer, 800 ISK per load (operator 2026; tjalda.is says 1,000 ISK per use each).",
+      "src": [
+        "own-camp-en",
+        "tjalda-api",
+        "ferdalag"
+      ]
+    },
+    "camping_card": {
+      "value": "Not on the 2026 Útilegukortið (Camping Card) – Hverinn does not appear on the 2026 opening-dates list (checked 2026-11-11), so pay the normal rates.",
+      "src": [
+        "utilegukort"
+      ]
+    },
+    "contact": {
+      "value": "+354 820 1310 · birgir@isa.is (operator, tjalda.is, reisa.is). ferdalag.is gives +354 625 8888.",
+      "src": [
+        "own",
+        "tjalda-api",
+        "reisa",
+        "ferdalag"
+      ]
+    }
+  },
+  "practical": [
+    {
+      "value": "No advance bookings for individual travellers: just turn up and pay on arrival inside the restaurant building, or with the QR code shown in the restaurant window. Only larger groups and family reunions book ahead (by email).",
+      "src": [
+        "own-camp-en",
+        "tjalda-api",
+        "reisa"
+      ]
+    },
+    {
+      "value": "Age limit: guests generally must be over 20 unless accompanied by an adult. No unnecessary traffic or noise after midnight.",
+      "src": [
+        "own-camp-en",
+        "own-camp-is"
+      ]
+    },
+    {
+      "value": "Campsite guests get 15% off at Krauma geothermal baths (discount cards in the restaurant building), and the restaurant sells single tickets to the Kleppjárnsreykir swimming pool next door (check its opening hours).",
+      "src": [
+        "own-camp-en",
+        "own-camp-is"
+      ]
+    },
+    {
+      "value": "The school playground, football field and basketball court next to the site are available to guests over the summer (operator text on tjalda.is / reisa.is).",
+      "src": [
+        "tjalda-api",
+        "reisa"
+      ]
+    },
+    {
+      "value": "Besides pitches, Hverinn rents geothermally heated 'hobbit houses' (plastic-covered greenhouse tents for small tents), double rooms with a shared kitchen and a 42 m² apartment (ferdalag.is). Seasonal vegetables from the greenhouses are sometimes sold on site.",
+      "src": [
+        "ferdalag",
+        "ferdalag-is",
+        "own"
+      ]
+    }
+  ],
+  "tours": [
+    "gti-northern-lights"
+  ]
+}
