@@ -1,0 +1,295 @@
+{
+  "slug": "stykkisholmur",
+  "name": "Stykkishólmur Campsite",
+  "alt_names": [
+    "Tjaldsvæði Stykkishólms",
+    "Tjaldsvæðið Stykkishólmi",
+    "Stykkishólmur Camping ground"
+  ],
+  "region": "west",
+  "town": "Stykkishólmur (Snæfellsnes)",
+  "completeness": "full",
+  "checked": "2026-11-12",
+  "sources": {
+    "muni": {
+      "title": "Sveitarfélagið Stykkishólmur – Tjaldsvæði Stykkishólms (municipality campsite page: 'Tjaldsvæðið er opið allt árið', reception in the Mostri golf clubhouse)",
+      "url": "https://www.stykkisholmur.is/is/mannlif/afthreying/tjaldsvaedi",
+      "checked": "2026-11-12"
+    },
+    "muni-prices": {
+      "title": "Sveitarfélagið Stykkishólmur – Gjaldskrá tjaldsvæðis 2026 (campsite price list approved by the town council 11 December 2025, PDF)",
+      "url": "https://www.stykkisholmur.is/static/files/gjaldskrar/2026/tjaldsvaedi.pdf",
+      "checked": "2026-11-12"
+    },
+    "own": {
+      "title": "Golfklúbburinn Mostri (operator) – Tjaldsvæðið: facilities, year-round opening, service house closes in September, clubhouse toilets open all year, card terminal / honesty payment",
+      "url": "https://www.mostri.is/tjaldsv%C3%A6%C3%B0i/tjaldsv%C3%A6%C3%B0i%C3%B0",
+      "checked": "2026-11-12"
+    },
+    "tjalda": {
+      "title": "Tjalda.is – Stykkishólmur ('Rates 2026', open year-round, service tags)",
+      "url": "https://tjalda.is/en/campsite/stykkisholmur",
+      "checked": "2026-11-12"
+    },
+    "tjalda-api": {
+      "title": "Tjalda.is public API – Stykkishólmur entry (opening text, Rates 2026, GPS, service tags, drop-in only, not bookable)",
+      "url": "https://tjalda.is/api/campsites",
+      "checked": "2026-11-12"
+    },
+    "ferdalag": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Stykkishólmur Camping ground, English ('Open all year', toilets, free outdoor showers, toilet emptying, electricity boards, Wi-Fi hot-spot)",
+      "url": "https://www.ferdalag.is/en/service/tjaldsvaedid-stykkisholmi",
+      "checked": "2026-11-12"
+    },
+    "ferdalag-is": {
+      "title": "Ferdalag.is – Tjaldsvæðið Stykkishólmi, Icelandic (14 toilets, outdoor sinks for dishes, adapters for the electricity boards from the wardens, laundry paid per load)",
+      "url": "https://www.ferdalag.is/is/thjonusta/tjaldsvaedid-stykkisholmi",
+      "checked": "2026-11-12"
+    },
+    "ferdalag-winter": {
+      "title": "Ferdalag.is – Camper winter service list (Stykkishólmur not listed)",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-11-12"
+    },
+    "utilegukort": {
+      "title": "Útilegukortið (Camping Card) – Opening dates of participating camping sites 2026 (Stykkishólmur not listed)",
+      "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en",
+      "checked": "2026-11-12"
+    }
+  },
+  "intro": {
+    "value": "The town campsite of Stykkishólmur, on the north side of the Snæfellsnes peninsula in West Iceland. It lies inside the town next to the 9-hole Víkurvöllur golf course, the sports field, the swimming pool and the primary school, and the shops, bakery, restaurants and fuel station are within walking distance (about 5 minutes to the pool). The town owns the site and the Mostri golf club runs it, with the reception in the golf clubhouse. Stykkishólmur is the port for boat trips around Breiðafjörður and the ferry to Flatey, and a common base for driving around Snæfellsnes.",
+    "src": [
+      "muni",
+      "own",
+      "tjalda-api",
+      "ferdalag"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Aðalgata 29, 340 Stykkishólmur (the golf club's own address is Vatnsás 18)",
+      "src": [
+        "muni",
+        "ferdalag",
+        "own"
+      ]
+    },
+    "lat": 65.070909,
+    "lon": -22.731467,
+    "coords_src": [
+      "tjalda-api"
+    ]
+  },
+  "season": {
+    "value": "Open all year (municipality, operator, tjalda.is and ferdalag.is all agree). Staffed only in summer: the operator says the reception in the golf clubhouse is open from about 15 May to the end of August, 08:00–22:00, and the service house closes in September and reopens in mid-May.",
+    "src": [
+      "muni",
+      "own",
+      "tjalda-api",
+      "ferdalag"
+    ],
+    "note": "Staffed hours differ between sources: tjalda.is says weekends only 10:00–14:00 or 16:00 in the early season (about 15 May to June) and daily 08:30–22:00 from 1 June to 15 August / until the end of August; ferdalag.is says wardens are usually there 8:00–22:00."
+  },
+  "winter": {
+    "status": "open",
+    "value": "Open in winter, unstaffed. The municipality, the operator, tjalda.is and ferdalag.is all say the campsite is open all year. Outside summer the service house (with the outdoor showers) is closed – it closes in September and reopens in mid-May – but the toilets in the golf clubhouse are open all year, and when the clubhouse is closed you pay at a card terminal on site on an honesty basis (operator; tjalda.is describes a self-service payment station). Not on ferdalag.is's camper winter service list (checked 2026-11-12). Whether electricity, water taps, the toilet-emptying point and showers work in winter is not published.",
+    "src": [
+      "muni",
+      "own",
+      "tjalda-api",
+      "ferdalag",
+      "ferdalag-winter"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates (town price list approved 11 December 2025; tjalda.is 'Rates 2026' gives the same amounts). Lodging tax is not included and is charged per unit.",
+      "src": [
+        "muni-prices",
+        "tjalda-api"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult (16+) per night",
+        "value": "2,000 ISK",
+        "src": [
+          "muni-prices",
+          "tjalda",
+          "tjalda-api"
+        ]
+      },
+      {
+        "label": "Senior citizen / disabled guest per night",
+        "value": "1,400 ISK",
+        "src": [
+          "muni-prices",
+          "tjalda-api"
+        ]
+      },
+      {
+        "label": "Children 15 and under",
+        "value": "Free",
+        "src": [
+          "muni-prices",
+          "tjalda-api"
+        ]
+      },
+      {
+        "label": "Multi-night package per adult",
+        "value": "2 nights 3,000 · 3 nights 3,600 · 4 nights 5,000 · 5 nights 6,000 · 6 nights 7,000 · 1 week 8,000 ISK",
+        "src": [
+          "muni-prices",
+          "tjalda-api"
+        ],
+        "note": "The town price list words these as days (dvöl / dagar); tjalda.is lists 2–5 nights only and says longer stays are by arrangement."
+      },
+      {
+        "label": "Electricity per night",
+        "value": "1,400 ISK",
+        "src": [
+          "muni-prices",
+          "tjalda-api"
+        ]
+      },
+      {
+        "label": "Lodging tax per unit (tent/motorhome) per night",
+        "value": "400 ISK",
+        "src": [
+          "muni-prices",
+          "tjalda-api"
+        ]
+      },
+      {
+        "label": "Showers",
+        "value": "Free",
+        "src": [
+          "ferdalag",
+          "ferdalag-is",
+          "tjalda-api"
+        ],
+        "note": "Two outdoor hot-water showers at the service house, which is closed from September to mid-May."
+      },
+      {
+        "label": "Washing machine / dryer",
+        "value": null,
+        "note": "Charged separately per load (ferdalag.is), but no source publishes the price."
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes – 1,400 ISK per night. Electricity boards are spread around the site; a special adapter is needed to connect and is available from the wardens (ferdalag.is, Icelandic page). Number of hook-ups, amperage and winter availability: not published.",
+      "src": [
+        "muni-prices",
+        "ferdalag-is",
+        "ferdalag",
+        "own",
+        "tjalda-api"
+      ],
+      "has": "yes"
+    },
+    "kitchen": {
+      "value": null,
+      "note": "No indoor campers' kitchen is described. tjalda.is says guests have access to 'cooking facilities' and tags 'Dishwashing facilities'; ferdalag.is (Icelandic) mentions only outdoor sinks for washing dishes; the operator's facility list does not mention a kitchen."
+    },
+    "showers": {
+      "value": "Yes – two outdoor showers with hot water at the service house, free for campsite guests (ferdalag.is; tjalda.is). The service house is closed from September to mid-May (operator), so showers are probably not available in winter; the swimming pool is about 5 minutes' walk away.",
+      "src": [
+        "ferdalag",
+        "ferdalag-is",
+        "tjalda-api",
+        "own"
+      ],
+      "has": "yes"
+    },
+    "toilets": {
+      "value": "Yes – 14 flush toilets in two places, the service house and the golf clubhouse, with hot and cold water at the washbasins (ferdalag.is). The clubhouse toilets are open all year (operator).",
+      "src": [
+        "ferdalag",
+        "ferdalag-is",
+        "own"
+      ]
+    },
+    "dump_station": {
+      "value": "Yes – ferdalag.is says there is a facility to empty and clean campervan toilets and lists waste tank discharge; tjalda.is lists 'Waste disposal for mobile homes'. Water taps for filling cans (ferdalag.is). Exact location and winter use are not published.",
+      "src": [
+        "ferdalag",
+        "tjalda-api"
+      ],
+      "has": "yes"
+    },
+    "wifi": {
+      "value": "ferdalag.is says the campsite is a wireless hot-spot. Not mentioned by the operator or tjalda.is.",
+      "src": [
+        "ferdalag",
+        "ferdalag-is"
+      ]
+    },
+    "laundry": {
+      "value": "Washing machine and dryer in the golf clubhouse, paid separately per load to the wardens (operator; ferdalag.is; tjalda.is). Price not published.",
+      "src": [
+        "own",
+        "ferdalag-is",
+        "tjalda-api"
+      ]
+    },
+    "camping_card": {
+      "value": "Not on the 2026 Útilegukortið (Camping Card) – Stykkishólmur does not appear on the 2026 opening-dates list (checked 2026-11-12), so pay the normal rates.",
+      "src": [
+        "utilegukort"
+      ]
+    },
+    "contact": {
+      "value": "+354 853 1075 · postur@mostri.is (municipality, operator, tjalda.is, ferdalag.is).",
+      "src": [
+        "muni",
+        "own",
+        "tjalda-api",
+        "ferdalag"
+      ]
+    }
+  },
+  "practical": [
+    {
+      "value": "No pre-booking: tjalda.is lists the site as drop-in only. In summer you pay at the golf clubhouse; when it is closed there is a card terminal on site and the operator relies on guests' honesty.",
+      "src": [
+        "tjalda-api",
+        "own",
+        "muni"
+      ]
+    },
+    {
+      "value": "Multi-night packages make longer stays cheaper: one adult pays 2,000 ISK for one night but 3,600 ISK for three nights, plus 400 ISK lodging tax per unit per night.",
+      "src": [
+        "muni-prices",
+        "tjalda-api"
+      ]
+    },
+    {
+      "value": "Golf clubs can be rented for the 9-hole Víkurvöllur course next to the campsite (operator; tjalda.is).",
+      "src": [
+        "own",
+        "tjalda-api"
+      ]
+    },
+    {
+      "value": "Things to do named by the operator: a drive around Snæfellsnes, day trips to Flatey, the town museums, kayaking, Breiðafjörður boat trips to see the islands and birdlife, and the short walk up Súgandisey island for the view over the bay.",
+      "src": [
+        "own",
+        "tjalda-api"
+      ]
+    },
+    {
+      "value": "Dogs are allowed (ferdalag.is).",
+      "src": [
+        "ferdalag"
+      ]
+    }
+  ],
+  "tours": [
+    "gti-northern-lights"
+  ]
+}
