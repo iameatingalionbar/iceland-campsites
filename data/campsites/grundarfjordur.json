@@ -1,0 +1,72 @@
+{
+  "slug": "grundarfjordur",
+  "name": "Grundarfjörður Campsite",
+  "alt_names": ["Tjaldsvæði Grundarfjarðar", "Tjaldsvæðið Grundarfirði", "Grundarfjörður Camping Ground"],
+  "region": "west",
+  "town": "Grundarfjörður (Snæfellsnes)",
+  "completeness": "full",
+  "checked": "2026-11-13",
+  "sources": {
+    "muni": {"title": "Grundarfjarðarbær (municipality) – Tjaldsvæði Grundarfjarðar, Icelandic (winter service, Camping Card 2026 member, warden contact, 'Gjaldskrá tjaldsvæðis (gildir 2026)')", "url": "https://www.grundarfjordur.is/is/thjonusta/ferdathjonusta/tjaldstaedi", "checked": "2026-11-13"},
+    "muni-en": {"title": "Grundarfjörður municipality – Grundarfjörður Campsite, English ('open all year round with less service in Winter', Rates 2026)", "url": "https://www.grundarfjordur.is/is/eng/tourism/grundarfjordur-camp-site", "checked": "2026-11-13"},
+    "parka": {"title": "Parka.is – Grundarfjörður campsite page ('Vetraropnun 26. september – 1. maí 2027': toilets and electricity only, park on gravel pitches, pay with the Parka app, pool showers not included; facility tags; price box)", "url": "https://www.parka.is/grundarfjordur/", "checked": "2026-11-13"},
+    "tjalda": {"title": "Tjalda.is – Grundarfjörður ('Rates 2026', open all year)", "url": "https://tjalda.is/en/campsite/grundarfjordur", "checked": "2026-11-13"},
+    "tjalda-api": {"title": "Tjalda.is public API – Grundarfjörður entry (open all year, Rates 2026, GPS, service tags, drop-in only)", "url": "https://tjalda.is/api/campsites", "checked": "2026-11-13"},
+    "ferdalag": {"title": "Ferdalag.is (Icelandic Tourist Board) – Grundarfjörður Camping Ground, English ('Open all year', less service in winter, waste tank discharge)", "url": "https://www.ferdalag.is/en/service/tjaldsvaedid-grundarfirdi", "checked": "2026-11-13"},
+    "ferdalag-is": {"title": "Ferdalag.is – Tjaldsvæðið Grundarfirði, Icelandic ('Vetrarþjónusta', losun skólptanka)", "url": "https://www.ferdalag.is/is/thjonusta/tjaldsvaedid-grundarfirdi", "checked": "2026-11-13"},
+    "ferdalag-winter": {"title": "Ferdalag.is – Camper winter service list (Grundarfjörður not listed)", "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service", "checked": "2026-11-13"},
+    "utilegukort": {"title": "Útilegukortið (Camping Card) – Opening dates of participating camping sites 2026 (Grundarfjörður 1 May – 15 September)", "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en", "checked": "2026-11-13"},
+    "utilegukort-site": {"title": "Útilegukortið – Grundarfjörður campsite page (five camping areas, ridge area suited to campervans, open 1 May – 15 September for the card, 178 km from Reykjavík)", "url": "https://utilegukortid.is/grundarfjordur/?lang=en", "checked": "2026-11-13"}
+  },
+  "intro": {
+    "value": "The town campsite of Grundarfjörður, on the north side of the Snæfellsnes peninsula in West Iceland, run by the municipality. It sits on the upper edge of town with views over the fjord and the mountains, and Kirkjufell can be seen from the site. It is split into five smaller areas; the Camping Card describes the one on the ridge above the football pitch as well suited to campervans and larger trailers. The swimming pool, playground and sports ground are next door, and shops, cafés, restaurants, fuel and the harbour are about 10 minutes' walk away. About 178 km from Reykjavík.",
+    "src": ["muni", "muni-en", "utilegukort-site", "tjalda-api", "ferdalag"]
+  },
+  "location": {
+    "address": {"value": "Borgarbraut 19, 350 Grundarfjörður", "src": ["muni-en", "ferdalag", "parka", "utilegukort-site"]},
+    "lat": 64.920661,
+    "lon": -23.258444,
+    "coords_src": ["tjalda-api"]
+  },
+  "season": {
+    "value": "Open all year (municipality, tjalda.is, ferdalag.is and Parka.is agree), with reduced service in winter. Parka.is gives the 2026–27 winter period as 26 September 2026 – 1 May 2027.",
+    "src": ["muni", "muni-en", "tjalda-api", "ferdalag", "parka"],
+    "note": "The Camping Card is only valid here from 1 May to 15 September 2026. ferdalag.is also carries an 'Open in the summer' tag next to its 'Open all year' text, and Parka.is shows 'Opið: 15. Okt – 30. Sep' in its info box; neither is explained."
+  },
+  "winter": {
+    "status": "open",
+    "value": "Open in winter with reduced service. The municipality's own page describes a winter service: toilets at the campsite stay open and you can shower, for a fee, at the swimming pool next door during its opening hours. Parka.is (winter opening 26 September 2026 – 1 May 2027) says that in winter only the toilets and electricity are available, you park on the gravel pitches, pitches and electricity cannot be booked ahead, and payment is through the Parka app. Not on ferdalag.is's camper winter service list (checked 2026-11-13). Whether the dump point and water filling work in winter is not published.",
+    "src": ["muni", "muni-en", "parka", "ferdalag", "ferdalag-is", "ferdalag-winter", "tjalda-api"]
+  },
+  "prices": {
+    "applies_to": {"value": "2026 rates per night (municipality 'gildir 2026' price list; tjalda.is 'Rates 2026' gives the same amounts). Lodging tax is included in the price, except when the Camping Card is used (tjalda.is Icelandic text; Parka.is winter notes also say it is included).", "src": ["muni", "muni-en", "tjalda-api", "parka"]},
+    "currency": "ISK",
+    "items": [
+      {"label": "Adult per night", "value": "1,800 ISK", "src": ["muni", "muni-en", "tjalda", "tjalda-api"], "note": "Parka.is's price box shows 1,300 ISK for adults (17+) and 1,000 ISK for seniors/disabled without saying which period it covers; the municipality's 2026 list is used here."},
+      {"label": "Children under 16", "value": "Free", "src": ["muni", "muni-en", "tjalda-api"]},
+      {"label": "Senior citizen / disabled guest per night", "value": "1,300 ISK", "src": ["muni", "muni-en", "tjalda-api"]},
+      {"label": "Electricity per night", "value": "1,300 ISK", "src": ["muni", "muni-en", "tjalda-api", "parka"]},
+      {"label": "Longer-stay discount", "value": "15% off for a three-day stay, 25% off for a six-day stay", "src": ["muni", "muni-en", "tjalda-api"]},
+      {"label": "Showers (at the swimming pool)", "value": null, "note": "Not included in the campsite fee (municipality, ferdalag.is, Parka.is); no source on this site's list publishes the pool's shower or entry price."}
+    ]
+  },
+  "facts": {
+    "electricity": {"value": "Yes – 1,300 ISK per night. Parka.is says electricity is also available in winter. Number of hook-ups, amperage and socket type: not published.", "src": ["muni", "muni-en", "tjalda-api", "parka"], "has": "yes"},
+    "kitchen": {"value": null, "note": "No campers' kitchen is described. The municipality, ferdalag.is and tjalda.is mention only dishwashing facilities at the toilets in the two main areas."},
+    "showers": {"value": "No showers on the campsite itself – you can shower at the swimming pool next door during its opening hours, for a fee that is not included in the campsite price (municipality; ferdalag.is; Parka.is). Parka.is gives the pool's winter hours as Monday–Friday 07:00–08:00 and 15:00–21:00, Saturday 13:00–17:00 (Sunday not listed).", "src": ["muni", "muni-en", "ferdalag", "ferdalag-is", "parka"], "has": "nearby"},
+    "toilets": {"value": "Yes – toilets with wheelchair access in the two largest areas, open in winter too (municipality; Parka.is). Parka.is tags hot and cold water.", "src": ["muni", "muni-en", "ferdalag", "parka"]},
+    "dump_station": {"value": "Yes – ferdalag.is lists waste tank discharge (losun skólptanka) and Parka.is tags sludge disposal (seyrulosun) and water filling. Exact location, whether it takes cassette toilets, and winter use are not published.", "src": ["ferdalag", "ferdalag-is", "parka"], "has": "yes"},
+    "wifi": {"value": null, "note": "Not mentioned by the municipality, tjalda.is, ferdalag.is or Parka.is."},
+    "laundry": {"value": null, "note": "No washing machine or dryer is mentioned by any source."},
+    "camping_card": {"value": "Yes, in season – the municipality says the campsite is part of Útilegukortið (Camping Card) 2026, and the card's own list gives 1 May – 15 September. Outside those dates pay the normal rates. Lodging tax is not included when the card is used (tjalda.is).", "src": ["muni", "utilegukort", "utilegukort-site", "tjalda-api"]},
+    "contact": {"value": "+354 831 7242 · camping@grundarfjordur.is (warden: Kristín Halla Haraldsdóttir, per the municipality).", "src": ["muni", "muni-en", "tjalda-api", "ferdalag"]}
+  },
+  "practical": [
+    {"value": "No pre-booking: tjalda.is lists the site as drop-in only, and Parka.is says pitches and electricity cannot be booked ahead in winter. Payment for stays is handled in the Parka app (Parka.is winter notes).", "src": ["tjalda-api", "parka"]},
+    {"value": "In winter, park on the gravel pitches (Parka.is).", "src": ["parka"]},
+    {"value": "Next to the campsite: the swimming pool, a bouncy pillow and playground by the school, a football pitch and the town sports ground, and a 9-basket disc golf course just above the site. Bárarvöllur golf course is about 8 km away (municipality).", "src": ["muni", "ferdalag-is"]},
+    {"value": "Things to do named by the municipality and tjalda.is: walks by the sea and up into the mountains, kayaking, whale watching, sea angling, bird-watching boat trips and horse riding, with day trips to Flatey and around Snæfellsjökull National Park.", "src": ["muni-en", "tjalda-api", "ferdalag"]},
+    {"value": "Dogs are allowed (ferdalag.is).", "src": ["ferdalag"]}
+  ],
+  "tours": ["gti-northern-lights"]
+}
