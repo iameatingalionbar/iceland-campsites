@@ -1,177 +1,71 @@
 {
   "slug": "mosskogar",
   "name": "Mosskógar Campsite (Mosfellsdalur)",
+  "alt_names": ["Tjaldsvæði Mosskóga", "Tjaldsvæðið Mosskógar", "Mosskógar Camping"],
   "region": "capital-area",
   "town": "Mosfellsdalur, Mosfellsbær",
-  "completeness": "stub",
-  "checked": "2026-10-31",
+  "completeness": "full",
+  "checked": "2026-11-14",
   "sources": {
-    "tjalda": {
-      "title": "Tjalda.is – Mosskógar listing (2026 rates & services)",
-      "url": "https://tjalda.is/en/campsite/mosskogar",
-      "checked": "2026-10-31"
-    }
+    "tjalda": {"title": "Tjalda.is – Mosskógar listing ('Rates 2026', season text, services)", "url": "https://tjalda.is/en/campsite/mosskogar", "checked": "2026-11-14"},
+    "tjalda-api": {"title": "Tjalda.is public API – Mosskógar entry (Icelandic and English descriptions, 'Verðskrá 2026' / 'Rates 2026', 'Opið frá 1. mars – 1. desember', service tags, drop-in only, not bookable)", "url": "https://tjalda.is/api/campsites", "checked": "2026-11-14"},
+    "ferdalag": {"title": "Ferdalag.is (Icelandic Tourist Board) – Mosskógar Camping, English (operator text: campsite 1 March – 15 December; map pin)", "url": "https://www.ferdalag.is/en/service/tjaldsvaedid-mosskogar", "checked": "2026-11-14"},
+    "ferdalag-is": {"title": "Ferdalag.is – Tjaldsvæðið Mosskógar, Icelandic ('opið frá 1 Mars til 15 Desember', 'Opið allt árið' tag, tree-plant sales all year)", "url": "https://www.ferdalag.is/is/thjonusta/tjaldsvaedid-mosskogar", "checked": "2026-11-14"},
+    "ferdalag-winter": {"title": "Ferdalag.is – Camper winter service list (Mosskógar not listed)", "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service", "checked": "2026-11-14"},
+    "utilegukort": {"title": "Útilegukortið (Camping Card) – Opening dates of participating camping sites 2026 (Mosskógar not listed)", "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en", "checked": "2026-11-14"},
+    "osm": {"title": "OpenStreetMap – Mosskógar campsite (tourism=camp_site, Kirkjumór, Mosfellsdalur), used to cross-check the ferdalag.is map pin", "url": "https://www.openstreetmap.org/way/222003125", "checked": "2026-11-14"}
   },
   "intro": {
-    "value": "A quiet campsite in a sheltered grove in Mosfellsdalur valley, a short drive from Mosfellsbær on the edge of the capital area. Nearby are horse rental, a golf course, walking paths and Gljúfrasteinn, the museum of Nobel laureate Halldór Laxness.",
-    "src": [
-      "tjalda"
-    ]
+    "value": "A small family-run campsite on a market garden and tree nursery in Mosfellsdalur valley, about 17 km from central Reykjavík on the road towards Þingvellir and the Golden Circle. The pitches are split into sections surrounded by trees, which makes the site very sheltered, and it takes tents, folding campers, caravans and motorhomes. Instead of a classic kitchen block there is a greenhouse where guests can sit indoors, cook and eat, plus a covered area with tables and benches outside.",
+    "src": ["tjalda-api", "ferdalag"]
   },
   "location": {
-    "address": {
-      "value": "Mosskógar, 271 Mosfellsbær",
-      "src": [
-        "tjalda"
-      ]
-    },
-    "lat": null,
-    "lon": null,
-    "coords_src": []
+    "address": {"value": "Dalsgarður 1, 270 Mosfellsbær (ferdalag.is); tjalda.is gives 'Mosskógar, 271 Mosfellsbær'. The campsite is in Mosfellsdalur, off Route 36 (Þingvallavegur).", "src": ["ferdalag", "ferdalag-is", "tjalda-api", "osm"]},
+    "lat": 64.179055,
+    "lon": -21.618297,
+    "coords_src": ["ferdalag", "osm"]
   },
   "season": {
-    "value": "1 March – 1 December",
-    "src": [
-      "tjalda"
-    ]
+    "value": "Sources disagree on the closing date: tjalda.is says open 1 March – 1 December; the operator's text on ferdalag.is says the campsite runs 1 March – 15 December. Closed from mid-December to the end of February.",
+    "src": ["tjalda-api", "tjalda", "ferdalag", "ferdalag-is"],
+    "note": "ferdalag.is also shows an 'Open all year' tag, but its own text limits the campsite to 1 March – 15 December (the tree-plant sales run all year), and tjalda.is's 'open all year' flag conflicts with its own dates. We use the dates."
   },
   "winter": {
     "status": "partial",
-    "value": "Shoulder season only: tjalda.is gives 'Open from 1st of March to 1st of December' (its 'open all year' flag conflicts with that text, so we use the dates). Closed December – February.",
-    "src": [
-      "tjalda"
-    ]
+    "value": "Shoulder season only. Open in March, November and at least the first day of December, then closed until 1 March: tjalda.is gives 1 March – 1 December, the operator's text on ferdalag.is 1 March – 15 December, so 2–15 December is Unconfirmed – call ahead (+354 663 6173). No source describes a reduced winter service, and Mosskógar is not on ferdalag.is's camper winter service list (checked 2026-11-14). For January and February the nearest all-year option is Reykjavík Eco-Campsite.",
+    "src": ["tjalda-api", "ferdalag", "ferdalag-is", "ferdalag-winter"]
   },
   "prices": {
-    "applies_to": {
-      "value": "2026 rates",
-      "src": [
-        "tjalda"
-      ]
-    },
+    "applies_to": {"value": "2026 rates per night (tjalda.is 'Rates 2026'). Lodging tax is included in the adult price. No payment method is stated.", "src": ["tjalda-api", "tjalda"]},
     "currency": "ISK",
     "items": [
-      {
-        "label": "Adult (13 and older) per night, lodging tax included",
-        "value": "3,000 ISK",
-        "src": [
-          "tjalda"
-        ]
-      },
-      {
-        "label": "Children 12 and younger",
-        "value": "Free",
-        "src": [
-          "tjalda"
-        ]
-      },
-      {
-        "label": "Electricity per unit per night",
-        "value": "2,000 ISK",
-        "src": [
-          "tjalda"
-        ]
-      },
-      {
-        "label": "Washing machine per use",
-        "value": "1,500 ISK",
-        "src": [
-          "tjalda"
-        ]
-      },
-      {
-        "label": "Tumble dryer per use",
-        "value": "1,000 ISK",
-        "src": [
-          "tjalda"
-        ]
-      },
-      {
-        "label": "Showers",
-        "value": "Free",
-        "src": [
-          "tjalda"
-        ]
-      },
-      {
-        "label": "Camping in the greenhouse, per person per night",
-        "value": "4,000 ISK",
-        "src": [
-          "tjalda"
-        ]
-      }
+      {"label": "Adult (13 and older) per night, lodging tax included", "value": "3,000 ISK", "src": ["tjalda-api", "tjalda"]},
+      {"label": "Children 12 and younger", "value": "Free", "src": ["tjalda-api", "tjalda"]},
+      {"label": "Electricity per unit per night", "value": "2,000 ISK", "src": ["tjalda-api", "tjalda"]},
+      {"label": "Showers", "value": "Free", "src": ["tjalda-api", "tjalda"]},
+      {"label": "Wi-Fi", "value": "Free", "src": ["tjalda-api", "tjalda"]},
+      {"label": "Washing machine per use", "value": "1,500 ISK", "src": ["tjalda-api", "tjalda"]},
+      {"label": "Tumble dryer per use", "value": "1,000 ISK", "src": ["tjalda-api", "tjalda"]},
+      {"label": "Camping in the greenhouse, per person per night", "value": "4,000 ISK", "src": ["tjalda-api", "tjalda"]},
+      {"label": "Senior / disabled discount", "value": null, "note": "No separate rate is published."}
     ]
   },
   "facts": {
-    "electricity": {
-      "has": "yes",
-      "value": "Yes – 'several electricity plugs' (2,000 ISK per unit per night). Number of hook-ups: Unconfirmed.",
-      "src": [
-        "tjalda"
-      ]
-    },
-    "kitchen": {
-      "has": "yes",
-      "value": "Yes – a kitchenette guests can use to prepare, cook and eat a meal",
-      "src": [
-        "tjalda"
-      ]
-    },
-    "showers": {
-      "has": "yes",
-      "value": "Yes – free",
-      "src": [
-        "tjalda"
-      ]
-    },
-    "toilets": {
-      "value": "Flushing toilets; drinking water",
-      "src": [
-        "tjalda"
-      ]
-    },
-    "dump_station": {
-      "has": "yes",
-      "value": "Listed by tjalda.is as 'Waste disposal for mobile homes'. Whether it takes cassette toilets, and where it is: Unconfirmed.",
-      "src": [
-        "tjalda"
-      ]
-    },
-    "wifi": {
-      "value": "Free",
-      "src": [
-        "tjalda"
-      ]
-    },
-    "laundry": {
-      "value": "Washing machine 1,500 ISK and dryer 1,000 ISK per use",
-      "src": [
-        "tjalda"
-      ]
-    },
-    "camping_card": {
-      "value": null,
-      "note": "Not stated in the sources checked."
-    },
-    "contact": {
-      "value": "+354 663 6173 · mosskogar@simnet.is · facebook.com/mosskogar.johannsson",
-      "src": [
-        "tjalda"
-      ]
-    }
+    "electricity": {"value": "Yes – 'several electricity plugs', 2,000 ISK per unit per night. Number of hook-ups, amperage and socket type: not published.", "src": ["tjalda-api", "tjalda"], "has": "yes"},
+    "kitchen": {"value": "Yes – a greenhouse with space to sit indoors, cook and eat (tjalda.is Icelandic text; the English text calls it a kitchenette). Outside it there is seating and a large charcoal grill for guests, and a covered area with tables and benches for groups of up to 60. Equipment (hobs, utensils) is not listed.", "src": ["tjalda-api", "tjalda"], "has": "yes"},
+    "showers": {"value": "Yes – free", "src": ["tjalda-api", "tjalda"], "has": "yes"},
+    "toilets": {"value": "Flushing toilets, with hot and cold running water and drinking water", "src": ["tjalda-api", "tjalda"]},
+    "dump_station": {"value": "Yes – tjalda.is's Icelandic text says there is a disposal point for travel toilets ('Losunaraðstaða er fyrir ferðasalerni', i.e. cassette/chemical toilets), and its services list 'Waste disposal for mobile homes'. Exact location and grey-water disposal: not published.", "src": ["tjalda-api", "tjalda"], "has": "yes"},
+    "wifi": {"value": "Free", "src": ["tjalda-api", "tjalda"]},
+    "laundry": {"value": "Washing machine 1,500 ISK and tumble dryer 1,000 ISK per use", "src": ["tjalda-api", "tjalda"]},
+    "camping_card": {"value": "No – Mosskógar is not on the Camping Card (Útilegukortið) 2026 list of participating sites.", "src": ["utilegukort"]},
+    "contact": {"value": "+354 663 6173 · mosskogar@simnet.is · facebook.com/mosskogar.johannsson (no own website)", "src": ["tjalda-api", "ferdalag"]}
   },
   "practical": [
-    {
-      "value": "Drop-in guests are accepted; tjalda.is lists no pre-booking.",
-      "src": [
-        "tjalda"
-      ]
-    },
-    {
-      "value": "From the beginning of July there is a vegetable market every Saturday, 10:00–15:00.",
-      "src": [
-        "tjalda"
-      ]
-    }
-  ]
+    {"value": "Drop-in only: tjalda.is says it accepts drop-in guests, takes no pre-bookings and is not bookable through Parka.", "src": ["tjalda-api"]},
+    {"value": "Vegetable market on the farm every Saturday, 10:00–15:00, from the first weekend in July into autumn (ferdalag.is says to the end of September; its Icelandic page says July to October).", "src": ["tjalda-api", "ferdalag", "ferdalag-is"]},
+    {"value": "Nearby in Mosfellsdalur, per tjalda.is: Gljúfrasteinn (the Halldór Laxness museum), horse rental at Laxnes, Bakkakot golf course, a farm-animal park at Hraðastaðir and rose and strawberry sales at Dalsgarður. Swimming pools, grocery shops and Mosfellsbakarí bakery are a short drive away in Mosfellsbær.", "src": ["tjalda-api"]},
+    {"value": "Handy first or last night of a Golden Circle loop: the farm sits on the road to Þingvellir National Park, about 15 minutes' drive from central Reykjavík (operator text on ferdalag.is).", "src": ["ferdalag"]}
+  ],
+  "tours": ["gti-golden-circle", "viator-golden-circle"]
 }

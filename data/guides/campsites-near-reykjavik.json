@@ -22,11 +22,12 @@
    ]
   },
   {
-   "value": "Only Reykjavík Eco-Campsite is open all year, and from 15 October to 15 April only its Area A is open, for motorhomes and campervans. Mosskógar is open 1 March – 1 December, and Hafnarfjörður 15 May – 30 September.",
+   "value": "Only Reykjavík Eco-Campsite is open all year, and from 15 October to 15 April only its Area A is open, for motorhomes and campervans. Mosskógar is open from 1 March to 1 December (tjalda.is) or 15 December (operator text on ferdalag.is), and Hafnarfjörður 15 May – 30 September.",
    "src": [
     "reykjavik-eco-campsite:own-home",
     "reykjavik-eco-campsite:own-campsite",
     "mosskogar:tjalda",
+    "mosskogar:ferdalag",
     "hafnarfjordur:tjalda",
     "hafnarfjordur:reisa"
    ]
@@ -63,7 +64,7 @@
      ]
     },
     {
-     "value": "You need to empty a cassette toilet: Hafnarfjörður lists cassette-toilet disposal on site. Reykjavík Eco-Campsite has none and sends you to Klettagarðar 14, about 5 minutes' drive. Mosskógar lists 'waste disposal for mobile homes', but whether it takes cassettes is Unconfirmed.",
+     "value": "You need to empty a cassette toilet: Hafnarfjörður lists cassette-toilet disposal on site. Reykjavík Eco-Campsite has none and sends you to Klettagarðar 14, about 5 minutes' drive. Mosskógar has a disposal point for travel (cassette) toilets, according to tjalda.is; its exact location is not published.",
      "src": [
       "hafnarfjordur:reisa",
       "reykjavik-eco-campsite:own-home",
