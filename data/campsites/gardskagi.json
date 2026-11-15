@@ -1,150 +1,69 @@
 {
   "slug": "gardskagi",
   "name": "Garðskagi Campsite (lighthouses)",
+  "alt_names": ["Tjaldsvæðið á Garðskaga", "Airport Campsite – Garðskagi (name used on Parka.is)", "Garðskagi Point campsite"],
   "region": "reykjanes",
   "town": "Garður, Suðurnesjabær",
-  "completeness": "stub",
-  "checked": "2026-10-24",
+  "completeness": "full",
+  "checked": "2026-11-15",
   "sources": {
-    "tjalda": {
-      "title": "Tjalda.is – Garðskagi listing (2026 rates & services)",
-      "url": "https://tjalda.is/en/campsite/gardskagi",
-      "checked": "2026-10-24"
-    }
+    "tjalda": {"title": "Tjalda.is – Garðskagi listing ('Pricelist 2026', open all year)", "url": "https://tjalda.is/en/campsite/gardskagi", "checked": "2026-11-15"},
+    "tjalda-api": {"title": "Tjalda.is public API – Garðskagi entry (Icelandic + English texts, 'Verð 2026', GPS, service tags, drop-in + pre-booking flags)", "url": "https://tjalda.is/api/campsites", "checked": "2026-11-15"},
+    "own": {"title": "Garðskagi ehf (operator) – Campsite page ('open all year', 'Pricelist 2023')", "url": "https://www.gardskagi.com/campsite", "checked": "2026-11-15"},
+    "own-home": {"title": "Garðskagi ehf – home page (Röstin restaurant hours 17:00–20:30, 11 km from Keflavík Airport)", "url": "https://www.gardskagi.com/", "checked": "2026-11-15"},
+    "parka": {"title": "Parka.is – 'Airport Campsite - Garðskagi' campsite page (Icelandic description, info box 'Opið: 11. Jan - 31. Des', price box, facility tags; online booking not activated)", "url": "https://parka.is/garskagi-campsite/", "checked": "2026-11-15"},
+    "ferdalag-rostin": {"title": "Ferdalag.is (Icelandic Tourist Board) – Röstin Restaurant (open all year, weekly opening hours, 'There is also a campsite on Garðskagi')", "url": "https://www.ferdalag.is/en/service/rostin-restaurant", "checked": "2026-11-15"},
+    "ferdalag-winter": {"title": "Ferdalag.is – Camper winter service list (Garðskagi not listed)", "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service", "checked": "2026-11-15"},
+    "utilegukort": {"title": "Útilegukortið (Camping Card) – Opening dates of participating camping sites 2026 (Garðskagi not listed)", "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en", "checked": "2026-11-15"}
   },
   "intro": {
-    "value": "A low-service campsite on the coast between the two Garðskagi lighthouses at the tip of the Reykjanes Peninsula, next to Röstin restaurant and the Garðskagi museum.",
-    "src": [
-      "tjalda"
-    ]
+    "value": "A low-service campsite at Garðskagi Point, on the coast between the two Garðskagi lighthouses at the north-western tip of the Reykjanes Peninsula, with an open view over Faxaflói bay and the Atlantic. The operator calls it one of the best bird-watching spots in Iceland, says whales are often seen just offshore, and points to walking trails along the coast on both sides of the point. You get toilets, hot and cold water, an outdoor washing-up sink, a dump point and electricity – but no showers, laundry or indoor space. Next door are Röstin restaurant, the Garðskagi heritage and maritime museum and the big lighthouse with its northern lights and whale exhibitions. The operator puts it 11 km from Keflavík Airport.",
+    "src": ["own", "own-home", "tjalda-api", "parka", "ferdalag-rostin"]
   },
   "location": {
-    "address": {
-      "value": "Skagabraut 100, 250 Suðurnesjabær",
-      "src": [
-        "tjalda"
-      ]
-    },
+    "address": {"value": "Skagabraut 100, 250 Suðurnesjabær (Garður)", "src": ["tjalda-api", "parka", "ferdalag-rostin"]},
     "lat": 64.082316,
     "lon": -22.69122,
-    "coords_src": [
-      "tjalda"
-    ]
+    "coords_src": ["tjalda-api"]
   },
   "season": {
-    "value": "Open all year",
-    "src": [
-      "tjalda"
-    ]
+    "value": "Open all year (operator's own page, tjalda.is and the Parka.is description all say so; Parka.is also tags it 'Opið allt árið' and 'Vetraropnun').",
+    "src": ["own", "tjalda", "tjalda-api", "parka"],
+    "note": "The info box on Parka.is reads 'Opið: 11. Jan - 31. Des', which would leave 1–10 January out; no source explains it, so call ahead if you plan to stay in early January."
   },
   "winter": {
     "status": "open",
-    "value": "'The campsite is open all year' (tjalda.is). It is a low-service site: no showers or indoor space in any season.",
-    "src": [
-      "tjalda"
-    ]
+    "value": "Open in winter: the operator, tjalda.is and Parka.is all say the campsite is open all year, and nothing published describes a separate winter service or a winter closure (apart from the unexplained 11 January start date in Parka.is's info box). It is low-service in every season – there are no showers or indoor facilities in summer either. Not on ferdalag.is's camper winter service list (checked 2026-11-15). Whether the water, washing-up sink and dump point stay in use during frost is not published.",
+    "src": ["own", "tjalda-api", "parka", "ferdalag-winter"]
   },
   "prices": {
-    "applies_to": {
-      "value": "2026 rates",
-      "src": [
-        "tjalda"
-      ]
-    },
+    "applies_to": {"value": "2026 rates per night (tjalda.is 'Pricelist 2026' / 'Verð 2026'; Parka.is shows the same amounts). The operator's own page still labels the same amounts 'Pricelist 2023'. Lodging tax 400 ISK is listed separately.", "src": ["tjalda", "tjalda-api", "parka", "own"]},
     "currency": "ISK",
     "items": [
-      {
-        "label": "Adult per night",
-        "value": "1,700 ISK",
-        "src": [
-          "tjalda"
-        ]
-      },
-      {
-        "label": "Children 0–12",
-        "value": "Free",
-        "src": [
-          "tjalda"
-        ]
-      },
-      {
-        "label": "Electricity per 24 hours",
-        "value": "1,000 ISK",
-        "src": [
-          "tjalda"
-        ]
-      },
-      {
-        "label": "Lodging tax",
-        "value": "400 ISK",
-        "src": [
-          "tjalda"
-        ]
-      }
+      {"label": "Adult per night", "value": "1,700 ISK", "src": ["tjalda-api", "parka", "own"]},
+      {"label": "Children 0–12", "value": "Free", "src": ["tjalda-api", "parka", "own"]},
+      {"label": "Electricity per 24 hours", "value": "1,000 ISK", "src": ["tjalda-api", "parka", "own"]},
+      {"label": "Lodging tax", "value": "400 ISK", "src": ["tjalda-api", "parka"], "note": "Sources list it as a separate line; whether it is per person or per unit is not stated."},
+      {"label": "Children 13–17 / seniors / disabled guests", "value": null, "note": "No separate rate is published by any source checked."}
     ]
   },
   "facts": {
-    "toilets": {
-      "value": "24-hour toilets",
-      "src": [
-        "tjalda"
-      ]
-    },
-    "wifi": {
-      "value": null,
-      "note": "Not stated in the sources checked."
-    },
-    "laundry": {
-      "value": "None",
-      "src": [
-        "tjalda"
-      ]
-    },
-    "camping_card": {
-      "value": null,
-      "note": "Not stated in the sources checked."
-    },
-    "contact": {
-      "value": "+354 893 8909 / +354 777 9847 · johann@gardskagi.com",
-      "src": [
-        "tjalda"
-      ]
-    },
-    "electricity": {
-      "has": "yes",
-      "value": "Yes – electricity for campers (1,000 ISK per 24 h)",
-      "src": [
-        "tjalda"
-      ]
-    },
-    "showers": {
-      "has": "no",
-      "value": "No – 'There are no showers, washing machines, or indoor facilities'",
-      "src": [
-        "tjalda"
-      ]
-    },
-    "kitchen": {
-      "has": "no",
-      "value": "No indoor kitchen; an outdoor sink for washing up with hot and cold water",
-      "src": [
-        "tjalda"
-      ]
-    },
-    "dump_station": {
-      "has": "yes",
-      "value": "Yes – 'a waste disposal (dump) point'",
-      "src": [
-        "tjalda"
-      ]
-    }
+    "electricity": {"value": "Yes – 'electricity for campers', 1,000 ISK per 24 hours. Number of hook-ups, amperage and socket type are not published.", "src": ["own", "tjalda-api", "parka"], "has": "yes"},
+    "kitchen": {"value": "No indoor kitchen or indoor space – only an outdoor sink for washing up, with hot and cold water.", "src": ["own", "tjalda-api", "parka"], "has": "no"},
+    "showers": {"value": "No – 'There are no showers, washing machines, or indoor facilities.'", "src": ["own", "tjalda-api"], "has": "no"},
+    "toilets": {"value": "Yes – toilets open 24 hours ('Twenty-four-hour toilet facilities'); Parka.is also tags wheelchair access.", "src": ["own", "tjalda-api", "parka"]},
+    "dump_station": {"value": "Yes – a 'waste disposal (dump) point'; the Icelandic text describes it as a disposal facility for toilet tanks ('losunaraðstaða fyrir salernistanka'), and Parka.is tags sludge disposal (seyrulosun) and water filling (áfylling vatns). Exact location on site and winter use are not published.", "src": ["own", "tjalda-api", "parka"], "has": "yes"},
+    "wifi": {"value": null, "note": "Not mentioned by the operator, tjalda.is or Parka.is."},
+    "laundry": {"value": "None – no washing machines.", "src": ["own", "tjalda-api"]},
+    "camping_card": {"value": "No – Garðskagi is not on the Camping Card (Útilegukortið) list of participating campsites for 2026.", "src": ["utilegukort"]},
+    "contact": {"value": "+354 893 8909 / +354 777 9847 · johann@gardskagi.com (Garðskagi ehf; contact person Jóhann per tjalda.is).", "src": ["own", "tjalda-api", "parka"]}
   },
   "practical": [
-    {
-      "value": "Pay at Röstin restaurant during opening hours or online at parka.is/gardskagi. Individual tents and small groups cannot reserve; the site says there is always space.",
-      "src": [
-        "tjalda"
-      ]
-    }
-  ]
+    {"value": "No need to book: the operator says it does not reserve pitches for single tents or small groups, the site is large and 'there will always be a spot for you'. Pay at Röstin restaurant during its opening hours or online via Parka (parka.is/gardskagi).", "src": ["tjalda-api", "own", "parka"], "note": "The operator's own page also says 'to reserve a campsite use the online option parka.is', but Parka.is shows a notice that online booking for the campsite has not been activated (checked 2026-11-15)."},
+    {"value": "Röstin restaurant (upper floor of the heritage museum, next to the campsite) is open all year. Hours differ between sources: the operator's home page says 17:00–20:30, while ferdalag.is lists Monday–Wednesday 17–21 and Thursday–Sunday 12–21. If you plan to pay in person, check on arrival or pay online.", "src": ["own-home", "own", "ferdalag-rostin"]},
+    {"value": "Do not confuse it with 'Airport Camping' in Sandgerði, a different campsite: Parka.is lists Garðskagi under the name 'Airport Campsite - Garðskagi'.", "src": ["parka"]},
+    {"value": "Next to the campsite: the Garðskagi heritage and maritime museum and the lighthouses (built 1897 and 1944); the big lighthouse, which ferdalag.is calls the biggest in the country, with a northern lights show and a whale show; admission is included in the museum fee.", "src": ["ferdalag-rostin", "own"]},
+    {"value": "Dogs are allowed on a leash (tjalda.is; Parka.is).", "src": ["tjalda-api", "parka"]}
+  ],
+  "tours": ["viator-blue-lagoon", "gti-blue-lagoon", "gti-northern-lights"]
 }
