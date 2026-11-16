@@ -96,11 +96,6 @@
       "url": "https://tjalda.is/en/campsite/fjalladyrd-modrudal",
       "checked": "2026-10-30"
     },
-    "tj-grindavik": {
-      "title": "Tjalda.is – Grindavík",
-      "url": "https://tjalda.is/en/campsite/grindavik",
-      "checked": "2026-10-30"
-    },
     "tj-fossatun": {
       "title": "Tjalda.is – Fossatún",
       "url": "https://tjalda.is/en/campsite/fossatun",
@@ -195,10 +190,12 @@
     ]
   },
   "campsites": [
-    "reykjavik-eco-campsite", "mosskogar",
+    "reykjavik-eco-campsite",
+    "mosskogar",
     "sandgerdi-airport-camping",
     "gardskagi",
     "vogar-reykjanes",
+    "grindavik",
     "happy-campsite-keflavik",
     "hveragerdi-reykjamork",
     "selfoss-gesthus",
@@ -339,16 +336,17 @@
       "title": "On the official winter list, with no current season on tjalda.is",
       "paras": [
         {
-          "value": "Skjól now has a full page on this site with winter status call-ahead: its own site and ferdalag.is say year-round, but the 2026 Camping Card list gives 21 May – 15 September, and tjalda.is still marks it inactive for 2026. Tjalda.is also says Fjalladýrð (Möðrudalur) is not an active 2026 participant. For Grindavík and Fossatún it gives no season dates and does not list them as open all year — winter status for those two (and Fjalladýrð) remains Unconfirmed. (Þingvellir is also inactive on tjalda.is, but the national park's own page confirms Nyrðri-Leirar is open year-round.)",
+          "value": "Skjól now has a full page on this site with winter status call-ahead: its own site and ferdalag.is say year-round, but the 2026 Camping Card list gives 21 May – 15 September, and tjalda.is still marks it inactive for 2026. Tjalda.is also says Fjalladýrð (Möðrudalur) is not an active 2026 participant. For Fossatún it gives no season dates and does not list it as open all year — winter status for Fossatún (and Fjalladýrð) remains Unconfirmed. Grindavík now has its own page on this site (call ahead: the town council approved a trial winter opening for 2026–27, but the town's own page still says mid-March to November). (Þingvellir is also inactive on tjalda.is, but the national park's own page confirms Nyrðri-Leirar is open year-round.)",
           "src": [
             "skjol-own",
             "utilegukort-skjol",
             "tj-skjol",
             "tj-thingvellir",
             "tj-fjalladyrd",
-            "tj-grindavik",
             "tj-fossatun",
-            "ferdalag-winter"
+            "ferdalag-winter",
+            "grindavik:vf-winter",
+            "grindavik:muni"
           ]
         }
       ],

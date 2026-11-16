@@ -1,0 +1,78 @@
+{
+  "slug": "grindavik",
+  "name": "Grindavík Campsite",
+  "alt_names": ["Tjaldsvæðið í Grindavík", "Tjaldsvæði Grindavíkur", "Grindavík Camping, Austurvegur 26"],
+  "region": "reykjanes",
+  "town": "Grindavík",
+  "completeness": "full",
+  "checked": "2026-11-16",
+  "sources": {
+    "muni": {"title": "Grindavíkurbær (municipality) – Tjaldsvæðið í Grindavík (opening period, facilities, rules, contact)", "url": "https://www.grindavik.is/tjaldsvaedi", "checked": "2026-11-16"},
+    "muni-news": {"title": "Grindavíkurbær – news 16 March 2026: 'Tjaldsvæðið í Grindavík opið á ný' (reopened 16 March, planned to stay open into November)", "url": "https://www.grindavik.is/gagnatorg/frettir-og-tilkynningar/tjaldsvaedid-i-grindavik-opnad-a-ny", "checked": "2026-11-16"},
+    "muni-council": {"title": "Grindavíkurbær – town council (bæjarráð) meeting 1690, 16 Sep 2025, item 1: the municipality to operate the campsite next year", "url": "https://www.grindavik.is/fundargerdir/baejarrad-grindavikur/FJeLauv4bUkCLLPmDpYWw1", "checked": "2026-11-16"},
+    "vf-winter": {"title": "Víkurfréttir (local news), 6 Oct 2026 – 'Tjaldsvæðið í Grindavík verður opið í vetur til reynslu' (council approves winter 2026–27 opening as a trial)", "url": "https://www.vf.is/frettir/tjaldsvaedid-i-grindavik-verdur-opid-i-vetur-til-reynslu", "checked": "2026-11-16"},
+    "visitreykjanes": {"title": "Visit Reykjanes – Tjaldsvæðið Grindavík (Icelandic listing: 01/03–30/11, price list 'VERÐSKRÁ', no year stated)", "url": "https://www.visitreykjanes.is/is/thjonusta/tjaldsvaedid-grindavik", "checked": "2026-11-16"},
+    "ferdalag": {"title": "Ferdalag.is (Icelandic Tourist Board) – Grindavík Campsite (English listing: 1 March – 30 November, price list, no year stated)", "url": "https://www.ferdalag.is/en/service/grindavik-campsite", "checked": "2026-11-16"},
+    "ferdalag-winter": {"title": "Ferdalag.is – Camper winter service list (Grindavík Campsite listed)", "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service", "checked": "2026-11-16"},
+    "tjalda": {"title": "Tjalda.is – Grindavík listing ('2026 Information Coming Soon', 'Rates 2025')", "url": "https://tjalda.is/en/campsite/grindavik", "checked": "2026-11-16"},
+    "tjalda-api": {"title": "Tjalda.is public API – Grindavík entry (Icelandic + English texts, 'Rates 2025', GPS, service tags)", "url": "https://tjalda.is/api/campsites", "checked": "2026-11-16"},
+    "utilegukort": {"title": "Útilegukortið (Camping Card) – Opening dates of participating camping sites 2026 (Grindavík not listed)", "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en", "checked": "2026-11-16"},
+    "vedur": {"title": "Veðurstofa Íslands (Icelandic Met Office) – 'Staðan á Reykjanesskaga', update of 10 Nov 2026 (uplift at Svartsengi continues; a magma intrusion that could lead to an eruption is the most likely scenario; Grindavík rated 'considerable' hazard on the map in force since 30 Sep 2026)", "url": "https://www.vedur.is/um-vi/frettir/stadan-a-reykjanesskaga", "checked": "2026-11-16"},
+    "vedur-map": {"title": "Veðurstofa Íslands – Hazard assessment map for the Sundhnúkur crater row (in force from 30 Sep 2026; warning time can be under an hour)", "url": "https://www.vedur.is/eldfjoll/eldgos-a-reykjanesi/haettumatskort/", "checked": "2026-11-16"},
+    "visitreykjanes-volcano": {"title": "Visit Reykjanes – Volcanic eruptions in Reykjanes: information for travellers ('The town of Grindavík is open to the public')", "url": "https://www.visitreykjanes.is/en/volcano-eruption/eruption-information-everything-you-need-to-know", "checked": "2026-11-16"}
+  },
+  "intro": {
+    "value": "A fenced, purpose-built campsite of about 13,500 m² on Austurvegur in the fishing town of Grindavík, on the south coast of the Reykjanes Peninsula, with 42 pitches for motorhomes, caravans and trailer tents. It opened in 2009 and has a 200 m² service building (2011) with cooking facilities, showers and laundry, plus electric hook-ups, a toilet-tank disposal point and two playgrounds. After the volcanic unrest that began in late 2023 the campsite reopened; in 2026 the town of Grindavík runs it itself and reopened it on 16 March 2026. The town is open to visitors, but the Icelandic Met Office still rates Grindavík as being in considerable volcanic hazard – read the safety section below before you go.",
+    "src": ["muni", "muni-news", "muni-council", "visitreykjanes", "tjalda-api", "vedur", "visitreykjanes-volcano"]
+  },
+  "location": {
+    "address": {"value": "Austurvegur 26, 240 Grindavík (near the church). Directions from the source: at the roundabout on entering town, continue straight along Víkurbraut, turn left onto Ránargata, then left onto Austurvegur.", "src": ["visitreykjanes", "ferdalag", "tjalda-api"]},
+    "lat": 63.843629,
+    "lon": -22.422112,
+    "coords_src": ["tjalda-api"]
+  },
+  "season": {
+    "value": "2026 season: reopened 16 March 2026. The town's campsite page gives the season as mid-March to November, subject to weather and conditions; Visit Reykjanes and ferdalag.is list 1 March – 30 November. On 6 October 2026 Víkurfréttir reported that the town council had approved keeping the campsite open through the whole of winter 2026–27 as a trial.",
+    "src": ["muni-news", "muni", "visitreykjanes", "ferdalag", "vf-winter"],
+    "note": "The town's own campsite page had not been updated with the winter opening when checked on 2026-11-16, and tjalda.is still has no 2026 information from the operator."
+  },
+  "winter": {
+    "status": "call-ahead",
+    "value": "Probably open, but call ahead: a local newspaper reported on 6 October 2026 that the town council approved a trial winter opening for 2026–27, and ferdalag.is includes the campsite on its camper winter service list. However, the town's own campsite page still says 'mid-March to November', ferdalag.is's own listing says 1 March – 30 November, and no source describes what stays open in winter (heated service building, showers, kitchen, water, electricity, dump point). Volcanic activity can also close the town at short notice. Ring 660 7310 or email campsite@grindavik.is before you drive there.",
+    "src": ["vf-winter", "ferdalag-winter", "muni", "ferdalag", "vedur"]
+  },
+  "prices": {
+    "applies_to": {"value": "Published rates per night, year not stated. The two tourist-board listings disagree: Visit Reykjanes (Icelandic) gives adult 2,200 ISK and electricity 1,300 ISK; ferdalag.is (English) gives adult 2,400 ISK and electricity 1,500 ISK – the same amounts tjalda.is labels 'Rates 2025'. The town's own page publishes no prices. Lodging tax is included in the adult price on all three.", "src": ["visitreykjanes", "ferdalag", "tjalda-api", "muni"]},
+    "currency": "ISK",
+    "items": [
+      {"label": "Adult per night", "value": "2,200 ISK or 2,400 ISK (sources conflict; lodging tax included)", "src": ["visitreykjanes", "ferdalag", "tjalda-api"], "note": "2,200 per Visit Reykjanes; 2,400 per ferdalag.is and tjalda.is 'Rates 2025'. Neither states a 2026 rate."},
+      {"label": "Children 14 and under", "value": "Free", "src": ["visitreykjanes", "ferdalag", "tjalda-api"]},
+      {"label": "Seniors / disabled guests", "value": null, "note": "Tjalda.is 'Rates 2025' gives 1,000 ISK for seniors and disabled guests; ferdalag.is lists a garbled '1.00 ISK' for 67 and older; Visit Reykjanes gives no rate. No 2026 rate confirmed."},
+      {"label": "Every fourth night", "value": "Free", "src": ["visitreykjanes", "ferdalag"]},
+      {"label": "Electricity per 24 hours", "value": "1,300 ISK or 1,500 ISK (sources conflict)", "src": ["visitreykjanes", "ferdalag", "tjalda-api"], "note": "1,300 per Visit Reykjanes; 1,500 per ferdalag.is and tjalda.is 'Rates 2025'."},
+      {"label": "Washing machine (one wash)", "value": "800 ISK", "src": ["visitreykjanes", "ferdalag"]},
+      {"label": "Dryer (one use)", "value": "800 ISK", "src": ["visitreykjanes", "ferdalag"]},
+      {"label": "Shower only (non-campers)", "value": "500 ISK", "src": ["visitreykjanes", "ferdalag"], "note": "Showers are included for campsite guests."}
+    ]
+  },
+  "facts": {
+    "electricity": {"value": "Yes – electric sockets for motorhomes and trailer tents (town page). Number of hook-ups, amperage and socket type are not published.", "src": ["muni", "visitreykjanes", "ferdalag"], "has": "yes"},
+    "kitchen": {"value": "Yes – cooking facilities ('eldunaraðstaða') in the service building, per the town's page; tjalda.is describes a kitchenette. Whether it is open and heated in winter is not published.", "src": ["muni", "tjalda-api", "visitreykjanes"], "has": "yes"},
+    "showers": {"value": "Yes – hot showers in the service building, included in the price (shower only for non-campers 500 ISK).", "src": ["muni", "visitreykjanes", "ferdalag", "tjalda-api"], "has": "yes"},
+    "toilets": {"value": "Yes – flushing toilets in the service building.", "src": ["muni", "tjalda-api"]},
+    "dump_station": {"value": "Yes – Visit Reykjanes lists 'ferðaklósett-losun' (chemical toilet disposal) and says sludge disposal (seyrulosun) is included in the price; ferdalag.is calls it 'a perfect place to empty port-a-potties'. The town's current facility list does not mention it, and winter use is not published.", "src": ["visitreykjanes", "ferdalag", "muni"], "has": "yes"},
+    "wifi": {"value": null, "note": "Older descriptions (Visit Reykjanes, tjalda.is) mention free internet access in the service building, but the town's current facility list does not include Wi-Fi."},
+    "laundry": {"value": "Yes – coin/paid laundry: washing machine 800 ISK per wash, dryer 800 ISK per use.", "src": ["visitreykjanes", "ferdalag", "tjalda-api"]},
+    "camping_card": {"value": "No for 2026 – Grindavík is not on the Camping Card (Útilegukortið) list of participating campsites for 2026, although ferdalag.is's older text still says 'Camping passes are valid'.", "src": ["utilegukort", "ferdalag"]},
+    "contact": {"value": "+354 660 7310 (campsite staff, 08:00–22:00 per the town's page) · campsite@grindavik.is. Visit Reykjanes and ferdalag.is give 830 9090 as the warden's phone.", "src": ["muni", "muni-news", "visitreykjanes", "tjalda-api"]}
+  },
+  "practical": [
+    {"value": "Volcanic safety: Grindavík is open to visitors, but the Icelandic Met Office (update of 10 November 2026) says land is still rising at Svartsengi and that a new magma intrusion, which could lead to an eruption on the Sundhnúkur crater row next to town, is the most likely scenario. On the hazard map in force since 30 September 2026 Grindavík is in the 'considerable' (orange) hazard category, and the warning before an eruption may be less than an hour.", "src": ["vedur", "vedur-map", "visitreykjanes-volcano"]},
+    {"value": "If an evacuation is ordered because of a natural hazard, the town's rules say guests must follow Civil Protection's instructions and leave the campsite immediately. Check vedur.is, umferdin.is (Route 43 into town) and safetravel.is on the day.", "src": ["muni", "vedur"]},
+    {"value": "No reservations – you cannot book a pitch; just turn up. Groups and family reunions pay by agreement.", "src": ["visitreykjanes", "ferdalag"]},
+    {"value": "Family-oriented rules: quiet hours 00:00–07:00, 10 km/h speed limit, no open fires or disposable grills on the ground, dogs on a leash, sort your rubbish. Minimum age for guests travelling alone is 18 (20 during the Sjóarinn síkáti festival).", "src": ["muni", "visitreykjanes"]},
+    {"value": "The website www.grindavikcampsite.com given in older listings (e.g. tjalda.is) did not show campsite content when we checked on 2026-11-16 – use the town's page grindavik.is/tjaldsvaedi instead.", "src": ["tjalda-api", "muni"]},
+    {"value": "Since 2026 the town of Grindavík operates the campsite itself; the council decided this in September 2025 after an enquiry from a private operator.", "src": ["muni-council", "muni-news"]}
+  ],
+  "tours": ["viator-blue-lagoon", "gti-blue-lagoon", "gti-northern-lights"]
+}
