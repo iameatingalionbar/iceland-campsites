@@ -36,11 +36,6 @@
       "url": "https://tjalda.is/en/campsite/cja",
       "checked": "2026-10-30"
     },
-    "tj-djupivogur": {
-      "title": "Tjalda.is – Djúpivogur",
-      "url": "https://tjalda.is/en/campsite/djupivogur",
-      "checked": "2026-10-30"
-    },
     "tj-thingeyraroddi": {
       "title": "Tjalda.is – Þingeyraroddi (Þingeyri)",
       "url": "https://tjalda.is/en/campsite/thingeyraroddi",
@@ -160,6 +155,11 @@
       "title": "Hotel Laugarvatn – own website (no campsite mentioned)",
       "url": "https://www.hotellaugarvatn.is/",
       "checked": "2026-11-08"
+    },
+    "tj-djupivogur": {
+      "title": "Tjalda.is – Djúpivogur (open year-round; services limited December–February)",
+      "url": "https://tjalda.is/en/campsite/djupivogur",
+      "checked": "2026-11-17"
     }
   },
   "intro": [
@@ -215,6 +215,7 @@
     "kirkjubaer-ii",
     "skaftafell",
     "hofn",
+    "djupivogur",
     "hverinn-kleppjarnsreykir",
     "stykkisholmur",
     "grundarfjordur",
@@ -235,7 +236,7 @@
       "title": "On the official winter list and 'open all year' on tjalda.is (not profiled here yet)",
       "paras": [
         {
-          "value": "These campsites are on the ferdalag.is winter list, and tjalda.is also says they are open all year. Two independent listings agree, but we have not yet checked prices or winter facilities, so treat them as call ahead.",
+          "value": "This campsite is on the ferdalag.is winter list, and tjalda.is also says it is open all year. Two independent listings agree, but we have not yet checked prices or winter facilities, so treat it as call ahead.",
           "src": [
             "ferdalag-winter",
             "tjalda-api"
@@ -243,13 +244,6 @@
         }
       ],
       "items": [
-        {
-          "value": "Djúpivogur (East): tjalda.is says 'Open year-round.'",
-          "src": [
-            "ferdalag-winter",
-            "tj-djupivogur"
-          ]
-        },
         {
           "value": "Þingeyraroddi (Þingeyri, Westfjords): tjalda.is says 'Open year-round.' It is the only Westfjords campsite on the official list that tjalda.is also lists as open all year.",
           "src": [
@@ -369,10 +363,11 @@
       ]
     },
     {
-      "value": "Several all-year campsites run reduced service in winter. Camp Egilsstaðir's reception may be closed in low season, when you pay at a self-service card terminal or in an honesty box, and Hlíð at Mývatn closes its reception for the winter.",
+      "value": "Several all-year campsites run reduced service in winter. Camp Egilsstaðir's reception may be closed in low season, when you pay at a self-service card terminal or in an honesty box, and Hlíð at Mývatn closes its reception for the winter. Djúpivogur says its services are limited in December–February without saying which, so ask at Hótel Framtíð.",
       "src": [
         "ferdalag-winter",
-        "tj-hlid"
+        "tj-hlid",
+        "tj-djupivogur"
       ]
     },
     {

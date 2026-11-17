@@ -1,0 +1,295 @@
+{
+  "slug": "djupivogur",
+  "name": "Djúpivogur Campsite",
+  "alt_names": [
+    "Tjaldsvæðið á Djúpavogi",
+    "Tjaldsvæðið Djúpavogi",
+    "Djupivogur Campsite"
+  ],
+  "region": "east",
+  "town": "Djúpivogur",
+  "completeness": "full",
+  "checked": "2026-11-17",
+  "sources": {
+    "tjalda": {
+      "title": "Tjalda.is – Djúpivogur listing ('Rates 2026', open year-round, services)",
+      "url": "https://tjalda.is/en/campsite/djupivogur",
+      "checked": "2026-11-17"
+    },
+    "tjalda-api": {
+      "title": "Tjalda.is public API – Djúpivogur entry (Icelandic + English texts, 'Verð/Rates 2026', GPS, service tags, drop-in + prebooked flags)",
+      "url": "https://tjalda.is/api/campsites",
+      "checked": "2026-11-17"
+    },
+    "parka": {
+      "title": "Parka.is – Djúpivogur campsite page (Icelandic description, info box 'Opið: 01. Jan - 31. Des', price list, feature tags; online booking not activated)",
+      "url": "https://www.parka.is/djupivogur/",
+      "checked": "2026-11-17"
+    },
+    "ferdalag": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Djúpivogur Campsite (open all year, Vogaland 4, 765)",
+      "url": "https://www.ferdalag.is/en/service/djupivogur-campsite",
+      "checked": "2026-11-17"
+    },
+    "ferdalag-winter": {
+      "title": "Ferdalag.is – Camper winter service list (Djúpivogur Campsite listed)",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-11-17"
+    },
+    "east": {
+      "title": "Visit Austurland (east.is) – Tjaldsvæðið Djúpavogi (Icelandic; open all year, service house facilities, reception at Hótel Framtíð, GPS)",
+      "url": "https://www.east.is/is/thjonusta/tjaldsvaedid-djupavogi",
+      "checked": "2026-11-17"
+    },
+    "hotel-acc": {
+      "title": "Hótel Framtíð – Accommodation page (barrel pods at the campsite, breakfast 7–10 at the hotel)",
+      "url": "https://www.hotelframtid.com/accommodation",
+      "checked": "2026-11-17"
+    },
+    "utilegukort": {
+      "title": "Útilegukortið (Camping Card) – Opening dates of participating camping sites 2026 (Djúpivogur town campsite not listed; 'Tjaldsvæðið Bragðavöllum (Djúpivogur)' is a different site)",
+      "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en",
+      "checked": "2026-11-17"
+    }
+  },
+  "intro": {
+    "value": "A town campsite in the centre of Djúpivogur, the small harbour village at the southern end of the Eastfjords, with a view over the harbour. Reception is at Hótel Framtíð, and the swimming pool, shop, museums, restaurants and cafés are all within about 500 m. The service house has cooking facilities, a lounge, a washing machine and dryer, electricity, and motorhome waste disposal and fresh-water filling. Every listing says it is open all year, but the operator's text on tjalda.is and Parka warns that services are limited in December–February.",
+    "src": [
+      "tjalda-api",
+      "parka",
+      "east",
+      "ferdalag"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Vogaland 4, 765 Djúpivogur",
+      "src": [
+        "east",
+        "ferdalag",
+        "ferdalag-winter",
+        "parka",
+        "hotel-acc"
+      ],
+      "note": "tjalda.is gives the postcode as 690; Visit Austurland, ferdalag.is, Parka and Hótel Framtíð (same street address) give 765. Reception: Hótel Framtíð."
+    },
+    "lat": 64.656512,
+    "lon": -14.283882,
+    "coords_src": [
+      "tjalda-api"
+    ]
+  },
+  "season": {
+    "value": "Open all year (tjalda.is 'Open year-round', ferdalag.is 'Open all year', Visit Austurland 'Allt árið', Parka info box 1 Jan – 31 Dec). Services are limited in the winter months, December–February.",
+    "src": [
+      "tjalda",
+      "tjalda-api",
+      "ferdalag",
+      "east",
+      "parka"
+    ]
+  },
+  "winter": {
+    "status": "open",
+    "value": "Open in winter: it is on ferdalag.is's official camper winter service list, and tjalda.is, ferdalag.is, Visit Austurland and Parka all say it is open all year. However, the operator's own text (tjalda.is and Parka) says 'services are limited during the winter months: December–February' without saying which. Whether the service house (kitchen, showers, laundry), electricity and the waste disposal point are available in December–February is Unconfirmed, so ask at Hótel Framtíð (+354 478 8887) before relying on them. Check road conditions on road.is.",
+    "src": [
+      "ferdalag-winter",
+      "tjalda-api",
+      "ferdalag",
+      "east",
+      "parka"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates from tjalda.is ('Rates 2026'), matching the Parka price list",
+      "src": [
+        "tjalda",
+        "tjalda-api",
+        "parka"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult per night",
+        "value": "2,100 ISK",
+        "src": [
+          "tjalda-api",
+          "parka"
+        ],
+        "note": "Parka: 'adult 15 years and older'."
+      },
+      {
+        "label": "Senior citizens and the disabled per night",
+        "value": "1,800 ISK",
+        "src": [
+          "tjalda-api",
+          "parka"
+        ]
+      },
+      {
+        "label": "Children 14 and younger",
+        "value": "Free",
+        "src": [
+          "tjalda-api"
+        ]
+      },
+      {
+        "label": "Electricity per night",
+        "value": "1,400 ISK",
+        "src": [
+          "tjalda-api",
+          "parka"
+        ],
+        "note": "Per night per the price lists; whether per unit or per 24 h is not stated."
+      },
+      {
+        "label": "Lodging tax per unit per night",
+        "value": "400 ISK",
+        "src": [
+          "tjalda-api",
+          "parka"
+        ]
+      },
+      {
+        "label": "Third night",
+        "value": "Free",
+        "src": [
+          "tjalda-api"
+        ],
+        "note": "Stated on tjalda.is only ('Third night free'); not on the Parka price list."
+      },
+      {
+        "label": "Showers",
+        "value": null,
+        "src": [],
+        "note": "Unconfirmed – showers are listed, but no source says whether they are included or charged."
+      },
+      {
+        "label": "Washing machine / dryer",
+        "value": null,
+        "src": [],
+        "note": "Unconfirmed – available, price not published."
+      },
+      {
+        "label": "Internet",
+        "value": null,
+        "src": [],
+        "note": "Unconfirmed – the operator says internet access can be bought; price not published."
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "has": "yes",
+      "value": "Yes – 1,400 ISK per night (2026). Number of hook-ups and socket type are Unconfirmed, as is availability in December–February.",
+      "src": [
+        "tjalda-api",
+        "parka",
+        "east"
+      ]
+    },
+    "kitchen": {
+      "has": "yes",
+      "value": "Yes – cooking facilities and a lounge in the service house; Parka also lists dishwashing facilities. Whether the indoor kitchen stays open in December–February is Unconfirmed.",
+      "src": [
+        "tjalda-api",
+        "parka",
+        "east"
+      ]
+    },
+    "showers": {
+      "has": "yes",
+      "value": "Yes – listed as a service by tjalda.is and Parka. Number, price and winter availability are Unconfirmed.",
+      "src": [
+        "tjalda-api",
+        "parka"
+      ]
+    },
+    "toilets": {
+      "value": "Yes – listed by tjalda.is and Parka",
+      "src": [
+        "tjalda-api",
+        "parka"
+      ]
+    },
+    "dump_station": {
+      "has": "yes",
+      "value": "Yes – 'facilities for motorhome waste disposal and fresh water refilling' (tjalda.is; Icelandic 'aðstaða til losunar/áfyllingar fyrir húsbíla'); Parka lists 'Seyrulosun' (sewage/toilet waste disposal) and water refill. Exact location, whether cassette toilets can be emptied there, and winter use are Unconfirmed – ask at reception.",
+      "src": [
+        "tjalda-api",
+        "parka",
+        "east"
+      ]
+    },
+    "wifi": {
+      "value": "Internet access can be bought (price Unconfirmed). Hótel Framtíð says free Wi-Fi is available in the hotel's main building for its barrel-pod guests.",
+      "src": [
+        "tjalda-api",
+        "east",
+        "hotel-acc"
+      ]
+    },
+    "laundry": {
+      "value": "Washing machine and dryer in the service house; price Unconfirmed",
+      "src": [
+        "tjalda-api",
+        "parka",
+        "east"
+      ]
+    },
+    "camping_card": {
+      "value": "No – the Djúpivogur town campsite is not on the Camping Card (Útilegukortið) 2026 list. The list's 'Tjaldsvæðið Bragðavöllum (Djúpivogur)' is a different campsite (1 May – 15 September).",
+      "src": [
+        "utilegukort"
+      ]
+    },
+    "contact": {
+      "value": "Hótel Framtíð, +354 478 8887 · info@hotelframtid.is",
+      "src": [
+        "tjalda-api",
+        "ferdalag",
+        "east",
+        "parka"
+      ]
+    }
+  },
+  "practical": [
+    {
+      "value": "No booking needed for campervans: tjalda.is says the campsite accepts drop-ins. Pitches are not reserved, and Parka notes that a connection-box number in a booking is not valid, so just pick a free spot. Pay at reception in Hótel Framtíð. (tjalda.is links to a Parka booking page, but Parka itself says online booking for Djúpivogur has not been activated.)",
+      "src": [
+        "tjalda-api",
+        "parka",
+        "east"
+      ]
+    },
+    {
+      "value": "Parka's feature tags include winter opening, hot and cold water, waste sorting, a restaurant, a swimming pool nearby, and dogs allowed on a leash.",
+      "src": [
+        "parka"
+      ]
+    },
+    {
+      "value": "The campsite also has small cabins / barrel pods (up to 3 people, sleeping-bag style or with bedding rented on site) that share the campsite facilities; breakfast is served 7–10 at Hótel Framtíð.",
+      "src": [
+        "tjalda-api",
+        "hotel-acc"
+      ]
+    },
+    {
+      "value": "Things to do from the campsite: the town swimming pool, a 9-hole golf course, walking trails to the mountains and the shore, museums, and boat trips to the island of Papey (summer).",
+      "src": [
+        "ferdalag",
+        "east",
+        "tjalda-api"
+      ]
+    },
+    {
+      "value": "Don't confuse this campsite with Bragðavellir, which the Camping Card list labels 'Djúpivogur' but is a separate summer campsite (1 May – 15 September in 2026).",
+      "src": [
+        "utilegukort"
+      ]
+    }
+  ]
+}
