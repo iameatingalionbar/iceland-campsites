@@ -59,7 +59,7 @@
     "tj-seydisfjordur": {
       "title": "Tjalda.is – Seyðisfjörður",
       "url": "https://tjalda.is/en/campsite/seyisfjordur",
-      "checked": "2026-10-30"
+      "checked": "2026-11-18"
     },
     "tj-laugarvatn": {
       "title": "Tjalda.is – Laugarvatn (listing hidden; season text dated 2023)",
@@ -160,6 +160,16 @@
       "title": "Tjalda.is – Djúpivogur (open year-round; services limited December–February)",
       "url": "https://tjalda.is/en/campsite/djupivogur",
       "checked": "2026-11-17"
+    },
+    "own-seydisfjordur": {
+      "title": "Seyðisfjörður Campsite – official website (opening months 1 April – 31 October)",
+      "url": "https://seydisfjordurcampsite.com/",
+      "checked": "2026-11-18"
+    },
+    "ferdalag-seydisfjordur": {
+      "title": "Ferdalag.is – Seyðisfjörður Campsite (01/05–30/09, 'Open in the summer')",
+      "url": "https://www.ferdalag.is/en/service/seydisfjordur-campsite",
+      "checked": "2026-11-18"
     }
   },
   "intro": [
@@ -283,10 +293,12 @@
           ]
         },
         {
-          "value": "Seyðisfjörður (East): 1 April – 31 October.",
+          "value": "Seyðisfjörður (East) now has a full page on this site (/campsites/seydisfjordur/) and is marked closed in winter: its own website, tjalda.is and the Camping Card 2026 list give 1 April – 31 October, and the ferdalag.is listing itself says 'Open in the summer'.",
           "src": [
             "ferdalag-winter",
-            "tj-seydisfjordur"
+            "tj-seydisfjordur",
+            "own-seydisfjordur",
+            "ferdalag-seydisfjordur"
           ]
         },
         {

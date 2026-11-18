@@ -1,0 +1,319 @@
+{
+  "slug": "seydisfjordur",
+  "name": "Seyðisfjörður Campsite",
+  "alt_names": [
+    "Tjaldsvæði Seyðisfjarðar",
+    "Tjaldsvæðið á Seyðisfirði",
+    "Seydisfjordur Campsite"
+  ],
+  "region": "east",
+  "town": "Seyðisfjörður",
+  "completeness": "full",
+  "checked": "2026-11-18",
+  "sources": {
+    "own": {
+      "title": "Seyðisfjörður Campsite – official website, home page (price counters: adults 2,500, seniors/disabled 1,600, electricity 1,500, lodging tax 400 ISK; 'Bookings are not possible'; reception 07–14, 17–23; opening months 1 April – 31 October)",
+      "url": "https://seydisfjordurcampsite.com/",
+      "checked": "2026-11-18"
+    },
+    "own-about": {
+      "title": "Seyðisfjörður Campsite – About page (older-looking price counters: adults 2,450, electricity 1,300, washing machine 800, dryer 800, lodging tax 333 ISK; children 15 and younger free)",
+      "url": "https://seydisfjordurcampsite.com/about/",
+      "checked": "2026-11-18"
+    },
+    "own-contact": {
+      "title": "Seyðisfjörður Campsite – Contact page (Ránargata 1, 710 Seyðisfjörður; +354 792 00 70; 'we are not in position to book a space for you')",
+      "url": "https://seydisfjordurcampsite.com/contact/",
+      "checked": "2026-11-18"
+    },
+    "tjalda": {
+      "title": "Tjalda.is – Seyðisfjörður listing ('Rates 2026', 1 April – 31 October)",
+      "url": "https://tjalda.is/en/campsite/seyisfjordur",
+      "checked": "2026-11-18"
+    },
+    "tjalda-api": {
+      "title": "Tjalda.is public API – Seyðisfjörður entry (Icelandic + English texts, 'Sumarið 2026 / Rates 2026', season 1 Apr – 31 Oct, GPS, service tags)",
+      "url": "https://tjalda.is/api/campsites",
+      "checked": "2026-11-18"
+    },
+    "utilegukort": {
+      "title": "Útilegukortið (Camping Card) – Opening dates of participating camping sites 2026 (Seyðisfjörður 1 April – 31 October)",
+      "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en",
+      "checked": "2026-11-18"
+    },
+    "ferdalag": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Seyðisfjörður Campsite (Ránargata 5; 01/05–30/09; tags incl. 'Camper winter service', 'Open in the summer', 'Waste tank discharge')",
+      "url": "https://www.ferdalag.is/en/service/seydisfjordur-campsite",
+      "checked": "2026-11-18"
+    },
+    "ferdalag-winter": {
+      "title": "Ferdalag.is – Camper winter service list (Seyðisfjörður Campsite listed)",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-11-18"
+    },
+    "east": {
+      "title": "Visit Austurland (east.is) – Tjaldsvæði Seyðisfjarðar (Icelandic; 01/05–30/09; service house facilities incl. motorhome WC cleaning facility; Camping Card member; GPS)",
+      "url": "https://www.east.is/is/thjonusta/tjald-og-husbilastaedi-seydisfjardar",
+      "checked": "2026-11-18"
+    },
+    "muni-case": {
+      "title": "Múlaþing municipality – case 202108124, campsite operation (lease periods 1 April – 31 October; Oct 2025: current operator's contract extended one year while a new campsite location is decided, aiming for a new campsite in 2027)",
+      "url": "https://www.mulathing.is/is/stjornsysla/sveitarstjorn-rad-og-stjornir/fundargerdir/malsnumer/202108124",
+      "checked": "2026-11-18"
+    },
+    "muni-2026": {
+      "title": "Múlaþing – Heimastjórn Seyðisfjarðar meeting 64, 8 Jan 2026 (item 3: preliminary design of the new campsite at Ránargata presented; still in progress)",
+      "url": "https://www.mulathing.is/is/stjornsysla/sveitarstjorn-rad-og-stjornir/fundargerdir/heimastjorn-seydisfjardar/4431",
+      "checked": "2026-11-18"
+    },
+    "tjalda-egilsstadir": {
+      "title": "Tjalda.is – Camp Egilsstaðir listing ('Open year-round')",
+      "url": "https://tjalda.is/en/campsite/egilsstadir",
+      "checked": "2026-11-18"
+    }
+  },
+  "intro": {
+    "value": "A town campsite in the centre of Seyðisfjörður, the fjord town where the Smyril Line ferry Norröna docks, sheltered by trees and divided into small areas. The service house has showers, toilets, cooking facilities, a dining/sitting room, washing machine and dryer and free internet, and there is electricity and a WC emptying point for motorhomes. The shop, pool (with sauna and hot tubs), restaurants, Rainbow Street and the Blue Church are a short walk away. It is a summer campsite: the operator's published 2026 season is 1 April – 31 October, and no bookings are taken.",
+    "src": [
+      "own",
+      "tjalda-api",
+      "east",
+      "ferdalag",
+      "utilegukort"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Ránargata 1, 710 Seyðisfjörður",
+      "src": [
+        "own-contact",
+        "tjalda-api"
+      ],
+      "note": "The campsite's own contact page and tjalda.is give Ránargata 1; ferdalag.is, Visit Iceland and Visit Austurland give Ránargata 5. Same campsite in the town centre."
+    },
+    "lat": 65.260389,
+    "lon": -14.012357,
+    "coords_src": [
+      "tjalda-api"
+    ]
+  },
+  "season": {
+    "value": "2026: 1 April – 31 October (the campsite's own website, tjalda.is and the Camping Card 2026 list). Ferdalag.is and Visit Austurland still show an older 1 May – 30 September season.",
+    "src": [
+      "own",
+      "tjalda",
+      "tjalda-api",
+      "utilegukort",
+      "ferdalag",
+      "east"
+    ]
+  },
+  "winter": {
+    "status": "closed",
+    "value": "Closed in winter. The operator's own website, tjalda.is and the Camping Card list all give a 2026 season of 1 April – 31 October, and the municipality's lease periods also run 1 April – 31 October. Ferdalag.is lists it on its camper winter service list and tags it 'Camper winter service', but the same listing says 'Open in the summer' with dates 01/05–30/09, and no source gives any winter dates or services, so do not plan a November–March night here without contacting the campsite first (+354 792 0070). The nearest year-round alternative is Camp Egilsstaðir, which tjalda.is lists as open year-round. Check road conditions on road.is before driving in winter.",
+    "src": [
+      "own",
+      "tjalda-api",
+      "utilegukort",
+      "muni-case",
+      "ferdalag",
+      "ferdalag-winter",
+      "tjalda-egilsstadir"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates from tjalda.is ('Rates 2026'), matching the price counters on the campsite's home page",
+      "src": [
+        "tjalda-api",
+        "own"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "value": "2,500 ISK",
+        "src": [
+          "tjalda-api",
+          "own"
+        ],
+        "note": "The campsite's About page still shows 2,450 ISK (undated); the home page and tjalda.is 'Rates 2026' show 2,500 ISK.",
+        "label": "Adult per night"
+      },
+      {
+        "value": "1,600 ISK",
+        "src": [
+          "tjalda-api",
+          "own"
+        ],
+        "label": "Seniors and disabled per night"
+      },
+      {
+        "value": "Free",
+        "src": [
+          "tjalda-api",
+          "own"
+        ],
+        "note": "tjalda.is: 14 and younger; the campsite's own site: 15 and younger.",
+        "label": "Children"
+      },
+      {
+        "value": "1,500 ISK",
+        "src": [
+          "tjalda-api",
+          "own"
+        ],
+        "note": "The About page shows 1,300 ISK (undated). Per night per the 2026 list; whether per unit or per 24 h is not stated.",
+        "label": "Electricity per night"
+      },
+      {
+        "value": "400 ISK",
+        "src": [
+          "tjalda-api",
+          "own"
+        ],
+        "note": "The About page shows 333 ISK (undated).",
+        "label": "Lodging tax per unit per night"
+      },
+      {
+        "value": "800 ISK",
+        "src": [
+          "tjalda-api",
+          "own-about"
+        ],
+        "label": "Washing machine (per load)"
+      },
+      {
+        "value": "800 ISK",
+        "src": [
+          "tjalda-api",
+          "own-about"
+        ],
+        "label": "Dryer"
+      },
+      {
+        "label": "Showers",
+        "value": null,
+        "src": [],
+        "note": "Unconfirmed – showers are listed, but no 2026 source says whether they are included or charged."
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes – electricity for motorhomes, 1,500 ISK per night (2026). Number of hook-ups and socket type are Unconfirmed.",
+      "src": [
+        "tjalda-api",
+        "own",
+        "east"
+      ],
+      "has": "yes"
+    },
+    "kitchen": {
+      "value": "Yes – indoor cooking facilities, dining room and sitting room in the service house; outdoor grill.",
+      "src": [
+        "tjalda-api",
+        "east",
+        "own"
+      ],
+      "has": "yes"
+    },
+    "showers": {
+      "value": "Yes – hot showers in the service house (price Unconfirmed).",
+      "src": [
+        "tjalda-api",
+        "east",
+        "own"
+      ],
+      "has": "yes"
+    },
+    "toilets": {
+      "value": "Yes – in the service house",
+      "src": [
+        "tjalda-api",
+        "east",
+        "own"
+      ]
+    },
+    "dump_station": {
+      "value": "Yes – Icelandic sources describe a 'hreinsiaðstaða fyrir húsbíla-wc' (cleaning/emptying facility for motorhome toilets), and ferdalag.is / Visit Austurland tag it 'Waste tank discharge' ('Losun skólptanka'). Exact location on site and whether grey water can also be emptied are Unconfirmed; ask at reception. Available only in the open season.",
+      "src": [
+        "tjalda-api",
+        "east",
+        "ferdalag"
+      ],
+      "has": "yes"
+    },
+    "wifi": {
+      "value": "Free internet / Wi-Fi",
+      "src": [
+        "tjalda-api",
+        "east",
+        "own"
+      ]
+    },
+    "laundry": {
+      "value": "Washing machine and tumble dryer, 800 ISK each (2026)",
+      "src": [
+        "tjalda-api",
+        "east",
+        "own-about"
+      ]
+    },
+    "camping_card": {
+      "value": "Yes – Seyðisfjörður is on the Camping Card (Útilegukortið) 2026 list (1 April – 31 October). Whether electricity or the lodging tax is extra for card holders is Unconfirmed.",
+      "src": [
+        "utilegukort",
+        "tjalda-api",
+        "east"
+      ]
+    },
+    "contact": {
+      "value": "+354 792 0070 · camping.seydisfjordur@gmail.com · seydisfjordurcampsite.com",
+      "src": [
+        "own-contact",
+        "tjalda-api",
+        "ferdalag"
+      ]
+    }
+  },
+  "practical": [
+    {
+      "value": "No booking: the campsite says bookings are not possible and that it cannot reserve a space for you, so arrive and pick a free spot. Reception hours on the website: 07–14 and 17–23.",
+      "src": [
+        "own",
+        "own-contact"
+      ]
+    },
+    {
+      "value": "Handy for the Norröna ferry: the campsite describes itself as made for ferry travellers' first and last night, and ferdalag.is lists the car ferry about 0.5 km away.",
+      "src": [
+        "own-about",
+        "tjalda-api",
+        "ferdalag"
+      ]
+    },
+    {
+      "value": "Age limit 18 unless travelling with adults. Dogs are allowed (since summer 2017) if owners follow the site rules.",
+      "src": [
+        "tjalda-api",
+        "east"
+      ]
+    },
+    {
+      "value": "Within walking distance: grocery store, swimming pool with sauna and hot tubs, restaurants, the Technical Museum of East Iceland and the Skaftfell art centre. Bike rental is available in the campsite's parking lot.",
+      "src": [
+        "tjalda-api",
+        "east",
+        "own"
+      ]
+    },
+    {
+      "value": "The campsite may move: Múlaþing municipality is designing a new campsite at Ránargata (preliminary design presented January 2026), and in October 2025 the Seyðisfjörður local council urged that a new campsite be ready for use in 2027; the current operator's contract was extended for one year. Re-check the location and operator before the 2027 season.",
+      "src": [
+        "muni-case",
+        "muni-2026"
+      ]
+    }
+  ]
+}
