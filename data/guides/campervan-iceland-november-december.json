@@ -1,0 +1,303 @@
+{
+ "slug": "campervan-iceland-november-december",
+ "title": "Campervan in Iceland in November and December (2026): Open Campsites, Daylight and Roads",
+ "short": "Campervan in November & December",
+ "description": "Planning a campervan trip in Iceland in November or December 2026? Which campsites stay open, which close during the month, daylight hours, winter road service and tyre rules. Every fact sourced and dated.",
+ "region": "all",
+ "checked": "2026-11-19",
+ "sources": {
+  "tad-rvk-nov": {
+   "title": "timeanddate.com – Sunrise and sunset times in Reykjavík, November 2026",
+   "url": "https://www.timeanddate.com/sun/iceland/reykjavik?month=11&year=2026",
+   "checked": "2026-11-19"
+  },
+  "tad-rvk-dec": {
+   "title": "timeanddate.com – Sunrise and sunset times in Reykjavík, December 2026",
+   "url": "https://www.timeanddate.com/sun/iceland/reykjavik?month=12&year=2026",
+   "checked": "2026-11-19"
+  },
+  "tad-aku-dec": {
+   "title": "timeanddate.com – Sunrise and sunset times in Akureyri, December 2026",
+   "url": "https://www.timeanddate.com/sun/iceland/akureyri?month=12&year=2026",
+   "checked": "2026-11-19"
+  },
+  "tjalda-api": {
+   "title": "Tjalda.is public campsite data (https://tjalda.is/api/campsites): season texts for Mosskógar, Kirkjubær II, Árhús (Hella), Ártún, Hlíð, Hvolsvöllur",
+   "url": "https://tjalda.is/api/campsites",
+   "checked": "2026-11-19"
+  },
+  "ferdalag-winter": {
+   "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service (38 listings)",
+   "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+   "checked": "2026-11-19"
+  },
+  "grindavik-town": {
+   "title": "Grindavíkurbær – Tjaldsvæði (town campsite page: open from mid-March into November, subject to weather)",
+   "url": "https://www.grindavik.is/tjaldsvaedi",
+   "checked": "2026-11-19"
+  },
+  "irca-winter": {
+   "title": "Vegagerðin (Icelandic Road and Coastal Administration) – Winter services",
+   "url": "https://www.vegagerdin.is/en/the-transportation-system/the-road-system/services/winter-services",
+   "checked": "2026-11-19"
+  },
+  "umferdin": {
+   "title": "Umferdin.is – IRCA traffic info (road conditions; traffic service phone 1777)",
+   "url": "https://umferdin.is/en",
+   "checked": "2026-11-19"
+  },
+  "safetravel-winter": {
+   "title": "SafeTravel.is (ICE-SAR) – Winter driving",
+   "url": "https://safetravel.is/winter-driving/",
+   "checked": "2026-11-19"
+  },
+  "safetravel": {
+   "title": "SafeTravel.is – home page (travel plan, emergency numbers)",
+   "url": "https://safetravel.is/",
+   "checked": "2026-11-19"
+  },
+  "rvk-studs": {
+   "title": "Reykjavík City – Studded tires",
+   "url": "https://reykjavik.is/en/studded-tires",
+   "checked": "2026-11-19"
+  },
+  "vik-own": {
+   "title": "Vík Camping – home page ('Opening hours - summer 2026')",
+   "url": "https://www.vikcamping.is/",
+   "checked": "2026-11-19"
+  }
+ },
+ "intro": [
+  {
+   "value": "November and December are deep winter for campervan travel in Iceland. In Reykjavík the sun rises at 09:10 and sets at 17:10 on 1 November, but by 21 December it is up only from 11:22 to 15:29, about four hours.",
+   "src": [
+    "tad-rvk-nov",
+    "tad-rvk-dec"
+   ]
+  },
+  {
+   "value": "Iceland's Tourist Board lists 38 entries on its official 'Camper winter service' list, but several campsites end their season during these two months: Hvolsvöllur closes on 1 November, Mosskógar near Reykjavík on 1 December according to tjalda.is, and Kirkjubær II at Kirkjubæjarklaustur is open from March to November.",
+   "src": [
+    "ferdalag-winter",
+    "tjalda-api"
+   ]
+  }
+ ],
+ "scope_note": "Scope: every campsite with its own page on this site that is open, partly open or call-ahead in winter, so it may still take campervans in November or December. Status and facts in the table come from each campsite's own page here, with its sources and check date; the season texts quoted in the sections below were rechecked on tjalda.is and the official winter list on 2026-11-19. Sites that are closed by November (for example Vík and Hvolsvöllur) are not in the table.",
+ "campsites": [
+  "reykjavik-eco-campsite",
+  "mosskogar",
+  "sandgerdi-airport-camping",
+  "gardskagi",
+  "vogar-reykjanes",
+  "grindavik",
+  "hveragerdi-reykjamork",
+  "selfoss-gesthus",
+  "thingvellir-leirar",
+  "hraunborgir",
+  "uthlid",
+  "skjol",
+  "hella-arhus",
+  "hellisholar",
+  "smaratun-fljotshlid",
+  "starlight-lambafell",
+  "skogafoss",
+  "farmhouse-lodge-skeidflot",
+  "kirkjubaer-ii",
+  "skaftafell",
+  "hofn",
+  "djupivogur",
+  "camp-egilsstadir",
+  "hverinn-kleppjarnsreykir",
+  "stykkisholmur",
+  "grundarfjordur",
+  "vogar-myvatn",
+  "hlid-myvatn",
+  "hamrar-akureyri",
+  "vaglaskogur",
+  "cja-laugar",
+  "artun"
+ ],
+ "table": "winter",
+ "glance_title": "Campsites that may be open in November and December",
+ "table_caption": "Roughly clockwise from Reykjavík: capital area, Reykjanes, South (Golden Circle and South Coast, west to east), East, West, North East. 'Shoulder season only' sites close at some point in November or December. Prices are 2026 rates as published.",
+ "sections": [
+  {
+   "id": "closing",
+   "title": "Campsites that close during November or December",
+   "paras": [
+    {
+     "value": "These campsites are open in November but stop taking guests during November or December, or only open again in spring. Seasons quoted are what the sources said on 19 November 2026.",
+     "src": [
+      "tjalda-api",
+      "grindavik-town"
+     ]
+    }
+   ],
+   "items": [
+    {
+     "value": "Mosskógar (Mosfellsdalur, 20 minutes from Reykjavík): tjalda.is says 'Open from 1st of March to 1st of December'; the operator's text on ferdalag.is gives 15 December. Call ahead for 2–15 December.",
+     "src": [
+      "tjalda-api",
+      "mosskogar:ferdalag"
+     ]
+    },
+    {
+     "value": "Árhús, Hella: 'Open until November/December (depending on weather)'.",
+     "src": [
+      "tjalda-api"
+     ]
+    },
+    {
+     "value": "Kirkjubær II, Kirkjubæjarklaustur: 'Open from March to November', so plan on it being closed in December.",
+     "src": [
+      "tjalda-api"
+     ]
+    },
+    {
+     "value": "Ártún (near Grenivík, North East): tjalda.is says 'Open all year, except in December and January'.",
+     "src": [
+      "tjalda-api"
+     ]
+    },
+    {
+     "value": "Grindavík: the town's campsite page still says the campsite is open from mid-March into November, subject to weather and conditions, although a trial winter opening for 2026–27 has been reported and the campsite is on the official winter list. Ring before you go.",
+     "src": [
+      "grindavik-town",
+      "grindavik:vf-winter",
+      "ferdalag-winter"
+     ]
+    },
+    {
+     "value": "Already closed by November: Hvolsvöllur ('1st of May - 1st of November') and Vík ('open from 20th of April to 1st of November 2026. In winter the campsite is closed').",
+     "src": [
+      "tjalda-api",
+      "vik-own"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "daylight",
+   "title": "Daylight in November and December",
+   "paras": [
+    {
+     "value": "Days shorten fast. Times below are sunrise and sunset for 2026; the North is darker than Reykjavík in December.",
+     "src": [
+      "tad-rvk-nov",
+      "tad-rvk-dec",
+      "tad-aku-dec"
+     ]
+    }
+   ],
+   "items": [
+    {
+     "value": "Reykjavík, 1 November: sunrise 09:10, sunset 17:10 (about 8 hours of daylight).",
+     "src": [
+      "tad-rvk-nov"
+     ]
+    },
+    {
+     "value": "Reykjavík, 30 November: sunrise 10:43, sunset 15:49 (about 5 hours 6 minutes).",
+     "src": [
+      "tad-rvk-nov"
+     ]
+    },
+    {
+     "value": "Reykjavík, 21 December: sunrise 11:22, sunset 15:29 (about 4 hours 7 minutes).",
+     "src": [
+      "tad-rvk-dec"
+     ]
+    },
+    {
+     "value": "Akureyri, 21 December: sunrise 11:38, sunset 14:42 (about 3 hours 3 minutes).",
+     "src": [
+      "tad-aku-dec"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roads",
+   "title": "Roads, weather and tyres",
+   "paras": [
+    {
+     "value": "The Icelandic Road and Coastal Administration (IRCA) gives winter service to roughly 5,000 of the 12,000 km of national roads. On regular service days, snow and ice removal is meant to be finished before morning traffic starts, but ice removal is not carried out on every road.",
+     "src": [
+      "irca-winter"
+     ]
+    }
+   ],
+   "items": [
+    {
+     "value": "Check road conditions on umferdin.is or call the IRCA traffic service on 1777 before every drive.",
+     "src": [
+      "umferdin",
+      "irca-winter"
+     ]
+    },
+    {
+     "value": "SafeTravel advises checking the forecast at least once a day (en.vedur.is): strong winds, snow, rain and drifting snow can make driving dangerous even when the roads look clear. If conditions get too much, wait in a safe place for the weather to calm down.",
+     "src": [
+      "safetravel-winter"
+     ]
+    },
+    {
+     "value": "Front and rear lights must be on 24 hours a day. SafeTravel warns that a car's 'AUTO' light setting often does not switch on the rear lights.",
+     "src": [
+      "safetravel-winter"
+     ]
+    },
+    {
+     "value": "Tyres: Reykjavík City says studded tyres are not banned from 1 November to 15 April (the city discourages them on its streets), and that the vehicle regulation requires at least 3 mm of tread on winter tyres of passenger cars. Ask your rental company what tyres the camper has.",
+     "src": [
+      "rvk-studs"
+     ]
+    },
+    {
+     "value": "Leave a travel plan on safetravel.is. In an emergency call 112.",
+     "src": [
+      "safetravel",
+      "safetravel-winter"
+     ]
+    }
+   ]
+  }
+ ],
+ "tips_title": "Campsite tips for November and December",
+ "tips": [
+  {
+   "value": "Reykjavík Eco-Campsite: from 15 October to 15 April only Area A is open, and only for motorhomes and campervans.",
+   "src": [
+    "reykjavik-eco-campsite:own-home",
+    "reykjavik-eco-campsite:own-campsite"
+   ]
+  },
+  {
+   "value": "Many all-year campsites run with no staff in winter. At Hlíð (Mývatn) the reception is closed during the winter, with information on a notice on the reception door; at Camp Egilsstaðir the reception may be closed on some low-season days, when you pay at a self-service card terminal or in an honesty box.",
+   "src": [
+    "tjalda-api",
+    "camp-egilsstadir:own-faq"
+   ]
+  },
+  {
+   "value": "Djúpivogur says its services are limited in December–February without saying which, so ask before relying on showers, kitchen or the waste disposal point.",
+   "src": [
+    "djupivogur:tjalda-api"
+   ]
+  },
+  {
+   "value": "The official winter list and the campsites' own seasons often disagree. See our all-Iceland winter guide (/guides/winter-campsites-iceland/) for the conflicts, and treat anything marked Call ahead as unconfirmed until the campsite answers.",
+   "src": [
+    "ferdalag-winter",
+    "tjalda-api"
+   ]
+  }
+ ],
+ "warning": "Seasons, winter services and road conditions change at short notice, especially around the start of December. Contact the campsite before relying on it, and check umferdin.is and the weather forecast every day.",
+ "tours": [
+  "viator-reykjavik-northern-lights",
+  "gti-northern-lights",
+  "gti-ice-caves"
+ ]
+}
