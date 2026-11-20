@@ -1,0 +1,234 @@
+{
+ "slug": "ring-road-campsites",
+ "title": "Ring Road Campsites in Order (2026): Iceland's Route 1 Clockwise from Reykjavík, with Map and Winter Status",
+ "short": "Ring Road in order",
+ "description": "Campsites on or just off Iceland's Ring Road (Route 1), listed clockwise from Reykjavík with a map, winter status, electricity, toilet disposal and 2026 prices, plus the Ring Road towns we have not profiled yet. Every fact sourced.",
+ "region": "all",
+ "checked": "2026-11-20",
+ "sources": {
+  "mbl-route1": {
+   "title": "Morgunblaðið (mbl.is), 24 June 2026 – Nýr kafli vígður við Hornafjarðarfljót (new Route 1 section at Hornafjörður; Ring Road shortened from 1,321 to 1,309 km)",
+   "url": "https://www.mbl.is/frettir/innlent/2026/06/24/nyr_kafli_vigdur_vid_hornafjardarfljot/",
+   "checked": "2026-11-20"
+  },
+  "wiki-route1": {
+   "title": "Wikipedia – Route 1 (Iceland): characteristics, mountain passes and list of towns on Route 1 (clockwise from Reykjavík)",
+   "url": "https://en.wikipedia.org/wiki/Route_1_(Iceland)",
+   "checked": "2026-11-20"
+  },
+  "tjalda-api": {
+   "title": "Tjalda.is public campsite data (https://tjalda.is/api/campsites): Borgarnes, Blönduós, Varmahlíð, CampEast Breiðdalsvík",
+   "url": "https://tjalda.is/api/campsites",
+   "checked": "2026-11-20"
+  },
+  "tjalda-borgarnes": {
+   "title": "Tjalda.is – Borgarnes campsite",
+   "url": "https://tjalda.is/en/campsite/borgarnes",
+   "checked": "2026-11-20"
+  },
+  "borgarnes-own": {
+   "title": "Granastaðir Campsite, Borgarnes – own website (facilities, winter rates, 'Open now · limited service')",
+   "url": "https://campingborgarnes.is/",
+   "checked": "2026-11-20"
+  },
+  "tjalda-blonduos": {
+   "title": "Tjalda.is – Blönduós campsite (Brautarhvammur)",
+   "url": "https://tjalda.is/en/campsite/blonduos",
+   "checked": "2026-11-20"
+  },
+  "tjalda-varmahlid": {
+   "title": "Tjalda.is – Varmahlíð campsite (not an active participant in 2026)",
+   "url": "https://tjalda.is/en/campsite/varmahlid",
+   "checked": "2026-11-20"
+  },
+  "tjalda-breiddalsvik": {
+   "title": "Tjalda.is – CampEast, Breiðdalsvík",
+   "url": "https://tjalda.is/en/campsite/breiddalsvik",
+   "checked": "2026-11-20"
+  },
+  "ferdalag-winter": {
+   "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
+   "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+   "checked": "2026-11-20"
+  },
+  "umferdin": {
+   "title": "Umferdin.is – IRCA traffic info (road conditions; traffic service phone 1777)",
+   "url": "https://umferdin.is/en",
+   "checked": "2026-11-20"
+  },
+  "safetravel-winter": {
+   "title": "SafeTravel.is (ICE-SAR) – Winter driving",
+   "url": "https://safetravel.is/winter-driving/",
+   "checked": "2026-11-20"
+  }
+ },
+ "intro": [
+  {
+   "value": "Route 1, the Ring Road, has been 1,309 km long since 24 June 2026, when a new section across Hornafjörður opened and shortened it by 12 km (from 1,321 km). It is paved all the way and passes through almost every part of Iceland except the Westfjords.",
+   "src": [
+    "mbl-route1",
+    "wiki-route1"
+   ]
+  },
+  {
+   "value": "This guide lists the campsites we have profiled in towns on Route 1 (or, for Skaftafell, just off it) in clockwise order from Reykjavík: north via Borgarnes and Akureyri, east to Egilsstaðir, down the East Fjords to Djúpivogur and Höfn, then west along the South Coast back to Reykjavík. Drive it anticlockwise by reading the table from the bottom up.",
+   "src": [
+    "wiki-route1",
+    "skaftafell:vjp-area"
+   ]
+  },
+  {
+   "value": "Of the 15 profiled campsites below, 9 are open in winter, 2 are listed as winter-open with vague details (call ahead), 2 are shoulder-season only and 2 are closed in winter. The biggest gap is between Reykjavík and Akureyri, where we have not yet profiled a campsite: see the section on that stretch below.",
+   "src": [
+    "reykjavik-eco-campsite:ferdalag-winter",
+    "hamrar-akureyri:ferdalag-winter",
+    "vik-camping:own",
+    "hvolsvollur:tjalda",
+    "kirkjubaer-ii:tjalda",
+    "hella-arhus:tjalda"
+   ]
+  }
+ ],
+ "scope_note": "Scope: campsites on this site whose town is on Wikipedia's list of communities on Route 1 (plus Skaftafell, whose entrance is just off Route 1), checked 2026-11-20. Mosfellsbær is on the list, but Mosskógar campsite is in Mosfellsdalur off Route 36, so it is left out. Campsites a short detour away (for example Hellishólar, Starlight Lambafell or Farmhouse Lodge) are on the South Coast winter guide. Winter status, electricity, dump station and price columns come straight from each campsite's own page on this site.",
+ "campsites": [
+  "reykjavik-eco-campsite",
+  "hamrar-akureyri",
+  "hlid-myvatn",
+  "vogar-myvatn",
+  "camp-egilsstadir",
+  "djupivogur",
+  "hofn",
+  "skaftafell",
+  "kirkjubaer-ii",
+  "vik-camping",
+  "skogafoss",
+  "hvolsvollur",
+  "hella-arhus",
+  "selfoss-gesthus",
+  "hveragerdi-reykjamork"
+ ],
+ "table": "winter",
+ "glance_title": "Ring Road campsites in clockwise order",
+ "table_caption": "Listed clockwise from Reykjavík (north first). Read from the bottom for an anticlockwise trip. Prices are 2026 rates as published on each campsite's page.",
+ "sections": [
+  {
+   "id": "west-north-gap",
+   "title": "Reykjavík to Akureyri: Ring Road campsites not profiled yet",
+   "paras": [
+    {
+     "value": "We have no full page yet for a campsite on Route 1 between Reykjavík and Akureyri. These are the main options in Ring Road towns on that stretch, from tjalda.is and the campsites' own pages. None of them is on the official camper winter service list (ferdalag.is, checked 2026-11-20).",
+     "src": [
+      "wiki-route1",
+      "tjalda-api",
+      "ferdalag-winter"
+     ]
+    }
+   ],
+   "items": [
+    {
+     "value": "Borgarnes – Granastaðir Campsite: the operator says it is at Granastaðir við Borgarbraut, right off Route 1, with toilets, showers (included), electricity hook-ups, free Wi-Fi, dishwashing and waste disposal. Its site shows 'Open now · limited service' and says that from 15 October it is open with limited service on a best-effort basis. Winter rates (from 20 October): pitch fee 400 ISK per vehicle, adults (14–66) 2,000 ISK, seniors (67+) 1,500 ISK, children (0–13) free, electricity 1,500 ISK per night; the Camping Card is not accepted. Tjalda.is gives a season of 10 May – 15 November, so call ahead in winter.",
+     "src": [
+      "borgarnes-own",
+      "tjalda-borgarnes",
+      "tjalda-api"
+     ]
+    },
+    {
+     "value": "Blönduós – Brautarhvammur: tjalda.is 'Rates 2026' are 2,250 ISK per adult (15+), children 14 and under free with adults, electricity 1,500 ISK per night and lodging tax 400 ISK per unit; toilets, showers and waste disposal for mobile homes are included. Tjalda.is does not list it as open all year, and its winter opening is Unconfirmed.",
+     "src": [
+      "tjalda-blonduos",
+      "tjalda-api"
+     ]
+    },
+    {
+     "value": "Varmahlíð (Skagafjörður): tjalda.is says this campsite is not an active participant in 2026 and that the information it shows may be outdated (it only shows 2025 rates). Its 2026 season and winter opening are Unconfirmed.",
+     "src": [
+      "tjalda-varmahlid",
+      "tjalda-api"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "east-fjords",
+   "title": "East Fjords: Breiðdalsvík",
+   "paras": [],
+   "items": [
+    {
+     "value": "Between Egilsstaðir and Djúpivogur, Route 1 runs through the East Fjords towns, including Breiðdalsvík. CampEast in Breiðdalsvík shows 'Open: 29 May – 01 Sep' on tjalda.is with 2025 rates (adults 2,500 ISK, electricity 1,500 ISK per night, lodging tax 400 ISK per unit), so it is a summer-only option.",
+     "src": [
+      "wiki-route1",
+      "tjalda-breiddalsvik",
+      "tjalda-api"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "winter-driving",
+   "title": "The Ring Road in winter",
+   "paras": [],
+   "items": [
+    {
+     "value": "Mountain passes on Route 1 that can close or be difficult in winter include Hellisheiði (Reykjavík – Hveragerði), Holtavörðuheiði (Borgarnes – Staðarskáli), Vatnsskarð (Blönduós – Varmahlíð), Öxnadalsheiði (Varmahlíð – Akureyri) and Biskupsháls (Akureyri – Egilsstaðir).",
+     "src": [
+      "wiki-route1"
+     ]
+    },
+    {
+     "value": "Check road conditions on umferdin.is (the Road and Coastal Administration's traffic info) or by calling 1777 before every driving day, and read SafeTravel's winter driving advice.",
+     "src": [
+      "umferdin",
+      "safetravel-winter"
+     ]
+    },
+    {
+     "value": "From Akureyri to Djúpivogur every campsite in this guide is open in winter (Hamrar, Hlíð, Vogar, Camp Egilsstaðir, Djúpivogur). On the South Coast it is patchier: Selfoss, Skaftafell and Höfn are open all year, but Vík and Hvolsvöllur are closed in winter and Hella and Kirkjubær II are shoulder-season only.",
+     "src": [
+      "hamrar-akureyri:ferdalag-winter",
+      "hlid-myvatn:tjalda",
+      "vogar-myvatn:tjalda",
+      "camp-egilsstadir:tjalda",
+      "djupivogur:tjalda",
+      "selfoss-gesthus:own",
+      "skaftafell:vjp",
+      "hofn:tjalda",
+      "vik-camping:own",
+      "hvolsvollur:tjalda",
+      "hella-arhus:tjalda",
+      "kirkjubaer-ii:tjalda"
+     ]
+    }
+   ]
+  }
+ ],
+ "tips_title": "Practical tips",
+ "tips": [
+  {
+   "value": "Reykjavík Eco-Campsite: from 15 October to 15 April only Area A is open, and only for motorhomes and campervans.",
+   "src": [
+    "reykjavik-eco-campsite:own-home",
+    "reykjavik-eco-campsite:own-campsite"
+   ]
+  },
+  {
+   "value": "Skaftafell is the only campsite in this guide between Kirkjubæjarklaustur and Höfn; in winter only its zones A and C stay open.",
+   "src": [
+    "skaftafell:vjp"
+   ]
+  },
+  {
+   "value": "The new Route 1 section at Hornafjörður (opened 24 June 2026) also shortened the southern approach to Höfn by 14.4 km.",
+   "src": [
+    "mbl-route1"
+   ]
+  }
+ ],
+ "warning": "Seasons, prices and facilities can change at short notice. Contact the campsite before relying on it, especially in winter and at sites marked Call ahead or Unconfirmed.",
+ "tours": [
+  "gti-south-coast",
+  "viator-skaftafell",
+  "viator-lake-myvatn",
+  "gti-northern-lights"
+ ]
+}
