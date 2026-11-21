@@ -19,17 +19,17 @@
   "tjalda-api": {
    "title": "Tjalda.is public campsite data (https://tjalda.is/api/campsites): Borgarnes, Blönduós, Varmahlíð, CampEast Breiðdalsvík",
    "url": "https://tjalda.is/api/campsites",
-   "checked": "2026-11-20"
+   "checked": "2026-11-21"
   },
   "tjalda-borgarnes": {
    "title": "Tjalda.is – Borgarnes campsite",
    "url": "https://tjalda.is/en/campsite/borgarnes",
-   "checked": "2026-11-20"
+   "checked": "2026-11-21"
   },
   "borgarnes-own": {
    "title": "Granastaðir Campsite, Borgarnes – own website (facilities, winter rates, 'Open now · limited service')",
    "url": "https://campingborgarnes.is/",
-   "checked": "2026-11-20"
+   "checked": "2026-11-21"
   },
   "tjalda-blonduos": {
    "title": "Tjalda.is – Blönduós campsite (Brautarhvammur)",
@@ -49,7 +49,7 @@
   "ferdalag-winter": {
    "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
    "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
-   "checked": "2026-11-20"
+   "checked": "2026-11-21"
   },
   "umferdin": {
    "title": "Umferdin.is – IRCA traffic info (road conditions; traffic service phone 1777)",
@@ -78,9 +78,10 @@
    ]
   },
   {
-   "value": "Of the 15 profiled campsites below, 9 are open in winter, 2 are listed as winter-open with vague details (call ahead), 2 are shoulder-season only and 2 are closed in winter. The biggest gap is between Reykjavík and Akureyri, where we have not yet profiled a campsite: see the section on that stretch below.",
+   "value": "Of the 16 profiled campsites below, 9 are open in winter, 3 are listed as winter-open with vague details (call ahead), 2 are shoulder-season only and 2 are closed in winter. The biggest gap is between Reykjavík and Akureyri, where Borgarnes is so far the only campsite we have profiled: see the section on that stretch below.",
    "src": [
     "reykjavik-eco-campsite:ferdalag-winter",
+    "borgarnes:own",
     "hamrar-akureyri:ferdalag-winter",
     "vik-camping:own",
     "hvolsvollur:tjalda",
@@ -92,6 +93,7 @@
  "scope_note": "Scope: campsites on this site whose town is on Wikipedia's list of communities on Route 1 (plus Skaftafell, whose entrance is just off Route 1), checked 2026-11-20. Mosfellsbær is on the list, but Mosskógar campsite is in Mosfellsdalur off Route 36, so it is left out. Campsites a short detour away (for example Hellishólar, Starlight Lambafell or Farmhouse Lodge) are on the South Coast winter guide. Winter status, electricity, dump station and price columns come straight from each campsite's own page on this site.",
  "campsites": [
   "reykjavik-eco-campsite",
+  "borgarnes",
   "hamrar-akureyri",
   "hlid-myvatn",
   "vogar-myvatn",
@@ -113,10 +115,10 @@
  "sections": [
   {
    "id": "west-north-gap",
-   "title": "Reykjavík to Akureyri: Ring Road campsites not profiled yet",
+   "title": "Reykjavík to Akureyri: Borgarnes and the Ring Road towns not profiled yet",
    "paras": [
     {
-     "value": "We have no full page yet for a campsite on Route 1 between Reykjavík and Akureyri. These are the main options in Ring Road towns on that stretch, from tjalda.is and the campsites' own pages. None of them is on the official camper winter service list (ferdalag.is, checked 2026-11-20).",
+     "value": "Between Reykjavík and Akureyri, Borgarnes – Granastaðir is the only Route 1 campsite with a full page on this site so far. The other main options in Ring Road towns on that stretch are below, from tjalda.is and the campsites' own pages. None of them, Borgarnes included, is on the official camper winter service list (ferdalag.is, checked 2026-11-21).",
      "src": [
       "wiki-route1",
       "tjalda-api",
@@ -126,11 +128,12 @@
    ],
    "items": [
     {
-     "value": "Borgarnes – Granastaðir Campsite: the operator says it is at Granastaðir við Borgarbraut, right off Route 1, with toilets, showers (included), electricity hook-ups, free Wi-Fi, dishwashing and waste disposal. Its site shows 'Open now · limited service' and says that from 15 October it is open with limited service on a best-effort basis. Winter rates (from 20 October): pitch fee 400 ISK per vehicle, adults (14–66) 2,000 ISK, seniors (67+) 1,500 ISK, children (0–13) free, electricity 1,500 ISK per night; the Camping Card is not accepted. Tjalda.is gives a season of 10 May – 15 November, so call ahead in winter.",
+     "value": "Borgarnes – Granastaðir Campsite now has its own page (/campsites/borgarnes/) and is marked call ahead in winter: the operator's website shows 'Open now · limited service' and winter rates, and says it stays open with limited service on a best-effort basis from 15 or 20 October (the page gives both dates), while ferdalag.is and the site's own metadata give a 15 May – 15 September season and tjalda.is 10 May – 15 November. Its adult price is in conflict too: 2,000 ISK on tjalda.is and in the page text, 1,000 ISK once the operator's page has loaded in a browser.",
      "src": [
       "borgarnes-own",
       "tjalda-borgarnes",
-      "tjalda-api"
+      "tjalda-api",
+      "borgarnes:ferdalag"
      ]
     },
     {

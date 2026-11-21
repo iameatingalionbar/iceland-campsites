@@ -163,7 +163,8 @@ A nightly run should take the first `todo` (or `stub` → full) row by prio, res
 | B34 | 1 | done | guide | campsites-near-reykjavik | Campsites near Reykjavík (city, Mosfellsdalur, Hafnarfjörður) | capital-area | KEYWORDS #4 | tjalda, reykjavikcampsite.is |
 | B35 | 1 | done | guide | north-iceland-winter-campsites | Winter campsites around Akureyri and Mývatn | north-east | KEYWORDS #5 | tjalda, visitakureyri.is, northiceland.is camper winter service |
 | B36 | 2 | done | guide | ring-road-campsites | Ring Road campsites in order (with map) | all | KEYWORDS #6; published 2026-11-20 (15 profiled sites clockwise + unprofiled Borgarnes/Blönduós/Varmahlíð/Breiðdalsvík) | tjalda coordinates, mbl, Wikipedia Route 1 |
-| B53 | 2 | todo | campsite | borgarnes / blonduos | Full pages for Borgarnes (Granastaðir) and Blönduós – fill the Reykjavík–Akureyri Ring Road gap | west / north-west | B36 gap; Borgarnes own site 'open now · limited service' from 15 Oct | campingborgarnes.is, tjalda |
+| B53 | 2 | done | campsite | borgarnes | Borgarnes – Granastaðir full page (Reykjavík–Akureyri Ring Road gap) | west | full page 2026-11-21; winter call-ahead (operator 'Open now · limited service' from 15/20 Oct vs own metadata + ferdalag 15 May–15 Sep, tjalda 10 May–15 Nov); adult price conflict 2,000 vs 1,000 (page script); Blönduós split to B54 | campingborgarnes.is, tjalda, ferdalag, borgarbyggd.is |
+| B54 | 2 | todo | campsite | blonduos | Blönduós (Brautarhvammur) full page – second Reykjavík–Akureyri Ring Road gap campsite (split from B53; Borgarnes done 2026-11-21, Blönduós next) | north-west | B36 gap; tjalda 'Rates 2026', winter Unconfirmed | tjalda, ferdalag |
 | B37 | 2 | todo | guide | snaefellsnes-campsites | Snæfellsnes campsites | west | KEYWORDS #7 | tjalda |
 | B38 | 3 | todo | guide | westfjords-campsites | Westfjords campsites | westfjords | KEYWORDS #10 | tjalda |
 | B39 | 3 | todo | campsite | landmannalaugar | Landmannalaugar campsite (summer, F-road) | south | KEYWORDS #11 | fi.is |
@@ -240,6 +241,25 @@ Options reviewed earlier (none of these are active; nothing else signed up by th
 - 2026-11-17: Deploy token GITHUB_TOKEN_CAMPSITES expires 2026-11-22 11:24 (Reykjavík) — needs a new token before then.
 
 ## CHANGELOG
+- 2026-11-21: Borgarnes – Granastaðir Campsite full page (/campsites/borgarnes/, B53 Borgarnes part; Blönduós split to new row B54, next).
+  Sources checked 2026-11-21: campingborgarnes.is (served HTML: 'Open now · limited service', 'Winter rates · from 20 October', 'From 15
+  October: open with limited service on a best-effort basis', pitch fee 400, adult 2,000, senior 1,500, 0–13 free, elec 1,500, no Camping
+  Card, info@campingborgarnes.is, Ámundi Sigurðsson; its language script, which runs on load, shows 'From 20 October' and adult/senior
+  1,000; its meta description + schema.org say 'Open mid-May to mid-September', 2026-05-15–2026-09-15, priceRange 2000–3900), tjalda.is
+  API + page ('Rates 2026' = 2,000/1,500/free/elec 1,500/lodging tax 400 per unit; season 10 May–15 Nov, not all-year; drop-in only,
+  payment on site, Camping Card not accepted, age limit 20, +354 892 5678, amundi@isl.is; GPS used; tags incl. shower, Wi-Fi, waste
+  disposal for mobile homes, dishwashing), ferdalag.is EN + IS service pages (15/05–15/09, 'Rates 2021' = outdated, free Wi-Fi, losun
+  skólptanka, dogs allowed, distances) + camper winter list (Borgarnes not listed; only Fossatún in Borgarbyggð), Borgarbyggð minutes
+  (byggðarráð 742, 30 Apr 2026: campsite leased to a tenant; byggðarráð 1, 18 Jun 2026: ÁS rekstur og þjónusta ehf. permit for a 70 m²
+  guest gathering tent until 15 Sep 2026). utilegukortid.is did not respond (TLS error/504) – Camping Card 2026 list read from a search
+  engine's copy (Borgarnes not listed) and the 'No' rests mainly on the operator + tjalda. Parka.is has no Borgarnes page (redirects
+  to /camping/). Winter = call-ahead (operator says limited service, best effort; season sources conflict; not on winter list).
+  Unconfirmed: kitchen (only dishwashing/BBQ listed), laundry, summer/high-season rates, which services run in winter, dump location /
+  cassette use, hook-up count. Prices: adult 2,000 kept (tjalda + page text) with the 1,000 script conflict noted on the page.
+  Also: ring-road-campsites guide – borgarnes added to the table (now 16: 9 open, 3 call ahead, 2 partial, 2 closed), gap section
+  retitled and Borgarnes item rewritten to point at the new page; winter-campsites-iceland – borgarnes added to the table.
+  Tours: gti-northern-lights (as Grundarfjörður). Awaiting Stefán: new GITHUB_TOKEN_CAMPSITES before 2026-11-22 11:24 (see Decisions)
+  – after that nightly deploys will fail.
 - 2026-11-20: Guide "Ring Road Campsites in Order (2026)" (/guides/ring-road-campsites/, B36). 15 profiled campsites in towns on Route 1
   (Wikipedia list of communities on Route 1, clockwise from Reykjavík; Skaftafell via own 'off Route 1'), table type winter, map. Sources
   checked 2026-11-20: mbl.is 24 Jun 2026 (new Hornafjörður section; Ring Road 1,321 → 1,309 km; southern route to Höfn −14.4 km),

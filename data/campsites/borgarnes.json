@@ -1,0 +1,280 @@
+{
+  "slug": "borgarnes",
+  "name": "Borgarnes – Granastaðir Campsite",
+  "alt_names": [
+    "Granastaðir Campsite",
+    "Granastaðir Tjaldsvæði",
+    "Tjaldsvæðið Borgarnesi",
+    "Borgarnes Camping ground",
+    "Camping Borgarnes"
+  ],
+  "region": "west",
+  "town": "Borgarnes (Borgarfjörður)",
+  "completeness": "full",
+  "checked": "2026-11-21",
+  "sources": {
+    "own": {
+      "title": "Granastaðir Campsite – own website, campingborgarnes.is (checked as served and as rendered in a browser): banner 'Open now · limited service'; facilities; 'Winter rates · from 20 October'; page text 'From 15 October: open with limited service on a best-effort basis' with adults 2,000 / seniors 1,500 ISK, while the page's language script (EN and IS) shows 'From 20 October' and adults/seniors 1,000 ISK; page metadata (meta description + schema.org Campground) 'Open mid-May to mid-September', opening period 2026-05-15 – 2026-09-15, priceRange 'ISK 2000-3900/person/night', GPS, phone; Camping Card not accepted; contact",
+      "url": "https://campingborgarnes.is/",
+      "checked": "2026-11-21"
+    },
+    "tjalda": {
+      "title": "Tjalda.is – Borgarnes campsite ('Rates 2026')",
+      "url": "https://tjalda.is/en/campsite/borgarnes",
+      "checked": "2026-11-21"
+    },
+    "tjalda-api": {
+      "title": "Tjalda.is public API – Borgarnes entry (season fields 10 May – 15 November, not flagged open all year, 'Rates 2026', GPS, service tags, drop-in only, contact)",
+      "url": "https://tjalda.is/api/campsites",
+      "checked": "2026-11-21"
+    },
+    "ferdalag": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – Borgarnes Camping ground, English (15/05–15/09, 'Rates 2021', free Wi-Fi, age limit, waste tank discharge, dogs allowed, distances to services)",
+      "url": "https://www.ferdalag.is/en/service/tjaldsvaedid-borgarnesi",
+      "checked": "2026-11-21"
+    },
+    "ferdalag-is": {
+      "title": "Ferdalag.is – Tjaldsvæðið Borgarnesi, Icelandic (15/05–15/09, 'Verð 2021', losun skólptanka)",
+      "url": "https://www.ferdalag.is/is/thjonusta/tjaldsvaedid-borgarnesi",
+      "checked": "2026-11-21"
+    },
+    "ferdalag-winter": {
+      "title": "Ferdalag.is – Camper winter service list (Borgarnes not listed; in Borgarbyggð only Fossatún)",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-11-21"
+    },
+    "utilegukort": {
+      "title": "Útilegukortið (Camping Card) – Opening dates of participating camping sites 2026 (Borgarnes not on the list). The site itself did not respond to direct requests on 2026-11-21 (TLS error / 504); list read from a search engine's copy of the page that day",
+      "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en",
+      "checked": "2026-11-21"
+    },
+    "muni-lease": {
+      "title": "Borgarbyggð – Byggðarráð meeting 742, 30 April 2026, item 8 'Rekstur á tjaldsvæðinu í Borgarnesi' (campsite at Granastaðir run by a tenant under a lease with the municipality)",
+      "url": "https://borgarbyggd.is/fundargerdir/19937",
+      "checked": "2026-11-21"
+    },
+    "muni-tent": {
+      "title": "Borgarbyggð – Byggðarráð meeting 1, 18 June 2026, item 7 'Granastaðir – Umsókn um stöðuleyfi' (ÁS rekstur og þjónusta ehf.: temporary 70 m² gathering tent as a shelter for campsite guests, permit until 15 September 2026)",
+      "url": "https://borgarbyggd.is/fundargerdir/19967",
+      "checked": "2026-11-21"
+    }
+  },
+  "intro": {
+    "value": "The town campsite of Borgarnes, at Granastaðir on Borgarbraut, right off Route 1 (the Ring Road) on the way north out of town. Grass pitches for tents and motorhomes look out over the Borgarfjörður fjord, and the operator pitches it as a base for exploring West Iceland and the Snæfellsnes peninsula. Shops, a petrol station, the swimming pool, restaurants and cafés are within walking distance. The campsite belongs to the municipality of Borgarbyggð and is run by a tenant, ÁS rekstur og þjónusta ehf.; the contact person is Ámundi Sigurðsson.",
+    "src": [
+      "own",
+      "tjalda-api",
+      "ferdalag",
+      "muni-lease",
+      "muni-tent"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Granastaðir við Borgarbraut, 310 Borgarnes",
+      "src": [
+        "own",
+        "ferdalag",
+        "tjalda-api"
+      ]
+    },
+    "lat": 64.551714,
+    "lon": -21.908179,
+    "coords_src": [
+      "tjalda-api",
+      "own"
+    ]
+  },
+  "season": {
+    "value": "Sources disagree. The summer season is 15 May – 15 September according to the campsite's own page metadata (schema.org opening period 2026-05-15 to 2026-09-15, 'Open mid-May to mid-September') and ferdalag.is (15/05–15/09). Tjalda.is gives 10 May – 15 November. The visible page of the campsite's website, however, shows 'Open now · limited service' with winter rates and says the site stays open with limited service on a best-effort basis from mid/late October.",
+    "src": [
+      "own",
+      "ferdalag",
+      "tjalda-api"
+    ],
+    "note": "The operator's own page gives two different start dates for limited service: 15 October in the page text, 20 October once the page's script has run (and 20 October for the winter rates in both)."
+  },
+  "winter": {
+    "status": "call-ahead",
+    "value": "Call ahead. The operator's website currently shows 'Open now · limited service' and winter rates, and says that from 15 October (20 October in the browser-rendered version) the campsite is open with limited service on a best-effort basis. Which services are kept running in winter (showers, dishwashing, dump point, water) is not stated. The same website's metadata, ferdalag.is (15 May – 15 September) and tjalda.is (season ending 15 November) do not describe a winter season, and Borgarnes is not on ferdalag.is's camper winter service list (checked 2026-11-21).",
+    "src": [
+      "own",
+      "ferdalag",
+      "tjalda-api",
+      "ferdalag-winter"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates per night (tjalda.is 'Rates 2026'). The operator's website shows the same amounts as 'Winter rates · from 20 October' in its page text, but different adult and senior prices once the page has loaded in a browser (see notes). Payment on site.",
+      "src": [
+        "tjalda",
+        "tjalda-api",
+        "own"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult (14–66) per night",
+        "value": "2,000 ISK",
+        "src": [
+          "tjalda",
+          "tjalda-api",
+          "own"
+        ],
+        "note": "Conflict: in a browser, the operator's page script shows 1,000 ISK for adults (English and Icelandic versions). The page's schema.org data gives a price range of 2,000–3,900 ISK per person per night without explaining it. Confirm the price on arrival."
+      },
+      {
+        "label": "Senior (67+) per night",
+        "value": "1,500 ISK",
+        "src": [
+          "tjalda",
+          "tjalda-api",
+          "own"
+        ],
+        "note": "Conflict: the operator's page script shows 1,000 ISK for seniors in a browser."
+      },
+      {
+        "label": "Children (13 and under)",
+        "value": "Free",
+        "src": [
+          "tjalda",
+          "tjalda-api",
+          "own"
+        ]
+      },
+      {
+        "label": "Electricity per night",
+        "value": "1,500 ISK",
+        "src": [
+          "tjalda",
+          "tjalda-api",
+          "own"
+        ]
+      },
+      {
+        "label": "Per tent, camper or vehicle per night",
+        "value": "400 ISK",
+        "src": [
+          "tjalda",
+          "tjalda-api",
+          "own"
+        ],
+        "note": "Tjalda.is calls this the lodging tax (400 ISK per unit per night); the operator's website calls it a pitch fee per tent, camper or vehicle. Probably the same charge, but not stated."
+      },
+      {
+        "label": "Summer (high-season) rates",
+        "value": null,
+        "note": "No separate summer price list was found. Ferdalag.is still shows 'Rates 2021' (adult 1,500 ISK, electricity 900 ISK), which is out of date."
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes – electricity hook-ups, 1,500 ISK per night (operator website; tjalda.is; ferdalag.is). Number of hook-ups, amperage, socket type and winter availability: not published.",
+      "src": [
+        "own",
+        "tjalda-api",
+        "ferdalag"
+      ],
+      "has": "yes"
+    },
+    "kitchen": {
+      "value": null,
+      "has": null,
+      "note": "No campers' kitchen is listed. The operator's website and tjalda.is list dishwashing facilities and BBQ grills; one photo caption on the operator's site mentions 'dishwashing and kitchen facilities' without detail. Borgarbyggð gave the tenant a temporary permit for a 70 m² gathering tent as a guest shelter, valid only until 15 September 2026."
+    },
+    "showers": {
+      "value": "Yes – showers included in the price (operator website; tjalda.is tags a shower). Whether they are available during the winter 'limited service' is not stated.",
+      "src": [
+        "own",
+        "tjalda-api"
+      ],
+      "has": "yes"
+    },
+    "toilets": {
+      "value": "Yes – WC/toilets (operator website, tjalda.is, ferdalag.is). Tjalda.is also tags hot and cold water.",
+      "src": [
+        "own",
+        "tjalda-api",
+        "ferdalag"
+      ]
+    },
+    "dump_station": {
+      "value": "Yes – the operator lists waste disposal ('seyrulosun', sludge disposal, in the Icelandic version), tjalda.is lists waste disposal for mobile homes, and ferdalag.is lists waste tank discharge (losun skólptanka). Exact location, whether cassette toilets can be emptied there, and whether it works in winter are not published.",
+      "src": [
+        "own",
+        "tjalda-api",
+        "ferdalag",
+        "ferdalag-is"
+      ],
+      "has": "yes"
+    },
+    "wifi": {
+      "value": "Yes – free Wi-Fi (operator website, tjalda.is, ferdalag.is).",
+      "src": [
+        "own",
+        "tjalda-api",
+        "ferdalag"
+      ]
+    },
+    "laundry": {
+      "value": null,
+      "note": "No washing machine or dryer is mentioned by the operator, tjalda.is or ferdalag.is."
+    },
+    "camping_card": {
+      "value": "No – the operator's website and tjalda.is both say the Camping Card (Útilegukortið) is not accepted, and Borgarnes is not on the card's 2026 list.",
+      "src": [
+        "own",
+        "tjalda-api",
+        "utilegukort"
+      ]
+    },
+    "contact": {
+      "value": "+354 892 5678 · info@campingborgarnes.is (contact person Ámundi Sigurðsson). Tjalda.is and ferdalag.is give amundi@isl.is as the email.",
+      "src": [
+        "own",
+        "tjalda-api",
+        "ferdalag"
+      ]
+    }
+  },
+  "practical": [
+    {
+      "value": "Drop-in only: tjalda.is lists the campsite as accepting drop-in guests but not pre-booked stays, and payment is made on site. The 'Reserve a pitch' buttons on the operator's website only jump to its contact details. For larger groups or longer stays, the operator asks you to request a special offer by email.",
+      "src": [
+        "tjalda-api",
+        "own"
+      ]
+    },
+    {
+      "value": "Age limit: guests under 20 must be with a guardian (tjalda.is; ferdalag.is).",
+      "src": [
+        "tjalda-api",
+        "ferdalag"
+      ]
+    },
+    {
+      "value": "Dogs are allowed (ferdalag.is).",
+      "src": [
+        "ferdalag"
+      ]
+    },
+    {
+      "value": "Nearby (ferdalag.is distances): petrol station and pharmacy about 0.5 km, grocery store and health centre about 0.8 km, swimming pool, bakery and bank about 1 km, restaurant, café and post office about 1.5 km.",
+      "src": [
+        "ferdalag"
+      ]
+    },
+    {
+      "value": "Sights the operator suggests: the Settlement Center and Safnahús Borgarfjarðar museums, the Brákin monument and Borg á Mýrum in and around town; Eldborg crater, Hafnarfjall, Glanni waterfall and Deildartunguhver hot spring; Borgarnes swimming pool and the Hreppslaug geothermal pool.",
+      "src": [
+        "own"
+      ]
+    }
+  ],
+  "tours": [
+    "gti-northern-lights"
+  ]
+}
