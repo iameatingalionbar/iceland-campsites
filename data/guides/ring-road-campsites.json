@@ -4,7 +4,7 @@
  "short": "Ring Road in order",
  "description": "Campsites on or just off Iceland's Ring Road (Route 1), listed clockwise from Reykjavík with a map, winter status, electricity, toilet disposal and 2026 prices, plus the Ring Road towns we have not profiled yet. Every fact sourced.",
  "region": "all",
- "checked": "2026-11-20",
+ "checked": "2026-11-22",
  "sources": {
   "mbl-route1": {
    "title": "Morgunblaðið (mbl.is), 24 June 2026 – Nýr kafli vígður við Hornafjarðarfljót (new Route 1 section at Hornafjörður; Ring Road shortened from 1,321 to 1,309 km)",
@@ -34,7 +34,7 @@
   "tjalda-blonduos": {
    "title": "Tjalda.is – Blönduós campsite (Brautarhvammur)",
    "url": "https://tjalda.is/en/campsite/blonduos",
-   "checked": "2026-11-20"
+   "checked": "2026-11-22"
   },
   "tjalda-varmahlid": {
    "title": "Tjalda.is – Varmahlíð campsite (not an active participant in 2026)",
@@ -49,7 +49,7 @@
   "ferdalag-winter": {
    "title": "Ferdalag.is (Icelandic Tourist Board) – Camper winter service",
    "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
-   "checked": "2026-11-21"
+   "checked": "2026-11-22"
   },
   "umferdin": {
    "title": "Umferdin.is – IRCA traffic info (road conditions; traffic service phone 1777)",
@@ -78,7 +78,7 @@
    ]
   },
   {
-   "value": "Of the 16 profiled campsites below, 9 are open in winter, 3 are listed as winter-open with vague details (call ahead), 2 are shoulder-season only and 2 are closed in winter. The biggest gap is between Reykjavík and Akureyri, where Borgarnes is so far the only campsite we have profiled: see the section on that stretch below.",
+   "value": "Of the 17 profiled campsites below, 9 are open in winter, 3 are listed as winter-open with vague details (call ahead), 2 are shoulder-season only and 3 are closed in winter. The biggest gap is between Reykjavík and Akureyri, where Borgarnes (call ahead) and Blönduós (closed in winter) are so far the only campsites we have profiled: see the section on that stretch below.",
    "src": [
     "reykjavik-eco-campsite:ferdalag-winter",
     "borgarnes:own",
@@ -86,7 +86,8 @@
     "vik-camping:own",
     "hvolsvollur:tjalda",
     "kirkjubaer-ii:tjalda",
-    "hella-arhus:tjalda"
+    "hella-arhus:tjalda",
+    "blonduos:tjalda"
    ]
   }
  ],
@@ -94,6 +95,7 @@
  "campsites": [
   "reykjavik-eco-campsite",
   "borgarnes",
+  "blonduos",
   "hamrar-akureyri",
   "hlid-myvatn",
   "vogar-myvatn",
@@ -115,10 +117,10 @@
  "sections": [
   {
    "id": "west-north-gap",
-   "title": "Reykjavík to Akureyri: Borgarnes and the Ring Road towns not profiled yet",
+   "title": "Reykjavík to Akureyri: Borgarnes, Blönduós and the Ring Road towns not profiled yet",
    "paras": [
     {
-     "value": "Between Reykjavík and Akureyri, Borgarnes – Granastaðir is the only Route 1 campsite with a full page on this site so far. The other main options in Ring Road towns on that stretch are below, from tjalda.is and the campsites' own pages. None of them, Borgarnes included, is on the official camper winter service list (ferdalag.is, checked 2026-11-21).",
+     "value": "Between Reykjavík and Akureyri, Borgarnes – Granastaðir and Blönduós (Brautarhvammur) are the Route 1 campsites with a full page on this site so far. Other options in Ring Road towns on that stretch are below, from tjalda.is. None of them, Borgarnes and Blönduós included, is on the official camper winter service list (ferdalag.is, checked 2026-11-22).",
      "src": [
       "wiki-route1",
       "tjalda-api",
@@ -137,9 +139,12 @@
      ]
     },
     {
-     "value": "Blönduós – Brautarhvammur: tjalda.is 'Rates 2026' are 2,250 ISK per adult (15+), children 14 and under free with adults, electricity 1,500 ISK per night and lodging tax 400 ISK per unit; toilets, showers and waste disposal for mobile homes are included. Tjalda.is does not list it as open all year, and its winter opening is Unconfirmed.",
+     "value": "Blönduós Campsite (Brautarhvammur) now has its own page (/campsites/blonduos/) and is marked closed in winter: tjalda.is gives a 2026 season of 1 January – 30 October and Parka.is 1 March – 30 October (both also show an 'Open all year' tag that contradicts those dates), and Húnabyggð's short-term lease of its town campsites ran until the end of October 2026. 2026 rates: 2,250 ISK per adult (15+), electricity 1,500 ISK, lodging tax 400 ISK per unit. The municipality plans to move the campsite to a new site at Hnjúkabyggð.",
      "src": [
-      "tjalda-blonduos",
+      "blonduos:tjalda",
+      "blonduos:parka",
+      "blonduos:muni-151",
+      "blonduos:muni-hnjuk",
       "tjalda-api"
      ]
     },

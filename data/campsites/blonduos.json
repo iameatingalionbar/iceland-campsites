@@ -1,0 +1,305 @@
+{
+  "slug": "blonduos",
+  "name": "Blönduós Campsite (Brautarhvammur)",
+  "alt_names": [
+    "Tjaldsvæðið Blönduósi",
+    "Tjaldsvæðið Brautarhvammi",
+    "Blönduós camping",
+    "Brautarhvammur campsite"
+  ],
+  "region": "north-west",
+  "town": "Blönduós (Húnabyggð)",
+  "completeness": "full",
+  "checked": "2026-11-22",
+  "sources": {
+    "tjalda": {
+      "title": "Tjalda.is – Blönduós campsite page (rendered in a browser: 'Campground opening season: January 1 – October 30', Brautarhvammi, 540 Blönduós, prebooking + drop-in, description, phone 8371300, logeehf@gmail.com)",
+      "url": "https://tjalda.is/en/campsite/blonduos",
+      "checked": "2026-11-22"
+    },
+    "tjalda-api": {
+      "title": "Tjalda.is public API – Blönduós entry (season fields 1 January – 30 October, opening_time not 'all year' but service tag 'Open all year'; 'Rates 2026'; EN + IS description; GPS 65.659362, -20.276667; drop-in and prebooked flags with a Parka link) and Hnjúkabyggð entry (temporary campsite, 10 Jul – 30 Sep, Rates 2026)",
+      "url": "https://tjalda.is/api/campsites",
+      "checked": "2026-11-22"
+    },
+    "parka": {
+      "title": "Parka.is – Tjaldsvæðið Blönduósi (Icelandic page: 'Opið: 01. Mar - 30. Okt', price list adult 15+ 2,250 / electricity 1,500 / lodging tax 400 ISK; feature tags incl. 'Opið allt árið', Sturta, Uppþvottaaðstaða, Seyrulosun, Áfylling vatns, Rafmagn, Hundar leyfðir; operator kt. 5305140560; 'Netbókun … hefur ekki verið virkjuð' = online booking not activated)",
+      "url": "https://parka.is/blonduos/",
+      "checked": "2026-11-22"
+    },
+    "parka-hnjuk": {
+      "title": "Parka.is – Tjaldsvæðið við Hnjúkabyggð Blönduósi (temporary campsite while the area is developed, no showers yet – use the town swimming pool; Rates 2026 adults 1,500, children free, electricity 1,500, lodging tax 400; 8 hook-ups in each of areas A and B; open 10 Jul – 30 Sep; same operator kt. 5305140560 / logeehf@gmail.com)",
+      "url": "https://parka.is/hnjukabyggd/",
+      "checked": "2026-11-22"
+    },
+    "muni-services": {
+      "title": "Húnabyggð (municipality) – service directory: 'Tjaldsvæðið Brautarhvammi', phone 8371300, logeehf@gmail.com, description (location after the bridge heading north, electricity, service house with hot and cold water, toilets incl. accessible toilet, dishwashing)",
+      "url": "https://www.hunabyggd.is/is/thjonusta/yfirlit-thjonustu",
+      "checked": "2026-11-22"
+    },
+    "muni-2020": {
+      "title": "Blönduósbær (now Húnabyggð) – 1 Dec 2020 notice seeking a partner to run the campsite in Brautarhvammur by Route 1: shower, WC, washing machine and dishwashing in the service house, power sockets in several places, playground (2020 description, may be out of date)",
+      "url": "https://www.hunabyggd.is/is/mannlif/frettir-og-vidburdir/frettir-og-auglysingar/tilkynningar-og-frettir/blonduosbaer-oskar-eftir-samstarfsadila-um-rekstur-tjaldsvaedis",
+      "checked": "2026-11-22"
+    },
+    "muni-move": {
+      "title": "Húnabyggð – Sveitarstjórn meeting 61, 27 Nov 2025: Brautarhvammur plan change (five new guesthouses + service house on area 2, previously for motorhomes and caravans), full revision of the area plan, and confirmation of the municipality's intention to move the Blönduós campsite to a new location",
+      "url": "https://www.hunabyggd.is/is/stjornsysla/stjornskipulag/fundargerdir/sveitarstjorn-hunabyggdar/861",
+      "checked": "2026-11-22"
+    },
+    "muni-148": {
+      "title": "Húnabyggð – Byggðarráð meeting 148, 16 Jun 2026, item 8 'Tjaldsvæði': draft extended, temporary contract with L&E ehf. to run Húnabyggð's campsites in Blönduós through the end of 2026",
+      "url": "https://www.hunabyggd.is/static/files/fundargerdir/Byggdarad/2026-2030/148.-fundur-byggdarrads-16.-juni-2026.pdf",
+      "checked": "2026-11-22"
+    },
+    "muni-151": {
+      "title": "Húnabyggð – Byggðarráð meeting 151, 22 Jul 2026, item 3 'Tjaldsvæði': signed short-term contract until the end of October 2026 for leasing the campsites in Húnabyggð's towns; item 13.5.3: temporary permit for a 20-ft container as toilets at the municipality's planned campsite",
+      "url": "https://www.hunabyggd.is/static/files/151.-fundur-byggdarrads.pdf",
+      "checked": "2026-11-22"
+    },
+    "muni-hnjuk": {
+      "title": "Húnabyggð – Skipulags- og samgöngunefnd meeting 67, 6 Oct 2026, item 3: plan description (Landslag ehf., 18 Sep 2026) for a new detailed plan including a new campsite at Hnjúkabyggð, to be advertised",
+      "url": "https://www.hunabyggd.is/is/stjornsysla/stjornskipulag/fundargerdir/skipulags-og-samgongunefnd-hunabyggdar/952",
+      "checked": "2026-11-22"
+    },
+    "ferdalag-list": {
+      "title": "Ferdalag.is (Icelandic Tourist Board) – camping & caravan listings, Icelandic (196 results; no separate listing for the Brautarhvammur town campsite – in 540/541 Blönduós only Glaðheimar, Áfangi and Húnavellir)",
+      "url": "https://www.ferdalag.is/is/gisting/i-tjaldi-og-a-fjollum",
+      "checked": "2026-11-22"
+    },
+    "ferdalag-gladheimar": {
+      "title": "Ferdalag.is – Glaðheimar, Brautarhvammur, 540 Blönduós (cottages for rent all year, 'Opið allt árið'; tags Cottages, Camping, Waste tank discharge, Dogs allowed; reception in the information centre in Brautarhvammur by Route 1)",
+      "url": "https://www.ferdalag.is/en/service/gladheimar",
+      "checked": "2026-11-22"
+    },
+    "ferdalag-winter": {
+      "title": "Ferdalag.is – Camper winter service list (38 results; Blönduós not listed; Hamrar in Akureyri listed)",
+      "url": "https://www.ferdalag.is/en/accommodation/in-tent-or-caravan/camper-winter-service",
+      "checked": "2026-11-22"
+    },
+    "ferdalag-pool": {
+      "title": "Ferdalag.is – Sundlaugin Blönduósi (swimming pool), Melabraut 2, 540 Blönduós, 455-4780, 'Opið allt árið'; hours and prices on imb.is",
+      "url": "https://www.ferdalag.is/is/thjonusta/sundlaugin-blonduosi",
+      "checked": "2026-11-22"
+    },
+    "utilegukort": {
+      "title": "Útilegukortið (Camping Card) – Opening dates of participating camping sites 2026. Did not respond on 2026-11-22 (TLS error / 504 Gateway Timeout), so Blönduós could not be checked against the list",
+      "url": "https://utilegukortid.is/opening-dates-of-camping-sites-this-year-4/?lang=en",
+      "checked": "2026-11-22"
+    },
+    "osm": {
+      "title": "OpenStreetMap – Brautarhvammur road (way 37562289), Blönduós, 540; tjalda.is GPS falls on it",
+      "url": "https://www.openstreetmap.org/way/37562289",
+      "checked": "2026-11-22"
+    },
+    "wiki-route1": {
+      "title": "Wikipedia – Route 1 (Iceland): mountain passes prone to closure, incl. Vatnsskarð between Blönduós and Varmahlíð",
+      "url": "https://en.wikipedia.org/wiki/Route_1_(Iceland)",
+      "checked": "2026-11-22"
+    },
+    "umferdin": {
+      "title": "Umferdin.is – IRCA traffic info (road conditions; traffic service phone 1777)",
+      "url": "https://umferdin.is/en",
+      "checked": "2026-11-22"
+    }
+  },
+  "intro": {
+    "value": "The town campsite of Blönduós, in Brautarhvammur right by Route 1 (the Ring Road): coming from the south, it is on the right immediately after you cross the bridge over the river Blanda heading north. The site is fairly flat and grassy, sheltered in its upper part, and watched by security cameras. A service house has toilets (including an accessible toilet), hot and cold water and dishwashing facilities, and there are electric hook-ups. The campsite belongs to the municipality of Húnabyggð, which leased its town campsites to L&E ehf. on a short-term contract until the end of October 2026, and which has decided to move the campsite to a new location (see below).",
+    "src": [
+      "tjalda",
+      "tjalda-api",
+      "parka",
+      "muni-services",
+      "muni-151",
+      "muni-move"
+    ]
+  },
+  "location": {
+    "address": {
+      "value": "Brautarhvammur, 540 Blönduós",
+      "src": [
+        "tjalda",
+        "muni-services",
+        "parka"
+      ]
+    },
+    "lat": 65.659362,
+    "lon": -20.276667,
+    "coords_src": [
+      "tjalda-api",
+      "osm"
+    ]
+  },
+  "season": {
+    "value": "Published 2026 season: 1 January – 30 October on tjalda.is, 1 March – 30 October on Parka.is. Both listings also carry an 'Open all year' tag, which contradicts their own dates. Ferdalag.is has no separate listing for this campsite.",
+    "src": [
+      "tjalda",
+      "tjalda-api",
+      "parka",
+      "ferdalag-list"
+    ],
+    "note": "Source conflict: tjalda.is and Parka.is give different start dates (1 January vs 1 March) for the same operator, and both show an 'Open all year' tag next to a season ending 30 October."
+  },
+  "winter": {
+    "status": "closed",
+    "value": "Closed in winter (treat as closed for winter 2026–27). Both published seasons end on 30 October (tjalda.is and Parka.is), Húnabyggð's signed short-term lease of its town campsites ran only until the end of October 2026, and Blönduós is not on ferdalag.is's camper winter service list (checked 2026-11-22). The 'Open all year' tags on tjalda.is and Parka.is contradict the dates on the same listings and no source gives winter services, so do not plan a November–March night here without contacting the campsite first (+354 837 1300). The Glaðheimar cottages next to the campsite are listed as open all year, but that listing describes the cottages. Going north, Hamrar in Akureyri is on the official winter list.",
+    "src": [
+      "tjalda",
+      "tjalda-api",
+      "parka",
+      "muni-151",
+      "ferdalag-winter",
+      "ferdalag-gladheimar"
+    ]
+  },
+  "prices": {
+    "applies_to": {
+      "value": "2026 rates per night (tjalda.is 'Rates 2026'; Parka.is shows the same amounts).",
+      "src": [
+        "tjalda-api",
+        "parka"
+      ]
+    },
+    "currency": "ISK",
+    "items": [
+      {
+        "label": "Adult (15+) per night",
+        "value": "2,250 ISK",
+        "src": [
+          "tjalda-api",
+          "parka"
+        ]
+      },
+      {
+        "label": "Children (14 and under, with adults)",
+        "value": "Free",
+        "src": [
+          "tjalda-api"
+        ],
+        "note": "Parka.is only says 'Frítt fyrir börn' (free for children) without an age limit."
+      },
+      {
+        "label": "Electricity per night",
+        "value": "1,500 ISK",
+        "src": [
+          "tjalda-api",
+          "parka"
+        ]
+      },
+      {
+        "label": "Lodging tax per unit per night",
+        "value": "400 ISK",
+        "src": [
+          "tjalda-api",
+          "parka"
+        ]
+      },
+      {
+        "label": "Senior / disabled discount",
+        "value": null,
+        "note": "No senior or disabled rate is published on tjalda.is or Parka.is."
+      }
+    ]
+  },
+  "facts": {
+    "electricity": {
+      "value": "Yes – electric hook-ups, 1,500 ISK per night (tjalda.is, Parka.is; the municipality's directory also lists electricity). Number of hook-ups, amperage and socket type are not published; a 2020 municipal notice said there were sockets 'in several places'.",
+      "src": [
+        "tjalda-api",
+        "parka",
+        "muni-services",
+        "muni-2020"
+      ],
+      "has": "yes"
+    },
+    "kitchen": {
+      "value": null,
+      "has": null,
+      "note": "No campers' kitchen is listed. Tjalda.is, Parka.is and the municipality list dishwashing facilities only."
+    },
+    "showers": {
+      "value": "Yes – toilets and showers are included in the price (tjalda.is 'Rates 2026'); Parka.is tags a shower. Tjalda.is's own service tags list toilets but not showers.",
+      "src": [
+        "tjalda-api",
+        "parka"
+      ],
+      "has": "yes"
+    },
+    "toilets": {
+      "value": "Yes – toilets in the service house, including a toilet for disabled guests (tjalda.is, municipality).",
+      "src": [
+        "tjalda-api",
+        "muni-services"
+      ]
+    },
+    "dump_station": {
+      "value": "Yes – tjalda.is says waste disposal for mobile homes is included in the price (the Icelandic text: a facility to empty the water from motorhomes), and Parka.is tags 'Seyrulosun' (sludge disposal) and water refill. Exact location and whether cassette toilets can be emptied there are not published.",
+      "src": [
+        "tjalda-api",
+        "parka"
+      ],
+      "has": "yes"
+    },
+    "wifi": {
+      "value": null,
+      "note": "Wi-Fi is not mentioned by tjalda.is, Parka.is or the municipality."
+    },
+    "laundry": {
+      "value": null,
+      "note": "Current listings do not mention a washing machine. Húnabyggð's 2020 notice seeking an operator listed a washing machine in the service house, but that is out of date and no fee is published."
+    },
+    "camping_card": {
+      "value": null,
+      "note": "The Camping Card (Útilegukortið) website did not respond on 2026-11-22, so we could not check its 2026 list. Tjalda.is and Parka.is do not mention the card."
+    },
+    "contact": {
+      "value": "+354 837 1300 · logeehf@gmail.com (operator L&E ehf.).",
+      "src": [
+        "tjalda",
+        "parka",
+        "muni-services",
+        "parka-hnjuk"
+      ]
+    }
+  },
+  "practical": [
+    {
+      "value": "The campsite is moving. On 27 November 2025 Húnabyggð's council confirmed its intention to move the Blönduós campsite to a new location, and approved a plan change that turns area 2 of Brautarhvammur, previously for motorhomes and caravans, into plots for five guesthouses and a service house. A new campsite at Hnjúkabyggð is being planned (plan description dated 18 September 2026). Check which site is operating before a 2027 visit.",
+      "src": [
+        "muni-move",
+        "muni-hnjuk"
+      ]
+    },
+    {
+      "value": "In summer 2026 the same operator also ran a temporary campsite at Hnjúkabyggð in Blönduós (10 July – 30 September): toilets and electricity (8 hook-ups in each of areas A and B), no showers yet (guests are referred to the town pool); 2026 rates adults 1,500 ISK, children free, electricity 1,500 ISK, lodging tax 400 ISK. The municipality got a permit for a 20-foot container as toilets at its planned campsite.",
+      "src": [
+        "parka-hnjuk",
+        "tjalda-api",
+        "muni-151"
+      ]
+    },
+    {
+      "value": "Booking: tjalda.is shows the campsite as taking both drop-in and pre-booked guests and links to Parka.is for reservations, but Parka.is says online booking for this campsite has not been activated. Expect to turn up and pay on site, or phone ahead.",
+      "src": [
+        "tjalda-api",
+        "parka"
+      ]
+    },
+    {
+      "value": "Blönduós swimming pool (Sundlaugin Blönduósi, Melabraut 2, +354 455 4780) is listed as open all year; opening hours and prices are on imb.is.",
+      "src": [
+        "ferdalag-pool"
+      ]
+    },
+    {
+      "value": "East of Blönduós, Route 1 crosses the Vatnsskarð pass towards Varmahlíð, one of the Ring Road mountain passes prone to closure. Check road conditions on umferdin.is or call the traffic service on 1777 before driving.",
+      "src": [
+        "wiki-route1",
+        "umferdin"
+      ]
+    }
+  ],
+  "tours": [
+    "gti-northern-lights"
+  ]
+}
